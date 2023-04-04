@@ -9,6 +9,7 @@ run:
 	-mkdir git/
 	-mkdir googletest/
 	-mkdir latex/
+	-mkdir latex-graph/
 	cp ../xemacs/main.pdf xemacs/main.pdf
 	cp ../vmware/vmwareplayer.pdf vmware/vmwareplayer.pdf
 	cp ../unix1-1/main.pdf unix1-1/main.pdf
@@ -19,6 +20,7 @@ run:
 	cp ../git/main.pdf git/main.pdf
 	cp ../googletest/main.pdf googletest/main.pdf
 	cp ../latex/main.pdf latex/main.pdf
+	cp ../latex-graph/main.pdf latex-graph/main.pdf
 	git add .; git commit -m"no msg"; git push
 	xdg-open index.html
 	firefox https://yliow.github.io/index.html &
