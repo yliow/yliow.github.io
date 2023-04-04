@@ -1,8 +1,10 @@
 run:
 	-mkdir xemacs/ 
-	-mkdir vmware/ 
+	-mkdir vmware/
+	-mkdir unix1-1/
 	cp ../xemacs/main.pdf xemacs/main.pdf
 	cp ../vmware/vmwareplayer.pdf vmware/vmwareplayer.pdf
+	cp ../unix1-1/main.pdf unix1-1/main.pdf
 	git add .; git commit -m"no msg"; git push
 	xdg-open index.html
 	firefox https://yliow.github.io/index.html &
