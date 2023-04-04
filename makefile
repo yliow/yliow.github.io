@@ -11,6 +11,8 @@ run:
 	-mkdir latex/
 	-mkdir latex-graph/
 	-mkdir latex-automata/
+	-mkdir latex-2d/
+	-mkdir book/
 	cp ../xemacs/main.pdf xemacs/main.pdf
 	cp ../vmware/vmwareplayer.pdf vmware/vmwareplayer.pdf
 	cp ../unix1-1/main.pdf unix1-1/main.pdf
@@ -23,7 +25,8 @@ run:
 	cp ../latex/main.pdf latex/main.pdf
 	cp ../latex-graph/main.pdf latex-graph/main.pdf
 	cp ../latex-automata/main.pdf latex-automata/main.pdf
+	cp ../latex-2d/main.pdf latex-2d/main.pdf
+	cp ../latex-templates/book.tar.gz book/book.tar.gz
 	git add .; git commit -m"no msg"; git push
 	xdg-open index.html
 	firefox https://yliow.github.io/index.html &
-
