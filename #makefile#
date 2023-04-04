@@ -21,5 +21,3 @@ run:
 	xdg-open index.html
 	firefox https://yliow.github.io/index.html &
 
-
-
