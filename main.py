@@ -1,3 +1,6 @@
+LINKS = {'ciss145':'<a href="http://ciss145.pythonanywhere.com">CISS145 (Python)</a>'
+         }
+
 def header():
     return r'''
         <h1>Y. Liow (under heavy construction)</h1>
