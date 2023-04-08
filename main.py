@@ -38,6 +38,7 @@ def toc():
     return r'''
     <h2><a id="top">TOC</a></h2>
     <ul>
+      <li><a href="#others">Others</a></li>      
       <li><a href="#software">Software</a></li>      
       <li><a href="#courses">Courses</a></li>      
       <li><a href="#tutorials">Tutorials</a></li>
@@ -274,6 +275,7 @@ def webpage():
     %(toc)s
     
     <hr>
+    %(others)s
     %(software)s
     %(courses)s
     %(tutorials)s
@@ -284,7 +286,8 @@ def webpage():
     ''' % \
         {'head':head(),
          'header':header(),
-         'toc':toc(),         
+         'toc':toc(),
+         'others':others(),
          'software':software(),
          'tutorials':tutorials(),
          'wanna_feed_your_brain':wanna_feed_your_brain(),
@@ -323,8 +326,6 @@ def courses():
     </ul>
 '''
 
-
-
 def software():
     return r'''<h2><a id="software">Software</a> <a href="#top" style="font-size:16px">top</a></h2>
 <ul>
@@ -352,5 +353,15 @@ def software():
 </ul>
     '''
 
+
+def others():
+    return r'''
+    <h2><a id="others">Others</a> <a href="#top" style="font-size:16px">top</a></h2>
+    <ul>
+    <li><a href="https://docs.google.com/document/d/1nYQtW3TTPIAYHcOeU-KSe2aEOiWHZgn6LA9aybH8pw0/edit?usp=sharing">Work study</a>
+    [only work study students have access]</li>
+    <li><a href="http://cctt0.pythonanywhere.com/">Royal Ping Pong Club</a></li>
+    </ul>
+    '''
 if __name__ == '__main__':
     print(webpage())
