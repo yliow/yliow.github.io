@@ -3,7 +3,7 @@ LINKS = {'ciss145':'<a href="http://ciss145.pythonanywhere.com">CISS145 (Python)
 
 def header():
     return r'''
-        <h1>Y. Liow (under heavy construction)</h1>
+        <h1>CCCS <br>Columbia College Computer Science (under heavy construction)</h1>
 
     I'm in the process of moving <a href="http://bit.ly/yliow0">http://bit.ly/yliow0</a> to this website.
     
