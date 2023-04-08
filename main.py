@@ -6,7 +6,7 @@ def header():
     return r'''
         <h1>CCCS <br>Columbia College Computer Science (under heavy construction)</h1>
 
-    [Last update: %(now)s] <br><br>
+    [Last update: %(now)s]
     <hr>
     I'm in the process of moving <a href="http://bit.ly/yliow0">http://bit.ly/yliow0</a> to this website.    
     Let me know if there are broken links.
