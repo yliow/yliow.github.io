@@ -273,7 +273,6 @@ def webpage():
   <body style="font-family: arial">
     %(header)s
     
-    <hr>
     %(toc)s
     
     <hr>
