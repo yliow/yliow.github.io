@@ -17,8 +17,8 @@ def header():
       <div class="column">
         <img src="images/dinner0-reduce10.jpg" style="width:100%">
       </div>
-      <div class="column">
-        <img src="images/dinner1-reduce10.jpg" style="width:100%">
+    <div class="column">
+    <img src="images/dinner1-reduce10.jpg" style="width:100%">
       </div>
     </div>
     '''
@@ -284,30 +284,6 @@ def webpage():
          'tutorials':tutorials(),
          'wanna_feed_your_brain':wanna_feed_your_brain()}
 
-def header():
-    return r'''
-        <h1>Y. Liow (under heavy construction)</h1>
-
-    I'm in the process of moving <a href="http://bit.ly/yliow0">http://bit.ly/yliow0</a> to this website.
-    
-    Let me know if there are broken links.
-
-    <br><br>
-    NOTE: Ctrl+Shift+R to do a hard reload of the page in case your browser is using a stale cached page.
-
-    <!-- pictures -->
-    <div class="row">
-      <div class="column">
-        <img src="images/midway-reduce10.jpg" style="width:100%">
-      </div>
-      <div class="column">
-        <img src="images/dinner0-reduce10.jpg" style="width:100%">
-      </div>
-    <div class="column">
-    <img src="images/dinner1-reduce10.jpg" style="width:100%">
-      </div>
-    </div>
-    '''
 
 if __name__ == '__main__':
     print(webpage())
