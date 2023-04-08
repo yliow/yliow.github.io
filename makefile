@@ -31,5 +31,5 @@ run: index.html
 	xdg-open index.html
 	firefox https://yliow.github.io/index.html &
 
-index.html:
+index.html: main.py
 	python main.py > index.html
