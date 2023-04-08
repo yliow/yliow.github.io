@@ -330,7 +330,7 @@ def software():
 <ul>
     <li>Web-based</li>
     <ul>
-        <li>C++: <a href="https://repl.it/languages/cpp">repl-c++</a> | cpp-sh</li>
+        <li>C++: <a href="https://repl.it/languages/cpp">repl-c++</a> | <a href="http://cpp.sh/">cpp-sh</a></li>
         <li>Python2: colab-py2 | repl-python</li>
         <li>Python3: repl-py3</li>
         <li>OCAML: ocamlpro</li>
