@@ -1,4 +1,4 @@
-run:
+run: index.html
 	-mkdir xemacs/ 
 	-mkdir vmware/
 	-mkdir unix1-1/
