@@ -30,3 +30,6 @@ run:
 	git add .; git commit -m"no msg"; git push
 	xdg-open index.html
 	firefox https://yliow.github.io/index.html &
+
+index.html:
+	python main.py > index.html
