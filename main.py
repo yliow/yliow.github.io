@@ -273,6 +273,7 @@ def webpage():
     %(toc)s
     
     <hr>
+    %(software)s
     %(courses)s
     %(tutorials)s
     %(wanna_feed_your_brain)s
@@ -282,7 +283,8 @@ def webpage():
     ''' % \
         {'head':head(),
          'header':header(),
-         'toc':toc(),
+         'toc':toc(),         
+         'software':software(),
          'tutorials':tutorials(),
          'wanna_feed_your_brain':wanna_feed_your_brain(),
          'courses':courses(),
@@ -319,6 +321,30 @@ def courses():
     <li><a href="http://ciss998.pythonanywhere.com">Qt</a>
     </ul>
 '''
+
+
+
+def software():
+    return r'''<h2><a id="software">Software</a> <a href="#top" style="font-size:16px">top</a></h2>
+<ul>
+    <li>Web-based</li>
+    <ul>
+        <li>C++: repl-c++ | cpp-sh</li>
+        <li>Python2: colab-py2 | repl-python</li>
+        <li>Python3: repl-py3</li>
+        <li>OCAML: ocamlpro</li>
+        <li>PDF: http://www.xodo.com</li>
+        <li>LaTeX: Some latex tutorials are below in the “Tutorials” section.</li>
+        <ul>
+            <li>handwriting-to-latex: https://detexify.kirelabs.org/classify.html</li>
+            <li>online latex: https://www.overleaf.com/ | https://latexbase.com/</li>
+        </ul>
+        <li>SAGE: https://sagecell.sagemath.org/ (for research in math, cryptography, etc.)
+    </ul>
+    <li>Software downloads for classes: README (README backup) | Software folder</li>
+    <li>Link for SDL demo.tar (for CISS245 game development)</li>
+</ul>
+    '''
 
 if __name__ == '__main__':
     print(webpage())
