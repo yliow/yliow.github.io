@@ -261,12 +261,9 @@ def head():
 
 def webpage():
     return r'''
-<html>
-  
+<html>  
   %(head)s
-  
   <body style="font-family: arial">
-
     %(header)s
     
     <hr>
@@ -317,7 +314,7 @@ def courses():
     <a href="http://ciss999.pythonanywhere.com">Computer vision</a>
     <a href="http://ciss998.pythonanywhere.com">Qt</a>
     </ul>
-
+'''
 
 if __name__ == '__main__':
     print(webpage())
