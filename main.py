@@ -33,7 +33,7 @@ def section(name):
 
 def toc():
     return r'''
-    <a id="top"></a>
+    <a id="top">TOC</a>
     <ul>
       <li><a href="#tutorials">Tutorials</a></li>
       <li><a href="#wanna-feed-your-brain">Wanna feed your brain?</a></li>      
