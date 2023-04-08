@@ -332,15 +332,15 @@ def software():
     <ul>
         <li>C++: <a href="https://repl.it/languages/cpp">repl-c++</a> | <a href="http://cpp.sh/">cpp-sh</a></li>
         <li>Python2: <a href="http://colab-py2">colab-py2</a> | <a href="https://repl.it/languages/python">repl-python</a></li>
-        <li>Python3: repl-py3</li>
-        <li>OCAML: ocamlpro</li>
-        <li>PDF: http://www.xodo.com</li>
+        <li>Python3: <a href="https://repl.it/languages/python3">repl-py3</a></li>
+        <li>OCAML: <a href="https://try.ocamlpro.com/">ocamlpro</a></li>
+        <li>PDF: <a href="http://www.xodo.com">xodo</a></li>
         <li>LaTeX: Some latex tutorials are below in the “Tutorials” section.</li>
         <ul>
-            <li>handwriting-to-latex: https://detexify.kirelabs.org/classify.html</li>
-            <li>online latex: https://www.overleaf.com/ | https://latexbase.com/</li>
+            <li><a href="https://detexify.kirelabs.org/classify.html">handwriting-to-latex</a></li>
+            <li>online latex: <a href="https://www.overleaf.com/">overleaf</a> | <a href="https://latexbase.com/">latexbase</a></li>
         </ul>
-        <li>SAGE: https://sagecell.sagemath.org/ (for research in math, cryptography, etc.)
+        <li><a href="https://sagecell.sagemath.org/">SageMath</a> (for research in math, cryptography, etc.)
     </ul>
     <li>Software downloads for classes: README (README backup) | Software folder</li>
     <li>Link for SDL demo.tar (for CISS245 game development)</li>
