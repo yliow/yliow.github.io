@@ -282,7 +282,8 @@ def webpage():
          'toc':toc(),
          'tutorials':tutorials(),
          'wanna_feed_your_brain':wanna_feed_your_brain(),
-         'courses':courses()}
+         'courses':courses(),
+        }
 
 def courses():
     return r'''<h2><a id="courses">Courses</a> <a href="#top" style="font-size:16px">top</a></h2>
