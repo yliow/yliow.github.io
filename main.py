@@ -38,6 +38,7 @@ def toc():
     return r'''
     <h2><a id="top">TOC</a></h2>
     <ul>
+      <li><a href="#software">Software</a></li>      
       <li><a href="#courses">Courses</a></li>      
       <li><a href="#tutorials">Tutorials</a></li>
       <li><a href="#wanna-feed-your-brain">Wanna feed your brain?</a></li>      
