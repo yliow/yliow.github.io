@@ -88,7 +88,7 @@ def webpage(head=HEAD,
     return r'''
 <html>  
 %(head)s
-<body style="font-family: arial">
+<body style="font-family: arial; margin:200px; padding:200px; ">
 %(navigation_bar)s
 %(header)s
 <h2>%(title)s</h2><hr>
