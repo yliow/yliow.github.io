@@ -3,7 +3,7 @@ webpage structure
 
 <html>  
   %(head)s
-  <body style="font-family:arial; margin:100px; padding:100px; ">
+  <body style="font-family:arial; margin:200px; padding:200px; ">
     
     %(navigation_bar)s
     %(header)s
@@ -407,6 +407,7 @@ def others():
     <li><a href="http://cctt0.pythonanywhere.com/">Royal Ping Pong Club</a></li>
     </ul>
     '''
+
 def images(float='right', srcs_captions='', width=r'33%'):
     s = ''
     for src,caption in srcs_captions:
