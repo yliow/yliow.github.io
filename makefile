@@ -33,3 +33,9 @@ run: index.html
 
 index.html: main.py
 	python main.py
+
+v:
+	firefox index.html &
+
+pics:
+	firefox pics.html &
