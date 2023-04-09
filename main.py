@@ -455,7 +455,9 @@ Click on the following links to find out more about our programs and activities:
 Here’s the 2017 summer camps link.
 
 <h2>Teachers</h2>
-If your school wishes to partner with Columbia College to promote computer science among your students, please email Dr. Yihsiang Liow (yliow@ccis.edu). We can for instance organize an “Hour of Code” for your school or classes.
+If your school wishes to partner with Columbia College to promote computer science among your students, please email
+Dr. Yihsiang Liow (<a href="mailto:yliow@ccis.edu">yliow@ccis.edu</a>).
+We can for instance organize an “Hour of Code” for your school or classes.
 Here’s our
 <a href="https://photos.app.goo.gl/1BeGWgch3uMzWJmN7">“Hour of Code” event in 3/2017</a>.
 
@@ -474,7 +476,7 @@ Dr. Yihsiang Liow (<a href="mailto:yliow@ccis.edu">yliow@ccis.edu</a>). All dono
 <br><br>
                    
 <h2>Are you game?</h2>
-To find out more, get in touch with Dr. Yihsiang Liow (yliow@ccis.edu) for a chat.
+To find out more, get in touch with Dr. Yihsiang Liow (<a href="mailto:yliow@ccis.edu">yliow@ccis.edu</a>) for a chat.
 <a href="https://drive.google.com/file/d/1o1dJ6F0MmSsFW4PAKX94JrsSeGHJg6ND/view?usp=sharing">Why CS?</a> |
 <a href="https://drive.google.com/file/d/0BzjYrK0VFuMWaXI1ZlJpNTkxT0U/view?resourcekey=0-JCm-tl5MEfX0peYxdfKOYA">CS program hunting</a>
                    ''' % {'images':images_})
