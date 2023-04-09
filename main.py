@@ -376,7 +376,7 @@ def pics():
   <body style="font-family: arial">
     <a href="index.html">Home</a> | <a href="index.html">Outreach</a>
     
-    %(header)s
+    <!-- %(header)s -->
 
     <h2>Welcome to PiCS</h2>
     
