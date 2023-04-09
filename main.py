@@ -60,7 +60,7 @@ def navigation_bar(name):
     if name == 'cccs':
         return '<a href="index.html">Home</a> | <a href="index.html">CCCS</a>'
     elif name == 'pics':
-        return '<a href="index.html">Home</a> | <a href="pics.html">Outreach</a>'
+        return '<a href="index.html">Home</a> | Outreach'
 
 def title(name):
     if name == 'cccs':
