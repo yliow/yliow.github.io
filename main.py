@@ -430,6 +430,8 @@ def pics():
     images_ = images(srcs_captions=[('images/pics/image16.png', 'HS Programming Contest #2 (2016)'),
                                     ('images/pics/image4.png', 'HS CS internship program (2016-2017)'),
                                     ('images/pics/image1.png', 'Weekend seminar (10/2016)'),
+                                    ('images/pics/image7.png', 'Break during HS Programming Contest #1 (2015)'),
+
     ])
     return webpage(navigation_bar=navigation_bar('pics'),
                    header=header(title('pics')),
