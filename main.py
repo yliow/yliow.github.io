@@ -7,6 +7,12 @@ def navigation_bar(name):
         return '<a href="">Home</a> | <a href="index.html">CCCS</a>'
     elif name == 'pics':
         return '<a href="">Home</a> | <a href="index.html">Outreach</a>'
+
+def title(name):
+    if name == 'cccs':
+        return 'Welcome to CCCS'
+    elif name == 'cccs':
+        return 'Welcome to PiCS'
     
 def header():
     return r'''
@@ -372,25 +378,28 @@ def others():
     '''
 
 
-def pics():
+def webpage(name):
     return r'''
-
 <html>  
   %(head)s
   <body style="font-family: arial">
     
     %(navigation_bar)s
     %(header)s
-    <h2>Welcome to PiCS</h2>
+    <h2>%(title)s</h2>
     
     <hr>
   
   </body>
 </html>
     ''' % {'head':head(),
-           'navigation_bar':navigation_bar('pics'),
+           'navigation_bar':navigation_bar(name),
+           'title':title(name),
            'header':'',
            }
+    
+def pics():
+    return webpage('pics')
     
 if __name__ == '__main__':
     f = open('index.html', 'w'); f.write(cccs()); f.close()
