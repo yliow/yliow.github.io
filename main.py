@@ -10,7 +10,6 @@ def navigation_bar(name):
     
 def header():
     return r'''
-    <a href="">Home</a> | <a href="index.html">CCCS</a>
     
         <h1>CCCS <br>Columbia College Computer Science (under heavy construction)</h1>
 
