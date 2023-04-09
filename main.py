@@ -72,7 +72,7 @@ def title(name):
         Welcome to PiCS'''
     
 def header(title):
-    return r'<h1>%(title)s</h1>[Last update: %(now)s]' % {'title':title,'now':NOW}
+    return r'<h1>%(title)s</h1>' % {'title':title}
 
 def tablerow(link, name, description):
     return '<tr><td><a href="%(link)s">%(name)s</td><td>%(description)s</td></tr>' % \
@@ -94,6 +94,8 @@ def webpage(head=HEAD,
 %(header)s
 <h2>%(title)s</h2><hr>
 %(body)s
+<hr>
+%(now)s
 </body>
 </html>
     ''' % {'head':head,
@@ -101,6 +103,7 @@ def webpage(head=HEAD,
            'title':title,
            'header':header,
            'body':body,
+           'now':NOW,
            }
 
 def toc():
