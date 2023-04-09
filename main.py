@@ -417,12 +417,12 @@ Welcome to PiCS (Portal into Computer Science), the computer science outreach pr
 
 <h2>Goal</h2>
 
-<div style="float:right; padding:20px 20px 20px 20px; width:30%">
+<div style="float:right; padding:20px 20px 20px 20px; width:33%">
   <table border='0'>
-                   <tr><td>
+  <tr><td>
   <img width="100%" src="images/pics/image16.png" alt="" />
   <div style="font-size:12px; text-align:center">HS Programming Contest #2 (2016)</div>
-                   </td></tr></table>
+  </td></tr></table>
 </div>
 The goal of PiCS is to introduce K-12 students to the exciting area of Computer Science. We have visited Benton Elementary School and Alpha Hart Lewis Elementary School to talk about computer science and to teach basic programming. In spring 2017 we organized an “Hour of Code” event for Jeff Middle School. We have organized several high school events including an annual High School Programming Contest since spring 2015. We are also organizing several summer camps for middle school and high school students. More programs for elementary school students are forthcoming.
 
