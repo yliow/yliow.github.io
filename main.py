@@ -466,7 +466,7 @@ To become a donor or sponsor of PiCS to support computer science outreach progra
 To find out more, get in touch with Dr. Yihsiang Liow (yliow@ccis.edu) for a chat.
 <a href="https://drive.google.com/file/d/1o1dJ6F0MmSsFW4PAKX94JrsSeGHJg6ND/view?usp=sharing">Why CS?</a> |
 <a href="https://drive.google.com/file/d/0BzjYrK0VFuMWaXI1ZlJpNTkxT0U/view?resourcekey=0-JCm-tl5MEfX0peYxdfKOYA">CS program hunting</a>
-                   ''' % {'images':images})
+                   ''' % {'images':images_})
 
 if __name__ == '__main__':
     f = open('index.html', 'w'); f.write(cccs()); f.close()
