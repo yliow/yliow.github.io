@@ -363,8 +363,8 @@ def courses():
     <li><a href="http://ciss465.pythonanywhere.com">CISS465 (SE)</a>
     <li><a href="http://ciss494.pythonanywhere.com">CISS493/4 (Senior sem)</a>
     <li><a href="http://math325.pythonanywhere.com">MATH325 (DM 2)</a>
-    <li><a href="http://ciss999.pythonanywhere.com">Computer vision</a>
-    <li><a href="http://ciss998.pythonanywhere.com">Qt</a>
+    <li><a href="http://ciss999.pythonanywhere.com">Computer vision (COMING)</a>
+    <li><a href="http://ciss998.pythonanywhere.com">Qt (COMING)</a>
     </ul>
 '''
 
