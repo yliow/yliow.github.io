@@ -410,8 +410,7 @@ def others():
 def images(float='right', srcs_captions='', width=r'33%'):
     s = ''
     for src,caption in srcs_captions:
-        t = r'''
-  <tr>
+        t = r'''<tr>
     <td><img width="100%%" src="%(src)s"/>
     <div style="font-size:12px; text-align:center; padding:5px">%(caption)s</div>
     </td>
