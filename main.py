@@ -421,7 +421,7 @@ Welcome to PiCS (Portal into Computer Science), the computer science outreach pr
   <table border='0'>
                    <tr><td>
   <img width="100%" src="images/pics/image16.png" alt="" />
-  <div style="font-size:10px; text-align:center">HS Programming Contest #2 (2016)</div>
+  <div style="font-size:12px; text-align:center">HS Programming Contest #2 (2016)</div>
                    </td></tr></table>
 </div>
 
