@@ -301,7 +301,7 @@ def wanna_feed_your_brain():
 
 def cccs():
     return webpage(navigation_bar=navigation_bar('cccs'),
-                   header=header('cccs'),
+                   header=header(title('cccs')),
                    body=r'''
     I'm in the process of moving <a href="http://bit.ly/yliow0">http://bit.ly/yliow0</a> to this website.    
     Let me know if there are broken links.
