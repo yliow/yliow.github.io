@@ -97,7 +97,7 @@ def webpage(head=HEAD,
 <hr>
 Copyright Dr. Yihsiang Liow (yliow@ccis.edu | <a href='http://bit.ly/yliow0'>http://bit.ly/yliow0</a>)
     Computer Science Columbia College at Columbia, MO, 1001 Rogers St, Columbia, MO 65216. <br>
-    Last update: %(now)s]
+    Last update: %(now)s
 </body>
 </html>
     ''' % {'head':head,
