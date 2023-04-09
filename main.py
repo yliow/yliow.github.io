@@ -418,8 +418,8 @@ def image(float='right', src='', caption='', width=r'33%'):
 </div>''' % {'float':float, 'src':src, 'caption':caption, 'width':width}
     
 def pics():
-    img1 = image(src='images/pics/image16.png',
-                 caption='HS Programming Contest #2 (2016)') 
+    img16 = image(src='images/pics/image16.png', caption='HS Programming Contest #2 (2016)') 
+    img4 = image(src='images/pics/image4.png', caption='HS CS internship program (2016-2017)') 
     return webpage(navigation_bar=navigation_bar('pics'),
                    header=header(title('pics')),
                    body=r'''
@@ -427,10 +427,12 @@ Welcome to PiCS (Portal into Computer Science), the computer science outreach pr
 
 <h2>Goal</h2>
 
-%(img1)s
+%(img16)s
+%(img4)s
 The goal of PiCS is to introduce K-12 students to the exciting area of Computer Science. We have visited Benton Elementary School and Alpha Hart Lewis Elementary School to talk about computer science and to teach basic programming. In spring 2017 we organized an “Hour of Code” event for Jeff Middle School. We have organized several high school events including an annual High School Programming Contest since spring 2015. We are also organizing several summer camps for middle school and high school students. More programs for elementary school students are forthcoming.
 
 <h2>Students</h2>
+
 Click on the following links to find out more about our programs and activities:
 <ul>
 <li>High school</li>
@@ -456,7 +458,7 @@ To become a donor or sponsor of PiCS to support computer science outreach progra
 To find out more, get in touch with Dr. Yihsiang Liow (yliow@ccis.edu) for a chat.
 <a href="https://drive.google.com/file/d/1o1dJ6F0MmSsFW4PAKX94JrsSeGHJg6ND/view?usp=sharing">Why CS?</a> |
 <a href="https://drive.google.com/file/d/0BzjYrK0VFuMWaXI1ZlJpNTkxT0U/view?resourcekey=0-JCm-tl5MEfX0peYxdfKOYA">CS program hunting</a>
-                   ''' % {'img1':img1})
+                   ''' % {'img16':img16, 'img4':img4})
 
 if __name__ == '__main__':
     f = open('index.html', 'w'); f.write(cccs()); f.close()
