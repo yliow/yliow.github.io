@@ -407,23 +407,27 @@ def others():
     <li><a href="http://cctt0.pythonanywhere.com/">Royal Ping Pong Club</a></li>
     </ul>
     '''
-
+def image(float='right', src='', caption='', width=r'33%'):
+    return r'''
+<div style="float:%(float)s; padding:20px 20px 20px 20px; width:%(width)s">
+  <table style='border-collapse:collapse; border:none'><tr>
+    <td><img width="100%%" src="%(src)s"/>
+    <div style="font-size:12px; text-align:center; padding:5px">%(caption)s</div>
+    </td>
+    </tr></table>
+</div>''' % {'float':float, 'src':src, 'caption':caption, 'width':width}
+    
 def pics():
+    img1 = image(src='images/pics/image16.png',
+                 caption='HS Programming Contest #2 (2016)') 
     return webpage(navigation_bar=navigation_bar('pics'),
                    header=header(title('pics')),
                    body=r'''
-
 Welcome to PiCS (Portal into Computer Science), the computer science outreach programs of Columbia College (of Missouri).
 
 <h2>Goal</h2>
 
-<div style="float:right; padding:20px 20px 20px 20px; width:33%">
-  <table style='border-collapse:collapse; border:none'>
-  <tr><td>
-  <img width="100%" src="images/pics/image16.png" alt="" />
-  <div style="font-size:12px; text-align:center; padding:5px" >HS Programming Contest #2 (2016)</div>
-  </td></tr></table>
-</div>
+%(img1)s
 The goal of PiCS is to introduce K-12 students to the exciting area of Computer Science. We have visited Benton Elementary School and Alpha Hart Lewis Elementary School to talk about computer science and to teach basic programming. In spring 2017 we organized an “Hour of Code” event for Jeff Middle School. We have organized several high school events including an annual High School Programming Contest since spring 2015. We are also organizing several summer camps for middle school and high school students. More programs for elementary school students are forthcoming.
 
 <h2>Students</h2>
@@ -440,7 +444,6 @@ If your school wishes to partner with Columbia College to promote computer scien
 Here’s our
 <a href="">“Hour of Code” event in 3/2017</a>.
 
-
 <h2>“PiCS”?</h2>
 The name PiCS and its logo (the spiral) were created by a group of our CS students, Mr. Nathaniel Graham, and Dr. Yihsiang Liow on 2015/03/30 while planning for the first High School Programming Contest (2015/04). Now they represent our outreach to all K-12 students. 
 
@@ -453,7 +456,7 @@ To become a donor or sponsor of PiCS to support computer science outreach progra
 To find out more, get in touch with Dr. Yihsiang Liow (yliow@ccis.edu) for a chat.
 <a href="https://drive.google.com/file/d/1o1dJ6F0MmSsFW4PAKX94JrsSeGHJg6ND/view?usp=sharing">Why CS?</a> |
 <a href="https://drive.google.com/file/d/0BzjYrK0VFuMWaXI1ZlJpNTkxT0U/view?resourcekey=0-JCm-tl5MEfX0peYxdfKOYA">CS program hunting</a>
-                   ''')
+                   ''' % {'img1':img1})
 
 if __name__ == '__main__':
     f = open('index.html', 'w'); f.write(cccs()); f.close()
