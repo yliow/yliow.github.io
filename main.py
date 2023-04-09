@@ -416,11 +416,14 @@ def images(float='right', srcs_captions='', width=r'33%'):
     </td>
         </tr>''' % {'src':src,'caption':caption}
         s += t
-    return r'''
+    html = r'''
 <div style="float:%(float)s; padding:20px 20px 20px 20px; width:%(width)s">
   <table style='border-collapse:collapse; border:none'>%(rows)s</table>
 </div>''' % {'width':width, 'rows':s, 'float':float}
+    print("\nhtml:", html)
     
+    return html
+
 def pics():
     images_ = images(srcs_captions=[('images/pics/image16.png', 'HS Programming Contest #2 (2016)'),
                                     ('images/pics/image4.png', 'HS CS internship program (2016-2017)')])
