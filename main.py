@@ -125,7 +125,7 @@ def tutorials():
     return r'''
         <h2><a id="tutorials">Tutorials</a> <a href="#top" style="font-size:16px">top</a></h2>
 
-    <table >
+    <table border='1'>
       <tr>
         <td><a href='vmware/vmwareplayer.pdf'>vmwareplayer.pdf</a></td>
         <td>
@@ -438,7 +438,7 @@ Here’s the 2017 summer camps link.
 <h2>Teachers</h2>
 If your school wishes to partner with Columbia College to promote computer science among your students, please email Dr. Yihsiang Liow (yliow@ccis.edu). We can for instance organize an “Hour of Code” for your school or classes.
 Here’s our
-<a href="https://photos.app.goo.gl/1BeGWgch3uMzWJmN7">“Hour of Code” event in 3/2017</a>.
+<a href="">“Hour of Code” event in 3/2017</a>.
 
 
 <h2>“PiCS”?</h2>
