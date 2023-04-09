@@ -19,9 +19,6 @@ def header():
     I'm in the process of moving <a href="http://bit.ly/yliow0">http://bit.ly/yliow0</a> to this website.    
     Let me know if there are broken links.
 
-    <br><br>
-    NOTE: Ctrl+Shift+R to do a hard reload of the page in case your browser is using a stale cached page.
-
     <!-- pictures -->
     <div class="row">
       <div class="column">
