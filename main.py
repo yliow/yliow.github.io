@@ -370,11 +370,15 @@ def others():
 
 def pics():
     return r'''
+        <a href="index.html">Home</a> | <a href="index.html">Outreach</a>
+
 <html>  
   %(head)s
   <body style="font-family: arial">
     %(header)s
-       
+
+    <h2>Welcome to PiCS</h2>
+    
     <hr>
   
   </body>
