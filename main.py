@@ -30,6 +30,28 @@ def tablerow(link, name, description):
 def section(name):
     pass
 
+def webpage(name, body):
+    return r'''
+<html>  
+  %(head)s
+  <body style="font-family: arial">
+    
+    %(navigation_bar)s
+    %(header)s
+    <h2>%(title)s</h2>
+    
+    <hr>
+
+    %(body)s
+  </body>
+</html>
+    ''' % {'head':head(),
+           'navigation_bar':navigation_bar(name),
+           'title':title(name),
+           'header':'',
+           'body':body,
+           }
+
 def toc():
     return r'''
     <h2><a id="top">TOC</a></h2>
@@ -261,15 +283,8 @@ def head():
     '''
 
 def cccs():
-    return r'''
-<html>  
-  %(head)s
-  <body style="font-family: arial">
-
-    %(navigation_bar)s
-    %(header)s
-
-        <hr>
+    return webpage(name='cccs',
+                   body=r'''
     I'm in the process of moving <a href="http://bit.ly/yliow0">http://bit.ly/yliow0</a> to this website.    
     Let me know if there are broken links.
 
@@ -293,21 +308,15 @@ def cccs():
     %(software)s
     %(courses)s
     %(tutorials)s
-    %(wanna_feed_your_brain)s
-  
-  </body>
-</html>
-    ''' % \
-        {'head':head(),
-         'navigation_bar':navigation_bar('cccs'),
-         'header':header(),
-         'toc':toc(),
-         'others':others(),
-         'software':software(),
-         'tutorials':tutorials(),
-         'wanna_feed_your_brain':wanna_feed_your_brain(),
+    %(wanna_feed_your_brain)s 
+    ''' % {
+        'toc':toc(),
+        'others':others(),
+        'software':software(),
+        'tutorials':tutorials(),
+        'wanna_feed_your_brain':wanna_feed_your_brain(),
          'courses':courses(),
-        }
+    })
 
 def courses():
     return r'''<h2><a id="courses">Courses</a> <a href="#top" style="font-size:16px">top</a></h2>
@@ -380,28 +389,9 @@ def others():
     '''
 
 
-def webpage(name):
-    return r'''
-<html>  
-  %(head)s
-  <body style="font-family: arial">
-    
-    %(navigation_bar)s
-    %(header)s
-    <h2>%(title)s</h2>
-    
-    <hr>
-  
-  </body>
-</html>
-    ''' % {'head':head(),
-           'navigation_bar':navigation_bar(name),
-           'title':title(name),
-           'header':'',
-           }
     
 def pics():
-    return webpage('pics')
+    return webpage('pics', '')
     
 if __name__ == '__main__':
     f = open('index.html', 'w'); f.write(cccs()); f.close()
