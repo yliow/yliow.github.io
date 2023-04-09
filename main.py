@@ -2,6 +2,12 @@ import datetime
 LINKS = {'ciss145':'<a href="http://ciss145.pythonanywhere.com">CISS145 (Python)</a>'
          }
 
+def navigation_bar(name):
+    if name == 'cccs':
+        return '<a href="">Home</a> | <a href="index.html">CCCS</a>'
+    elif name == 'pics':
+        return '<a href="">Home</a> | <a href="index.html">Outreach</a>'
+    
 def header():
     return r'''
     <a href="">Home</a> | <a href="index.html">CCCS</a>
@@ -374,7 +380,7 @@ def pics():
 <html>  
   %(head)s
   <body style="font-family: arial">
-    <a href="index.html">Home</a> | <a href="index.html">Outreach</a>
+    %(navigation_bar)s
     
     %(header)s
 
@@ -384,7 +390,9 @@ def pics():
   
   </body>
 </html>
-    ''' % {'head':head(), 'header':'',
+    ''' % {'head':head(),
+           'navigation_bar':navigation_bar('pics'),
+           'header':'',
            }
     
 if __name__ == '__main__':
