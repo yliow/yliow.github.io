@@ -11,7 +11,7 @@ def navigation_bar(name):
 def header():
     return r'''
     
-        <h1>CCCS <br>Columbia College Computer Science (under heavy construction)</h1>
+    <h1>CCCS <br>Columbia College Computer Science (under heavy construction)</h1>
 
     [Last update: %(now)s]
     <hr>
@@ -270,15 +270,14 @@ def head():
   </head>
     '''
 
-def webpage():
+def cccs():
     return r'''
 <html>  
   %(head)s
   <body style="font-family: arial">
+
     %(navigation_bar)s
-    
     %(header)s
-    
     %(toc)s
     
     <hr>
@@ -379,10 +378,9 @@ def pics():
 <html>  
   %(head)s
   <body style="font-family: arial">
-    %(navigation_bar)s
     
+    %(navigation_bar)s
     %(header)s
-
     <h2>Welcome to PiCS</h2>
     
     <hr>
@@ -395,5 +393,5 @@ def pics():
            }
     
 if __name__ == '__main__':
-    f = open('index.html', 'w'); f.write(webpage()); f.close()
+    f = open('index.html', 'w'); f.write(cccs()); f.close()
     f = open('pics.html', 'w'); f.write(pics()); f.close()
