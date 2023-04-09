@@ -11,7 +11,7 @@ def navigation_bar(name):
 def title(name):
     if name == 'cccs':
         return 'Welcome to CCCS'
-    elif name == 'cccs':
+    elif name == 'pics':
         return 'Welcome to PiCS'
     
 def header():
