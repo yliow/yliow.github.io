@@ -416,8 +416,7 @@ def images(float='right', srcs_captions='', width=r'33%'):
     </td>
   </tr>''' % {'src':src,'caption':caption}
         s += t
-    html = r'''
-<div style="float:%(float)s; padding:20px 20px 20px 20px; width:%(width)s">
+    html = r'''<div style="float:%(float)s; padding:20px 20px 20px 20px; width:%(width)s">
   <table style='border-collapse:collapse; border:none'>
     %(rows)s
   </table>
