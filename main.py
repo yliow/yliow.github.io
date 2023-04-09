@@ -38,7 +38,6 @@ HEAD = r'''
           flex: 33.33%;
           padding: 5px;
       }
-
       
       table {
           font-family: arial, sans-serif;
@@ -54,15 +53,12 @@ HEAD = r'''
       }
 
 figure {
-  border: 1px #cccccc solid;
   padding: 4px;
   margin: auto;
 }
 
 figcaption {
-  background-color: black;
-  color: white;
-  font-style: italic;
+  font-size: "5px";
   padding: 2px;
   text-align: center;
 }
