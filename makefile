@@ -32,4 +32,4 @@ run: index.html
 	firefox https://yliow.github.io/index.html &
 
 index.html: main.py
-	python main.py > index.html
+	python main.py

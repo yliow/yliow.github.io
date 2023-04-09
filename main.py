@@ -4,6 +4,8 @@ LINKS = {'ciss145':'<a href="http://ciss145.pythonanywhere.com">CISS145 (Python)
 
 def header():
     return r'''
+    <a href="">Home</a> | <a href="index.html">CCCS</a>
+    
         <h1>CCCS <br>Columbia College Computer Science (under heavy construction)</h1>
 
     [Last update: %(now)s]
@@ -364,5 +366,21 @@ def others():
     <li><a href="http://cctt0.pythonanywhere.com/">Royal Ping Pong Club</a></li>
     </ul>
     '''
+
+
+def pics():
+    return r'''
+<html>  
+  %(head)s
+  <body style="font-family: arial">
+    %(header)s
+       
+    <hr>
+  
+  </body>
+</html>
+    ''' 
+    
 if __name__ == '__main__':
-    print(webpage())
+    f = open('index.html', 'w'); f.write(webpage()); f.close()
+    f = open('pics.html', 'w'); f.write(webpage()); f.close()
