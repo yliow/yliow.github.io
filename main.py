@@ -3,7 +3,7 @@ webpage structure
 
 <html>  
   %(head)s
-  <body style="font-family: arial">
+  <body style="font-family: arial; padding-left: 75px; ">
     
     %(navigation_bar)s
     %(header)s
