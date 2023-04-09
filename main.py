@@ -125,7 +125,7 @@ def tutorials():
     return r'''
         <h2><a id="tutorials">Tutorials</a> <a href="#top" style="font-size:16px">top</a></h2>
 
-    <table border='collapse'>
+    <table style='border:border-collapse'>
       <tr>
         <td><a href='vmware/vmwareplayer.pdf'>vmwareplayer.pdf</a></td>
         <td>
