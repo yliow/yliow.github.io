@@ -420,7 +420,7 @@ Welcome to PiCS (Portal into Computer Science), the computer science outreach pr
 <div style="float:right; padding:20px 20px 20px 20px; width:30%">
   <table >
                    <tr><td>
-  <img src="images/pics/image16.png" alt="" />
+  <img width="30%" src="images/pics/image16.png" alt="" />
   <div style="font-size:10px">HS Programming Contest #2 (2016)</div>
                    </td></tr></table>
 </div>
