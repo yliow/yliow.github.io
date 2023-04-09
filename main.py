@@ -67,7 +67,7 @@ def title(name):
         return 'CCCS<br>Columbia College Computer Science'
     elif name == 'pics':
         return r'''
-        <div style="display: flex; justify-content: center"><img src='images/pics/pics.png'/></div><br>
+        <div style="display: flex; justify-content: center; background-color:rgba(0,65,122,255)"><img src='images/pics/pics.png'/></div><br>
         Welcome to PiCS'''
     
 def header(title):
