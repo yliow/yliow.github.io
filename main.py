@@ -376,7 +376,7 @@ def pics():
   <body style="font-family: arial">
     <a href="index.html">Home</a> | <a href="index.html">Outreach</a>
     
-    <!-- %(header)s -->
+    %(header)s
 
     <h2>Welcome to PiCS</h2>
     
@@ -384,7 +384,8 @@ def pics():
   
   </body>
 </html>
-    ''' 
+    ''' % {'head':head(), 'header':'',
+           }
     
 if __name__ == '__main__':
     f = open('index.html', 'w'); f.write(webpage()); f.close()
