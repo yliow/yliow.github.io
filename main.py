@@ -453,7 +453,7 @@ Click on the following links to find out more about our programs and activities:
 <li>Middle school</li>
 <li>Elementary school [coming soon]</li>
 </ul>
-Here’s the 2017 summer camps link.
+Here’s the <a href="http://bit.ly/pics-summer">2017 summer camps link</a>.
 
 <h2>Teachers</h2>
 If your school wishes to partner with Columbia College to promote computer science among your students, please email
