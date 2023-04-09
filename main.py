@@ -428,6 +428,22 @@ Click on the following links to find out more about our programs and activities:
 </ul>
 Here’s the 2017 summer camps link.
 
+<h2>Teachers</h2>
+If your school wishes to partner with Columbia College to promote computer science among your students, please email Dr. Yihsiang Liow (yliow@ccis.edu). We can for instance organize an “Hour of Code” for your school or classes. Here’s our “Hour of Code” event in 3/2017.
+
+
+<h2>“PiCS”?</h2>
+The name PiCS and its logo (the spiral) were created by a group of our CS students, Mr. Nathaniel Graham, and Dr. Yihsiang Liow on 2015/03/30 while planning for the first High School Programming Contest (2015/04). Now they represent our outreach to all K-12 students. 
+
+<h2>Donors and Sponsors</h2> 
+To become a donor or sponsor of PiCS to support computer science outreach programs to K-12 students, please email Dr. Yihsiang Liow (yliow@ccis.edu). All donors/sponsors (past, current, and recurring) are acknowledged below (except for anonymous donors).
+<br><br>
+                   [TODO]
+                   
+<h2>Are you game?<h2>
+To find out more, get in touch with Dr. Yihsiang Liow (yliow@ccis.edu) for a chat.
+<a href="https://drive.google.com/file/d/1o1dJ6F0MmSsFW4PAKX94JrsSeGHJg6ND/view?usp=sharing">Why CS?</a> |
+<a href="https://drive.google.com/file/d/0BzjYrK0VFuMWaXI1ZlJpNTkxT0U/view?resourcekey=0-JCm-tl5MEfX0peYxdfKOYA">CS program hunting</a>
                    ''')
 
 if __name__ == '__main__':
