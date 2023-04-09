@@ -67,7 +67,9 @@ def title(name):
     if name == 'cccs':
         return 'CCCS<br>Columbia College Computer Science'
     elif name == 'pics':
-        return 'Welcome to PiCS'
+        return r'''
+        <img src='images/pics/pics.png'/>
+        Welcome to PiCS'''
     
 def header(title):
     return r'<h1>%(title)s</h1>[Last update: %(now)s]' % {'title':title,'now':NOW}
