@@ -463,7 +463,8 @@ Here’s our
 The name PiCS and its logo (the spiral) were created by a group of our CS students, Mr. Nathaniel Graham, and Dr. Yihsiang Liow on 2015/03/30 while planning for the first High School Programming Contest (2015/04). Now they represent our outreach to all K-12 students. 
 
 <h2>Donors and Sponsors</h2> 
-To become a donor or sponsor of PiCS to support computer science outreach programs to K-12 students, please email Dr. Yihsiang Liow (yliow@ccis.edu). All donors/sponsors (past, current, and recurring) are acknowledged below (except for anonymous donors).
+To become a donor or sponsor of PiCS to support computer science outreach programs to K-12 students, please email
+Dr. Yihsiang Liow (<a mailto:"yliow@ccis.edu">yliow@ccis.edu</a>). All donors/sponsors (past, current, and recurring) are acknowledged below (except for anonymous donors).
 <ul>
  <li>Columbia College of Missouri
  <li>MidwayUSA
