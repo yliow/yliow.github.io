@@ -434,11 +434,11 @@ def pics():
     return webpage(navigation_bar=navigation_bar('pics'),
                    header=header(title('pics')),
                    body=r'''
+%(images)s
 Welcome to PiCS (Portal into Computer Science), the computer science outreach programs of Columbia College (of Missouri).
 
 <h2>Goal</h2>
 
-%(images)s
 The goal of PiCS is to introduce K-12 students to the exciting area of Computer Science. We have visited Benton Elementary School and Alpha Hart Lewis Elementary School to talk about computer science and to teach basic programming. In spring 2017 we organized an “Hour of Code” event for Jeff Middle School. We have organized several high school events including an annual High School Programming Contest since spring 2015. We are also organizing several summer camps for middle school and high school students. More programs for elementary school students are forthcoming.
 
 <h2>Students</h2>
