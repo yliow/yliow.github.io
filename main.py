@@ -10,7 +10,7 @@ def navigation_bar(name):
 
 def title(name):
     if name == 'cccs':
-        return 'Welcome to CCCS'
+        return 'CCCS<br>Columbia College Computer Science'
     elif name == 'pics':
         return 'Welcome to PiCS'
     
