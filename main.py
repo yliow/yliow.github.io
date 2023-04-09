@@ -407,7 +407,11 @@ def others():
 def pics():
     return webpage(navigation_bar=navigation_bar('pics'),
                    header=header(title('pics')),
-                   body='[body]')
+                   body=r'''
+
+Welcome to PiCS (Portal into Computer Science), the computer science outreach programs of Columbia College (of Missouri).
+                   
+                   ''')
 
 if __name__ == '__main__':
     f = open('index.html', 'w'); f.write(cccs()); f.close()
