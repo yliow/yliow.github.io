@@ -418,7 +418,7 @@ Welcome to PiCS (Portal into Computer Science), the computer science outreach pr
 <h2>Goal</h2>
 
 <div style="float:right; padding:20px 20px 20px 20px; width:33%">
-  <table style='border-collapse:collapse;'>
+  <table style='border-collapse:collapse; border:none'>
   <tr><td>
   <img width="100%" src="images/pics/image16.png" alt="" />
   <div style="font-size:12px; text-align:center">HS Programming Contest #2 (2016)</div>
