@@ -407,7 +407,7 @@ def others():
 def pics():
     return webpage(navigation_bar=navigation_bar('pics'),
                    header=header(title('pics')),
-                   body=r'''[pics body]''')
+                   body='[body]')
 
 if __name__ == '__main__':
     f = open('index.html', 'w'); f.write(cccs()); f.close()
