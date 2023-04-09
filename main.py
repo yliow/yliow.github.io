@@ -97,7 +97,7 @@ def webpage(head=HEAD,
 <hr>
 Copyright Dr. Yihsiang Liow (yliow@ccis.edu | <a href='http://bit.ly/yliow0'>http://bit.ly/yliow0</a>)
     <br>
-    Last update: %(now)s
+    <font size='8'>Last update: %(now)s</font>
 </body>
 </html>
     ''' % {'head':head,
