@@ -70,7 +70,7 @@ def title(name):
         return 'Welcome to PiCS'
     
 def header(title):
-    return r'<h1>title</h1>[Last update: %(now)s]' % {'now':NOW}
+    return r'<h1>title</h1>[Last update: %(now)s]' % {'title':title,'now':NOW}
 
 def tablerow(link, name, description):
     return '<tr><td><a href="%(link)s">%(name)s</td><td>%(description)s</td></tr>' % \
