@@ -387,4 +387,4 @@ def pics():
     
 if __name__ == '__main__':
     f = open('index.html', 'w'); f.write(webpage()); f.close()
-    f = open('pics.html', 'w'); f.write(webpage()); f.close()
+    f = open('pics.html', 'w'); f.write(pics()); f.close()
