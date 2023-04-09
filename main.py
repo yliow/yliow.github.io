@@ -279,6 +279,8 @@ def webpage():
 <html>  
   %(head)s
   <body style="font-family: arial">
+    %(navigation_bar)s
+    
     %(header)s
     
     %(toc)s
@@ -294,6 +296,7 @@ def webpage():
 </html>
     ''' % \
         {'head':head(),
+         'navigation_bar':navigation_bar('cccs'),
          'header':header(),
          'toc':toc(),
          'others':others(),
