@@ -1,6 +1,61 @@
+"""
+webpage structure
+
+<html>  
+  %(head)s
+  <body style="font-family: arial">
+    
+    %(navigation_bar)s
+    %(header)s
+    <h2>%(title)s</h2>
+    
+    <hr>
+
+    %(body)s
+  </body>
+</html>
+
+"""
 import datetime
 LINKS = {'ciss145':'<a href="http://ciss145.pythonanywhere.com">CISS145 (Python)</a>'
          }
+
+NOW = datetime.datetime.now()
+HEAD = r'''
+      <head>
+    <style>
+
+      * {
+          box-sizing: border-box;
+      }
+      
+      .row {
+          display: flex;
+      }
+      
+      /* Create three equal columns that sits next to each other */
+      .column {
+          flex: 33.33%;
+          padding: 5px;
+      }
+
+      
+      table {
+          font-family: arial, sans-serif;
+          border: 1px solid black;
+          border-collapse: collapse;
+          width: 100%;
+      }
+
+      td, th {
+          text-align: left;
+          vertical-align:top;
+          padding: 8px;
+      }
+      
+    </style>
+  </head>
+    '''
 
 def navigation_bar(name):
     if name == 'cccs':
@@ -14,13 +69,8 @@ def title(name):
     elif name == 'pics':
         return 'Welcome to PiCS'
     
-def header():
-    return r'''
-    
-    <h1>CCCS <br>Columbia College Computer Science (under heavy construction)</h1>
-
-    [Last update: %(now)s]
-    ''' % {'now':datetime.datetime.now()}
+def header(title):
+    return r'<h1>title</h1>[Last update: %(now)s]' % {'now':NOW}
 
 def tablerow(link, name, description):
     return '<tr><td><a href="%(link)s">%(name)s</td><td>%(description)s</td></tr>' % \
@@ -30,7 +80,10 @@ def tablerow(link, name, description):
 def section(name):
     pass
 
-def webpage(name, body):
+def webpage(head=HEAD,
+            navigation_bar='',
+            header='',
+            body=''):
     return r'''
 <html>  
   %(head)s
@@ -45,10 +98,10 @@ def webpage(name, body):
     %(body)s
   </body>
 </html>
-    ''' % {'head':head(),
-           'navigation_bar':navigation_bar(name),
-           'title':title(name),
-           'header':'',
+    ''' % {'head':head,
+           'navigation_bar':navigation_bar,
+           'title':title,
+           'header':header,
            'body':body,
            }
 
@@ -245,45 +298,10 @@ def wanna_feed_your_brain():
     </ul>
     '''
 
-def head():
-    return r'''
-      <head>
-    <style>
-
-      * {
-          box-sizing: border-box;
-      }
-      
-      .row {
-          display: flex;
-      }
-      
-      /* Create three equal columns that sits next to each other */
-      .column {
-          flex: 33.33%;
-          padding: 5px;
-      }
-
-      
-      table {
-          font-family: arial, sans-serif;
-          border: 1px solid black;
-          border-collapse: collapse;
-          width: 100%;
-      }
-
-      td, th {
-          text-align: left;
-          vertical-align:top;
-          padding: 8px;
-      }
-      
-    </style>
-  </head>
-    '''
 
 def cccs():
-    return webpage(name='cccs',
+    return webpage(navigation_bar=navigation_bar('cccs'),
+                   header=header('cccs'),
                    body=r'''
     I'm in the process of moving <a href="http://bit.ly/yliow0">http://bit.ly/yliow0</a> to this website.    
     Let me know if there are broken links.
@@ -315,7 +333,7 @@ def cccs():
         'software':software(),
         'tutorials':tutorials(),
         'wanna_feed_your_brain':wanna_feed_your_brain(),
-         'courses':courses(),
+        'courses':courses(),
     })
 
 def courses():
