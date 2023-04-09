@@ -58,7 +58,7 @@ figure {
 }
 
 figcaption {
-  font-size: "5px";
+  font-size: "4px";
   padding: 2px;
   text-align: center;
 }
