@@ -58,9 +58,9 @@ HEAD = r'''
 
 def navigation_bar(name):
     if name == 'cccs':
-        return '<a href="">Home</a> | <a href="index.html">CCCS</a>'
+        return '<a href="index.html">Home</a> | <a href="index.html">CCCS</a>'
     elif name == 'pics':
-        return '<a href="">Home</a> | <a href="index.html">Outreach</a>'
+        return '<a href="index.html">Home</a> | <a href="pics.html">Outreach</a>'
 
 def title(name):
     if name == 'cccs':
