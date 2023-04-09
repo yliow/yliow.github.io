@@ -86,17 +86,13 @@ def webpage(head=HEAD,
             body=''):
     return r'''
 <html>  
-  %(head)s
-  <body style="font-family: arial">
-    
-    %(navigation_bar)s
-    %(header)s
-    <h2>%(title)s</h2>
-    
-    <hr>
-
-    %(body)s
-  </body>
+%(head)s
+<body style="font-family: arial">
+%(navigation_bar)s
+%(header)s
+<h2>%(title)s</h2><hr>
+%(body)s
+</body>
 </html>
     ''' % {'head':head,
            'navigation_bar':navigation_bar,
