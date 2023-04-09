@@ -407,19 +407,23 @@ def others():
     <li><a href="http://cctt0.pythonanywhere.com/">Royal Ping Pong Club</a></li>
     </ul>
     '''
-def image(float='right', src='', caption='', width=r'33%'):
-    return r'''
-<div style="float:%(float)s; padding:20px 20px 20px 20px; width:%(width)s">
-  <table style='border-collapse:collapse; border:none'><tr>
+def images(float='right', srcs_captions='', width=r'33%'):
+    s = ''
+    for src,caption in srcs_captions:
+        t = r'''<tr>
     <td><img width="100%%" src="%(src)s"/>
     <div style="font-size:12px; text-align:center; padding:5px">%(caption)s</div>
     </td>
-    </tr></table>
-</div>''' % {'float':float, 'src':src, 'caption':caption, 'width':width}
+        </tr>''' % {'src':src,'caption':caption}
+        s += t
+    return r'''
+<div style="float:%(float)s; padding:20px 20px 20px 20px; width:%(width)s">
+  <table style='border-collapse:collapse; border:none'>%(rows)s</table>
+</div>''' % {'width':width, 'rows':s, 'float':float}
     
 def pics():
-    img16 = image(src='images/pics/image16.png', caption='HS Programming Contest #2 (2016)') 
-    img4 = image(src='images/pics/image4.png', caption='HS CS internship program (2016-2017)') 
+    images_ = images(srcs_captions=[('images/pics/image16.png', 'HS Programming Contest #2 (2016)'),
+                                    ('images/pics/image4.png', 'HS CS internship program (2016-2017)')])
     return webpage(navigation_bar=navigation_bar('pics'),
                    header=header(title('pics')),
                    body=r'''
@@ -427,8 +431,7 @@ Welcome to PiCS (Portal into Computer Science), the computer science outreach pr
 
 <h2>Goal</h2>
 
-%(img16)s
-%(img4)s
+%(images)s
 The goal of PiCS is to introduce K-12 students to the exciting area of Computer Science. We have visited Benton Elementary School and Alpha Hart Lewis Elementary School to talk about computer science and to teach basic programming. In spring 2017 we organized an “Hour of Code” event for Jeff Middle School. We have organized several high school events including an annual High School Programming Contest since spring 2015. We are also organizing several summer camps for middle school and high school students. More programs for elementary school students are forthcoming.
 
 <h2>Students</h2>
@@ -458,7 +461,7 @@ To become a donor or sponsor of PiCS to support computer science outreach progra
 To find out more, get in touch with Dr. Yihsiang Liow (yliow@ccis.edu) for a chat.
 <a href="https://drive.google.com/file/d/1o1dJ6F0MmSsFW4PAKX94JrsSeGHJg6ND/view?usp=sharing">Why CS?</a> |
 <a href="https://drive.google.com/file/d/0BzjYrK0VFuMWaXI1ZlJpNTkxT0U/view?resourcekey=0-JCm-tl5MEfX0peYxdfKOYA">CS program hunting</a>
-                   ''' % {'img16':img16, 'img4':img4})
+                   ''' % {'images':images})
 
 if __name__ == '__main__':
     f = open('index.html', 'w'); f.write(cccs()); f.close()
