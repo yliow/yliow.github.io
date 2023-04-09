@@ -93,6 +93,7 @@ def webpage(head=HEAD,
 %(header)s
 <h2>%(title)s</h2><hr>
 %(body)s
+<br><br>
 <hr>
 Copyright Dr. Yihsiang Liow (yliow@ccis.edu | <a href='http://bit.ly/yliow0'>http://bit.ly/yliow0</a>)
 <br>
