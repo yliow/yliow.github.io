@@ -95,7 +95,7 @@ def webpage(head=HEAD,
 <h2>%(title)s</h2><hr>
 %(body)s
 <hr>
-[Last update: %(now)s]
+[Copyright Y.Liow. Last update: %(now)s]
 </body>
 </html>
     ''' % {'head':head,
