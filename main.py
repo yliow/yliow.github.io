@@ -109,7 +109,8 @@ def toc():
       <li><a href="#software">Software</a></li>      
       <li><a href="#courses">Courses</a></li>      
       <li><a href="#tutorials">Tutorials</a></li>
-      <li><a href="#wanna-feed-your-brain">Wanna feed your brain?</a></li>      
+      <li><a href="#wanna-feed-your-brain">Wanna feed your brain?</a></li>
+    <li><a href="pics.html">pics ... test</a></li>
     </ul>
 
     '''
@@ -391,7 +392,6 @@ def software():
 </ul>
     '''
 
-
 def others():
     return r'''
     <h2><a id="others">Others</a> <a href="#top" style="font-size:16px">top</a></h2>
@@ -402,8 +402,6 @@ def others():
     </ul>
     '''
 
-
-    
 def pics():
     return webpage('pics', '')
     
