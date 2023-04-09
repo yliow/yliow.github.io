@@ -20,22 +20,6 @@ def header():
     <h1>CCCS <br>Columbia College Computer Science (under heavy construction)</h1>
 
     [Last update: %(now)s]
-    <hr>
-    I'm in the process of moving <a href="http://bit.ly/yliow0">http://bit.ly/yliow0</a> to this website.    
-    Let me know if there are broken links.
-
-    <!-- pictures -->
-    <div class="row">
-      <div class="column">
-        <img src="images/midway-reduce10.jpg" style="width:100%%">
-      </div>
-      <div class="column">
-        <img src="images/dinner0-reduce10.jpg" style="width:100%%">
-      </div>
-    <div class="column">
-    <img src="images/dinner1-reduce10.jpg" style="width:100%%">
-      </div>
-    </div>
     ''' % {'now':datetime.datetime.now()}
 
 def tablerow(link, name, description):
@@ -284,6 +268,24 @@ def cccs():
 
     %(navigation_bar)s
     %(header)s
+
+        <hr>
+    I'm in the process of moving <a href="http://bit.ly/yliow0">http://bit.ly/yliow0</a> to this website.    
+    Let me know if there are broken links.
+
+    <!-- pictures -->
+    <div class="row">
+      <div class="column">
+        <img src="images/midway-reduce10.jpg" style="width:100%%">
+      </div>
+      <div class="column">
+        <img src="images/dinner0-reduce10.jpg" style="width:100%%">
+      </div>
+    <div class="column">
+    <img src="images/dinner1-reduce10.jpg" style="width:100%%">
+      </div>
+    </div>
+
     %(toc)s
     
     <hr>
