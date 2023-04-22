@@ -17,7 +17,7 @@ webpage structure
 
 """
 import datetime
-import undergrad_research_in_cs as urics
+import urics
 
 LINKS = {'ciss145':'<a href="http://ciss145.pythonanywhere.com">CISS145 (Python)</a>'
          }
@@ -507,5 +507,5 @@ if __name__ == '__main__':
     f = open('pics.html', 'w'); f.write(pics()); f.close()
 
     f = open('urics.html', 'w')
-    f.write(undergrad_research_in_cs())
+    f.write(urics.index())
     f.close()

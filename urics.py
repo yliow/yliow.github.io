@@ -153,6 +153,6 @@ Members of a research study group will take turns learning a topic, writing note
     
 <h3>Talks</h3>
 <ul>
-    <li><a href="https://drive.google.com/file/d/10VzWor17hVunt9PUXywuuNINZquLykXg/view?usp=sharing">Help me plan a party</a> | <a href="https://photos.app.goo.gl/TJHD37HhKn4j7YLY7">photo album</a>
+    <li><a href="https://drive.google.com/file/d/10VzWor17hVunt9PUXywuuNINZquLykXg/view?usp=sharing">Help me plan a party</a> | <a href="https://photos.app.goo.gl/eLKAuXchrYEBB7Te7">photo album</a>
 </ul>
     '''
