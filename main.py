@@ -78,7 +78,7 @@ def title(name):
     elif name == 'urics':
         return '''<div>
         URiCS <br>
-        Undergraduate Research in Computer Science
+        <div style="foreground-color:rgba(0,100,100,100);">Undergraduate Research in Computer Science</div>
         </div>'''
     else:
         return '[NO TITLE]'
