@@ -64,7 +64,7 @@ def navigation_bar(name):
     elif name == 'pics':
         return '<a href="index.html">Home</a> | Outreach'
     elif name == 'urics':
-        return '<a href="index.html">Home</a> | Outreach'
+        return '<a href="index.html">Home</a> | URiCS'
     else:
         return '<a href="index.html">Home</a> [INCOMPLETE]'
     
