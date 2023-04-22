@@ -490,8 +490,8 @@ To find out more, get in touch with Dr. Yihsiang Liow (<a href="mailto:yliow@cci
 
 
 def undergrad_research_in_cs():
-    return webpage(navigation_bar=navigation_bar('pics'),
-                   header=header(title('pics')),
+    return webpage(navigation_bar=navigation_bar('urics'),
+                   header=header(title('urics')),
                    body=urics.index()
 )
 
