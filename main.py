@@ -63,7 +63,11 @@ def navigation_bar(name):
         return '<a href="index.html">Home</a> | <a href="index.html">CCCS</a>'
     elif name == 'pics':
         return '<a href="index.html">Home</a> | Outreach'
-
+    elif name == 'urics':
+        return '<a href="index.html">Home</a> | Outreach'
+    else:
+        return '<a href="index.html">Home</a> [INCOMPLETE]'
+    
 def title(name):
     if name == 'cccs':
         return 'CCCS<br>Columbia College Computer Science'
@@ -486,7 +490,10 @@ To find out more, get in touch with Dr. Yihsiang Liow (<a href="mailto:yliow@cci
 
 
 def undergrad_research_in_cs():
-    return urics.index()
+    return webpage(navigation_bar=navigation_bar('pics'),
+                   header=header(title('pics')),
+                   body=urics.index()
+)
 
 if __name__ == '__main__':
     f = open('index.html', 'w'); f.write(cccs()); f.close()
