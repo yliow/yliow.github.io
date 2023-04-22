@@ -17,6 +17,8 @@ webpage structure
 
 """
 import datetime
+import undergrad_research_in_cs as urics
+
 LINKS = {'ciss145':'<a href="http://ciss145.pythonanywhere.com">CISS145 (Python)</a>'
          }
 
@@ -482,6 +484,14 @@ To find out more, get in touch with Dr. Yihsiang Liow (<a href="mailto:yliow@cci
 <a href="https://drive.google.com/file/d/0BzjYrK0VFuMWaXI1ZlJpNTkxT0U/view?resourcekey=0-JCm-tl5MEfX0peYxdfKOYA">CS program hunting</a>
                    ''' % {'images':images_})
 
+
+def undergrad_research_in_cs():
+    return urics.index()
+
 if __name__ == '__main__':
     f = open('index.html', 'w'); f.write(cccs()); f.close()
     f = open('pics.html', 'w'); f.write(pics()); f.close()
+
+    f = open('urics.html', 'w')
+    f.write(undergrad_research_in_cs())
+    f.close()
