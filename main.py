@@ -496,7 +496,7 @@ To find out more, get in touch with Dr. Yihsiang Liow (<a href="mailto:yliow@cci
                    ''' % {'images':images_})
 
 
-def undergrad_research_in_cs():
+def urics_():
     return webpage(navigation_bar=navigation_bar('urics'),
                    header=header(title('urics')),
                    body=urics.index()
@@ -507,5 +507,5 @@ if __name__ == '__main__':
     f = open('pics.html', 'w'); f.write(pics()); f.close()
 
     f = open('urics.html', 'w')
-    f.write(urics.index())
+    f.write(urics_())
     f.close()
