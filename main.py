@@ -76,7 +76,10 @@ def title(name):
         <div style="display: flex; justify-content: center; background-color:rgba(0,65,122,255); padding:10px"><img src='images/pics/pics.png'/></div><br>
         Welcome to PiCS'''
     elif name == 'urics':
-        return 'CCCS<br>Columbia College Computer Science'
+        return '''<div>
+        URiCS <br>
+        Undergraduate Research in Computer Science
+        </div>'''
     else:
         return '[NO TITLE]'
     
