@@ -110,7 +110,7 @@ Members of a research study group will take turns learning a topic, writing note
     
 <h3>Cryptography and number theory</h3>
 <ul>
-<li>Pre-requisites: C++, Python, data structures and algorithms
+<li>Pre-requisites: C++, Python, data structures and algorithms.
     Cryptography is a huge area in CS with many subareas such as cryptocurrency and blockchain.
 <li>Preparation:</li>
     
