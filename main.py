@@ -75,6 +75,10 @@ def title(name):
         return r'''
         <div style="display: flex; justify-content: center; background-color:rgba(0,65,122,255); padding:10px"><img src='images/pics/pics.png'/></div><br>
         Welcome to PiCS'''
+    elif name == 'urics':
+        return 'CCCS<br>Columbia College Computer Science'
+    else:
+        return '[NO TITLE]'
     
 def header(title):
     return r'<h1>%(title)s</h1>' % {'title':title}
