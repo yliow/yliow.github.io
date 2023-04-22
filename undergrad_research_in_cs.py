@@ -144,7 +144,7 @@ Members of a research study group will take turns learning a topic, writing note
 <h3>Writing research papers</h3>
 
 <ul>
-<li><a href="http://www.jmlr.org/reviewing-papers/knuth_mathematical_writing.pdf">Mathematical Writing by Donald E. Knuth, Tracy Larrabee, and Paul M. Roberts</a>
+<li><a href="https://jmlr.csail.mit.edu/reviewing-papers/knuth_mathematical_writing.pdf">Mathematical Writing by Donald E. Knuth, Tracy Larrabee, and Paul M. Roberts</a>
 <li>How to Organize your Thesis, by John W. Chinneck
 <li>Research writing in computer science by Kevin Korb
 <li>Hints on good mathematical writing, by David Goss
