@@ -21,7 +21,7 @@ undergraduate computer science students to be involved in research. Specifically
 <li>Algorithms</li>
 <li>Artificial Intelligence</li>
 <li>Computer graphics and image processing</li>
-<li>Cryptography</li>
+<li>Cryptography and number theory</li>
 <li>Database</li>
 </ul>
 
