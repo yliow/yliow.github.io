@@ -147,7 +147,7 @@ Members of a research study group will take turns learning a topic, writing note
 <li><a href="https://jmlr.csail.mit.edu/reviewing-papers/knuth_mathematical_writing.pdf">Mathematical Writing by Donald E. Knuth, Tracy Larrabee, and Paul M. Roberts</a>
 <li><a href="http://www.sce.carleton.ca/faculty/chinneck/thesis.html">How to Organize your Thesis, by John W. Chinneck</a>
 <li><a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.53.148&rep=rep1&type=pdf">Research writing in computer science by Kevin Korb</a>
-<li><a href="https://people.math.osu.edu/goss.3/hint.pdf">Hints on good mathematical writing, by David Goss</a>
+<li><a href="https://cr.yp.to/bib/1998/goss-style.pdf">Hints on good mathematical writing, by David Goss</a>
 </ul>
 
     
