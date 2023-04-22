@@ -1,0 +1,208 @@
+
+<html>  
+
+      <head>
+    <style>
+
+      * {
+          box-sizing: border-box;
+      }
+      
+      .row {
+          display: flex;
+      }
+      
+      /* Create three equal columns that sits next to each other */
+      .column {
+          flex: 33.33%;
+          padding: 5px;
+      }
+      
+      table {
+          font-family: arial, sans-serif;
+          border: 1px solid black;
+          border-collapse: collapse;
+          width: 100%;
+      }
+
+      td, th {
+          text-align: left;
+          vertical-align:top;
+          padding: 8px;
+      }
+
+    </style>
+  </head>
+    
+<body style="font-family: arial; margin-left:100px; margin-right:100px; ">
+<a href="index.html">Home</a> | URiCS
+<h1><div>
+        URiCS <br>
+        <div style="color:#D3D3D3;">Undergraduate Research in Computer Science</div>
+        </div></h1>
+<h2><function title at 0x7f8b69a09ef0></h2><hr>
+
+
+    
+<h2>Why?</h2>
+
+The purpose of the Undergraduate Research in CS Program is to encourage
+undergraduate computer science students to be involved in research. Specifically, the goals are:
+<ul>
+<li>To train students to study for themselves</li>
+<li>To understand how to plan the study/research of an area in computer science</li>
+<li>To immerse in an area and go beyond what is covered in a standard one-semester course</li>
+<li>To read and study research papers</li>
+<li>To do research and write a paper</li>
+</ul>
+
+    
+<h2>What?</h2>
+
+<ul>
+<li>Algorithms</li>
+<li>Artificial Intelligence</li>
+<li>Computer graphics and image processing</li>
+<li>Cryptography</li>
+<li>Database</li>
+</ul>
+
+    
+<h2>Who?</h2>
+    
+<ul>
+<li>Undergraduate student majoring in computer science</li>
+<li>GPA of at least 3.5</li>
+</ul>
+
+    
+<h2>Areas</h2>
+    
+The following are some areas of interest.
+For each I have listed a minimal guide or study plan for an individual.
+If there are more than one students interested in a specific area, I might form a research study group.
+Members of a research study group will take turns learning a topic, writing notes, and presenting -- this is how all research groups work. The material to study is either a book, one or more papers, etc.
+
+<h3>Algorithms</h3>
+<ul>
+<li>Pre-requisites: C++, data structures and algorithms. (Python is usually helpful too.)</li>
+<li>Preparation: This is a very broad area. Practically every area of computer science contains algorithms to be studied. There are lots of interesting problems in graph theory. Beyond basic algorithms, one possible area to go into is computational geometry which has applications in computer graphics, robotics, computer vision, etc. Then there’s also computational number theory. Here’s a study plan for computational geometry which can also be used as a plan to study graphs.
+    <ul>
+    <li>STEP 1. Study CISS240. After that you can start reading up on C++ OOP on your own and start studying and implementing linked lists. If you have the necessary background, you should take MATH225. If not, see STEP 2.</li>
+    <li>STEP 2. Study CISS245 and MATH225. Start studying and implementing trees and graphs on your own. It’s possible to start some mini-project at this point.</li>
+    <li>STEP 3. Study CISS350 and MATH325. Start studying computational geometry on your own. A good book to use is the computational geometry book by O’Rourke.</li>
+    <li>STEP 4. Study CISS358 and CISS362. Research on computational geometry.</li>
+    </ul>
+</ul>
+    
+<h3>Artificial Intelligence</h3>
+<ul>
+    <li>Pre-requisites: C++, data structures and algorithms. (Python can be used in image processing, but it’s not absolutely necessary.)
+    <li>Preparation: There are many directions to take the following is an example study plan on search algorithms which is the first step in AI.
+    <ul>
+    <li>STEP 1.
+    Learn C++ and python. Example: take CISS240 with me. The project for CISS240 is othello. After that, try the following: 
+    Rewrite the othello program so it plays against a human player by making random moves. 
+    Next, your program evaluates all possible moves and for each move calculate how many pieces it has against the player,
+    and then choose the best move. 
+    Once you’re done with that, get the program to attempt two moves, simulating moves for the player. 
+    Then try three, four, etc. 
+    You will see that the program gets more and more complicated and the execution time gets longer and longer.
+    At this point, you will need better data structures and algorithms.
+    You can find more powerful algorithms on the web (or through books). 
+    <li>STEP 2.
+    Take CISS245.
+    This will allow you to use OOP to clean up your othello program to some extent.
+    This is helpful since the code from STEP 1 is getting more and more complicated.
+    You can study “search algorithms” to help understand the direction your code from STEP 1 is going.
+    The algorithm to study is general breadth first and depth first search algorithms.</li>
+    <li>STEP 3.
+    Take CISS350.
+    This will give you concepts of data structures and algorithms and help further clean up your code from STEP 1 and 2.
+    At this point, you should study A* search algorithm and then alpha-beta pruning.
+    It’s possible to start some mini-project at this point.
+    <li>STEP 4.
+    Take CISS450.
+    During the course, you can improve on your othello AI.
+    Most of the ideas apply to any form of game play (adversarial search).
+    You can also study the bitboard technique. </li>
+    <li>STEP 5.
+    You can continue to work on game AI or any of the areas/problems in CISS450 such as CSP which is used heavily in the industry.
+    You can also study machine learning. You can also combine AI and image processing.
+    </ul>
+    </ul>
+
+    
+<h3>Computer graphics and image processing</h3>
+    
+<ul>
+<li>Pre-requisites: C++, data structures and algorithms.
+    (Python can be used in image processing, but it’s not absolutely necessary.)</li>
+<li>Preparation: There are many possible directions. The following follows computer graphics first. (If you want to follow image processing, you can start learning OpenCV using C++ which means you need to know CISS240 from STEP 1 below. The OpenCV library assumes you know OOP. So some CISS245 knowledge is helpful.)
+    
+    <ul>
+    <li>STEP 1. Learn C++. Example: take CISS240 (and possibly CISS245). In fact, if you are persistent, it’s possible to start learning OpenGL after CISS240 because beginning OpenGL programming is primarily procedural and does not use object-oriented programming. Math-wise you want to begin the Calculus sequence and the discrete math sequence as well either during STEP 1 or STEP 2. </li>
+    <li>STEP 2. Learn CISS245 and basic OpenGL (using C++). Continue to learn OpenGL. Continue with your Calculus sequence and discrete math sequence. </li>
+    <li>STEP 3. Take CISS350. It’s possible to start some mini-project at this point.</li>
+    <li>STEP 4. Take CISS358 and CISS380 (Graphics). After CISS350, you might want to talk to me about studying special areas in computer graphics, computational geometry, etc.</li>
+    </ul>
+
+</ul>
+
+    
+<h3>Cryptography and number theory</h3>
+<ul>
+<li>Pre-requisites: C++, Python, data structures and algorithms
+    Cryptography is a huge area in CS with many subareas such as cryptocurrency and blockchain.
+<li>Preparation:</li>
+    
+    <ul>
+    <li>STEP 1: CISS240. You should begin the Calculus sequence and discrete math sequence as soon as possible. You should read generally about cryptography, cryptocurrency, and blockchain.</li>
+    <li>STEP 2: CISS245. It’s possible to start some mini-project at this point.</li>
+    <li>STEP 3: CISS350.</li>
+    <li>STEP 4: CISS358 and CISS451. After CISS350, you should talk to me about projects.</li>
+    </ul>
+    
+</ul>
+
+
+<h3>Database</h3>
+
+<ul>
+<li>Pre-requisites: C++, Python, data structures and algorithms.</li>
+<li>Preparation:</li>
+
+    <ul>
+    <li>STEP 1. Learn C++ and Python. Example: take CISS240 and CISS145.
+    <li>STEP 2. Learn SQL using for instance MySQL. At this point, you do not need to know complex data structures and algorithms. A strong background in C++ and python is enough. Write a web app that has a backend using Python and MySQL.
+    <li>STEP 3. Take CISS245 and 350. Continue to learn SQL using MySQL and write more complex web apps. With a background in CISS350, you can start reading deeper topics in SQL. With some experience in using SQL, you should start thinking about how you can implement the MySQL software.
+    <li>STEP 4. As soon as possible, take CISS430 (Database) with me after CISS240-245-350. Spend more time thinking about the implementation of an RDBMS software. In particular, study the heap files, B+ tree data structure, and hashing strategies.
+    <li>STEP 5. Research in RDBMS by implementing (in C++) parts of an RDBMS software.
+    </ul>
+    
+</ul>
+
+    
+<h3>Writing research papers</h3>
+
+<ul>
+<li><a href="http://www.jmlr.org/reviewing-papers/knuth_mathematical_writing.pdf">Mathematical Writing by Donald E. Knuth, Tracy Larrabee, and Paul M. Roberts</a>
+<li>How to Organize your Thesis, by John W. Chinneck
+<li>Research writing in computer science by Kevin Korb
+<li>Hints on good mathematical writing, by David Goss
+</ul>
+
+    
+<h3>Talks</h3>
+<ul>
+    <li>Help me plan a party | photo album
+</ul>
+    
+<br>
+<hr>
+Copyright Dr. Yihsiang Liow (yliow@ccis.edu | <a href='http://bit.ly/yliow0'>http://bit.ly/yliow0</a>)
+<br>
+Last update: 2023-04-22 14:55:07.010927
+</body>
+</html>
+    
