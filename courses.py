@@ -1,5 +1,5 @@
 def index():
-    data = [('http://ciss145.pythonanywhere.com', 'ciss145', 'CISS145 (Python)'),
+    data = [('http://ciss145.pythonanywhere.com', 'CISS145 (Python)'),
             ('http://ciss170.pythonanywhere.com', 'CISS170 (Intro CIS)'),
             ('http://ciss176.pythonanywhere.com', 'CISS176 (Intro CS)'),
             ('http://ciss234.pythonanywhere.com', 'CISS234 (VB)'),
@@ -25,6 +25,18 @@ def index():
             ('http://ciss999.pythonanywhere.com', 'Computer vision (COMING)'),
             ('http://ciss998.pythonanywhere.com', 'Qt (COMING)'),
         ]
+    #print(data[0][0][7:14]) -- sort key
+    data.sort(key=lambda x: x[0][7:14])
+    #for x in data: print(x)
+    html = r'''<h2><a id="courses">Courses</a> <a href="#top" style="font-size:16px">top</a></h2>
+In the future all my notes will be public. Right now they are all under heavy construction.
+<ul>'''
+    for url, s in data:
+        html += '<li><a href="%s">%s</a>' % (url, s)
+    html += '</ul>'
+    return html
+
+    # DEPRECATED
     return \
     r'''<h2><a id="courses">Courses</a> <a href="#top" style="font-size:16px">top</a></h2>
     In the future all my notes will be public. Right now they are all under heavy construction.
@@ -56,3 +68,5 @@ def index():
     <li><a href="http://ciss998.pythonanywhere.com">Qt (COMING)</a>
     </ul>
 '''
+
+index()
