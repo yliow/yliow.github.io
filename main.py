@@ -360,6 +360,7 @@ def useful_stuff():
     return r'''
 <h2><a id="useful_stuff">Useful stuff</a> <a href="#top" style="font-size:16px">top</a></h2>
 <ul>
+    <li><a href='https://docs.google.com/document/d/1KZ7bve4oEmIHiP8ghwZ2Ky42KGQuxpvJetpYVImTDMY/edit?usp=sharing'>Publications about CCCS</li>
     <li><a href='https://docs.google.com/presentation/d/1v_YISntWpguP-t-SwrhjT1537UwmgybZe5mGzwP_11w/edit?usp=sharing'>CS101 Guide to CCCS or ... HHGTT CCCS</a>
     <li><a href='urics.html'>Research</a></li>
 </ul>
