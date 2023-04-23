@@ -365,8 +365,6 @@ def useful_stuff():
 </ul>
 '''
 
-#def courses():
-#    return 
 def software():
     return r'''<h2><a id="software">Software</a> <a href="#top" style="font-size:16px">top</a></h2>
 <ul>
