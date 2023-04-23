@@ -479,8 +479,8 @@ More programs for elementary school students are forthcoming.
 
 Click on the following links to find out more about our programs and activities:
 <ul>
-<li>High school</li>
-<li>Middle school</li>
+<li><a href='https://docs.google.com/document/d/1weDfXSYzwsvBL-DvTmnb4SyOn_Rf1SKofbQoE4yN3fs/'>High school</a></li>
+<li><a href='https://docs.google.com/document/d/1g7FxMLD8pBvVEF_tjj7fw7fCA8SqDPCPv5P438ePR04/'>Middle school</a></li>
 <li>Elementary school [coming soon]</li>
 </ul>
 Here’s the <a href="http://bit.ly/pics-summer">2017 summer camps link</a>.
