@@ -125,6 +125,7 @@ def toc():
     return r'''
     <h2><a id="top">TOC</a></h2>
     <ul>
+      <li><a href="#useful_stuff">Useful stuff</a></li>      
       <li><a href="#others">Others</a></li>      
       <li><a href="#software">Software</a></li>      
       <li><a href="#courses">Courses</a></li>      
