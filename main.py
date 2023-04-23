@@ -465,7 +465,9 @@ def pics():
                    body=r'''
 %(images)s
 Welcome to PiCS (Portal into Computer Science), the computer science outreach programs of Columbia College (of Missouri).
-
+<br><br>           
+[pics to be transferred]
+                   
 <h2>Goal</h2>
 
 The goal of PiCS is to introduce K-12 students to the exciting area of Computer Science.
