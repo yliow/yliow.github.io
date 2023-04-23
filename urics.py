@@ -1,7 +1,5 @@
 def index():
-    return r'''
-
-    
+    return r'''    
 <h2>Why?</h2>
 
 The purpose of the Undergraduate Research in CS Program is to encourage

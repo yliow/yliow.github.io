@@ -338,7 +338,8 @@ def cccs():
 
     %(toc)s
     
-    <hr>
+    <hr>                   
+    %(useful_stuff)s
     %(others)s
     %(software)s
     %(courses)s
@@ -346,12 +347,21 @@ def cccs():
     %(wanna_feed_your_brain)s 
     ''' % {
         'toc':toc(),
+        'useful_stuff':useful_stuff(),
         'others':others(),
         'software':software(),
         'tutorials':tutorials(),
         'wanna_feed_your_brain':wanna_feed_your_brain(),
         'courses':courses(),
     })
+
+def useful_stuff():
+    return r'''
+<h2><a id="useful_stuff">Useful stuff</a> <a href="#top" style="font-size:16px">top</a></h2>
+<ul>
+    <li><a href='urics.html'>Research</a></li>
+</ul>
+'''
 
 def courses():
     return r'''<h2><a id="courses">Courses</a> <a href="#top" style="font-size:16px">top</a></h2>
@@ -456,7 +466,12 @@ Welcome to PiCS (Portal into Computer Science), the computer science outreach pr
 
 <h2>Goal</h2>
 
-The goal of PiCS is to introduce K-12 students to the exciting area of Computer Science. We have visited Benton Elementary School and Alpha Hart Lewis Elementary School to talk about computer science and to teach basic programming. In spring 2017 we organized an “Hour of Code” event for Jeff Middle School. We have organized several high school events including an annual High School Programming Contest since spring 2015. We are also organizing several summer camps for middle school and high school students. More programs for elementary school students are forthcoming.
+The goal of PiCS is to introduce K-12 students to the exciting area of Computer Science.
+We have visited Benton Elementary School and Alpha Hart Lewis Elementary School to talk about computer science and to teach basic programming.
+In spring 2017 we organized an “Hour of Code” event for Jeff Middle School.
+We have organized several high school events including an annual High School Programming Contest since spring 2015.
+We are also organizing several summer camps for middle school and high school students.
+More programs for elementary school students are forthcoming.
 
 <h2>Students</h2>
 
