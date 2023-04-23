@@ -32,7 +32,7 @@ def index():
 In the future all my notes will be public. Right now they are all under heavy construction.
 <ul>'''
     for url, s in data:
-        html += '<li><a href="%s">%s</a>' % (url, s)
+        html += '<li>xxx<a href="%s">%s</a>' % (url, s)
     html += '</ul>'
     return html
 
