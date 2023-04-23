@@ -466,7 +466,7 @@ def pics():
 %(images)s
 Welcome to PiCS (Portal into Computer Science), the computer science outreach programs of Columbia College (of Missouri).
 <br><br>           
-[pics to be transferred]
+[PICS TO BE TRANSFERRED]
                    
 <h2>Goal</h2>
 
