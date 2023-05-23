@@ -374,13 +374,13 @@ def useful_stuff():
 def events_t_shirts_etc():
     return section(name='Events, T-shirts, etc.', id_='events_t_shirts_etc') + \
         ul(htmls=[pictures_and_videos(),
+                  cs_club(),
                   cs_day(),
                   cs_jam(),
                   department_welcome_lunch(),
                   end_of_semester_presentations(),
                   end_of_semester_celebration(),
                   facebook(),
-                  cs_club(), 
         ])
 
 
