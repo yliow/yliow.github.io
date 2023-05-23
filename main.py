@@ -101,17 +101,6 @@ def section(name='Useful stuff', id_='useful_stuff'):
          'id_':id_,
          }
 
-def classes_for_current_semester():
-    return r'''
-Classes for current semester (spring 2023):
-<ul>
- <li> MATH325, MWF 9:05AM, BUH100
- <li> CISS350, MWF 11:15AM, BUH103
- <li> CISS240, MWF 1:25PM and Tu 2:00PM, BUH107
- <li> CISS451, MWF 2:30PM, BUH103
-</ul>
-'''
-
 def webpage(head=HEAD,
             navigation_bar='',
             header='',
@@ -143,7 +132,8 @@ def toc():
     return r'''
     <h2><a id="top">TOC</a></h2>
     <ul>
-      <li><a href="#useful_stuff">Useful stuff</a></li>      
+      <li><a href="#useful_stuff">Useful stuff</a></li>
+      <li><a href="#events_t_shirts_etc">Events, T-shirts, etc.</a></li>
       <li><a href="#others">Others</a></li>      
       <li><a href="#software">Software</a></li>      
       <li><a href="#courses">Courses</a></li>      
@@ -354,6 +344,7 @@ def cccs():
     
     <hr>                   
     %(useful_stuff)s
+    %(events_t_shirts_etc)s
     %(others)s
     %(software)s
     %(courses)s
@@ -362,6 +353,7 @@ def cccs():
     ''' % {
         'toc':toc(),
         'useful_stuff':useful_stuff(),
+        'events_t_shirts_etc':events_t_shirts_etc(),
         'others':others(),
         'software':software(),
         'tutorials':tutorials(),
@@ -378,7 +370,13 @@ def useful_stuff():
                   cs101(),
                   research(),
         ])
-    
+
+def events_t_shirts_etc():
+    return section(name='Events, T-shirts, etc.', id_='events_t_shirts_etc') + \
+        ul(htmls=[pictures_and_videos(),
+        ])
+
+
 def software():
     return r'''<h2><a id="software">Software</a> <a href="#top" style="font-size:16px">top</a></h2>
 <ul>
