@@ -74,3 +74,6 @@ def kickoff():
 
 def media_committee():
     return r"<a href='https://docs.google.com/document/d/1wY-P6JPTw0zQfbonmlYLWbc0nyFErPSzXSE_sX5EY8o/edit?usp=sharing'>Media committee</a>"
+
+def movie_night():
+    return r"""<a href="https://docs.google.com/document/d/1rJqBMNCTFRQ2JNAQBfXwWUYXDwjbsml3vIdWP-YQTpI/edit?usp=sharing">Movie night</a>"""
