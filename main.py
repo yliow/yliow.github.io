@@ -111,8 +111,11 @@ def tablerow(link, name, description):
     return '<tr><td><a href="%(link)s">%(name)s</td><td>%(description)s</td></tr>' % \
         {'link':link, 'name':name, 'description':description}
 
-def section(name):
-    pass
+def section(name='Useful stuff', id_='useful_stuff'):
+    return r'''<h2><a id="%(id_)s">%(name)s</a> <a href="#top" style="font-size:16px">top</a></h2>''' % \
+        {'name':name,
+         'id_':id_,
+         }
 
 def webpage(head=HEAD,
             navigation_bar='',
@@ -379,14 +382,15 @@ def cccs():
 
 def useful_stuff():
     return r'''
-<h2><a id="useful_stuff">Useful stuff</a> <a href="#top" style="font-size:16px">top</a></h2>
-<ul>
-    <li>%(cs_hangout)s
-    <li>%(publication_about_cccs)s
-    <li>%(cs101)s
-    <li>%(research)s
-</ul>
-''' % {'cs101':cs101(),
+<h2>%(section)s
+ <ul>
+  <li>%(cs_hangout)s
+  <li>%(publication_about_cccs)s
+  <li>%(cs101)s
+  <li>%(research)s
+ </ul>
+''' % {'section':section(name='Useful stuff', id_='useful_stuff'),
+       'cs101':cs101(),
        'publication_about_cccs':publication_about_cccs(),
        'cs_hangout':cs_hangout(),
        'research':research(),
