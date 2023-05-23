@@ -56,3 +56,6 @@ def end_of_semester_presentations():
 
 def end_of_semester_celebration():
     return r"End of celebration"
+
+def facebook():
+    return r"Facebook"

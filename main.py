@@ -379,6 +379,7 @@ def events_t_shirts_etc():
                   department_welcome_lunch(),
                   end_of_semester_presentations(),
                   end_of_semester_celebration(),
+                  facebook(),
         ])
 
 
