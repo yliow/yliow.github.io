@@ -375,6 +375,7 @@ def events_t_shirts_etc():
     return section(name='Events, T-shirts, etc.', id_='events_t_shirts_etc') + \
         ul(htmls=[pictures_and_videos(),
                   cs_day(),
+                  cs_jam(),
         ])
 
 
