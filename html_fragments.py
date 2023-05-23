@@ -40,4 +40,4 @@ Classes for current semester (spring 2023):
 '''
 
 def pictures_and_videos():
-    return r"<a hef='https://docs.google.com/document/d/1uGC6ZMQ6OMY8voiTKsuaRYOW2fUQZDdj1QoA-euKGtg/edit?usp=sharing'>Pictures and videos</a>"
+    return r"<a href='https://docs.google.com/document/d/1uGC6ZMQ6OMY8voiTKsuaRYOW2fUQZDdj1QoA-euKGtg/edit?usp=sharing'>Pictures and videos</a>"
