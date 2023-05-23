@@ -84,3 +84,5 @@ def monday_programming_challenges():
 def robotics_group():
     return r"<a href='https://docs.google.com/document/d/1z-Mu7qCrj62TJYtnN-FJYYXVqYmGRPSpIcz5eJCt-x4/edit#'>Robotics group</a>"
     
+def t_shirt():
+    return r"""<a href="https://docs.google.com/document/d/16f147t6G8pnBvP9hGhbVwsK56hLoLaK_S9x5tT8X0vs/edit?usp=sharing">T-shirt</a> | <a href="https://docs.google.com/document/d/1C32m45nlAsTkeCpOWtrVsI4tK7fKD9tWe1UTZUTjaEM/edit#">Committee</a>"""
