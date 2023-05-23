@@ -85,7 +85,16 @@ def robotics_group():
     return r"<a href='https://docs.google.com/document/d/1z-Mu7qCrj62TJYtnN-FJYYXVqYmGRPSpIcz5eJCt-x4/edit#'>Robotics group</a>"
     
 def t_shirt():
-    return r"""<a href="https://docs.google.com/document/d/16f147t6G8pnBvP9hGhbVwsK56hLoLaK_S9x5tT8X0vs/edit?usp=sharing">T-shirt</a> | <a href="https://docs.google.com/document/d/1C32m45nlAsTkeCpOWtrVsI4tK7fKD9tWe1UTZUTjaEM/edit#">Committee</a>"""
+    return r"""<a href="https://docs.google.com/document/d/16f147t6G8pnBvP9hGhbVwsK56hLoLaK_S9x5tT8X0vs/edit?usp=sharing">T-shirt</a>
+    |
+    <a href="https://docs.google.com/document/d/1C32m45nlAsTkeCpOWtrVsI4tK7fKD9tWe1UTZUTjaEM/edit#">Committee</a>"""
 
 def programming_contest():
-    return r"""<a href="https://docs.google.com/document/d/1wc3Wov4B4qistaV8csbUm0NyUOn0XbwDEY4BWM5dSoE/edit?usp=sharing">Programming contest</a> | <a href="https://docs.google.com/document/d/1x_37FDFysT159iKrgJKUosgI6EElMzu9WfDd4b8nokY/edit?usp=sharing">Committee</a>"""
+    return r"""<a href="https://docs.google.com/document/d/1wc3Wov4B4qistaV8csbUm0NyUOn0XbwDEY4BWM5dSoE/edit?usp=sharing">Programming contest</a>
+    |
+    <a href="https://docs.google.com/document/d/1x_37FDFysT159iKrgJKUosgI6EElMzu9WfDd4b8nokY/edit?usp=sharing">Committee</a>"""
+
+def high_school_programming_contest():
+    return '''<a href='https://docs.google.com/document/d/1gjkRumx_jq9VGyxdjBZU9IICerqZr_8wKHaq7nls64Q/edit'> HS Programming contest</a>
+    |
+    <a href='https://docs.google.com/document/d/1evtUsB7LE-sTPoY5g2BUrptodSErx-Mxks0z3sTrWqM/edit#'>Committee</a>'''
