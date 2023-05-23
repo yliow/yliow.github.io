@@ -364,16 +364,21 @@ def cccs():
         'courses':courses.index(),
     })
 
+def cs101():
+    return r'''<a href='https://docs.google.com/presentation/d/1v_YISntWpguP-t-SwrhjT1537UwmgybZe5mGzwP_11w/edit?usp=sharing'>CS101 Guide to CCCS or ... HHGTT CCCS</a>
+    '''
+
 def useful_stuff():
     return r'''
 <h2><a id="useful_stuff">Useful stuff</a> <a href="#top" style="font-size:16px">top</a></h2>
 <ul>
     <li>%(cs_hangout)s
     <li><a href='https://docs.google.com/document/d/1KZ7bve4oEmIHiP8ghwZ2Ky42KGQuxpvJetpYVImTDMY/edit?usp=sharing'>Publications about CCCS</li>
-    <li><a href='https://docs.google.com/presentation/d/1v_YISntWpguP-t-SwrhjT1537UwmgybZe5mGzwP_11w/edit?usp=sharing'>CS101 Guide to CCCS or ... HHGTT CCCS</a>
+    <li>%(cs101)s
     <li><a href='urics.html'>Research</a></li>
 </ul>
-''' % {'cs_hangout':cs_hangout(),
+''' % {'cs101':cs101(),
+       'cs_hangout':cs_hangout(),
        }
 
 def software():
