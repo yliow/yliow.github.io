@@ -60,6 +60,10 @@ HEAD = r'''
 #===========================================================================
 # SMALLEST HTML FRAGMENTS
 #===========================================================================
+def cctt():
+    return r'''<a href="http://cctt0.pythonanywhere.com/">Royal Ping Pong Club</a>'''
+def work_study():
+    return r'''<a href="https://docs.google.com/document/d/1nYQtW3TTPIAYHcOeU-KSe2aEOiWHZgn6LA9aybH8pw0/edit?usp=sharing">Work study</a>'''
 def cs101():
     return r'''<a href='https://docs.google.com/presentation/d/1v_YISntWpguP-t-SwrhjT1537UwmgybZe5mGzwP_11w/edit?usp=sharing'>CS101 Guide to CCCS or ... HHGTT CCCS</a>'''
 
@@ -434,9 +438,8 @@ def software():
 
 def others():
     return '%s %s' % (section(name='Others', id_='others'),
-                      ul(htmls=['<a href="https://docs.google.com/document/d/1nYQtW3TTPIAYHcOeU-KSe2aEOiWHZgn6LA9aybH8pw0/edit?usp=sharing">Work study</a> [only work study students have access]',
-                  '<a href="http://cctt0.pythonanywhere.com/">Royal Ping Pong Club</a>''',
-                      ]))
+                      ul(htmls=[work_study(), cctt()]),
+                      )
 
 def images(float='right', srcs_captions='', width=r'33%'):
     s = ''
