@@ -66,12 +66,16 @@ def navigation_bar(name):
         return '<a href="index.html">Home</a> | Outreach'
     elif name == 'urics':
         return '<a href="index.html">Home</a> | URiCS'
+    elif name == 'cs_day':
+        return '<a href="index.html">Home</a> | CS Day'
     else:
         return '<a href="index.html">Home</a> [INCOMPLETE]'
     
 def title(name):
     if name == 'cccs':
         return 'CCCS<br>Columbia College Computer Science'
+    if name == 'cs_day':
+        return 'CS Day'
     elif name == 'pics':
         return r'''
         <div style="display: flex; justify-content: center; background-color:rgba(0,65,122,255); padding:10px"><img src='images/pics/pics.png'/></div><br>
@@ -513,7 +517,36 @@ def urics_():
                    body=urics.index()
 )
 
+def cs_day_page():
+    return webpage(navigation_bar=navigation_bar('cs_day'),
+                   header=header(title('cs_day')),
+                   body=r'''
+For committee
+                   
+<h2>Fall 2022</h2>
+<a href='https://photos.app.goo.gl/zpLQkxcUuANKa4AZ8'>https://photos.app.goo.gl/zpLQkxcUuANKa4AZ8</a>
+WHAT: CS Day #2 Flyer  RSVP link (optional)<br>
+WHEN: Monday 10/24, 5PM-6:30PM<br>
+WHERE: Buchanan Hall, Room 107 (BUH107) https://www.ccis.edu/about/map</br> 
+WHO: Anyone interested in finding out more about CS</br>
+
+<center>
+What is CS?<br>
+What is programming?<br>
+Why is CS fun?<br>
+What are career paths in CS?<br>
+How to be successful in CS?<br>
+Q&A<br>
+</center>
+<h2>Fall 2021</h2>
+
+'''
+    )
+
+
+
 if __name__ == '__main__':
     f = open('index.html', 'w'); f.write(cccs()); f.close()
     f = open('pics.html', 'w'); f.write(pics()); f.close()
     f = open('urics.html', 'w'); f.write(urics_()); f.close()
+    f = open('cs_day.html', 'w'); f.write(cs_day_page()); f.close()
