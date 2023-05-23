@@ -58,6 +58,15 @@ HEAD = r'''
   </head>
     '''
 
+def cs_hangout():
+    return r'''<a href ='http://bit.ly/cc_cs_hangout'>CS Hangout</a>.
+    <ul>
+    <li>MF: 4:30PM-6:30PM in BUH103
+    <li>Wed: 4:30-6:30 in COUGAR CAFE
+    <li>TuTh: 3:00PM–5:00PM in BUH102 
+    </ul>
+    '''
+
 def navigation_bar(name):
     if name == 'cccs':
         return '<a href="index.html">Home</a> | <a href="index.html">CCCS</a>'
@@ -89,7 +98,6 @@ def header(title):
 def tablerow(link, name, description):
     return '<tr><td><a href="%(link)s">%(name)s</td><td>%(description)s</td></tr>' % \
         {'link':link, 'name':name, 'description':description}
-
 
 def section(name):
     pass
@@ -309,12 +317,12 @@ def tutorials():
 
 def wanna_feed_your_brain():
     return r'''
-        <h2><a id="wanna-feed-your-brain">Wanna feed your brain?</a> <a href="#top" style="font-size:16px">top</a></h2>
-    <ul>
-      <li><a href="https://docs.google.com/document/d/1i4HYMQqOo0yP3XPTdtZqws2SgaJ71n2ikBd68c8FYig/edit">Quotes</a></li>
-      <li><a href="https://docs.google.com/document/d/1taIWv3QzXe1WKmqW2DvG_FYNiHtSLcFisZqz1tolM4M/">Yes</a> | No – not clickable </li>
-    </ul>
-    '''
+<h2><a id="wanna-feed-your-brain">Wanna feed your brain?</a> <a href="#top" style="font-size:16px">top</a></h2>
+<ul>
+  <li><a href="https://docs.google.com/document/d/1i4HYMQqOo0yP3XPTdtZqws2SgaJ71n2ikBd68c8FYig/edit">Quotes</a></li>
+  <li><a href="https://docs.google.com/document/d/1taIWv3QzXe1WKmqW2DvG_FYNiHtSLcFisZqz1tolM4M/">Yes</a> | No – not clickable </li>
+</ul>
+'''
 
 
 def cccs():
@@ -360,11 +368,13 @@ def useful_stuff():
     return r'''
 <h2><a id="useful_stuff">Useful stuff</a> <a href="#top" style="font-size:16px">top</a></h2>
 <ul>
+    <li>%(cs_hangout)s
     <li><a href='https://docs.google.com/document/d/1KZ7bve4oEmIHiP8ghwZ2Ky42KGQuxpvJetpYVImTDMY/edit?usp=sharing'>Publications about CCCS</li>
     <li><a href='https://docs.google.com/presentation/d/1v_YISntWpguP-t-SwrhjT1537UwmgybZe5mGzwP_11w/edit?usp=sharing'>CS101 Guide to CCCS or ... HHGTT CCCS</a>
     <li><a href='urics.html'>Research</a></li>
 </ul>
-'''
+''' % {'cs_hangout':cs_hangout(),
+       }
 
 def software():
     return r'''<h2><a id="software">Software</a> <a href="#top" style="font-size:16px">top</a></h2>
@@ -493,7 +503,4 @@ def urics_():
 if __name__ == '__main__':
     f = open('index.html', 'w'); f.write(cccs()); f.close()
     f = open('pics.html', 'w'); f.write(pics()); f.close()
-
-    f = open('urics.html', 'w')
-    f.write(urics_())
-    f.close()
+    f = open('urics.html', 'w'); f.write(urics_()); f.close()
