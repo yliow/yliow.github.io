@@ -19,8 +19,6 @@ webpage structure
 import datetime
 import urics, courses
 
-LINKS = {'ciss145':'<a href="http://ciss145.pythonanywhere.com">CISS145 (Python)</a>'
-         }
 
 NOW = datetime.datetime.now()
 HEAD = r'''
@@ -58,6 +56,15 @@ HEAD = r'''
   </head>
     '''
 
+#===========================================================================
+# SMALLEST HTML FRAGMENTS
+#===========================================================================
+def cs101():
+    return r'''<a href='https://docs.google.com/presentation/d/1v_YISntWpguP-t-SwrhjT1537UwmgybZe5mGzwP_11w/edit?usp=sharing'>CS101 Guide to CCCS or ... HHGTT CCCS</a>'''
+
+def publication_about_cccs():
+    return r'''<a href='https://docs.google.com/document/d/1KZ7bve4oEmIHiP8ghwZ2Ky42KGQuxpvJetpYVImTDMY/edit?usp=sharing'>Publications about CCCS</li>'''
+
 def cs_hangout():
     return r'''<a href ='http://bit.ly/cc_cs_hangout'>CS Hangout</a>.
     <ul>
@@ -66,6 +73,10 @@ def cs_hangout():
     <li>TuTh: 3:00PM–5:00PM in BUH102 
     </ul>
     '''
+def ciss145():
+    return r'<a href="http://ciss145.pythonanywhere.com">CISS145 (Python)</a>'
+
+
 
 def navigation_bar(name):
     if name == 'cccs':
@@ -364,20 +375,18 @@ def cccs():
         'courses':courses.index(),
     })
 
-def cs101():
-    return r'''<a href='https://docs.google.com/presentation/d/1v_YISntWpguP-t-SwrhjT1537UwmgybZe5mGzwP_11w/edit?usp=sharing'>CS101 Guide to CCCS or ... HHGTT CCCS</a>
-    '''
 
 def useful_stuff():
     return r'''
 <h2><a id="useful_stuff">Useful stuff</a> <a href="#top" style="font-size:16px">top</a></h2>
 <ul>
     <li>%(cs_hangout)s
-    <li><a href='https://docs.google.com/document/d/1KZ7bve4oEmIHiP8ghwZ2Ky42KGQuxpvJetpYVImTDMY/edit?usp=sharing'>Publications about CCCS</li>
+    <li>%(publication_about_cccs)s
     <li>%(cs101)s
     <li><a href='urics.html'>Research</a></li>
 </ul>
 ''' % {'cs101':cs101(),
+       'publication_about_cccs':publication_about_cccs(),
        'cs_hangout':cs_hangout(),
        }
 
