@@ -71,3 +71,6 @@ def industrial_connection():
 
 def kickoff():
     return r"""Kickoff | <a href="https://docs.google.com/document/d/1QNu_Zt0RhNLgDziYJ779yav-9l9bXuRfckVxglZeM_s/edit?usp=sharing">Committee</a>"""
+
+def media_committee():
+    return r"<a href='https://docs.google.com/document/d/1wY-P6JPTw0zQfbonmlYLWbc0nyFErPSzXSE_sX5EY8o/edit?usp=sharing'>Media committee</a>"
