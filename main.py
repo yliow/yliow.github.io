@@ -118,9 +118,9 @@ def ul(html, htmls):
     return \
 r'''%(html)s
 <ul>
-%(lis)
+%(lis)s
 </ul>
-''' % {'html':html, 'lis':''.join('<li>%s' % _ for _ in htmls)}
+''' % {'html':html, 'lis':''.join(('<li>' + _) for _ in htmls)}
 
 
 def section(name='Useful stuff', id_='useful_stuff'):
@@ -422,6 +422,9 @@ def useful_stuff():
        'research':research(),
        }
 """
+    return ul(html=section(name='Useful stuff', id_='useful_stuff'),
+              htmls=[classes_for_current_semester(),
+                     ])
     pass
     
 def software():
