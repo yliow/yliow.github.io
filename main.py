@@ -387,8 +387,8 @@ def events_t_shirts_etc():
                   media_committee(),
                   movie_night(),
                   monday_programming_challenges(),
+                  robotics_group(),
         ])
-
 
 def software():
     return r'''<h2><a id="software">Software</a> <a href="#top" style="font-size:16px">top</a></h2>

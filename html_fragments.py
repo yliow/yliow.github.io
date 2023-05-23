@@ -80,3 +80,7 @@ def movie_night():
 
 def monday_programming_challenges():
     return r"<a href='https://docs.google.com/document/d/1P-wEe4xqaP7SUwY0QXE8hd2Q0ti_vJb6E5xHRrWZfys/edit?usp=sharing'>Monday Programming Challenges</a>"
+
+def robotics_group():
+    return r"<a href='https://docs.google.com/document/d/1z-Mu7qCrj62TJYtnN-FJYYXVqYmGRPSpIcz5eJCt-x4/edit#'>Robotics group</a>"
+    
