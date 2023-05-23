@@ -378,6 +378,7 @@ def events_t_shirts_etc():
                   cs_jam(),
                   department_welcome_lunch(),
                   end_of_semester_presentations(),
+                  end_of_semester_celebration(),
         ])
 
 

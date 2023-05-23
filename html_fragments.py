@@ -53,3 +53,6 @@ def department_welcome_lunch():
 
 def end_of_semester_presentations():
     return r"End of semester presentations: <a href='https://docs.google.com/document/d/1UoL3cx0y_4jE8KPZ5QRPpsaE6Qu6YOoMFOP_xfXBEG4/edit#'>How to give a talk</a>"
+
+def end_of_semester_celebration():
+    return r"End of celebration"
