@@ -376,6 +376,7 @@ def events_t_shirts_etc():
         ul(htmls=[pictures_and_videos(),
                   cs_day(),
                   cs_jam(),
+                  department_welcome_lunch(),
         ])
 
 

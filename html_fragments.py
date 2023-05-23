@@ -47,3 +47,6 @@ def cs_day():
 
 def cs_jam():
     return r"<a href='https://docs.google.com/document/d/1NGH0XFmeaIfdWVxBzlBK-ehKvilg61Rs9gww6j1FjsQ/edit'>CS.js (CS Jam)</a>"
+
+def department_welcome_lunch():
+    return r"<a href='http://bit.ly/cccslunch'>Department welcome lunch</a>"
