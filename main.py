@@ -416,6 +416,13 @@ def useful_stuff():
 def software():
     return r'''<h2><a id="software">Software</a> <a href="#top" style="font-size:16px">top</a></h2>
 <ul>
+    <li>Software downloads for classes:
+    <a href="https://docs.google.com/document/d/1KFeT4hDx6HoaNM7qZSyVf0RY6wYwvX83PZ-wZY5x2oo/edit?usp=sharing">README</a>
+    (<a href="https://docs.google.com/document/d/1gsozRu7xMSO0WO_QouY81B5WeDt2Sg119JTF9I1Mq2Q/edit?usp=sharing">README</a> backup)
+    |
+    <a href="https://drive.google.com/drive/folders/0B7Sweg7OrVSTQUh6a0VmVnMzVm8">Software folder</a></li>
+    <li>Link for SDL <a href="https://drive.google.com/file/d/1munqhXWCN3J3Wp_0GtrvxZozGPwj7JiQ/view?usp=sharing">demo.tar</a>
+    (for CISS245 game development)</li>
     <li>Web-based</li>
     <ul>
         <li>C++: <a href="https://repl.it/languages/cpp">repl-c++</a> | <a href="http://cpp.sh/">cpp-sh</a></li>
@@ -430,13 +437,6 @@ def software():
         </ul>
         <li><a href="https://sagecell.sagemath.org/">SageMath</a> (for research in math, cryptography, etc.)
     </ul>
-    <li>Software downloads for classes:
-    <a href="https://docs.google.com/document/d/1KFeT4hDx6HoaNM7qZSyVf0RY6wYwvX83PZ-wZY5x2oo/edit?usp=sharing">README</a>
-    (<a href="https://docs.google.com/document/d/1gsozRu7xMSO0WO_QouY81B5WeDt2Sg119JTF9I1Mq2Q/edit?usp=sharing">README</a> backup)
-    |
-    <a href="https://drive.google.com/drive/folders/0B7Sweg7OrVSTQUh6a0VmVnMzVm8">Software folder</a></li>
-    <li>Link for SDL <a href="https://drive.google.com/file/d/1munqhXWCN3J3Wp_0GtrvxZozGPwj7JiQ/view?usp=sharing">demo.tar</a>
-    (for CISS245 game development)</li>
 </ul>
     '''
 
