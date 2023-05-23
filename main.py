@@ -115,6 +115,7 @@ def tablerow(link, name, description):
         {'link':link, 'name':name, 'description':description}
 
 def ul(html, htmls):
+    """ returns string + ul of lists """
     return \
 r'''%(html)s
 <ul>
@@ -131,12 +132,12 @@ def section(name='Useful stuff', id_='useful_stuff'):
 
 def classes_for_current_semester():
     return r'''
-Classes for current semester:
+Classes for current semester (spring 2023):
 <ul>
- <li> MATH325, MWF 9:05AM, BUH100, zoom
- <li> CISS350, MWF 11:15AM, BUH103, zoom
- <li> CISS240, MWF 1:25PM and Tu 2:00PM, BUH107, zoom
- <li> CISS451, MWF 2:30PM, BUH103, zoom
+ <li> MATH325, MWF 9:05AM, BUH100
+ <li> CISS350, MWF 11:15AM, BUH103
+ <li> CISS240, MWF 1:25PM and Tu 2:00PM, BUH107
+ <li> CISS451, MWF 2:30PM, BUH103
 </ul>
 '''
 
@@ -404,24 +405,6 @@ def cccs():
 
 
 def useful_stuff():
-    """
-    return r'''
-<h2>%(section)s
- <ul>    
-  <li>%(classes_for_current_semester)s
-  <li>%(cs_hangout)s
-  <li>%(publication_about_cccs)s
-  <li>%(cs101)s
-  <li>%(research)s
- </ul>
-''' % {'section':section(name='Useful stuff', id_='useful_stuff'),
-       'classes_for_current_semester':classes_for_current_semester(),
-       'cs101':cs101(),
-       'publication_about_cccs':publication_about_cccs(),
-       'cs_hangout':cs_hangout(),
-       'research':research(),
-       }
-"""
     return ul(html=section(name='Useful stuff', id_='useful_stuff'),
               htmls=[classes_for_current_semester(),
                      cs_hangout(),
@@ -429,7 +412,6 @@ def useful_stuff():
                      cs101(),
                      research(),
                      ])
-    pass
     
 def software():
     return r'''<h2><a id="software">Software</a> <a href="#top" style="font-size:16px">top</a></h2>
