@@ -424,6 +424,10 @@ def useful_stuff():
 """
     return ul(html=section(name='Useful stuff', id_='useful_stuff'),
               htmls=[classes_for_current_semester(),
+                     cs_hangout(),
+                     publication_about_cccs(),
+                     cs101(),
+                     research(),
                      ])
     pass
     
