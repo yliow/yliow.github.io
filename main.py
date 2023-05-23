@@ -386,6 +386,7 @@ def events_t_shirts_etc():
                   kickoff(),
                   media_committee(),
                   movie_night(),
+                  monday_programming_challenges(),
         ])
 
 

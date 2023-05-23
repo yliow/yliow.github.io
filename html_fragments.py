@@ -77,3 +77,6 @@ def media_committee():
 
 def movie_night():
     return r"""<a href="https://docs.google.com/document/d/1rJqBMNCTFRQ2JNAQBfXwWUYXDwjbsml3vIdWP-YQTpI/edit?usp=sharing">Movie night</a>"""
+
+def monday_programming_challenges():
+    return r"<a href='https://docs.google.com/document/d/1P-wEe4xqaP7SUwY0QXE8hd2Q0ti_vJb6E5xHRrWZfys/edit?usp=sharing'>Monday Programming Challenges</a>"
