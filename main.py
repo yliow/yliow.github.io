@@ -117,6 +117,17 @@ def section(name='Useful stuff', id_='useful_stuff'):
          'id_':id_,
          }
 
+def classes_for_current_semester():
+    return r'''
+Classes for current semester:
+<ul>
+ <li> MATH325, MWF 9:05AM, BUH100, zoom
+ <li> CISS350, MWF 11:15AM, BUH103, zoom
+ <li> CISS240, MWF 1:25PM and Tu 2:00PM, BUH107, zoom
+ <li> CISS451, MWF 2:30PM, BUH103, zoom
+</ul>
+'''
+
 def webpage(head=HEAD,
             navigation_bar='',
             header='',
@@ -383,13 +394,15 @@ def cccs():
 def useful_stuff():
     return r'''
 <h2>%(section)s
- <ul>
+ <ul>    
+  <li>%(classes_for_current_semester)s
   <li>%(cs_hangout)s
   <li>%(publication_about_cccs)s
   <li>%(cs101)s
   <li>%(research)s
  </ul>
 ''' % {'section':section(name='Useful stuff', id_='useful_stuff'),
+       'classes_for_current_semester':classes_for_current_semester(),
        'cs101':cs101(),
        'publication_about_cccs':publication_about_cccs(),
        'cs_hangout':cs_hangout(),
