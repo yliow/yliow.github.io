@@ -65,3 +65,7 @@ def cs_club():
 
 def game_tournaments():
     return r"""<a href="https://docs.google.com/document/d/1roomf0yhSgpk-jC1tw8maa5MfKlnDjlAPSRgLhR6Gck/edit#">Game Tournaments</a>"""
+
+
+def industrial_connection():
+    return r"""<a href="https://docs.google.com/document/d/1SfhwTUO0HX3b6imjGNou_Vjg0uw2gGy1cSLm38w9p64/edit#">Industrial connection</a>"""
