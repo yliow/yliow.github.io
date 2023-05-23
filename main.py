@@ -17,6 +17,7 @@ webpage structure
 
 """
 import datetime
+from html_util import *
 import urics, courses
 
 
@@ -113,13 +114,6 @@ def header(title):
 def tablerow(link, name, description):
     return '<tr><td><a href="%(link)s">%(name)s</td><td>%(description)s</td></tr>' % \
         {'link':link, 'name':name, 'description':description}
-
-def ul(htmls):
-    """ returns string + ul of lists """
-    return r'''<ul>
-%(lis)s
-</ul>
-''' % {'lis':''.join(('<li>' + _) for _ in htmls)}
 
 
 def section(name='Useful stuff', id_='useful_stuff'):
@@ -440,13 +434,10 @@ def software():
 
 def others():
     return r'''
-    <h2><a id="others">Others</a> <a href="#top" style="font-size:16px">top</a></h2>
-    <ul>
-    <li><a href="https://docs.google.com/document/d/1nYQtW3TTPIAYHcOeU-KSe2aEOiWHZgn6LA9aybH8pw0/edit?usp=sharing">Work study</a>
-    [only work study students have access]</li>
-    <li><a href="http://cctt0.pythonanywhere.com/">Royal Ping Pong Club</a></li>
-    </ul>
-    '''
+    <h2><a id="others">Others</a> <a href="#top" style="font-size:16px">top</a></h2> ''' +\
+        ul(htmls=['<a href="https://docs.google.com/document/d/1nYQtW3TTPIAYHcOeU-KSe2aEOiWHZgn6LA9aybH8pw0/edit?usp=sharing">Work study</a>[only work study students have access]',
+                  '<a href="http://cctt0.pythonanywhere.com/">Royal Ping Pong Club</a>''',
+                  ])
 
 def images(float='right', srcs_captions='', width=r'33%'):
     s = ''
