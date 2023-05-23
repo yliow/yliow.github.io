@@ -383,6 +383,7 @@ def events_t_shirts_etc():
                   facebook(),
                   game_tournaments(),
                   industrial_connection(),
+                  kickoff(),
         ])
 
 
