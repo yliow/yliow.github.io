@@ -76,7 +76,8 @@ def cs_hangout():
 def ciss145():
     return r'<a href="http://ciss145.pythonanywhere.com">CISS145 (Python)</a>'
 
-
+def research():
+    return r'''<a href='urics.html'>Research</a>'''
 
 def navigation_bar(name):
     if name == 'cccs':
@@ -383,11 +384,12 @@ def useful_stuff():
     <li>%(cs_hangout)s
     <li>%(publication_about_cccs)s
     <li>%(cs101)s
-    <li><a href='urics.html'>Research</a></li>
+    <li>%(research)s
 </ul>
 ''' % {'cs101':cs101(),
        'publication_about_cccs':publication_about_cccs(),
        'cs_hangout':cs_hangout(),
+       'research':research(),
        }
 
 def software():
