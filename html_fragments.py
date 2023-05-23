@@ -86,3 +86,6 @@ def robotics_group():
     
 def t_shirt():
     return r"""<a href="https://docs.google.com/document/d/16f147t6G8pnBvP9hGhbVwsK56hLoLaK_S9x5tT8X0vs/edit?usp=sharing">T-shirt</a> | <a href="https://docs.google.com/document/d/1C32m45nlAsTkeCpOWtrVsI4tK7fKD9tWe1UTZUTjaEM/edit#">Committee</a>"""
+
+def programming_contest():
+    return r"""<a href="https://docs.google.com/document/d/1wc3Wov4B4qistaV8csbUm0NyUOn0XbwDEY4BWM5dSoE/edit?usp=sharing">Programming contest</a> | <a href="https://docs.google.com/document/d/1x_37FDFysT159iKrgJKUosgI6EElMzu9WfDd4b8nokY/edit?usp=sharing">Committee</a>"""
