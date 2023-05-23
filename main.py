@@ -104,12 +104,24 @@ def title(name):
     else:
         return '[NO TITLE]'
     
+#==============================================================================
+# GENERAL HTML
+#==============================================================================
 def header(title):
     return r'<h1>%(title)s</h1>' % {'title':title}
 
 def tablerow(link, name, description):
     return '<tr><td><a href="%(link)s">%(name)s</td><td>%(description)s</td></tr>' % \
         {'link':link, 'name':name, 'description':description}
+
+def ul(html, htmls):
+    return \
+r'''%(html)s
+<ul>
+%(lis)
+</ul>
+''' % {'html':html, 'lis':''.join('<li>%s' % _ for _ in htmls)}
+
 
 def section(name='Useful stuff', id_='useful_stuff'):
     return r'''<h2><a id="%(id_)s">%(name)s</a> <a href="#top" style="font-size:16px">top</a></h2>''' % \
@@ -392,6 +404,7 @@ def cccs():
 
 
 def useful_stuff():
+    """
     return r'''
 <h2>%(section)s
  <ul>    
@@ -408,7 +421,9 @@ def useful_stuff():
        'cs_hangout':cs_hangout(),
        'research':research(),
        }
-
+"""
+    pass
+    
 def software():
     return r'''<h2><a id="software">Software</a> <a href="#top" style="font-size:16px">top</a></h2>
 <ul>
