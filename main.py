@@ -114,14 +114,12 @@ def tablerow(link, name, description):
     return '<tr><td><a href="%(link)s">%(name)s</td><td>%(description)s</td></tr>' % \
         {'link':link, 'name':name, 'description':description}
 
-def ul(html, htmls):
+def ul(htmls):
     """ returns string + ul of lists """
-    return \
-r'''%(html)s
-<ul>
+    return r'''<ul>
 %(lis)s
 </ul>
-''' % {'html':html, 'lis':''.join(('<li>' + _) for _ in htmls)}
+''' % {'lis':''.join(('<li>' + _) for _ in htmls)}
 
 
 def section(name='Useful stuff', id_='useful_stuff'):
@@ -405,13 +403,13 @@ def cccs():
 
 
 def useful_stuff():
-    return ul(html=section(name='Useful stuff', id_='useful_stuff'),
-              htmls=[classes_for_current_semester(),
-                     cs_hangout(),
-                     publication_about_cccs(),
-                     cs101(),
-                     research(),
-                     ])
+    return section(name='Useful stuff', id_='useful_stuff') + \
+        ul(htmls=[classes_for_current_semester(),
+                  cs_hangout(),
+                  publication_about_cccs(),
+                  cs101(),
+                  research(),
+        ])
     
 def software():
     return r'''<h2><a id="software">Software</a> <a href="#top" style="font-size:16px">top</a></h2>
