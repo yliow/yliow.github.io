@@ -373,8 +373,7 @@ def useful_stuff():
 
 def events_t_shirts_etc():
     return section(name='Events, T-shirts, etc.', id_='events_t_shirts_etc') + \
-        r"""<div style="float:right; padding:20px 20px 20px 20px; width:100%"><img src='images/graph1.png'/>
-</div>""" +\
+        r"""<img style="float:right; padding:20px 20px 20px 20px; width:100%" src='images/graph1.png'/>""" +\
         ul(htmls=[pictures_and_videos(),
                   cs_club(),
                   cs_day(),
