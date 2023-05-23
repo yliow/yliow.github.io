@@ -435,7 +435,7 @@ def software():
 def others():
     return r'''
     <h2><a id="others">Others</a> <a href="#top" style="font-size:16px">top</a></h2> ''' +\
-        ul(htmls=['<a href="https://docs.google.com/document/d/1nYQtW3TTPIAYHcOeU-KSe2aEOiWHZgn6LA9aybH8pw0/edit?usp=sharing">Work study</a>[only work study students have access]',
+        ul(htmls=['<a href="https://docs.google.com/document/d/1nYQtW3TTPIAYHcOeU-KSe2aEOiWHZgn6LA9aybH8pw0/edit?usp=sharing">Work study</a> [only work study students have access]',
                   '<a href="http://cctt0.pythonanywhere.com/">Royal Ping Pong Club</a>''',
                   ])
 
