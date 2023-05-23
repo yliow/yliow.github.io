@@ -326,14 +326,9 @@ def tutorials():
     '''
 
 def wanna_feed_your_brain():
-    return r'''
-<h2><a id="wanna-feed-your-brain">Wanna feed your brain?</a> <a href="#top" style="font-size:16px">top</a></h2>
-<ul>
-  <li><a href="https://docs.google.com/document/d/1i4HYMQqOo0yP3XPTdtZqws2SgaJ71n2ikBd68c8FYig/edit">Quotes</a></li>
-  <li><a href="https://docs.google.com/document/d/1taIWv3QzXe1WKmqW2DvG_FYNiHtSLcFisZqz1tolM4M/">Yes</a> | No – not clickable </li>
-</ul>
-'''
-
+    return '%s %s' % (section(name='Wanna feed your brain?', id_="wanna-feed-your-brain"),
+                      ul(htmls=[quotes(),
+                                '<a href="https://docs.google.com/document/d/1taIWv3QzXe1WKmqW2DvG_FYNiHtSLcFisZqz1tolM4M/">Yes</a> | No – not clickable']))
 
 def cccs():
     return webpage(navigation_bar=navigation_bar('cccs'),
