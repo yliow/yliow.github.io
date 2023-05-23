@@ -29,7 +29,7 @@ run: index.html
 	cp ../latex-templates/book.tar.gz book/book.tar.gz
 	git add .; git commit -m"no msg"; git push
 	xdg-open index.html
-	#firefox https://yliow.github.io/index.html &
+	firefox https://yliow.github.io/index.html &
 
 index.html: main.py
 	python main.py
