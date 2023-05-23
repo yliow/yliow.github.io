@@ -380,6 +380,7 @@ def events_t_shirts_etc():
                   end_of_semester_presentations(),
                   end_of_semester_celebration(),
                   facebook(),
+                  cs_club(), 
         ])
 
 

@@ -59,3 +59,6 @@ def end_of_semester_celebration():
 
 def facebook():
     return r"Facebook"
+
+def cs_club():
+    return r"""<a href="https://docs.google.com/document/d/1N3mPEOMjcKJQLtjWQ_-qsvVcVNrDFDdwsB35SPqcxbA/">CS Club</a> | <a href="https://docs.google.com/document/d/1R_7pFL_HV9hSLtdgGbi58uAm71c5d2-Fm9TnV7_sZas/edit#">CS Club meetings</a> (all members are invited)"""
