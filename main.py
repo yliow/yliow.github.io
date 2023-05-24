@@ -138,6 +138,7 @@ def toc():
     <ul>
       <li><a href="#useful_stuff">Useful stuff</a></li>
       <li><a href="#events_t_shirts_etc">Events, T-shirts, etc.</a></li>
+      <li><a href="#outreach">Outreach</a></li>
       <li><a href="#others">Others</a></li>      
       <li><a href="#software">Software</a></li>      
       <li><a href="#courses">Courses</a></li>      
@@ -349,6 +350,7 @@ def cccs():
     <hr>                   
     %(useful_stuff)s
     %(events_t_shirts_etc)s
+    %(outreach)s
     %(others)s
     %(software)s
     %(courses)s
@@ -358,6 +360,7 @@ def cccs():
         'toc':toc(),
         'useful_stuff':useful_stuff(),
         'events_t_shirts_etc':events_t_shirts_etc(),
+        'outreach':outreach(),
         'others':others(),
         'software':software(),
         'tutorials':tutorials(),
