@@ -396,6 +396,7 @@ def events_t_shirts_etc():
                   robotics_group(),
                   t_shirt(),
                   programming_contest(),
+                  high_school_programming_contest(),
         ])
 
 def software():
