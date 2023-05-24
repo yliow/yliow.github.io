@@ -27,6 +27,7 @@ run: index.html
 	cp ../latex-automata/main.pdf latex-automata/main.pdf
 	cp ../latex-2d/main.pdf latex-2d/main.pdf
 	cp ../latex-templates/book.tar.gz book/book.tar.gz
+	python main.py
 	git add .; git commit -m"no msg"; git push
 	xdg-open index.html &
 
