@@ -110,3 +110,6 @@ def academic_calendar_final_exam():
 
 def calendar():
     return r""" Calendar: <a href="https://www.google.com/calendar/embed?src=cc.cs.photos.videos%40gmail.com&ctz=America/Chicago&mode=week">Week</a> | <a href="https://www.google.com/calendar/embed?src=cc.cs.photos.videos%40gmail.com&ctz=America/Chicago&mode=month">Month</a> """
+
+def cccs_google_group():
+    return r"""<a href="https://groups.google.com/g/cc_cs/">CCCS google group</a>"""

@@ -374,6 +374,7 @@ def useful_stuff():
         section(name='Useful stuff', id_='useful_stuff') + \
         ul(htmls=[calendar(),
                   academic_calendar_final_exam(),
+                  cccs_google_group(),
                   classes_for_current_semester(),
                   cs_hangout(),
                   publication_about_cccs(),
