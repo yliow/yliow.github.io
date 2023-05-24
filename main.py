@@ -370,7 +370,8 @@ def cccs():
 
 
 def useful_stuff():
-    return section(name='Useful stuff', id_='useful_stuff') + \
+    return r"""<img style="float:right; padding:20px 20px 20px 20px; width:30%" src='images/graph2.png'/>""" +\
+        section(name='Useful stuff', id_='useful_stuff') + \
         ul(htmls=[classes_for_current_semester(),
                   cs_hangout(),
                   publication_about_cccs(),
