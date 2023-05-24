@@ -107,3 +107,6 @@ def final_exam():
 
 def academic_calendar_final_exam():
     return academic_calendar() + " | " + final_exam() 
+
+def calendar():
+    return r""" Calendar: <a href="https://www.google.com/calendar/embed?src=cc.cs.photos.videos%40gmail.com&ctz=America/Chicago&mode=week">Week</a> | <a href="https://www.google.com/calendar/embed?src=cc.cs.photos.videos%40gmail.com&ctz=America/Chicago&mode=month">Month</a> """

@@ -28,8 +28,7 @@ run: index.html
 	cp ../latex-2d/main.pdf latex-2d/main.pdf
 	cp ../latex-templates/book.tar.gz book/book.tar.gz
 	git add .; git commit -m"no msg"; git push
-	xdg-open index.html
-	firefox https://yliow.github.io/index.html &
+	xdg-open index.html &
 
 index.html: main.py
 	python main.py
