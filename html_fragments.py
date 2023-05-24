@@ -43,7 +43,7 @@ def pictures_and_videos():
     return r"<a href='https://docs.google.com/document/d/1uGC6ZMQ6OMY8voiTKsuaRYOW2fUQZDdj1QoA-euKGtg/edit?usp=sharing'>Pictures and videos</a>"
 
 def cs_day():
-    return r"<a href='https://docs.google.com/document/d/1jsXTXpRvsOBk3_epX7stOJJhlqAkqI5q5lXlMzUdemg/edit?usp=sharing'>CS Day</a>"
+    return r"<a href='cs_day.html'>CS Day</a>"
 
 def cs_jam():
     return r"<a href='https://docs.google.com/document/d/1NGH0XFmeaIfdWVxBzlBK-ehKvilg61Rs9gww6j1FjsQ/edit'>CS.js (CS Jam)</a>"
