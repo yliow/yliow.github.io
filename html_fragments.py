@@ -9,7 +9,7 @@ def cs101():
     return r'''<a href='https://docs.google.com/presentation/d/1v_YISntWpguP-t-SwrhjT1537UwmgybZe5mGzwP_11w/edit?usp=sharing'>CS101 Guide to CCCS or ... HHGTT CCCS</a>'''
 
 def publication_about_cccs():
-    return r'''<a href='https://docs.google.com/document/d/1KZ7bve4oEmIHiP8ghwZ2Ky42KGQuxpvJetpYVImTDMY/edit?usp=sharing'>Publications about CCCS</li>'''
+    return r'''<a href='google-drive-downloads/PublicationsonCCCS.html'>Publications about CCCS</a>'''
 
 def cs_hangout():
     return r'''<a href ='http://bit.ly/cc_cs_hangout'>CS Hangout</a>.
