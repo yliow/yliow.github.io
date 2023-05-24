@@ -127,7 +127,7 @@ def administrative_stuff():
     return r"""
 Administrative stuff:
 <ul>
-<li>>a href="https://docs.google.com/document/d/1n4mIGWJWRFDNyDrQstJ64z1ND4zSw89jca0VWp8YbrA/edit?usp=sharing">How to register for classes</a> (form: <a href="https://drive.google.com/file/d/1YOaFo5nM9X8EHanqufFKAEq_7miwNLvC/view?usp=sharing">Prerequisite waiver</a>)
+<li><a href="https://docs.google.com/document/d/1n4mIGWJWRFDNyDrQstJ64z1ND4zSw89jca0VWp8YbrA/edit?usp=sharing">How to register for classes</a> (form: <a href="https://drive.google.com/file/d/1YOaFo5nM9X8EHanqufFKAEq_7miwNLvC/view?usp=sharing">Prerequisite waiver</a>)
 <li>How to withdraw from a class: (form: <a href="https://drive.google.com/file/d/1qdu3EVnCXhxvEpl3lI_RPYFYqN_O1flu/view?usp=sharing">Course withdrawal</a>)
 <li><a href="https://docs.google.com/document/d/1Z5Aq_AuCzT6XFSI7OGy6_rEQ7tAJLjvtrJBdcqimAGM/edit?usp=sharing">How to add a minor</a>
 </ul>
