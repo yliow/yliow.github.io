@@ -399,6 +399,13 @@ def events_t_shirts_etc():
                   high_school_programming_contest(),
         ])
 
+def outreach():
+    return section(name='Outreach', id_='outreach') + \
+        ul(htmls=['US students: Local high schools | Hannibal | State Tech',
+                  "International students: <a href='https://docs.google.com/document/d/1rJRVfzMLUaOJs5R7oF0y3-gHf68EmERlXfZlvJtdfAQ/edit#'>Nepal</a> | <a href='https://docs.google.com/document/d/1regRPe9dhVKWgKY2iJ59YW_S2venGytsSuiWh2FSUrw/edit'>Committee</a>",
+                  ])
+
+
 def software():
     return r'''<h2><a id="software">Software</a> <a href="#top" style="font-size:16px">top</a></h2>
 <ul>
