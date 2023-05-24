@@ -21,8 +21,8 @@ from html_util import *
 from html_fragments import *
 import urics, courses
 
-
 NOW = datetime.datetime.now()
+CURR_YEAR = NOW.year
 HEAD = r'''
       <head>
     <style>
@@ -119,7 +119,7 @@ def webpage(head=HEAD,
 %(body)s
 <br>
 <hr>
-Copyright Dr. Yihsiang Liow (yliow@ccis.edu | <a href='http://bit.ly/yliow0'>http://bit.ly/yliow0</a>)
+Copyright 2013-%(curr_year)s Dr. Yihsiang Liow (yliow@ccis.edu | <a href='http://bit.ly/yliow0'>http://bit.ly/yliow0</a>)
 <br>
 Last update: %(now)s
 </body>
@@ -130,6 +130,7 @@ Last update: %(now)s
            'header':header,
            'body':body,
            'now':NOW,
+           'curr_year':CURR_YEAR,
            }
 
 def toc():
