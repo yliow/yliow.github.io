@@ -119,9 +119,9 @@ def webpage(head=HEAD,
 %(body)s
 <br>
 <hr>
-&copy Copyright 2013-%(curr_year)s Yihsiang Liow (yliow@ccis.edu
+&copy Copyright 2013-%(curr_year)s. Yihsiang Liow (yliow@ccis.edu
     | <a href='http://yliow.github.io'>http://yliow.github.io</a>
-    | <a href='http://bit.ly/yliow0'>http://bit.ly/yliow0</a>)
+    | <a href='http://bit.ly/yliow0'>http://bit.ly/yliow0</a>). All rights reserved.
 <br>
 Last update: %(now)s
 </body>
