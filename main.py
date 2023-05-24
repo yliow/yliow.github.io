@@ -521,15 +521,16 @@ def cs_day_page():
     return webpage(navigation_bar=navigation_bar('cs_day'),
                    header=header(title('cs_day')),
                    body=r'''
-For committee
+<a href="https://drive.google.com/drive/folders/1-C8w2Xqcpk-MXWBsp2CLb5DgCu1BApy5?usp=sharing">For committee</a>
                    
 <h2>Fall 2022</h2>
-<a href='https://photos.app.goo.gl/zpLQkxcUuANKa4AZ8'>https://photos.app.goo.gl/zpLQkxcUuANKa4AZ8</a>
+<a href='https://photos.app.goo.gl/zpLQkxcUuANKa4AZ8'>https://photos.app.goo.gl/zpLQkxcUuANKa4AZ8</a><br>
 WHAT: CS Day #2 Flyer  RSVP link (optional)<br>
 WHEN: Monday 10/24, 5PM-6:30PM<br>
 WHERE: Buchanan Hall, Room 107 (BUH107) https://www.ccis.edu/about/map</br> 
 WHO: Anyone interested in finding out more about CS</br>
-
+<br>
+                   
 <center>
 What is CS?<br>
 What is programming?<br>
