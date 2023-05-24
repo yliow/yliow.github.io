@@ -115,7 +115,7 @@ def cccs_google_group():
     return r"""<a href="https://groups.google.com/g/cc_cs/">CCCS google group</a>"""
 
 def cccs_discord():
-    return r"""<a href="https://discord.gg/UDCX6wF">CCCS discord</a> (https://discord.gg/UDCX6wF | <a href="https://discordapp.com/download">discord app</a>)
+    return r"""<a href="https://discord.gg/UDCX6wF">CCCS discord</a> (<a href="https://discordapp.com/download">discord app</a>)
     <ul>
     <li>Once you are in, go to “welcome-and-rules”.
     <li>Ask questions in the rooms/channels.
