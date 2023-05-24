@@ -381,6 +381,7 @@ def useful_stuff():
                   publication_about_cccs(),
                   cs101(),
                   research(),
+                  administrative_stuff(),
         ])
 
 def events_t_shirts_etc():
