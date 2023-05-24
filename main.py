@@ -372,7 +372,8 @@ def cccs():
 def useful_stuff():
     return r"""<img style="float:right; padding:20px 20px 20px 20px; width:25%" src='images/graph2.png'/>""" +\
         section(name='Useful stuff', id_='useful_stuff') + \
-        ul(htmls=[classes_for_current_semester(),
+        ul(htmls=[academic_calendar_final_exam(),
+                  classes_for_current_semester(),
                   cs_hangout(),
                   publication_about_cccs(),
                   cs101(),

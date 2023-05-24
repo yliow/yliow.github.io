@@ -98,3 +98,12 @@ def high_school_programming_contest():
     return '''<a href='https://docs.google.com/document/d/1gjkRumx_jq9VGyxdjBZU9IICerqZr_8wKHaq7nls64Q/edit'> HS Programming contest</a>
     |
     <a href='https://docs.google.com/document/d/1evtUsB7LE-sTPoY5g2BUrptodSErx-Mxks0z3sTrWqM/edit#'>Committee</a>'''
+
+def academic_calendar():
+    return r'<a href="https://www.ccis.edu/-/media/www/files/directory/registrar/2022-2023/2022-semester-academic-calendar-pdf.ashx?la=en&hash=208429BAD616CA213AEFB753D76C09DC">Academic calendar</a>'
+
+def final_exam():
+    return r'<a href="https://drive.google.com/file/d/1Le1VIJLtGx2ovk0xSXnxsZpOpYxekAqm/view?usp=sharing">Final exam</a>'
+
+def academic_calendar_final_exam():
+    return academic_calendar() + " | " + final_exam() 
