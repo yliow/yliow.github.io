@@ -525,7 +525,7 @@ def cs_day_page():
                    
 <h2>Fall 2022</h2>
 <a href='https://photos.app.goo.gl/zpLQkxcUuANKa4AZ8'>https://photos.app.goo.gl/zpLQkxcUuANKa4AZ8</a><br>
-WHAT: CS Day #2 Flyer  RSVP link (optional)<br>
+WHAT: CS Day #2 <a href="https://docs.google.com/document/d/1fq1jV49gD7OpMiNWfYZnO0LffOibGSdHP4EXPi8FPPQ/edit#heading=h.e76ogupi6d86">Flyer</a>  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeynMah_RXTMjvg3T0HRTLw5CT7bJXyyp0-T3FVj4TLlIaOlg/viewform?usp=sharing">RSVP link</a> (optional)<br>
 WHEN: Monday 10/24, 5PM-6:30PM<br>
 WHERE: Buchanan Hall, Room 107 (BUH107) https://www.ccis.edu/about/map</br> 
 WHO: Anyone interested in finding out more about CS</br>
