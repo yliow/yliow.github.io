@@ -370,7 +370,7 @@ def cccs():
 
 
 def useful_stuff():
-    return r"""<img style="float:right; padding:20px 20px 20px 20px; width:30%" src='images/graph2.png'/>""" +\
+    return r"""<img style="float:right; padding:20px 20px 20px 20px; width:25%" src='images/graph2.png'/>""" +\
         section(name='Useful stuff', id_='useful_stuff') + \
         ul(htmls=[classes_for_current_semester(),
                   cs_hangout(),
@@ -381,7 +381,7 @@ def useful_stuff():
 
 def events_t_shirts_etc():
     return \
-        r"""<img style="float:right; padding:20px 20px 20px 20px; width:30%" src='images/graph1.png'/>""" +\
+        r"""<img style="float:right; padding:20px 20px 20px 20px; width:25%" src='images/graph1.png'/>""" +\
         section(name='Events, T-shirts, etc.', id_='events_t_shirts_etc') + \
         ul(htmls=[pictures_and_videos(),
                   cs_club(),
