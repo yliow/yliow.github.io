@@ -30,7 +30,7 @@ def quotes():
 
 def classes_for_current_semester():
     return r'''
-Classes for current semester (spring 2023):
+My classes for spring 2023:
 <ul>
  <li> MATH325, MWF 9:05AM, BUH100
  <li> CISS350, MWF 11:15AM, BUH103
