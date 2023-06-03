@@ -380,7 +380,6 @@ def useful_stuff():
                   cccs_google_group(),
                   cccs_discord(),
                   classes_for_current_semester(),
-                  alex(),
                   cs_hangout(),
                   publication_about_cccs(),
                   cs101(),
