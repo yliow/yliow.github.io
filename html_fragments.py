@@ -32,12 +32,13 @@ def classes_for_current_semester():
     return r'''
 My classes:
 <ul>
+ <li> %s
  <li> MATH325, MWF 9:05AM, BUH100
  <li> CISS350, MWF 11:15AM, BUH103
  <li> CISS240, MWF 1:25PM and Tu 2:00PM, BUH107
  <li> CISS451, MWF 2:30PM, BUH103
 </ul>
-'''
+''' % alex()
 
 def pictures_and_videos():
     return r"<a href='https://docs.google.com/document/d/1uGC6ZMQ6OMY8voiTKsuaRYOW2fUQZDdj1QoA-euKGtg/edit?usp=sharing'>Pictures and videos</a>"
