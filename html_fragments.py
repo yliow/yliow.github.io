@@ -125,7 +125,7 @@ def cccs_discord():
     """
 
 def alex():
-    return r"""<a href="https://docs.google.com/document/d/1KeA5yUidxdIbImR7OlvEChweyhMuuBdIyv9NSUxuLoI/edit">alex (for work submission)</a>
+    return r"""alex (for work submission): <a href="https://docs.google.com/document/d/1KeA5yUidxdIbImR7OlvEChweyhMuuBdIyv9NSUxuLoI/edit">help</a> | <a href='https://yliowsubmit.pythonanywhere.com/ul'>website</a>
     """
 
 def administrative_stuff():
