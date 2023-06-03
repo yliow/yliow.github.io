@@ -123,6 +123,10 @@ def cccs_discord():
     </ul>
     """
 
+def alex():
+    return r"""<a href="https://docs.google.com/document/d/1KeA5yUidxdIbImR7OlvEChweyhMuuBdIyv9NSUxuLoI/edit">alex (for work submission)</a>
+    """
+
 def administrative_stuff():
     return r"""
 Administrative stuff:
