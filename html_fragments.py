@@ -125,7 +125,7 @@ def cccs_discord():
     """
 
 def alex():
-    return r"""alex (for work submission): <a href="https://docs.google.com/document/d/1KeA5yUidxdIbImR7OlvEChweyhMuuBdIyv9NSUxuLoI/edit">help</a> | <a href='https://yliowsubmit.pythonanywhere.com/ul'>website (only for newbies, the rest should use linux)</a>
+    return r"""alex (for work submission): <a href="https://docs.google.com/document/d/1KeA5yUidxdIbImR7OlvEChweyhMuuBdIyv9NSUxuLoI/edit">help</a> | <a href='https://yliowsubmit.pythonanywhere.com/ul'>website (only for newbies, the rest should use linux!!!)</a>
     """
 
 def administrative_stuff():
