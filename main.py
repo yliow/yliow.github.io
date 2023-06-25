@@ -455,6 +455,7 @@ def quotes_():
                    body=r'''
                    
     <!-- pictures -->
+                   <!--
     <div class="row">
       <div class="column">
         <img src="images/midway-reduce10.jpg" style="width:100%%">
@@ -466,6 +467,7 @@ def quotes_():
     <img src="images/dinner1-reduce10.jpg" style="width:100%%">
       </div>
     </div>
+                   -->
     '''
                    +
                    quotes.index()
