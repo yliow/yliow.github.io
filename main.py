@@ -61,11 +61,9 @@ HEAD = r'''
     display: inline;
     display: block;
     width: 10%;
-    top:-210px;
     padding: 0;
-    padding-top: 10px;
     float: right;
-margin: 0 0 0 15px;
+    margin: 0 0 0 15px;
     }
 
 
