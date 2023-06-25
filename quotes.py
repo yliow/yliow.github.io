@@ -13,6 +13,8 @@ quotes = '''
 “Life stands before me like an eternal spring with new and brilliant clothes.”
 
 “He who loves practice without theory is like the sailor who boards ship without a rudder and compass and never knows where he may cast.”
+
+"This is a test."
 '''
 
 quotes = quotes.split('\n')
