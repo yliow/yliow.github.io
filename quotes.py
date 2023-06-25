@@ -48,7 +48,7 @@ def index():
 “He who loves practice without theory is like the sailor who boards ship without a rudder and compass and never knows where he may cast.”
 </p>
     </td>
-    <td width="25%%">
+    <td width="10%%">
     <div class="detailImgWrapper"><img src="images/image1.png"/></div>
     <div class="detailImgWrapper"><img src="images/image3.png"/></div>
     <div class="detailImgWrapper"><img src="images/image5.png"/></div>
