@@ -16,11 +16,9 @@ def index():
 
 <h2>Quotes</h2>
 
-    <div class="detailImgWrapper">
-    <img src="images/image1.png"/>
-    <img src="images/image3.png"/>
-    <img src="images/image5.png"/>
-    </div>
+    <div class="detailImgWrapper"><img src="images/image1.png"/></div>
+    <div class="detailImgWrapper"><img src="images/image3.png"/></div>
+    <div class="detailImgWrapper"><img src="images/image5.png"/></div>
 
 <p>
 “What matters isn’t extraordinary ability but extraordinary effort.”
