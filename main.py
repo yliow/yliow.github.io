@@ -452,7 +452,22 @@ def urics_():
 def quotes_():
     return webpage(navigation_bar=navigation_bar('quotes'),
                    header=header(title('quotes')),
-                   body=quotes.index()
+                   body=r'''
+                       <!-- pictures -->
+    <div class="row">
+      <div class="column">
+        <img src="images/midway-reduce10.jpg" style="width:100%%">
+      </div>
+      <div class="column">
+        <img src="images/dinner0-reduce10.jpg" style="width:100%%">
+      </div>
+    <div class="column">
+    <img src="images/dinner1-reduce10.jpg" style="width:100%%">
+      </div>
+    </div>
+                   '''
+                   +
+                   quotes.index()
 )
 
 def cs_day_page():
