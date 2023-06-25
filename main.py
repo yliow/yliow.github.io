@@ -237,7 +237,7 @@ def tutorials():
 
 def wanna_feed_your_brain():
     return '%s %s' % (section(name='Wanna feed your brain?', id_="wanna-feed-your-brain"),
-                      ul(htmls=['quotes.html',
+                      ul(htmls=['<a href="quotes.html">Quotes</a>',
                                 '<a href="https://docs.google.com/document/d/1taIWv3QzXe1WKmqW2DvG_FYNiHtSLcFisZqz1tolM4M/">Yes</a> | No – not clickable']))
 
 def cccs():
