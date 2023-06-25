@@ -16,9 +16,9 @@ def index():
 
 <h2>Quotes</h2>
 
-    <div class="detailImgWrapper"><img src="images/image1.png"/></div>
-    <div class="detailImgWrapper"><img src="images/image3.png"/></div>
-    <div class="detailImgWrapper"><img src="images/image5.png"/></div>
+    <table>
+    <tr>
+    <td>
 
 <p>
 “What matters isn’t extraordinary ability but extraordinary effort.”
@@ -47,4 +47,11 @@ def index():
 <p>
 “He who loves practice without theory is like the sailor who boards ship without a rudder and compass and never knows where he may cast.”
 </p>
+    </td>
+    <td>
+        <div class="detailImgWrapper"><img src="images/image1.png"/></div>
+    <div class="detailImgWrapper"><img src="images/image3.png"/></div>
+    <div class="detailImgWrapper"><img src="images/image5.png"/></div>
+</td>
+    </tr>
     '''
