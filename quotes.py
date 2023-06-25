@@ -16,7 +16,7 @@ def index():
 
 <h2>Quotes</h2>
 
-    <table style={border-collapse:collapse}>
+    <table style="border-collapse:collapse">
     
     <tr>
     <td>
