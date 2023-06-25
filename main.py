@@ -154,7 +154,9 @@ def toc():
 
 def tutorials():
     def tr(path, name, comment):
-        return r'''<tr><td><a href='%(path)s'>%(name)s</a></td><td>%(comment)s</td></tr>'''
+        return r'''<tr><td><a href='%(path)s'>%(name)s</a></td><td>%(comment)s</td></tr>''' % {'path':path,
+                                                                                               'name':name,
+                                                                                               'comment':comment}
         
     html = r'''
         <h2><a id="tutorials">Tutorials</a> <a href="#top" style="font-size:16px">top</a></h2>
