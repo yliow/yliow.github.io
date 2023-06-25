@@ -452,7 +452,7 @@ def urics_():
 def quotes_():
     return webpage(navigation_bar=navigation_bar('quotes'),
                    header=header(title('quotes')),
-                   body=quotes.index()
+                   body=quotes.index() % {}
 )
 
 def cs_day_page():
