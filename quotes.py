@@ -55,9 +55,9 @@ def index():
 </p>
     </td>
     <td width="10%%">
-    <div class="detailImgWrapper"><img src="images/image1.png" width="100"/></div>
-    <div class="detailImgWrapper"><img src="images/image3.png" width="100"/></div>
-    <div class="detailImgWrapper"><img src="images/image5.png" width="100"/></div>
+    <div class="detailImgWrapper"><img src="images/image1.png" width="200"/></div>
+    <div class="detailImgWrapper"><img src="images/image3.png" width="200"/></div>
+    <div class="detailImgWrapper"><img src="images/image5.png" width="200"/></div>
     </td>
     </tr>
     </table>
