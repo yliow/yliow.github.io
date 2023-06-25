@@ -19,7 +19,7 @@ webpage structure
 import datetime
 from html_util import *
 from html_fragments import *
-import urics, courses
+import urics, courses, quotes
 
 NOW = datetime.datetime.now()
 CURR_YEAR = NOW.year
@@ -66,6 +66,8 @@ def navigation_bar(name):
         return '<a href="index.html">Home</a> | Outreach'
     elif name == 'urics':
         return '<a href="index.html">Home</a> | URiCS'
+    elif name == 'quotes':
+        return '<a href="index.html">Home</a> | Quotes'
     elif name == 'cs_day':
         return '<a href="index.html">Home</a> | CS Day'
     else:
@@ -84,6 +86,10 @@ def title(name):
         return '''<div>
         URiCS <br>
         <div style="color:#D3D3D3;">Undergraduate Research in Computer Science</div>
+        </div>'''
+    elif name == 'quotes':
+        return '''<div>
+        Quotes 
         </div>'''
     else:
         return '[NO TITLE]'
@@ -154,9 +160,9 @@ def toc():
 
 def tutorials():
     def tr(path, name, comment):
-        return r'''<tr><td><a href='%(path)s'>%(name)s</a></td><td>%(comment)s</td></tr>''' % {'path':path,
-                                                                                               'name':name,
-                                                                                               'comment':comment}
+        return r"<tr><td><a href='%(path)s'>%(name)s</a></td><td>%(comment)s</td></tr>" % {'path':path,
+                                                                                           'name':name,
+                                                                                           'comment':comment}
         
     html = r'''
         <h2><a id="tutorials">Tutorials</a> <a href="#top" style="font-size:16px">top</a></h2>
@@ -231,7 +237,7 @@ def tutorials():
 
 def wanna_feed_your_brain():
     return '%s %s' % (section(name='Wanna feed your brain?', id_="wanna-feed-your-brain"),
-                      ul(htmls=[quotes(),
+                      ul(htmls=['quotes.html',
                                 '<a href="https://docs.google.com/document/d/1taIWv3QzXe1WKmqW2DvG_FYNiHtSLcFisZqz1tolM4M/">Yes</a> | No – not clickable']))
 
 def cccs():
@@ -443,6 +449,12 @@ def urics_():
                    body=urics.index()
 )
 
+def quotes_():
+    return webpage(navigation_bar=navigation_bar('quotes'),
+                   header=header(title('quotes')),
+                   body=quotes.index()
+)
+
 def cs_day_page():
     return webpage(navigation_bar=navigation_bar('cs_day'),
                    header=header(title('cs_day')),
@@ -477,3 +489,4 @@ if __name__ == '__main__':
     f = open('pics.html', 'w'); f.write(pics()); f.close()
     f = open('urics.html', 'w'); f.write(urics_()); f.close()
     f = open('cs_day.html', 'w'); f.write(cs_day_page()); f.close()
+    f = open('quotes.html', 'w'); f.write(quotes_()); f.close()
