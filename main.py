@@ -60,8 +60,7 @@ HEAD = r'''
     {
     display: inline;
     display: block;
-%position: relative;
-    width: 25%;
+    width: 10%;
     top:-210px;
     padding: 0;
     padding-top: 10px;
