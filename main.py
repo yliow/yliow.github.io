@@ -54,6 +54,29 @@ HEAD = r'''
           padding: 8px;
       }
 
+    <!-- vertically stacked images -->
+
+.detailImgWrapper
+    {
+    display: inline;
+    display: block;
+    position: relative;
+    width: 25px;
+    top:-210px;
+    }
+
+.detailImgWrapper img
+    {
+    visibility: hidden;
+    padding: 0;
+    padding-top: 10px;
+    display: inline;
+    width: 25px;
+    height: 25px;
+    }
+
+
+
     </style>
   </head>
     '''
