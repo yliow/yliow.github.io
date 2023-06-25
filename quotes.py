@@ -16,7 +16,7 @@ def index():
 
 <h2>Quotes</h2>
 
-    <table>
+    <table border=0>
     <tr>
     <td>
 
