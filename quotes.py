@@ -4,13 +4,13 @@ def index():
     <!-- pictures -->
     <div class="row">
       <div class="column">
-        <img src="images/midway-reduce10.jpg" style="width:100%%">
+        <img src="images/midway-reduce10.jpg" style="width:50%%">
       </div>
       <div class="column">
-        <img src="images/dinner0-reduce10.jpg" style="width:100%%">
+        <img src="images/dinner0-reduce10.jpg" style="width:50%%">
       </div>
     <div class="column">
-    <img src="images/dinner1-reduce10.jpg" style="width:100%%">
+    <img src="images/dinner1-reduce10.jpg" style="width:50%%">
       </div>
     </div>
 
