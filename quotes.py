@@ -1,5 +1,19 @@
 def index():
     return r'''
+
+    <!-- pictures -->
+    <div class="row">
+      <div class="column">
+        <img src="images/midway-reduce10.jpg" style="width:100%%">
+      </div>
+      <div class="column">
+        <img src="images/dinner0-reduce10.jpg" style="width:100%%">
+      </div>
+    <div class="column">
+    <img src="images/dinner1-reduce10.jpg" style="width:100%%">
+      </div>
+    </div>
+
 <h2>Quotes</h2>
 
 <p>
