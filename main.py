@@ -60,12 +60,13 @@ HEAD = r'''
     {
     display: inline;
     display: block;
-    %position: relative;
+%position: relative;
     width: 25%;
     top:-210px;
     padding: 0;
     padding-top: 10px;
     float: right;
+margin: 0 0 0 15px;
     }
 
 
