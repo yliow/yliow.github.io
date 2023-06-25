@@ -65,7 +65,7 @@ HEAD = r'''
     top:-210px;
     padding: 0;
     padding-top: 10px;
-float: right;
+    float: right;
     }
 
 
