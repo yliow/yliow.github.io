@@ -17,12 +17,9 @@ def index():
 <h2>Quotes</h2>
 
     <div class="detailImgWrapper">
-    <img src="images/image1.png" style="width:100%%">
-      </div>
-    <img src="images/image3.png" style="width:100%%">
-      </div>
-    <img src="images/image5.png" style="width:100%%">
-      </div>
+    <img src="images/image1.png"/>
+    <img src="images/image3.png"/>
+    <img src="images/image5.png"/>
     </div>
 
 <p>
