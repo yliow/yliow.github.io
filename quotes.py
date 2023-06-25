@@ -17,9 +17,9 @@ def index():
 <h2>Quotes</h2>
 
     <table border=0>
+    
     <tr>
     <td>
-
 <p>
 “What matters isn’t extraordinary ability but extraordinary effort.”
 </p>
@@ -49,9 +49,10 @@ def index():
 </p>
     </td>
     <td>
-        <div class="detailImgWrapper"><img src="images/image1.png"/></div>
+    <div class="detailImgWrapper"><img src="images/image1.png"/></div>
     <div class="detailImgWrapper"><img src="images/image3.png"/></div>
     <div class="detailImgWrapper"><img src="images/image5.png"/></div>
-</td>
+    </td>
     </tr>
+    </table>
     '''
