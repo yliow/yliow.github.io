@@ -153,175 +153,79 @@ def toc():
     '''
 
 def tutorials():
-    return r'''
+    def tr(path, name, comment):
+        return r'''<tr><td><a href='%(path)s'>%(name)s</a></td><td>%(comment)s</td></tr>'''
+        
+    html = r'''
         <h2><a id="tutorials">Tutorials</a> <a href="#top" style="font-size:16px">top</a></h2>
-
     <table border='1'>
-      <tr>
-        <td><a href='pdfs/vmware/vmwareplayer.pdf'>vmwareplayer.pdf</a></td>
-        <td>
-          How to use the VMWare WorkStation or VMWare Player software.
-          (The screenshots in the pdf are slightly different from the newer
-          versions of the VMWare software.
-          But in general, the process for using the software is the same.)
-        </td>
-      </tr>
-
-      <tr>
-        <td><a href='pdfs/unix1-1/main.pdf'>unix1.pdf</a></td>
-        <td>
-          How to work with linux. Extra linux commands
-          <a href="https://docs.google.com/document/d/1QivrEQChzKZb2RV5X0p-TbEWh65K_NR-shsmMWi5O_4/edit?usp=sharing">here</a>.
-        </td>
-      </tr>
-      
-      <tr>
-        <td>
-          <a href='pdfs/xemacs/main.pdf'>emacs.pdf</a>
-        </td>
-        <td>
-          How to use emacs/xemacs.
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <a href='pdfs/gpp/main.pdf'>gpp.pdf</a>
-        </td>
-        <td>
-          How to use g++ to compile C++ programs.
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <a href='pdfs/make/main.pdf'>make.pdf</a>
-        </td>
-        <td>
-          How to use make to automate building your programs.
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <a href='pdfs/gdb/main.pdf'>gdb.pdf</a>
-        </td>
-        <td>
-          How to use gdb to help find bugs.
-        </td>
-      </tr>
-      
-      <tr>
-        <td>
-          <a href='pdfs/memory-debugging/main.pdf'>memory-debugging.pdf</a>
-        </td>
-        <td>
-          How to use Google’s addr sanitizer and valgrind to find memory bugs.
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <a href='pdfs/git/main.pdf'>git.pdf</a>
-        </td>
-        <td>
-          How to use git and github.
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <a href='pdfs/googletest/main.pdf'>googletest.pdf</a>
-        </td>
-        <td>
-          How to use Google’s googletest to write C++ unit tests..
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <a href='pdfs/static-analysis/main.pdf'>static-analysis.pdf</a>
-        </td>
-        <td>
-          TO COME
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <a href=''>Helloweb1.pdf</a>
-        </td>
-        <td>
-          How to create a basic website using pythonanywhere. (Moved to CISS430 notes.)
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <a href=''>sdl.pdf</a>
-        </td>
-        <td>
-          How to install the SDL library. Required for CISS245.
-          (REMOVED: SDL is now installed in our Fedora virtual machine.)
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <a href='pdfs/latex/main.pdf'>latex.pdf</a>
-        </td>
-        <td>
-          How to write LaTeX documents and generate pdf.
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <a href='pdfs/latex-graph/main.pdf'>latex-graph.pdf</a>
-        </td>
-        <td>
-          How to draw directed and undirected graphs (including DFAs, TMs).
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <a href='pdfs/latex-automata/main.pdf'>latex-automata.pdf</a>
-        </td>
-        <td>
-          How to draw automata diagram.
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <a href='pdfs/latex-2d/main.pdf'>latex-2d-graphs.pdf</a>
-        </td>
-        <td>
-          How to draw functions in 2D plane.
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <a href='pdfs/latex-surfaces/main.pdf'>latex-surfaces.pdf</a>
-        </td>
-        <td>
-          How to draw 3D surfaces. TO COME.
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <a href='book/book.tar.gz'>book.tar.gz</a>
-        </td>
-        <td>
-          Book template.
-        </td>
-      </tr>
-      
-    </table>
     '''
+    data = [('pdfs/vmware/vmwareplayer.pdf',
+             'vmwareplayer.pdf',
+             '''How to use the VMWare WorkStation or VMWare Player software.
+             (The screenshots in the pdf are slightly different from the newer
+             versions of the VMWare software.
+             But in general, the process for using the software is the same.)'''),
+            ('pdfs/unix1-1/main.pdf',
+             'unix1.pdf',
+             '''How to work with linux. Extra linux commands
+             <a href="https://docs.google.com/document/d/1QivrEQChzKZb2RV5X0p-TbEWh65K_NR-shsmMWi5O_4/edit?usp=sharing">here</a>'''),
+            #('pdfs/xemacs/main.pdf',
+            # 'emacs.pdf', 
+            # 'How to use emacs/xemacs.'),
+            #('pdfs/gpp/main.pdf',
+            # 'gpp.pdf', 
+            # 'How to use g++ to compile C++ programs.'),
+            #('pdfs/make/main.pdf',
+            # 'make.pdf', 
+            # 'How to use make to automate building your programs.'),
+            #('pdfs/gdb/main.pdf',
+            # 'gdb.pdf',
+            # 'How to use gdb to help find bugs.'),
+            #('pdfs/memory-debugging/main.pdf',
+            # 'memory-debugging.pdf'
+            # 'How to use Google’s addr sanitizer and valgrind to find memory bugs.'),
+            #('pdfs/git/main.pdf',
+            # 'git.pdf',
+            # 'How to use git and github.'),
+            #('pdfs/googletest/main.pdf',
+            # 'googletest.pdf', 
+            # 'How to use Google’s googletest to write C++ unit tests.'),
+            #('pdfs/static-analysis/main.pdf',
+            # 'static-analysis.pdf',
+            # 'TO COME'),
+            #('',
+            # 'Helloweb1.pdf', 
+            # 'How to create a basic website using pythonanywhere. (Moved to CISS430 notes.)'),
+            #('',
+            # 'sdl.pdf', 
+            # '''How to install the SDL library.
+            #    Required for CISS245.
+            #    (REMOVED: SDL is now installed in our Fedora virtual machine.)'''),
+            #('pdfs/latex/main.pdf',
+            # 'latex.pdf', 
+            # 'How to write LaTeX documents and generate pdf.'),
+            #('pdfs/latex-graph/main.pdf',
+            # 'latex-graph.pdf', 
+            # 'How to draw directed and undirected graphs (including DFAs, TMs).'),
+            #('pdfs/latex-automata/main.pdf',
+            # 'latex-automata.pdf',
+            # 'How to draw automata diagram.'),
+            #('pdfs/latex-2d/main.pdf',
+            # 'latex-2d-graphs.pdf', 
+            # 'How to draw functions in 2D plane.'),
+            #('pdfs/latex-surfaces/main.pdf',
+            # 'latex-surfaces.pdf', 
+            # 'How to draw 3D surfaces. TO COME.'),
+            #('book/book.tar.gz',
+            # 'book.tar.gz',
+            # 'Book template.'),
+    ]
+
+    for path,name,comment in data:
+        html += tr(path=path, name=name, comment=comment)
+    html = html + '</table>'
+    return html
 
 def wanna_feed_your_brain():
     return '%s %s' % (section(name='Wanna feed your brain?', id_="wanna-feed-your-brain"),
