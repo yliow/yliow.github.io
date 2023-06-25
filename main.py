@@ -61,7 +61,7 @@ HEAD = r'''
     display: inline;
     display: block;
     position: relative;
-    width: 25px;
+    width: 25%;
     top:-210px;
     padding: 0;
     padding-top: 10px;
