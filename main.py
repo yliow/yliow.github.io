@@ -158,7 +158,7 @@ def tutorials():
 
     <table border='1'>
       <tr>
-        <td><a href='vmware/vmwareplayer.pdf'>vmwareplayer.pdf</a></td>
+        <td><a href='pdfs/vmware/vmwareplayer.pdf'>vmwareplayer.pdf</a></td>
         <td>
           How to use the VMWare WorkStation or VMWare Player software.
           (The screenshots in the pdf are slightly different from the newer
@@ -168,7 +168,7 @@ def tutorials():
       </tr>
 
       <tr>
-        <td><a href='unix1-1/main.pdf'>unix1.pdf</a></td>
+        <td><a href='pdfs/unix1-1/main.pdf'>unix1.pdf</a></td>
         <td>
           How to work with linux. Extra linux commands
           <a href="https://docs.google.com/document/d/1QivrEQChzKZb2RV5X0p-TbEWh65K_NR-shsmMWi5O_4/edit?usp=sharing">here</a>.
@@ -177,7 +177,7 @@ def tutorials():
       
       <tr>
         <td>
-          <a href='xemacs/main.pdf'>emacs.pdf</a>
+          <a href='pdfs/xemacs/main.pdf'>emacs.pdf</a>
         </td>
         <td>
           How to use emacs/xemacs.
@@ -186,7 +186,7 @@ def tutorials():
 
       <tr>
         <td>
-          <a href='gpp/main.pdf'>gpp.pdf</a>
+          <a href='pdfs/gpp/main.pdf'>gpp.pdf</a>
         </td>
         <td>
           How to use g++ to compile C++ programs.
@@ -195,7 +195,7 @@ def tutorials():
 
       <tr>
         <td>
-          <a href='make/main.pdf'>make.pdf</a>
+          <a href='pdfs/make/main.pdf'>make.pdf</a>
         </td>
         <td>
           How to use make to automate building your programs.
@@ -204,7 +204,7 @@ def tutorials():
 
       <tr>
         <td>
-          <a href='gdb/main.pdf'>gdb.pdf</a>
+          <a href='pdfs/gdb/main.pdf'>gdb.pdf</a>
         </td>
         <td>
           How to use gdb to help find bugs.
@@ -213,7 +213,7 @@ def tutorials():
       
       <tr>
         <td>
-          <a href='memory-debugging/main.pdf'>memory-debugging.pdf</a>
+          <a href='pdfs/memory-debugging/main.pdf'>memory-debugging.pdf</a>
         </td>
         <td>
           How to use Google’s addr sanitizer and valgrind to find memory bugs.
@@ -222,7 +222,7 @@ def tutorials():
 
       <tr>
         <td>
-          <a href='git/main.pdf'>git.pdf</a>
+          <a href='pdfs/git/main.pdf'>git.pdf</a>
         </td>
         <td>
           How to use git and github.
@@ -231,7 +231,7 @@ def tutorials():
 
       <tr>
         <td>
-          <a href='googletest/main.pdf'>googletest.pdf</a>
+          <a href='pdfs/googletest/main.pdf'>googletest.pdf</a>
         </td>
         <td>
           How to use Google’s googletest to write C++ unit tests..
@@ -240,7 +240,7 @@ def tutorials():
 
       <tr>
         <td>
-          <a href='static-analysis/main.pdf'>static-analysis.pdf</a>
+          <a href='pdfs/static-analysis/main.pdf'>static-analysis.pdf</a>
         </td>
         <td>
           TO COME
@@ -268,7 +268,7 @@ def tutorials():
 
       <tr>
         <td>
-          <a href='latex/main.pdf'>latex.pdf</a>
+          <a href='pdfs/latex/main.pdf'>latex.pdf</a>
         </td>
         <td>
           How to write LaTeX documents and generate pdf.
@@ -277,7 +277,7 @@ def tutorials():
 
       <tr>
         <td>
-          <a href='latex-graph/main.pdf'>latex-graph.pdf</a>
+          <a href='pdfs/latex-graph/main.pdf'>latex-graph.pdf</a>
         </td>
         <td>
           How to draw directed and undirected graphs (including DFAs, TMs).
@@ -286,7 +286,7 @@ def tutorials():
 
       <tr>
         <td>
-          <a href='latex-automata/main.pdf'>latex-automata.pdf</a>
+          <a href='pdfs/latex-automata/main.pdf'>latex-automata.pdf</a>
         </td>
         <td>
           How to draw automata diagram.
@@ -295,7 +295,7 @@ def tutorials():
 
       <tr>
         <td>
-          <a href='latex-2d/main.pdf'>latex-2d-graphs.pdf</a>
+          <a href='pdfs/latex-2d/main.pdf'>latex-2d-graphs.pdf</a>
         </td>
         <td>
           How to draw functions in 2D plane.
@@ -304,7 +304,7 @@ def tutorials():
 
       <tr>
         <td>
-          <a href='latex-surfaces/main.pdf'>latex-surfaces.pdf</a>
+          <a href='pdfs/latex-surfaces/main.pdf'>latex-surfaces.pdf</a>
         </td>
         <td>
           How to draw 3D surfaces. TO COME.

@@ -1,31 +1,32 @@
 run: index.html
-	-mkdir xemacs/ 
-	-mkdir vmware/
-	-mkdir unix1-1/
-	-mkdir gpp/
-	-mkdir make/
-	-mkdir gdb/
-	-mkdir memory-debugging/
-	-mkdir git/
-	-mkdir googletest/
-	-mkdir latex/
-	-mkdir latex-graph/
-	-mkdir latex-automata/
-	-mkdir latex-2d/
+	-mkdir pdfs
+	-mkdir pdfs/xemacs/ 
+	-mkdir pdfs/vmware/
+	-mkdir pdfs/unix1-1/
+	-mkdir pdfs/gpp/
+	-mkdir pdfs/make/
+	-mkdir pdfs/gdb/
+	-mkdir pdfs/memory-debugging/
+	-mkdir pdfs/git/
+	-mkdir pdfs/googletest/
+	-mkdir pdfs/latex/
+	-mkdir pdfs/latex-graph/
+	-mkdir pdfs/latex-automata/
+	-mkdir pdfs/latex-2d/
 	-mkdir book/
-	cp ../xemacs/main.pdf xemacs/main.pdf
-	cp ../vmware/vmwareplayer.pdf vmware/vmwareplayer.pdf
-	cp ../unix1-1/main.pdf unix1-1/main.pdf
-	cp ../gpp/main.pdf gpp/main.pdf
-	cp ../make/main.pdf make/main.pdf
-	cp ../gdb/main.pdf gdb/main.pdf
-	cp ../memory-debugging/main.pdf memory-debugging/main.pdf
-	cp ../git/main.pdf git/main.pdf
-	cp ../googletest/main.pdf googletest/main.pdf
-	cp ../latex/main.pdf latex/main.pdf
-	cp ../latex-graph/main.pdf latex-graph/main.pdf
-	cp ../latex-automata/main.pdf latex-automata/main.pdf
-	cp ../latex-2d/main.pdf latex-2d/main.pdf
+	cp ../xemacs/main.pdf           pdfs/xemacs/main.pdf
+	cp ../vmware/vmwareplayer.pdf 	pdfs/vmware/vmwareplayer.pdf
+	cp ../unix1-1/main.pdf       	pdfs/unix1-1/main.pdf
+	cp ../gpp/main.pdf 	      	pdfs/gpp/main.pdf
+	cp ../make/main.pdf 	      	pdfs/make/main.pdf
+	cp ../gdb/main.pdf 	      	pdfs/gdb/main.pdf
+	cp ../memory-debugging/main.pdf pdfs/memory-debugging/main.pdf
+	cp ../git/main.pdf 		pdfs/git/main.pdf
+	cp ../googletest/main.pdf 	pdfs/googletest/main.pdf
+	cp ../latex/main.pdf 		pdfs/latex/main.pdf
+	cp ../latex-graph/main.pdf 	pdfs/latex-graph/main.pdf
+	cp ../latex-automata/main.pdf 	pdfs/latex-automata/main.pdf
+	cp ../latex-2d/main.pdf 	pdfs/latex-2d/main.pdf
 	cp ../latex-templates/book.tar.gz book/book.tar.gz
 	python main.py
 	git add .; git commit -m"no msg"; git push
