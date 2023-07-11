@@ -61,7 +61,8 @@ Besides looking at data from BLS, another way to tell if CS (or any major) has h
 <li>Finance: $60,000
 <li>Physics: $55,000
 </ul>
-[Updated for 4/2022. See link.]
+[Updated for 4/2022.
+See <a href='https://fortune.com/education/articles/these-are-the-highest-paying-college-majors-of-2022/'>link</a>.]
 <br><br>
 
 From the above chart, you can deduce very quickly that CS is one of the best majors to get into simply because of the high demand and low supply. Furthermore, the data from NACE is pretty much the same for CS for the past 15 years. Yes, I have been tracking NACE for that long. There are some majors that become “fashionable” for a couple of years … and then die out. So you also should check the historical data from NACE too. Another thing to note is that if you read the NACE reports carefully, you’ll see that many computer engineers actually end up being software engineers/developers.
