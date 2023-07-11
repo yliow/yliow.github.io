@@ -81,9 +81,11 @@ For other thoughts on the issue of GPA, you can google “perfect gpa jobless”
 <br><br>
     
 So if your concern is to find a job or build your career:, 
-Find an area/major with high job growth that interests you, and 
-find a program that emphasizes both the theory and the practice in that area
-Don’t worry too much about the major being difficult. Find a good program that teaches well. And work hard. A high GPA is good, but is secondary to the above two points.
+<ul>
+    <li> Find an area/major with high job growth that interests you, and 
+    <li> find a program that emphasizes both the theory and the practice in that area
+</ul>
+    Don’t worry too much about the major being difficult. Find a good program that teaches well. And work hard. A high GPA is good, but is secondary to the above two points.
 <br><br>
 
 One last thing. Here’s a caveat. If you are really passionate about an area of study, and I mean really passionate about it as in life-is-not-worth-living-if-I-don’t-study-it, then go for it and ignore the above comments. Even if this area of study opens up one job for every 50,000 applicants, because of your passion, you might be able to differentiate between you and the rest. Maybe you are the top of that 50,000 applicants. So go for it.
