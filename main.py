@@ -20,7 +20,7 @@ import datetime
 from html_util import *
 from html_fragments import *
 import urics, courses, quotes
-
+import why_you_should_still_consider_cs
 NOW = datetime.datetime.now()
 CURR_YEAR = NOW.year
 HEAD = r'''
@@ -477,9 +477,12 @@ def quotes_():
 )
 
 def why_you_should_still_consider_cs_():
+    s = why_you_should_still_consider_cs.index()
+    print(type(s))
+    input('.......')
     return webpage(navigation_bar=navigation_bar('why_you_should_still_consider_cs'),
                    header=header(title('why_you_should_still_consider_cs')),
-                   body=quotes.index() % {}
+                   body=s
 )
     
 def cs_day_page():
