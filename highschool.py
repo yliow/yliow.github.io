@@ -65,6 +65,6 @@ This is not updated all the time!
 <li>Thu 10/20, 9:00AM - 10:20AM -- Intro C++ (Battle HS) [9]
 <li>Thu 10/20, 2:40PM - 4:00PM -- Intro C++ (Columbia Area Career Ctr) [15]
 </ul>
-[Complete calendar]
+[<a href='https://docs.google.com/document/d/1zQKEbZkhigTyOSUsyuxke77WziI217K23HQknwlX9HM/edit#heading=h.fn6td22q3eax'>Complete calendar</a>]
 
     '''
