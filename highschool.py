@@ -5,7 +5,7 @@ def index():
 <ul>
     <li><a href='https://docs.google.com/document/d/1P-wEe4xqaP7SUwY0QXE8hd2Q0ti_vJb6E5xHRrWZfys/edit'>Programming Challenge meetings</a>
 <li>High school class visits
-<li>HS CS Internship
+<li><a href='https://docs.google.com/document/d/1kBkt_scGsrFe2PGLsrcsf16JyjtKmtYJTobsh0ulGC0'>HS CS Internship</a>
 <li>HS Programming Contests
 <li>Weekend seminars
 <li>Summer camps
