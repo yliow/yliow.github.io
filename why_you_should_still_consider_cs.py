@@ -88,5 +88,5 @@ Don’t worry too much about the major being difficult. Find a good program that
 
 One last thing. Here’s a caveat. If you are really passionate about an area of study, and I mean really passionate about it as in life-is-not-worth-living-if-I-don’t-study-it, then go for it and ignore the above comments. Even if this area of study opens up one job for every 50,000 applicants, because of your passion, you might be able to differentiate between you and the rest. Maybe you are the top of that 50,000 applicants. So go for it.
 Work hard, play hard, study hard, and dream on.
-
+<br><br>
 '''
