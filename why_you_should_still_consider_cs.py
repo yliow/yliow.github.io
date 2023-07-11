@@ -92,7 +92,7 @@ For other thoughts on the issue of GPA, you can google “perfect gpa jobless”
 So if your concern is to find a job or build your career:, 
 <ul>
     <li> Find an area/major with high job growth that interests you, and 
-    <li> Find a program that emphasizes both the theory and the practice in that area
+    <li> Find a program that emphasizes both theory and practice in that area
 </ul>
     Don’t worry too much about the major being difficult. Find a good program that teaches well. And work hard. A high GPA is good, but is secondary to the above two points.
 <br><br>
