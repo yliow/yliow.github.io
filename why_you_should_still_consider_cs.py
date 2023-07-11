@@ -4,26 +4,37 @@ def index():
 <h2>Why you should still consider CS even though it’s tough and you might get a lower GPA than another major</h2>
 
 In one of my early HS programming contests, I met a very bright student. She totally enjoyed the programming contest event. She was one of those who stayed on way past the end of the event. The event ended at 6PM (with a pizza dinner). A group of students stayed on to play ping pong and chat until almost 9PM. She was one of them. So I was very surprised when I found out that in the following year, she did not proceed onto the “Adv C++” class. From what I have heard (from her cohort of HS students in her “Intro C++” class in the previous year), she found C++ challenging and has decided to major in something “easier”. Therefore she decided not to continue on to “Adv C++”. Before reading the thought below, let me state this very clearly: If you are really passionate about major X (whatever X is), then don’t let anyone stop you from studying X. 
+<br>
 
 Now … back to “Why you should still consider CS even though it’s tough and you might get a lower GPA than another major” ...
+<br>
 
 Here’s the short answer: supply and demand. If you understand that answer, you can ignore the rest of the answer below.
+<br>
 
 Here’s the longer answer …
+<br>
 
 It’s a big mistake to think that a GPA of at least 3.5 will automatically guarantee you a job. Now, if you are the type that wants a high GPA just for the sake of having a high GPA (and you don’t really care about your job/career), then two things: you can ignore my comments below and you might also want to reassess your goal.
+<br>
 
 OK. Let’s get back to the idea that “a high GPA guarantees a job”. That’s totally wrong. A company hires you because you have the right skills that they want. First, The GPA might or might not translate to the right skills. Second, there might be a huge pool of applicants with the right skills. Both of these issues are tied to supply and demand.
+<br>
 
 Why?
+<br>
 
 It’s tied to supply because “supply” means how many graduates are being produced to meet the market needs. It’s tied to demand because “demand” means how many professionals with the right skills the market (or a specific company) needs. 
+<br>
 
 For your information, the average job growth for all types of jobs tracked by the Bureau of Labor and Statistics (BLS – check out http://bls.gov) is about 5%%. This has been the case for at least 10 years. The job growth for software developers, which is the most common job title for CS graduates, has been > 20% for more than 15 years. BLS classifies the job growth of software developers as “much faster than average”, the category with the fastest growth rate.
+<br>
 
 Because of the huge demand for CS professionals, it’s therefore possible to get a CS-related job with a lower GPA, when compared with some other majors. 
+<br>
 
 When I was still in graduate school, there was a local company (in computer security) who actually said they were willing to interview candidates with a GPA of 2.0. I’m not kidding.That’s how desperate some IT companies are.
+<br>
 
 Besides looking at data from BLS, another way to tell if CS (or any major) has high demand and low supply is to look at the salary information. It’s obvious that a college major that brings in a job with a high pay has to be with high demand and low supply. You don’t think a company is going to offer you a fat paycheck for a job that has 5000 desperate applicants do you? All you need to do to check on this is google “nace 2022 most lucrative college degree”. NACE stands for National Association of Colleges and Employers. (Change 2022 to the year of your choice.) This is what you see:
     <ul>
@@ -44,21 +55,28 @@ Besides looking at data from BLS, another way to tell if CS (or any major) has h
 <li>Physics: $55,000
 </ul>
 [Updated for 4/2022. See link.]
+<br>
 
 From the above chart, you can deduce very quickly that CS is one of the best majors to get into simply because of the high demand and low supply. Furthermore, the data from NACE is pretty much the same for CS for the past 15 years. Yes, I have been tracking NACE for that long. There are some majors that become “fashionable” for a couple of years … and then die out. So you also should check the historical data from NACE too. Another thing to note is that if you read the NACE reports carefully, you’ll see that many computer engineers actually end up being software engineers/developers.
+<br>
 
 Oh and by the way, the “GPA” is a relative and not absolute measure of academic intelligence. A GPA of 3.0 at MIT, Berkeley, and Stanford is probably worth a GPA of 3.9 at most other schools which are not in the top 10 bracket.
+<br>
 
 A high GPA at a CS program is a measure of how well you do on the coursework at that CS program. If a CS program does not have a balance of theoretical background and practical knowledge of how the theory translates into real world applications, graduates of that CS program, even if they have a GPA of 4.0, will find it impossible to land a job. Period. 
+<br>
 
 This is the reason why, in CS, the hiring manager is not looking for a perfect GPA. There are many other factors to consider, including the quality of the CS program of the job applicant.
+<br>
 
 For other thoughts on the issue of GPA, you can google “perfect gpa jobless”. Here’s a quora link to a post by someone who went to a top CS school, attained a perfect GPA of 4.0, and got “flat out rejected”: link. 
-
+<br>
+    
 So if your concern is to find a job or build your career:, 
 Find an area/major with high job growth that interests you, and 
 Find a program that emphasizes both the theory and the practice in that area
 Don’t worry too much about the major being difficult. Find a good program that teaches well. And work hard. A high GPA is good, but is secondary to the above two points.
+<br>
 
 One last thing. Here’s a caveat. If you are really passionate about an area of study, and I mean really passionate about it as in life-is-not-worth-living-if-I-don’t-study-it, then go for it and ignore the above comments. Even if this area of study opens up one job for every 50,000 applicants, because of your passion, you might be able to differentiate between you and the rest. Maybe you are the top of that 50,000 applicants. So go for it.
 Work hard, play hard, study hard, and dream on.
