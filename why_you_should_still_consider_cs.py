@@ -31,7 +31,8 @@ Why?
 <br><br>
 
 It’s tied to supply because “supply” means how many graduates are being produced.
-It’s tied to demand because “demand” means how many professionals with the right skills the market needs. 
+It’s tied to demand because “demand” means how many professionals with the right skills the market needs.
+It's not rocket science to deduce that there will be more graduates from an "easy major". Right?
 <br><br>
 
 For your information, the average job growth for all types of jobs tracked by the Bureau of Labor and Statistics (BLS – check out http://bls.gov) is about 5% -- this has been the case for more than 10 years. The job growth for software developers, which is the most common job title for CS graduates, has been > 20% for more than 15 years. BLS classifies the job growth of software developers as “much faster than average”, the category with the fastest growth rate.
