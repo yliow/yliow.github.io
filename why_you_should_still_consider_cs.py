@@ -3,14 +3,19 @@ def index():
 
 <h2>Why you should still consider CS even though it’s tough and you might get a lower GPA than another major</h2>
 
-
 In one of my early HS programming contests, I met a very bright student. She totally enjoyed the programming contest event. She was one of those who stayed on way past the end of the event. The event ended at 6PM (with a pizza dinner). A group of students stayed on to play ping pong and chat until almost 9PM. She was one of them. So I was very surprised when I found out that in the following year, she did not proceed onto the “Adv C++” class. From what I have heard (from her cohort of HS students in her “Intro C++” class in the previous year), she found C++ challenging and has decided to major in something “easier”. Therefore she decided not to continue on to “Adv C++”. Before reading the thought below, let me state this very clearly: If you are really passionate about major X (whatever X is), then don’t let anyone stop you from studying X. 
 <br><br>
 
-Now … back to “Why you should still consider CS even though it’s tough and you might get a lower GPA than another major” ...
+Now ... back to “Why you should still consider CS even though it’s tough and you might get a lower GPA than another major”.
+Different people have different reasons to be in school (whether it's high school or college).
+But generally, there are two reason: (1) to get a job or a career and (2) to learn something so that you can have an impact
+in the world.
 <br><br>
 
-Here’s the short answer: supply and demand. If you understand that answer, you can ignore the rest of the answer below.
+First, let me focus on getting the job or starting a career. (Having a job and having a career are two different things.
+But that's for another conversation.)
+Here’s the short answer: supply and demand.
+If you understand that answer, you can ignore the rest of the answer below.
 <br><br>
 
 Here’s the longer answer …
