@@ -85,6 +85,8 @@ def navigation_bar(name):
         return '<a href="index.html">Home</a> | Quotes'
     elif name == 'cs_day':
         return '<a href="index.html">Home</a> | CS Day'
+    elif name == 'why_you_should_still_consider_cs':
+        return '<a href="index.html">Home</a> | CS Outreach | High school CS | Q&A'
     else:
         return '<a href="index.html">Home</a> [INCOMPLETE]'
     
@@ -105,6 +107,10 @@ def title(name):
     elif name == 'quotes':
         return '''<div>
         Quotes 
+        </div>'''
+    elif name == 'why_you_should_still_consider_cs':
+        return '''<div>
+        Why you should still consider CS even though it’s tough and you might get a lower GPA than another major
         </div>'''
     else:
         return '[NO TITLE]'
@@ -470,6 +476,12 @@ def quotes_():
                    body=quotes.index() % {}
 )
 
+def why_you_should_still_consider_cs_():
+    return webpage(navigation_bar=navigation_bar('why_you_should_still_consider_cs'),
+                   header=header(title('why_you_should_still_consider_cs')),
+                   body=quotes.index() % {}
+)
+    
 def cs_day_page():
     return webpage(navigation_bar=navigation_bar('cs_day'),
                    header=header(title('cs_day')),
@@ -505,3 +517,4 @@ if __name__ == '__main__':
     f = open('urics.html', 'w'); f.write(urics_()); f.close()
     f = open('cs_day.html', 'w'); f.write(cs_day_page()); f.close()
     f = open('quotes.html', 'w'); f.write(quotes_()); f.close()
+    f = open('why_you_should_still_consider_cs.html', 'w'); f.write(why_you_should_still_consider_cs_()); f.close()
