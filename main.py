@@ -20,7 +20,7 @@ import datetime
 from html_util import *
 from html_fragments import *
 import urics, courses, quotes, pics
-import why_you_should_still_consider_cs
+import why_you_should_still_consider_cs, highschool
 NOW = datetime.datetime.now()
 CURR_YEAR = NOW.year
 HEAD = r'''
@@ -99,6 +99,10 @@ def title(name):
         return r'''
         <div style="display: flex; justify-content: center; background-color:rgba(0,65,122,255); padding:10px"><img src='images/pics/pics.png'/></div><br>
         Welcome to PiCS'''
+    elif name == 'highschool':
+        return r'''
+        <div style="display: flex; justify-content: center; background-color:rgba(0,65,122,255); padding:10px"><img src='images/pics/pics.png'/></div><br>
+        High School CS'''
     elif name == 'urics':
         return '''<div>
         URiCS <br>
@@ -403,9 +407,9 @@ def images(float='right', srcs_captions='', width=r'33%'):
 
 def pics_():
     images_ = images(srcs_captions=[('images/pics/image16.png', 'HS Programming Contest #2 (2016)'),
-                                    ('images/pics/image4.png', 'HS CS internship program (2016-2017)'),
-                                    ('images/pics/image1.png', 'Weekend seminar (10/2016)'),
-                                    ('images/pics/image7.png', 'Break during HS Programming Contest #1 (2015)'),
+                                    ('images/pics/image4.png',  'HS CS internship program (2016-2017)'),
+                                    ('images/pics/image1.png',  'Weekend seminar (10/2016)'),
+                                    ('images/pics/image7.png',  'Break during HS Programming Contest #1 (2015)'),
                                     ('images/pics/image14.png', 'Computer game contest during HS Programming Contest #2 (2016)'),
 
     ])
@@ -413,6 +417,24 @@ def pics_():
                    header=header(title('pics')),
                    body=pics.index() % {'images':images_})
 
+
+def pics_():
+    images_ = images(srcs_captions=[('images/pics/image16.png', 'HS Programming Contest #2 (2016)'),
+                                    ('images/pics/image4.png',  'HS CS internship program (2016-2017)'),
+                                    ('images/pics/image1.png',  'Weekend seminar (10/2016)'),
+                                    ('images/pics/image7.png',  'Break during HS Programming Contest #1 (2015)'),
+                                    ('images/pics/image14.png', 'Computer game contest during HS Programming Contest #2 (2016)'),
+
+    ])
+    return webpage(navigation_bar=navigation_bar('pics'),
+                   header=header(title('pics')),
+                   body=pics.index() % {'images':images_})
+
+def highschool_():
+    return webpage(navigation_bar=navigation_bar('highschool'),
+                   header=header(title('highschool')),
+                   body=highschool.index()
+)
 
 def urics_():
     return webpage(navigation_bar=navigation_bar('urics'),
@@ -465,6 +487,7 @@ Q&A<br>
 if __name__ == '__main__':
     f = open('index.html', 'w'); f.write(cccs()); f.close()
     f = open('pics.html', 'w'); f.write(pics_()); f.close()
+    f = open('highschool.html', 'w'); f.write(highschool_()); f.close()
     f = open('urics.html', 'w'); f.write(urics_()); f.close()
     f = open('cs_day.html', 'w'); f.write(cs_day_page()); f.close()
     f = open('quotes.html', 'w'); f.write(quotes_()); f.close()
