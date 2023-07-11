@@ -42,7 +42,7 @@ For your information, the average job growth for all types of jobs tracked by th
 Because of the huge demand for CS professionals, it’s therefore possible to get a CS-related job with a lower GPA, when compared with some other majors. 
 <br><br>
 
-When I was still in graduate school, there was a local company (in computer security) who actually said they were willing to interview candidates with a GPA of 2.0. I’m not kidding.That’s how desperate some IT companies are.
+When I was still in graduate school, there was a local company (in computer security) who actually said they were willing to interview candidates with a GPA of 2.0. I’m not kidding. That’s how desperate some IT companies are.
 <br><br>
 
 Besides looking at data from BLS, another way to tell if CS (or any major) has high demand and low supply is to look at the salary information. It’s obvious that a college major that brings in a job with a high pay has to be with high demand and low supply. You don’t think a company is going to offer you a fat paycheck for a job that has 5000 desperate applicants do you?
