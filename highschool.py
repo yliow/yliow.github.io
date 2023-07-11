@@ -3,7 +3,7 @@ def index():
 
 <h2>Programs</h2>
 <ul>
-    <li>Programming Challenge meetings
+    <li><a href='https://docs.google.com/document/d/1P-wEe4xqaP7SUwY0QXE8hd2Q0ti_vJb6E5xHRrWZfys/edit'>Programming Challenge meetings</a>
 <li>High school class visits
 <li>HS CS Internship
 <li>HS Programming Contests
