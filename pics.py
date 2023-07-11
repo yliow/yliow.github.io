@@ -1,86 +1,6 @@
-
-<html>  
-
-      <head>
-    <style>
-
-      * {
-          box-sizing: border-box;
-      }
-      
-      .row {
-          display: flex;
-      }
-      
-      /* Create three equal columns that sits next to each other */
-      .column {
-          flex: 33.33%;
-          padding: 5px;
-      }
-      
-      table {
-          font-family: arial, sans-serif;
-          border: 1px solid black;
-          border-collapse: collapse;
-          width: 100%;
-      }
-
-      td, th {
-          text-align: left;
-          vertical-align:top;
-          padding: 8px;
-      }
-
-    <!-- vertically stacked images -->
-
-.detailImgWrapper
-    {
-    display: inline;
-    display: block;
-    width: 100px;
-    padding: 0;
-    float: right;
-    margin: 0 0 0 15px;
-    }
-
-
-
-
-    </style>
-  </head>
-    
-<body style="font-family: arial; margin-left:100px; margin-right:100px; ">
-<a href="index.html">Home</a> | Outreach
-<h1>
-        <div style="display: flex; justify-content: center; background-color:rgba(0,65,122,255); padding:10px"><img src='images/pics/pics.png'/></div><br>
-        Welcome to PiCS</h1>
-<h2><function title at 0x7f46eb196170></h2><hr>
-
-<div style="float:right; padding:20px 20px 20px 20px; width:33%">
-  <table style='border-collapse:collapse; border:none'>
-    <tr>
-    <td><img width="100%" src="images/pics/image16.png"/>
-    <div style="font-size:12px; text-align:center; padding:5px">HS Programming Contest #2 (2016)</div>
-    </td>
-  </tr><tr>
-    <td><img width="100%" src="images/pics/image4.png"/>
-    <div style="font-size:12px; text-align:center; padding:5px">HS CS internship program (2016-2017)</div>
-    </td>
-  </tr><tr>
-    <td><img width="100%" src="images/pics/image1.png"/>
-    <div style="font-size:12px; text-align:center; padding:5px">Weekend seminar (10/2016)</div>
-    </td>
-  </tr><tr>
-    <td><img width="100%" src="images/pics/image7.png"/>
-    <div style="font-size:12px; text-align:center; padding:5px">Break during HS Programming Contest #1 (2015)</div>
-    </td>
-  </tr><tr>
-    <td><img width="100%" src="images/pics/image14.png"/>
-    <div style="font-size:12px; text-align:center; padding:5px">Computer game contest during HS Programming Contest #2 (2016)</div>
-    </td>
-  </tr>
-  </table>
-</div>
+def index():
+    return r'''
+%(images)s
 Welcome to PiCS (Portal into Computer Science), the computer science outreach programs of Columbia College (of Missouri).
 <br><br>           
 [PICS TO BE TRANSFERRED]
@@ -129,14 +49,4 @@ Dr. Yihsiang Liow (<a href="mailto:yliow@ccis.edu">yliow@ccis.edu</a>). All dono
 To find out more, get in touch with Dr. Yihsiang Liow (<a href="mailto:yliow@ccis.edu">yliow@ccis.edu</a>) for a chat.
 <a href="https://drive.google.com/file/d/1o1dJ6F0MmSsFW4PAKX94JrsSeGHJg6ND/view?usp=sharing">Why CS?</a> |
 <a href="https://drive.google.com/file/d/0BzjYrK0VFuMWaXI1ZlJpNTkxT0U/view?resourcekey=0-JCm-tl5MEfX0peYxdfKOYA">CS program hunting</a>
-    
-<br>
-<hr>
-&copy Copyright 2013-2023. Yihsiang Liow. All rights reserved. (yliow@ccis.edu
-    | <a href='http://yliow.github.io'>http://yliow.github.io</a>
-    | <a href='http://bit.ly/yliow0'>http://bit.ly/yliow0</a>)
-<br>
-Last update: 2023-07-11 13:55:27.351704
-</body>
-</html>
-    
+    '''

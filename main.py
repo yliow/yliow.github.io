@@ -19,7 +19,7 @@ webpage structure
 import datetime
 from html_util import *
 from html_fragments import *
-import urics, courses, quotes
+import urics, courses, quotes, pics
 import why_you_should_still_consider_cs
 NOW = datetime.datetime.now()
 CURR_YEAR = NOW.year
@@ -401,7 +401,7 @@ def images(float='right', srcs_captions='', width=r'33%'):
     
     return html
 
-def pics():
+def pics_():
     images_ = images(srcs_captions=[('images/pics/image16.png', 'HS Programming Contest #2 (2016)'),
                                     ('images/pics/image4.png', 'HS CS internship program (2016-2017)'),
                                     ('images/pics/image1.png', 'Weekend seminar (10/2016)'),
@@ -411,57 +411,7 @@ def pics():
     ])
     return webpage(navigation_bar=navigation_bar('pics'),
                    header=header(title('pics')),
-                   body=r'''
-%(images)s
-Welcome to PiCS (Portal into Computer Science), the computer science outreach programs of Columbia College (of Missouri).
-<br><br>           
-[PICS TO BE TRANSFERRED]
-                   
-<h2>Goal</h2>
-
-The goal of PiCS is to introduce K-12 students to the exciting area of Computer Science.
-We have visited Benton Elementary School and Alpha Hart Lewis Elementary School to talk about computer science and to teach basic programming.
-In spring 2017 we organized an “Hour of Code” event for Jeff Middle School.
-We have organized several high school events including an annual High School Programming Contest since spring 2015.
-We are also organizing several summer camps for middle school and high school students.
-More programs for elementary school students are forthcoming.
-
-<h2>Students</h2>
-
-Click on the following links to find out more about our programs and activities:
-<ul>
-<li><a href='https://docs.google.com/document/d/1weDfXSYzwsvBL-DvTmnb4SyOn_Rf1SKofbQoE4yN3fs/'>High school</a></li>
-<li><a href='https://docs.google.com/document/d/1g7FxMLD8pBvVEF_tjj7fw7fCA8SqDPCPv5P438ePR04/'>Middle school</a></li>
-<li>Elementary school [coming soon]</li>
-</ul>
-Here’s the <a href="http://bit.ly/pics-summer">2017 summer camps link</a>.
-
-<h2>Teachers</h2>
-If your school wishes to partner with Columbia College to promote computer science among your students, please email
-Dr. Yihsiang Liow (<a href="mailto:yliow@ccis.edu">yliow@ccis.edu</a>).
-We can for instance organize an “Hour of Code” for your school or classes.
-Here’s our
-<a href="https://photos.app.goo.gl/1BeGWgch3uMzWJmN7">“Hour of Code” event in 3/2017</a>.
-
-<h2>“PiCS”?</h2>
-The name PiCS and its logo (the spiral) were created by a group of our CS students, Mr. Nathaniel Graham, and Dr. Yihsiang Liow on 2015/03/30 while planning for the first High School Programming Contest (2015/04). Now they represent our outreach to all K-12 students. 
-
-<h2>Donors and Sponsors</h2> 
-To become a donor or sponsor of PiCS to support computer science outreach programs to K-12 students, please email
-Dr. Yihsiang Liow (<a href="mailto:yliow@ccis.edu">yliow@ccis.edu</a>). All donors/sponsors (past, current, and recurring) are acknowledged below (except for anonymous donors).
-<ul>
- <li>Columbia College of Missouri
- <li>MidwayUSA
- <li>Partner-in-Education (Dr. T. Vandover)
- <li>Julia Collins
-</ul>
-<br><br>
-                   
-<h2>Are you game?</h2>
-To find out more, get in touch with Dr. Yihsiang Liow (<a href="mailto:yliow@ccis.edu">yliow@ccis.edu</a>) for a chat.
-<a href="https://drive.google.com/file/d/1o1dJ6F0MmSsFW4PAKX94JrsSeGHJg6ND/view?usp=sharing">Why CS?</a> |
-<a href="https://drive.google.com/file/d/0BzjYrK0VFuMWaXI1ZlJpNTkxT0U/view?resourcekey=0-JCm-tl5MEfX0peYxdfKOYA">CS program hunting</a>
-                   ''' % {'images':images_})
+                   body=pics.index() % {'images':images_})
 
 
 def urics_():
@@ -514,7 +464,7 @@ Q&A<br>
 
 if __name__ == '__main__':
     f = open('index.html', 'w'); f.write(cccs()); f.close()
-    f = open('pics.html', 'w'); f.write(pics()); f.close()
+    f = open('pics.html', 'w'); f.write(pics_()); f.close()
     f = open('urics.html', 'w'); f.write(urics_()); f.close()
     f = open('cs_day.html', 'w'); f.write(cs_day_page()); f.close()
     f = open('quotes.html', 'w'); f.write(quotes_()); f.close()
