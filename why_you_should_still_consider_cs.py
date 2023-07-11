@@ -81,7 +81,8 @@ A high GPA at a CS program is a measure of how well you do on the coursework at 
 This is the reason why, in CS, the hiring manager is not looking for a perfect GPA. There are many other factors to consider, including the quality of the CS program of the job applicant.
 <br><br>
 
-For other thoughts on the issue of GPA, you can google “perfect gpa jobless”. Here’s a quora link to a post by someone who went to a top CS school, attained a perfect GPA of 4.0, and got “flat out rejected”: link. 
+For other thoughts on the issue of GPA, you can google “perfect gpa jobless”. Here’s a quora link to a post by someone who went to a top CS school, attained a perfect GPA of 4.0, and got “flat out rejected”:
+    <a href='https://www.quora.com/I-have-a-4-0-GPA-at-a-top-university-in-CS-I-applied-to-internships-but-got-flat-out-rejected-I-do-put-a-lot-of-effort-into-getting-good-grades-but-at-the-expense-of-more-practical-experience-But-why-do-I-not-even-get-an-interview'>link</a>. 
 <br><br>
     
 So if your concern is to find a job or build your career:, 
