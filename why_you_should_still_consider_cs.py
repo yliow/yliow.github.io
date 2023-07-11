@@ -33,6 +33,7 @@ Why?
 It’s tied to supply because “supply” means how many graduates are being produced.
 It’s tied to demand because “demand” means how many professionals with the right skills the market needs.
 It's not rocket science to deduce that there will be more graduates from an "easy major". Right?
+Let's look at some numbers on demand.
 <br><br>
 
 For your information, the average job growth for all types of jobs tracked by the Bureau of Labor and Statistics (BLS – check out http://bls.gov) is about 5% -- this has been the case for more than 10 years. The job growth for software developers, which is the most common job title for CS graduates, has been > 20% for more than 15 years. BLS classifies the job growth of software developers as “much faster than average”, the category with the fastest growth rate.
@@ -44,7 +45,9 @@ Because of the huge demand for CS professionals, it’s therefore possible to ge
 When I was still in graduate school, there was a local company (in computer security) who actually said they were willing to interview candidates with a GPA of 2.0. I’m not kidding.That’s how desperate some IT companies are.
 <br><br>
 
-Besides looking at data from BLS, another way to tell if CS (or any major) has high demand and low supply is to look at the salary information. It’s obvious that a college major that brings in a job with a high pay has to be with high demand and low supply. You don’t think a company is going to offer you a fat paycheck for a job that has 5000 desperate applicants do you? All you need to do to check on this is google “nace 2022 most lucrative college degree”. NACE stands for National Association of Colleges and Employers. (Change 2022 to the year of your choice.) This is what you see:
+Besides looking at data from BLS, another way to tell if CS (or any major) has high demand and low supply is to look at the salary information. It’s obvious that a college major that brings in a job with a high pay has to be with high demand and low supply. You don’t think a company is going to offer you a fat paycheck for a job that has 5000 desperate applicants do you?
+Pay goes up for a major with low supply.
+All you need to do to check on this is google “nace 2022 most lucrative college degree”. NACE stands for National Association of Colleges and Employers. (Change 2022 to the year of your choice.) This is what you see:
     <ul>
 <li>Computer Engineering: $74,000
 <li>Computer Science: $70,000
