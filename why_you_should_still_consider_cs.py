@@ -12,10 +12,10 @@ But generally, there are two reason: (1) to get a job or a career and (2) to lea
 in the world.
 <br><br>
 
-I will focus on getting the job or starting a career. (Having a job and having a career are two different things.
+I will focus on "getting the job or starting a career". (Having a job and having a career are two different things.
 But that's for another conversation.)
-I won't talk about why doing CS is great if you want to have a great impact in the world -- that's for
-another blog page.
+I won't talk about why studying CS is great if you want to have a great impact in the world -- that's for
+another webpage.
 <br><br>
     
 Here’s the short answer: supply and demand.
