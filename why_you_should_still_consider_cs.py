@@ -34,7 +34,7 @@ It’s tied to supply because “supply” means how many graduates are being pr
 It’s tied to demand because “demand” means how many professionals with the right skills the market needs. 
 <br><br>
 
-For your information, the average job growth for all types of jobs tracked by the Bureau of Labor and Statistics (BLS – check out http://bls.gov) is about 5\%. This has been the case for at least 10 years. The job growth for software developers, which is the most common job title for CS graduates, has been > 20% for more than 15 years. BLS classifies the job growth of software developers as “much faster than average”, the category with the fastest growth rate.
+For your information, the average job growth for all types of jobs tracked by the Bureau of Labor and Statistics (BLS – check out http://bls.gov) is about 5&percent;. This has been the case for at least 10 years. The job growth for software developers, which is the most common job title for CS graduates, has been > 20% for more than 15 years. BLS classifies the job growth of software developers as “much faster than average”, the category with the fastest growth rate.
 <br><br>
 
 Because of the huge demand for CS professionals, it’s therefore possible to get a CS-related job with a lower GPA, when compared with some other majors. 

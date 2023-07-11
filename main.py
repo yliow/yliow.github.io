@@ -478,8 +478,6 @@ def quotes_():
 
 def why_you_should_still_consider_cs_():
     s = why_you_should_still_consider_cs.index()
-    print(type(s))
-    input('.......')
     return webpage(navigation_bar=navigation_bar('why_you_should_still_consider_cs'),
                    header=header(title('why_you_should_still_consider_cs')),
                    body=s
