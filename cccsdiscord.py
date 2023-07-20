@@ -20,7 +20,7 @@ there was no definite plan for when CC will be in-seat-in-person again.
 Two things happen right away.
 We had a <a href="https://photos.google.com/share/AF1QipPHJrM1rcp6JaU6vrOByxS0RkIAuF93j1gQwFkNf4VE2rHiPOHAhC39_KRpmNDQag?key=RnEyMHpOdW1HbzNEajlyYUVqd2lEQU5INW52M193">last-minute CS jam on 03/13/2020</a> and
 the CS club officers decided to create CCCS Discord.
-CCCS Discord was created by Caleb, Brandon, Michael in March 2020.
+CCCS Discord was created by Brandon, Caleb, Michael in March 2020.
 </p>
 
 Messages (03/13/2020-03/19/2020) from our google group on setting up CCCS Discord are below.
@@ -41,7 +41,7 @@ The following was added to my homepage:<br><br>
 We are continuing with CS hangout on our CCCS discord server
 <a href="https://discord.gg/UDCX6wF">https://discord.gg/UDCX6wF</a>.
 Same time, different place.
-<b>Thanks go to Caleb, Brandon, Michael for creating/managing it.</b>
+<b>Thanks go to Brandon, Caleb, Michael for creating/managing it.</b>
 Thanks also to those who made suggestions.
 <ul>
 <li><b>WHAT:</b> (Virtual) CS Hangout and other things
