@@ -86,6 +86,8 @@ def navigation_bar(name):
         return '<a href="index.html">Home</a> | Quotes'
     elif name == 'cs_day':
         return '<a href="index.html">Home</a> | CS Day'
+    elif name == 'cccsdiscord':
+        return '<a href="index.html">Home</a> | CCCS Discord'
     elif name == 'why_you_should_still_consider_cs':
         return '<a href="index.html">Home</a> | CS Outreach | High school CS | Q&A'
     else:
@@ -112,6 +114,10 @@ def title(name):
     elif name == 'quotes':
         return '''<div>
         Quotes 
+        </div>'''
+    elif name == 'cccsdiscord':
+        return '''<div>
+        CCCS Discord 
         </div>'''
     elif name == 'why_you_should_still_consider_cs':
         return '''<div>
@@ -484,7 +490,7 @@ Q&A<br>
 '''
     )
 
-def cccsdiscord():
+def cccsdiscord_():
     return webpage(navigation_bar=navigation_bar('cccsdiscord'),
                    header=header(title('cccsdiscord')),
                    body=cccsdiscord.index()
@@ -499,3 +505,4 @@ if __name__ == '__main__':
     f = open('cs_day.html', 'w'); f.write(cs_day_page()); f.close()
     f = open('quotes.html', 'w'); f.write(quotes_()); f.close()
     f = open('why_you_should_still_consider_cs.html', 'w'); f.write(why_you_should_still_consider_cs_()); f.close()
+    f = open('cccsdiscord.html', 'w'); f.write(cccsdiscord_()); f.close()
