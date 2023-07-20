@@ -41,7 +41,7 @@ Thanks also to those who made suggestions.
 <h2>Messages in cc_cs@googlegroups.com leading to CCCS Discord</h2>
 
 The following from cc_cs@googlegroups.com from 2020/03/13 - 2020/03/19 are the messages
-leading up to the creating of CCCS discord.<br>
+leading up to the creating of CCCS discord.<br><br>
 
 <div style="border-style: solid; padding:10px">
 Braydon Hampton blhampton1@cougars.ccis.edu Mar 19, 2020, 2:40:52 PM<br>
