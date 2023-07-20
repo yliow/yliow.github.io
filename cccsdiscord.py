@@ -3,6 +3,30 @@ def index():
 
 <h2>CCCS Discord</h2>
 
+<p>
+A bit about the history of CCCS Discord ...
+</p>
+
+<p>
+In March 2020, because of covid-19, CC announced campus shutdown one week before
+springbreak.
+Everyone must leave campus on the Friday one week before springbreak.
+All classes will continue virtually after springbreak. 
+Furthermore CC will continue virtually into the next academic year
+and (of course)
+there was no definite plan for when CC will be in-seat-in-person again.
+</p>
+
+<p>
+Two things happen right away.
+Once the annoucement was made, we had a last-minute CS jam and
+the CS club officers decided to create CCCS Discord.
+CCCS Discord was created by Caleb, Brandon, Michael in March 2020.
+</p>
+
+The following was added to my homepage:
+
+<div style="border-style: solid; padding:10px">
 We are continuing with CS hangout on our CCCS discord server
 <a href="https://discord.gg/UDCX6wF">https://discord.gg/UDCX6wF</a>.
 Same time, different place.
@@ -34,14 +58,12 @@ Thanks also to those who made suggestions.
     <li>MTuWThF: 6:30-8:30PM (Spring 2021)
     </ul>
 </ul>
+</div>
 
-
-
-
-<h2>Messages in cc_cs@googlegroups.com leading to CCCS Discord</h2>
-
+<p>
 The following from cc_cs@googlegroups.com from 2020/03/13 - 2020/03/19 are the messages
-leading up to the creating of CCCS discord.<br><br>
+leading up to the creating of CCCS discord:
+</p>
 
 <div style="border-style: solid; padding:10px">
 Braydon Hampton blhampton1@cougars.ccis.edu Mar 19, 2020, 2:40:52 PM<br>
