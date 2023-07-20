@@ -37,6 +37,78 @@ Thanks also to those who made suggestions.
 
 <h2>Messages in cc_cs@googlegroups.com leading to CCCS Discord</h2>
 
+
+
+
+<div style="border-style: solid;">
+Michael Fisher <mefi...@cougars.ccis.edu> Mar 13, 2020, at 6:17 PM<br>
+﻿
+Hey everyone, <br><br>
+
+So as you all know, day campus classes for Columbia College are suspended for the next two weeks, and will be resumed in an online format for the rest of the semester. This is disruptive for a lot of us, especially for those who have come to rely on the support structure of the CS club for tutoring in Math and Computer Science as well as assistance in the final projects for our program. <br><br>
+
+Even though classes and club activities have been suspended for the remainder of the semester, we are taking active steps to allow for a continued support structure for the department. As such, I will outline the measures we are taking to supplement our old program:<br><br>
+
+<b>Discord Server:<b><br><br>
+
+We will be setting up a discord server for the organization that will allow us to remain in contact and provide an open forum for students to ask questions, propose ideas and solutions, and schedule personalized tutoring sessions. The general structure is still provisional but will look something like this-
+groups for specific CS classes:
+240,
+245,
+350,
+430 database
+445 programming languages<br><br>
+
+groups for hangout hours:<br>
+CCCS Hangout Hours<br><br>
+
+Caleb Fischer has agreed to take responsibility for setting this up, so be on the lookout for an email from him with the particulars. If you do not already have a discord page, an account can be created here. If you already have an account, send your information on to Caleb at cpfis...@cougars.ccis.edu so he can add you to the group.<br><br>
+
+<b>Individual Tutoring Sessions:</b><br><br>
+
+A group of volunteers has agreed to provide individual tutoring sessions upon appointment. If you are needing CS help, please send us the source code that you are having issues with as well as the general question that you are having so that we can get a clear idea of how to help you. If you are needing math help, please have the problem in its entirety as well as the subject being covered for the math tutors. All appointments can be done over a Skype/Zoom/Discord call for live/interactive help.<br><br>
+
+Tutors:<br>
+Karissa Brickey:<br>
+CS: 240, 245, 350, 430 database<br>
+Math: College Algebra, Pre-Calc, Calculus I/II, Discrete I/II<br>
+kebrickey1@cougars.ccis.edu<br>
+
+Trinity Mayer:<br>
+CS: 240<br>
+Math: College Algebra, Pre-Calc, Calculus I/II, Discrete I<br>
+tamayer1@cougars.ccis.edu<br><br>
+
+Michael Fisher:<br>
+CS: 240, 245, 350, 430 database<br>
+Math: College Algebra, Pre-Calc, Calculus I<br>
+mefisher2@cougars.ccis.edu<br><br>
+
+Please remember that all appointments are subject to availability. The tutors are unpaid and have their own classwork to complete, so proactive planning is appreciated.<br><br> 
+
+<b>Daily Hangout Hours</b><br><br>
+
+There will be a concerted effort to continue hangout hours in the form of a group Skype/Discord/Zoom session at the usual time slot of MWF 4:30 - 6:30, TTh 3:00-5:00.
+I encourage all of you to come to these sessions as a way of maintaining a sense of structure in your studies, something that can be easily lost in these online sessions. More details about how hangout hours will be conducted will be announced within the next couple of days as the logistics are hammered out. <br><br>
+
+<b>Course Planning</b><br><br>
+
+It is a tradition for upperclassmen to work with underclassmen in our department to help them plan their classes for the next two years of their academic career. As such, we will be planning a video conference led by Dr. Liow and some Seniors to outline the course plan for the underclassmen. This date is still undetermined, but expect an email in the coming weeks and a post in the CCCS discord about information concerning this.<br><br>
+
+<b>End of Semester Presentations</b><br><br>
+
+Traditionally, the last part of every semester is the CS Presentations, which is where all classes come together and present their class projects for the semester. Especially for CISS 245 and beyond, this is a major part of our final grade. As such, it would be a shame if we were forced to cancel this time honored tradition. As such this is what we discussed and was agreed upon during the last CS meeting by the department:<br><br>
+
+We will hold the presentations at Stephens Lake Park in the amphitheatre. This will be a large, open air environment that will be a better alternative to being confined in a small area. For those that can not/ do not feel comfortable about coming to this public event, we will be doing a hybrid style video conference where people can tune in and watch/present their projects from their home. <br><br>
+
+<b>Conclusion</b><br><br>
+
+This will be a tough transition and a tough semester for a lot of us, but our department is committed to maintaining a sense of cohesion and support for everyone. If you have any ideas, suggestions, or critiques, please reach out to me personally, and I will bring it up with the CS officers and Dr. Liow so we can make amends to the program as needed. <br><br>
+
+Please have a safe break, and I hope to see you all again next year,<br>
+Michael Fisher
+</div>
+    
 <div style="border-style: solid;">
 Braydon Hampton blhampton1@cougars.ccis.edu Mar 13, 2020, 2:49:33 PM<br>
 to cc_cs@googlegroups.com<br>
