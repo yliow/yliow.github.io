@@ -62,7 +62,8 @@ Thanks also to those who made suggestions.
 </div>
 
 <p>
-The following from cc_cs@googlegroups.com from 2020/03/13 - 2020/03/19 are the messages
+The following from <a href="https://groups.google.com/g/cc_cs/">cc_cs@googlegroups.com</a>
+    from 2020/03/13 - 2020/03/19 are the messages
 leading up to the creating of CCCS discord:
 </p>
 
@@ -110,7 +111,7 @@ We are setting up discord for everyone to interact socially and also to chat abo
 <li>Create an account.
 <li>Run discord and use the following https://discord.gg/yrssjGb to get to CCCS discord.
 </ol>
-<br>
+    <br>
     
 If you have problems doing any of the above, post to cc_cs@googlegroups.com.<br><br>
 
