@@ -49,8 +49,8 @@ We will still have Hangout Hours today. This will be the last time we meet this 
 
 For the rest of the semester the work study students will be deciding what to do to still offer help to anyone who would like it. Right now I’m think a discord server will be our best option, but if you have any suggestions feel free to let me know. <br><br><br>
 
---
-Thanks,
-Braydon Hampton
+--<br>
+Thanks,<br>
+Braydon Hampton<br>
 </div>
     '''
