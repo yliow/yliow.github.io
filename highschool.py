@@ -58,12 +58,14 @@ This is not updated all the time!
 <li>2016/10/29 -- Weekend seminar: Algorithms & puzzles [CLOSED] [15]
 <li>2016/09 -- <a href="https://docs.google.com/document/d/1kBkt_scGsrFe2PGLsrcsf16JyjtKmtYJTobsh0ulGC0/">HS CS Internship</a> begins [CLOSED] [6]
 <li>High school class visits for 2016-2017:
-<li>Thu 10/13, 8:55AM - 10:20AM -- Adv C++ (Columbia Area Career Ctr) [8]	
-<li>Thu 10/13, 12:50PM - 2:20PM -- Intro C++ (Columbia Area Career Ctr) [16]
-<li>Thu 10/13, 2:40PM - 4:00PM -- Adv C++ (Columbia Area Career Ctr) [12]  
-<li>Tue 10/18, 11:05AM - 12:20PM -- Intro C++ (Battle HS) [11]
-<li>Thu 10/20, 9:00AM - 10:20AM -- Intro C++ (Battle HS) [9]
-<li>Thu 10/20, 2:40PM - 4:00PM -- Intro C++ (Columbia Area Career Ctr) [15]
+    <ul>
+    <li>Thu 10/13, 8:55AM - 10:20AM -- Adv C++ (Columbia Area Career Ctr) [8]	
+    <li>Thu 10/13, 12:50PM - 2:20PM -- Intro C++ (Columbia Area Career Ctr) [16]
+    <li>Thu 10/13, 2:40PM - 4:00PM -- Adv C++ (Columbia Area Career Ctr) [12]  
+    <li>Tue 10/18, 11:05AM - 12:20PM -- Intro C++ (Battle HS) [11]
+    <li>Thu 10/20, 9:00AM - 10:20AM -- Intro C++ (Battle HS) [9]
+    <li>Thu 10/20, 2:40PM - 4:00PM -- Intro C++ (Columbia Area Career Ctr) [15]
+    </ul>
 </ul>
 [<a href='https://docs.google.com/document/d/1zQKEbZkhigTyOSUsyuxke77WziI217K23HQknwlX9HM/edit#heading=h.fn6td22q3eax'>Complete calendar</a>]
 
