@@ -34,4 +34,24 @@ Thanks also to those who made suggestions.
     <li>MTuWThF: 6:30-8:30PM (Spring 2021)
     </ul>
 </ul>
+
+<h2>Messages in cc_cs@googlegroups.com leading to CCCS Discord</h2>
+
+<pre>
+Braydon Hampton<blhampton1@cougars.ccis.edu>
+unread,
+Mar 13, 2020, 2:49:33 PM
+to cc_cs@googlegroups.com
+Hey everyone, 
+
+As you all probably know by now the campus is shutting down and will be going all online. Obviously this will effect hangout hours. So here’s where we’re at:
+
+We will still have Hangout Hours today. This will be the last time we meet this spring. 
+
+For the rest of the semester the work study students will be deciding what to do to still offer help to anyone who would like it. Right now I’m think a discord server will be our best option, but if you have any suggestions feel free to let me know.
+
+--
+Thanks,
+Braydon Hampton
+</pre>
     '''
