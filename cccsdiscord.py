@@ -38,16 +38,16 @@ Thanks also to those who made suggestions.
 <h2>Messages in cc_cs@googlegroups.com leading to CCCS Discord</h2>
 
 <div style="border-style: solid;">
-Braydon Hampton<blhampton1@cougars.ccis.edu>
-Mar 13, 2020, 2:49:33 PM
-to cc_cs@googlegroups.com
-Hey everyone, 
+Braydon Hampton<blhampton1@cougars.ccis.edu><br>
+Mar 13, 2020, 2:49:33 PM<br>
+to cc_cs@googlegroups.com<br>
+Hey everyone, <br><br>
 
-As you all probably know by now the campus is shutting down and will be going all online. Obviously this will effect hangout hours. So here’s where we’re at:
+As you all probably know by now the campus is shutting down and will be going all online. Obviously this will effect hangout hours. So here’s where we’re at: <br><br>
 
-We will still have Hangout Hours today. This will be the last time we meet this spring. 
+We will still have Hangout Hours today. This will be the last time we meet this spring. <br><br>
 
-For the rest of the semester the work study students will be deciding what to do to still offer help to anyone who would like it. Right now I’m think a discord server will be our best option, but if you have any suggestions feel free to let me know.
+For the rest of the semester the work study students will be deciding what to do to still offer help to anyone who would like it. Right now I’m think a discord server will be our best option, but if you have any suggestions feel free to let me know. <br><br><br>
 
 --
 Thanks,
