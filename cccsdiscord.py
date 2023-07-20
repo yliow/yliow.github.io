@@ -41,7 +41,7 @@ Thanks also to those who made suggestions.
 
 
 <div style="border-style: solid;">
-Michael Fisher mefisher2@cougars.ccis.edu Mar 13, 2020, at 6:17 PM<br>
+Michael Fisher mefisher2@cougars.ccis.edu Mar 13, 2020, at 6:17 PM<br><br>
 ﻿
 Hey everyone, <br><br>
 
