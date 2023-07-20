@@ -117,7 +117,8 @@ def cccs_google_group():
 
 def cccs_discord():
     return r"""<a href="https://discord.gg/UDCX6wF">CCCS discord</a>
-    (<a href="https://discordapp.com/download">discord app</a> |
+    (
+    <a href="https://discordapp.com/download">discord app</a> |
     <a href="cccsdiscord.html">history</a>
     )
     <ul>
