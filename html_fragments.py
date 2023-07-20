@@ -119,7 +119,7 @@ def cccs_discord():
     return r"""<a href="https://discord.gg/UDCX6wF">CCCS discord</a>
     (
     <a href="https://discordapp.com/download">discord app</a> |
-    <a href="cccsdiscord.html">history</a>
+    <a href="cccsdiscord.html">history</a> [new]
     )
     <ul>
     <li>Once you are in, go to “welcome-and-rules”.
