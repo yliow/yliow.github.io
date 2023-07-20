@@ -41,6 +41,23 @@ Thanks also to those who made suggestions.
 
 
 <div style="border-style: solid; padding:10px">
+Michael Fisher mefisher2@cougars.ccis.edu Mar 16, 2020, 12:42:24 PM<br>
+to cc_cs@googlegroups.com, krfelts@ccis.edu, Tourville, Suzanne<br><br>
+    
+Hey everyone,<br><br>
+
+We have the discord channel setup. The current set up is not finalized yet, but Dr. Liow thought it would be a good idea to go ahead and bring in everyone so we can maintain a good stream of communication. <br><br>
+
+I will include the link at the bottom of the email, feel free to let me know if you have any questions or difficulties getting in.<br><br>
+
+Thanks,<br>
+Michael Fisher<br><br>
+
+https://discord.gg/yrssjGb
+<?div>
+
+
+<div style="border-style: solid; padding:10px">
 Michael Fisher mefisher2@cougars.ccis.edu Mar 13, 2020, at 6:17 PM<br><br>
 ﻿
 Hey everyone, <br><br>
