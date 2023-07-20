@@ -39,6 +39,35 @@ Thanks also to those who made suggestions.
 
 
 
+<div style="border-style: solid; padding:10px">
+Braydon Hampton blhampton1@cougars.ccis.edu Mar 19, 2020, 2:40:52 PM<br>
+to cc_cs@googlegroups.com<br><br>
+    
+Hey all,<br><br>
+
+Hope you are doing well. Today we will be continuing hangout hours per our normal schedule:<br><br>
+
+MWF: 4:30-6:30<br>
+TTh: 3-5<br><br>
+
+This will be happening via discord. 
+Invite link: 
+https://discord.gg/fPYEda
+(Note this invite expires after a day)
+<br><br>
+It would be a lot of help if you all could make it so we can playtest hangout hours and see what changes may need to happen for the discord channel.
+<br><br>
+    
+It’s going to take a group effort of supporting one another to finish out this semester strong, so let’s make due with what we’ve got and work together!<br><br>
+
+--<br>
+Thanks,<br>
+Braydon Hampton
+</div>
+
+
+
+    
 
 <div style="border-style: solid; padding:10px">
 Michael Fisher mefisher2@cougars.ccis.edu Mar 16, 2020, 12:42:24 PM<br>
