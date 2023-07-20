@@ -118,7 +118,7 @@ If you have problems doing any of the above, post to cc_cs@googlegroups.com.<br>
 
 Right now we’re trying to figure out how to set up the channels, how to interact effectively, etc. If you are already in discord, you can jump in and make suggestions.<br><br>
 
-<div style="color:red"><b>CS Hangout in discord will start VERY SOON – THIS WEEK.</b></div><br><br>
+<div style="color:red"><b>CS Hangout in discord will start VERY SOON – THIS WEEK.</b></div><br>
 
 Once things are semi-finalized, we might have a “CCCS Discord Kickoff” in case people have new suggestions on how to configure the discord space and also for Michael, Braydon, Caleb, etc to do a general welcome + introduction to discord.
 </div>
