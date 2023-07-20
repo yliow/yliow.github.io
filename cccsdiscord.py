@@ -110,7 +110,7 @@ We are setting up discord for everyone to interact socially and also to chat abo
 <li>Create an account.
 <li>Run discord and use the following https://discord.gg/yrssjGb to get to CCCS discord.
 </ol>
-<br><br>
+<br>
     
 If you have problems doing any of the above, post to cc_cs@googlegroups.com.<br><br>
 
