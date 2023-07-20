@@ -41,8 +41,9 @@ Thanks also to those who made suggestions.
 
 <div style="border-style: solid; padding:10px">
 Braydon Hampton blhampton1@cougars.ccis.edu Mar 19, 2020, 2:40:52 PM<br>
-to cc_cs@googlegroups.com<br><br>
-    
+to cc_cs@googlegroups.com<br>
+Subject: Hangout Hours and Discord kickoff<br><br>
+
 Hey all,<br><br>
 
 Hope you are doing well. Today we will be continuing hangout hours per our normal schedule:<br><br>
@@ -71,7 +72,8 @@ Braydon Hampton
 
 <div style="border-style: solid; padding:10px">
 Michael Fisher mefisher2@cougars.ccis.edu Mar 16, 2020, 12:42:24 PM<br>
-to cc_cs@googlegroups.com, krfelts@ccis.edu, Tourville, Suzanne<br><br>
+to cc_cs@googlegroups.com, krfelts@ccis.edu, Tourville, Suzanne<br>
+Subject: Discord<br><br>
     
 Hey everyone,<br><br>
 
@@ -87,8 +89,8 @@ https://discord.gg/yrssjGb
 
 
 <div style="border-style: solid; padding:10px">
-Michael Fisher mefisher2@cougars.ccis.edu Mar 13, 2020, at 6:17 PM<br><br>
-﻿
+Michael Fisher mefisher2@cougars.ccis.edu Mar 13, 2020, at 6:17 PM<br>
+﻿Subject: CCCS Continuity for the Spring Semester<br><br>
 Hey everyone, <br><br>
 
 So as you all know, day campus classes for Columbia College are suspended for the next two weeks, and will be resumed in an online format for the rest of the semester. This is disruptive for a lot of us, especially for those who have come to rely on the support structure of the CS club for tutoring in Math and Computer Science as well as assistance in the final projects for our program. <br><br>
@@ -161,6 +163,8 @@ Michael Fisher
 <div style="border-style: solid; padding:10px">
 Braydon Hampton blhampton1@cougars.ccis.edu Mar 13, 2020, 2:49:33 PM<br>
 to cc_cs@googlegroups.com<br>
+Subject: Hangout Hours<br><br>
+
 Hey everyone, <br><br>
 
 As you all probably know by now the campus is shutting down and will be going all online. Obviously this will effect hangout hours. So here’s where we’re at: <br><br>
