@@ -37,7 +37,7 @@ Thanks also to those who made suggestions.
 
 <h2>Messages in cc_cs@googlegroups.com leading to CCCS Discord</h2>
 
-<pre style="border-style: solid;">
+<div style="border-style: solid;">
 Braydon Hampton<blhampton1@cougars.ccis.edu>
 Mar 13, 2020, 2:49:33 PM
 to cc_cs@googlegroups.com
@@ -52,5 +52,5 @@ For the rest of the semester the work study students will be deciding what to do
 --
 Thanks,
 Braydon Hampton
-</pre>
+</div>
     '''
