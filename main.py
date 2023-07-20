@@ -21,6 +21,7 @@ from html_util import *
 from html_fragments import *
 import urics, courses, quotes, pics
 import why_you_should_still_consider_cs, highschool
+import cccsdiscord
 NOW = datetime.datetime.now()
 CURR_YEAR = NOW.year
 HEAD = r'''
@@ -482,6 +483,11 @@ Q&A<br>
 '''
     )
 
+def cccsdiscord():
+    return webpage(navigation_bar=navigation_bar('cccsdiscord'),
+                   header=header(title('cccsdiscord')),
+                   body=cccsdiscord.index()
+    )
 
 
 if __name__ == '__main__':
