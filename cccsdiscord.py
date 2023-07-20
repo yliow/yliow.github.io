@@ -72,6 +72,7 @@ Braydon Hampton
 
 <div style="border-style: solid; padding:10px">
 Liow, Yihsiang yliow@ccis.edu Tue, Mar 17, 2020 at 12:10 PM<br>
+to cc_cs@googlegroups.com<br>
 Subject: CCCS discord server for online chat & video conf & pair programming<br><br>
 
 We are setting up discord for everyone to interact socially and also to chat about CS courses (programming, theory, math, etc.) Discord has text chat and video conferencing. It also has screen share which will help in chatting about program code.
