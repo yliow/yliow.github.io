@@ -8,8 +8,7 @@ A bit about the history of CCCS Discord ...
 </p>
 
 <p>
-In March 2020, because of covid-19, CC announced campus shutdown one week before
-springbreak.
+In March 2020, because of covid-19, CC announced campus shutdown.
 Everyone must leave campus on the Friday one week before springbreak.
 All classes will continue virtually after springbreak. 
 Furthermore CC will continue virtually into the next academic year
