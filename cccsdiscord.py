@@ -41,7 +41,7 @@ Thanks also to those who made suggestions.
 
 
 <div style="border-style: solid;">
-Michael Fisher <mefi...@cougars.ccis.edu> Mar 13, 2020, at 6:17 PM<br>
+Michael Fisher mefisher2@cougars.ccis.edu Mar 13, 2020, at 6:17 PM<br>
 ﻿
 Hey everyone, <br><br>
 
@@ -108,6 +108,9 @@ This will be a tough transition and a tough semester for a lot of us, but our de
 Please have a safe break, and I hope to see you all again next year,<br>
 Michael Fisher
 </div>
+
+
+
     
 <div style="border-style: solid;">
 Braydon Hampton blhampton1@cougars.ccis.edu Mar 13, 2020, 2:49:33 PM<br>
