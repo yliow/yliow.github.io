@@ -121,6 +121,7 @@ https://discord.gg/yrssjGb
     
 <div style="border-style: solid; padding:10px">
 Michael Fisher mefisher2@cougars.ccis.edu Mar 13, 2020, at 6:17 PM<br>
+to cc_cs@googlegroups.com<br>
 ﻿Subject: CCCS Continuity for the Spring Semester<br><br>
 Hey everyone, <br><br>
 
