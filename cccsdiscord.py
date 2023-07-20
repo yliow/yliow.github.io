@@ -1,7 +1,7 @@
 def index():
     return r'''
 
-<h2>History of CCCS Discord</h2>
+    <h2>History of CCCS Discord</h2>
 
 <p>
 A bit about the history of CCCS Discord <a href="https://discord.gg/UDCX6wF">https://discord.gg/UDCX6wF</a> ...
