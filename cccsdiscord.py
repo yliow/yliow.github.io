@@ -4,7 +4,7 @@ def index():
 <h2>CCCS Discord</h2>
 
 <p>
-A bit about the history of CCCS Discord ...
+A bit about the history of CCCS Discord <a href="https://discord.gg/UDCX6wF">https://discord.gg/UDCX6wF</a> ...
 </p>
 
 <p>
