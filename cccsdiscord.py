@@ -30,7 +30,7 @@ Here are some snippets:
     best option
     <li>
     Michael: ... disruptive for a lot of us, especially for those who have come to rely on the support structure of the CS club for
-    tutoring in Math and Computer Science as well as assistance in the final projects for our program ...
+    tutoring in Math and Computer Science ...
     We will be setting up a discord server ... that will allow us to remain in contact and provide an open forum for students	
     </ul>
 The following was added to my homepage:<br><br>
