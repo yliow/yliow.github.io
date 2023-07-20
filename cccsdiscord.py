@@ -6,7 +6,7 @@ def index():
 We are continuing with CS hangout on our CCCS discord server
 <a href="https://discord.gg/UDCX6wF">https://discord.gg/UDCX6wF</a>.
 Same time, different place.
-Thanks go to Caleb, Brandon, Michael for creating/managing it.
+<b>Thanks go to Caleb, Brandon, Michael for creating/managing it.</b>
 Thanks also to those who made suggestions.
 <ul>
 <li><b>WHAT:</b> (Virtual) CS Hangout and other things
