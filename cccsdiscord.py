@@ -23,7 +23,7 @@ the CS club officers decided to create CCCS Discord.
 CCCS Discord was created by Caleb, Brandon, Michael in March 2020.
 </p>
 
-The following was added to my homepage:<br>
+The following was added to my homepage:<br><br>
 
 <div style="border-style: solid; padding:10px">
     <h2>CCCS Discord</h2>
