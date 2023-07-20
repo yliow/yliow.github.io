@@ -49,7 +49,7 @@ So as you all know, day campus classes for Columbia College are suspended for th
 
 Even though classes and club activities have been suspended for the remainder of the semester, we are taking active steps to allow for a continued support structure for the department. As such, I will outline the measures we are taking to supplement our old program:<br><br>
 
-<b>Discord Server:<b><br><br>
+<b>Discord Server:</b><br><br>
 
 We will be setting up a discord server for the organization that will allow us to remain in contact and provide an open forum for students to ask questions, propose ideas and solutions, and schedule personalized tutoring sessions. The general structure is still provisional but will look something like this-
 groups for specific CS classes:
