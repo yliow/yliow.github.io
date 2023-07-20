@@ -40,7 +40,7 @@ Thanks also to those who made suggestions.
 
 
 
-<div style="border-style: solid;">
+<div style="border-style: solid; padding:5px">
 Michael Fisher mefisher2@cougars.ccis.edu Mar 13, 2020, at 6:17 PM<br><br>
 ﻿
 Hey everyone, <br><br>
@@ -72,7 +72,7 @@ Tutors:<br>
 Karissa Brickey:<br>
 CS: 240, 245, 350, 430 database<br>
 Math: College Algebra, Pre-Calc, Calculus I/II, Discrete I/II<br>
-kebrickey1@cougars.ccis.edu<br>
+kebrickey1@cougars.ccis.edu<br><br>
 
 Trinity Mayer:<br>
 CS: 240<br>
