@@ -18,7 +18,7 @@ there was no definite plan for when CC will be in-seat-in-person again.
 
 <p>
 Two things happen right away.
-Once the annoucement was made, we had a last-minute CS jam and
+We had a last-minute CS jam on 03/13/2020 and
 the CS club officers decided to create CCCS Discord.
 CCCS Discord was created by Caleb, Brandon, Michael in March 2020.
 </p>
@@ -26,6 +26,8 @@ CCCS Discord was created by Caleb, Brandon, Michael in March 2020.
 The following was added to my homepage:
 
 <div style="border-style: solid; padding:10px">
+    <h2>CCCS Discord</h2>
+
 We are continuing with CS hangout on our CCCS discord server
 <a href="https://discord.gg/UDCX6wF">https://discord.gg/UDCX6wF</a>.
 Same time, different place.
