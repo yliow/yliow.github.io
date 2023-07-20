@@ -38,7 +38,7 @@ Thanks also to those who made suggestions.
 <h2>Messages in cc_cs@googlegroups.com leading to CCCS Discord</h2>
 
 <div style="border-style: solid;">
-Braydon Hampton<blhampton1@cougars.ccis.edu><br>
+Braydon Hampton blhampton1@cougars.ccis.edu<br>
 Mar 13, 2020, 2:49:33 PM<br>
 to cc_cs@googlegroups.com<br>
 Hey everyone, <br><br>
