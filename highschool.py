@@ -23,40 +23,40 @@ def index():
 <h2>Current Calendar</h2>
 This is not updated all the time!
 <ul>
-<li>2023/05/15: Deadline for 2023-2024 HS CS internship “enrolment” [NEW]
+<li>2023/05/15: Deadline for 2023-2024 <a href="https://docs.google.com/document/d/1kBkt_scGsrFe2PGLsrcsf16JyjtKmtYJTobsh0ulGC0/">HS CS Internship</a> “enrolment” [NEW]
 <li>2023/04/08: HS Programming Contest [4]
 <li>2023/01/19, 12:50PM-2PM. HHS Java [7]
 <li>2023/01/19, 10:30AM-12:00PM. HHS Intro C++ [3]
 <li>2023/01/19, 9AM-10:30AM. HHS Intro C++ [7]
-<li>2022/09/13, 1PM-2:20PM: HHS Java [14 students] slides
-<li>2022/09/13, 10:30AM-12PM: HHS Intro C++ [5 students] slides
-<li>2022/09/13, 9AM-10:30PM: HHS Intro C++ [14 students] slides
-<li>2022/09/06, 1PM-2:20PM: CACC Intro C++ [16 students] slides
-<li>2022/09/06, 10:30AM-12PM: CACC Intro C++ [18 students] slides
-<li>2020/09/05: HS CS Internship begins
-<li>2020/09/02, 6PM: HS CS Internship application ends. 
-<li>2022/08/26, 2:30-4PM: Class visit. CACC, Adv C++ and Adv Projects [18] slides
+<li>2022/09/13, 1PM-2:20PM: HHS Java [14 students] <a href="https://docs.google.com/presentation/d/1emwpy5vuDOAKfLIMr2niUylN5-W93LaRn6BewzYI5OA/edit?usp=sharing">slides</a>
+<li>2022/09/13, 10:30AM-12PM: HHS Intro C++ [5 students] <a href="https://docs.google.com/presentation/d/1emwpy5vuDOAKfLIMr2niUylN5-W93LaRn6BewzYI5OA/edit?usp=sharing">slides</a>
+<li>2022/09/13, 9AM-10:30PM: HHS Intro C++ [14 students] <a href="https://docs.google.com/presentation/d/1emwpy5vuDOAKfLIMr2niUylN5-W93LaRn6BewzYI5OA/edit?usp=sharing">slides</a>
+<li>2022/09/06, 1PM-2:20PM: CACC Intro C++ [16 students] <a href="https://docs.google.com/presentation/d/1emwpy5vuDOAKfLIMr2niUylN5-W93LaRn6BewzYI5OA/edit?usp=sharing">slides</a>
+<li>2022/09/06, 10:30AM-12PM: CACC Intro C++ [18 students] <a href="https://docs.google.com/presentation/d/1emwpy5vuDOAKfLIMr2niUylN5-W93LaRn6BewzYI5OA/edit?usp=sharing">slides</a>
+<li>2020/09/05: <a href="https://docs.google.com/document/d/1kBkt_scGsrFe2PGLsrcsf16JyjtKmtYJTobsh0ulGC0/">HS CS Internship</a> begins
+<li>2020/09/02, 6PM: <a href="https://docs.google.com/document/d/1kBkt_scGsrFe2PGLsrcsf16JyjtKmtYJTobsh0ulGC0/">HS CS Internship</a> application ends. 
+<li>2022/08/26, 2:30-4PM: Class visit. CACC, Adv C++ and Adv Projects [18] <a href="https://docs.google.com/presentation/d/1emwpy5vuDOAKfLIMr2niUylN5-W93LaRn6BewzYI5OA/edit?usp=sharing">slides</a>
 <li>Spring 2022: CACC C++ class visits resume
 <li>Fall 2021: CACC C++ class visits resume
 <li>!!! COVID-19 !!!
 <li>2020/3: Meetings suspended because of covid-19
-<li>2019/9: HS CS Internship begins [3]
+<li>2019/9: <a href="https://docs.google.com/document/d/1kBkt_scGsrFe2PGLsrcsf16JyjtKmtYJTobsh0ulGC0/">HS CS Internship</a> begins [3]
 <li>2019/9: Visited 7 HS CS classes
 <li>2018/10/2: 3:15pm-4:00pm C++ Programming (HHS) [?]
 <li>2018/10/2: 10:37am-12:05 Advanced C++/Adv Projects and AP CS (CACC) [?]
 <li>2018/10/2: 8:55-10:20 C++ Programming (CACC) [?]
 <li>2018/09/25: CACC Intro C++ class visit [17]
 <li>2018/09/18: CACC Adv C++ & Adv Proj class visit [5]
-<li>2018/08/28: HS CS Internship begins [4]
+<li>2018/08/28: <a href="https://docs.google.com/document/d/1kBkt_scGsrFe2PGLsrcsf16JyjtKmtYJTobsh0ulGC0/">HS CS Internship</a> begins [4]
 <li>2018/05/19: HS Programming Contest [CLOSE] [10]
 <li>High school class visits for 2017-2018: 7 C++ classes and 2 AP CS related classes [105?]
-<li>HS CS Internship. 2017/09 -- 2018/05. begins [3]
+<li><a href="https://docs.google.com/document/d/1kBkt_scGsrFe2PGLsrcsf16JyjtKmtYJTobsh0ulGC0/">HS CS Internship</a>. 2017/09 -- 2018/05. begins [3]
 <li>2017/06,07 -- Summer camps
-<li>2017/05 -- HS CS Internship ends [CLOSED] [4]
+<li>2017/05 -- <a href="https://docs.google.com/document/d/1kBkt_scGsrFe2PGLsrcsf16JyjtKmtYJTobsh0ulGC0/">HS CS Internship</a> ends [CLOSED] [4]
 <li>2017/04/22 -- Weekend seminar: Games CANCELED. See Summer camps.
 <li>2016/12/03 -- Weekend seminar: AI [CLOSED] [10]
 <li>2016/10/29 -- Weekend seminar: Algorithms & puzzles [CLOSED] [15]
-<li>2016/09 -- HS CS Internship begins [CLOSED] [6]
+<li>2016/09 -- <a href="https://docs.google.com/document/d/1kBkt_scGsrFe2PGLsrcsf16JyjtKmtYJTobsh0ulGC0/">HS CS Internship</a> begins [CLOSED] [6]
 <li>High school class visits for 2016-2017:
 <li>Thu 10/13, 8:55AM - 10:20AM -- Adv C++ (Columbia Area Career Ctr) [8]	
 <li>Thu 10/13, 12:50PM - 2:20PM -- Intro C++ (Columbia Area Career Ctr) [16]
