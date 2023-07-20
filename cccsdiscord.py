@@ -68,8 +68,35 @@ Braydon Hampton
 
 
 
-    
 
+
+<div style="border-style: solid; padding:10px">
+Liow, Yihsiang yliow@ccis.edu Tue, Mar 17, 2020 at 12:10 PM<br>
+Subject: CCCS discord server for online chat & video conf & pair programming<br><br>
+
+We are setting up discord for everyone to interact socially and also to chat about CS courses (programming, theory, math, etc.) Discord has text chat and video conferencing. It also has screen share which will help in chatting about program code.
+<br><br>
+    
+<ol>
+<li>Google and install discord. https://discordapp.com/. You can use a web browser, but it’s probably faster if you use download install the app.
+<li>Create an account.
+<li>Run discord and use the following https://discord.gg/yrssjGb to get to CCCS discord.
+</ol>
+<br><br>
+    
+If you have problems doing any of the above, post to cc_cs@googlegroups.com.<br><br>
+
+
+Right now we’re trying to figure out how to set up the channels, how to interact effectively, etc. If you are already in discord, you can jump in and make suggestions.<br><br>
+
+CS Hangout in discord will start VERY SOON – THIS WEEK.<br><br>
+
+Once things are semi-finalized, we might have a “CCCS Discord Kickoff” in case people have new suggestions on how to configure the discord space and also for Michael, Braydon, Caleb, etc to do a general welcome + introduction to discord.
+</div>
+
+
+
+   
 <div style="border-style: solid; padding:10px">
 Michael Fisher mefisher2@cougars.ccis.edu Mar 16, 2020, 12:42:24 PM<br>
 to cc_cs@googlegroups.com, krfelts@ccis.edu, Tourville, Suzanne<br>
@@ -88,6 +115,9 @@ https://discord.gg/yrssjGb
 </div>
 
 
+
+
+    
 <div style="border-style: solid; padding:10px">
 Michael Fisher mefisher2@cougars.ccis.edu Mar 13, 2020, at 6:17 PM<br>
 ﻿Subject: CCCS Continuity for the Spring Semester<br><br>
