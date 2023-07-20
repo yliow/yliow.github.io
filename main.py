@@ -185,7 +185,7 @@ def toc():
       <li><a href="#courses">Courses</a></li>      
       <li><a href="#tutorials">Tutorials</a></li>
       <li><a href="#wanna-feed-your-brain">Wanna feed your brain?</a></li>
-    <li><a href="pics.html">pics ... to be organized</a></li>
+    <li><a href="pics.html">K-12</a></li>
     </ul>
 
     '''
