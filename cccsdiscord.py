@@ -74,7 +74,7 @@ Thanks also to those who made suggestions.
 <p>
 The following from <a href="https://groups.google.com/g/cc_cs/">cc_cs@googlegroups.com</a>
     from 2020/03/13 - 2020/03/19 are the messages
-leading up to the creating of CCCS discord:
+leading up to the creation of CCCS discord:
 </p>
 
 <div style="border-style: solid; padding:10px">
