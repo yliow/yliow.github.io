@@ -40,7 +40,7 @@ Thanks also to those who made suggestions.
 
 
 
-<div style="border-style: solid; padding:5px">
+<div style="border-style: solid; padding:10px">
 Michael Fisher mefisher2@cougars.ccis.edu Mar 13, 2020, at 6:17 PM<br><br>
 ﻿
 Hey everyone, <br><br>
@@ -112,7 +112,7 @@ Michael Fisher
 
 
     
-<div style="border-style: solid;">
+<div style="border-style: solid; padding:10px">
 Braydon Hampton blhampton1@cougars.ccis.edu Mar 13, 2020, 2:49:33 PM<br>
 to cc_cs@googlegroups.com<br>
 Hey everyone, <br><br>
