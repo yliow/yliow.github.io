@@ -1,6 +1,5 @@
 def index():
     return r'''
-<!-- %(images)s -->
     
     <h2>History of CCCS Discord</h2>
 
