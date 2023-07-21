@@ -514,7 +514,7 @@ def cccsdiscord_():
 
 
 if __name__ == '__main__':
-    #    f = open('index.html', 'w'); f.write(cccs()); f.close()
+        f = open('index.html', 'w'); f.write(cccs()); f.close()
     #    f = open('pics.html', 'w'); f.write(pics_()); f.close()
     #    f = open('highschool.html', 'w'); f.write(highschool_()); f.close()
     #    f = open('urics.html', 'w'); f.write(urics_()); f.close()
@@ -523,7 +523,7 @@ if __name__ == '__main__':
     #    f = open('why_you_should_still_consider_cs.html', 'w'); f.write(why_you_should_still_consider_cs_()); f.close()
     #    f = open('cccsdiscord.html', 'w'); f.write(cccsdiscord_()); f.close()
 
-    save_webpage(path='index.html', body=cccs())
+    #save_webpage(path='index.html', body=cccs())
     #    f = open('pics.html', 'w'); f.write(pics_()); f.close()
     #    f = open('highschool.html', 'w'); f.write(highschool_()); f.close()
     #    f = open('urics.html', 'w'); f.write(urics_()); f.close()
