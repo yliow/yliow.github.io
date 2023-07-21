@@ -14,8 +14,8 @@ webpage structure
     %(body)s
   </body>
 </html>
-
 """
+
 import datetime
 from html_util import *
 from html_fragments import *
@@ -172,6 +172,23 @@ Last update: %(now)s
            'now':NOW,
            'curr_year':CURR_YEAR,
            }
+
+def save_webpage(head=HEAD,
+                 navigation_bar='',
+                 header='',
+                 body='',
+                 path=None):
+    if path == None:
+        raise ValueError("save_webpage ERROR: no path")
+    f = open(path, 'w')
+    w = webpage(head=head,
+                navigation_bar=navigation_bar,
+                header=header,
+                body=body)
+    f.write(w) 
+    f.close()
+
+    
 
 def toc():
     return r'''
@@ -497,11 +514,20 @@ def cccsdiscord_():
 
 
 if __name__ == '__main__':
-    f = open('index.html', 'w'); f.write(cccs()); f.close()
-    f = open('pics.html', 'w'); f.write(pics_()); f.close()
-    f = open('highschool.html', 'w'); f.write(highschool_()); f.close()
-    f = open('urics.html', 'w'); f.write(urics_()); f.close()
-    f = open('cs_day.html', 'w'); f.write(cs_day_page()); f.close()
-    f = open('quotes.html', 'w'); f.write(quotes_()); f.close()
-    f = open('why_you_should_still_consider_cs.html', 'w'); f.write(why_you_should_still_consider_cs_()); f.close()
-    f = open('cccsdiscord.html', 'w'); f.write(cccsdiscord_()); f.close()
+    #    f = open('index.html', 'w'); f.write(cccs()); f.close()
+    #    f = open('pics.html', 'w'); f.write(pics_()); f.close()
+    #    f = open('highschool.html', 'w'); f.write(highschool_()); f.close()
+    #    f = open('urics.html', 'w'); f.write(urics_()); f.close()
+    #    f = open('cs_day.html', 'w'); f.write(cs_day_page()); f.close()
+    #    f = open('quotes.html', 'w'); f.write(quotes_()); f.close()
+    #    f = open('why_you_should_still_consider_cs.html', 'w'); f.write(why_you_should_still_consider_cs_()); f.close()
+    #    f = open('cccsdiscord.html', 'w'); f.write(cccsdiscord_()); f.close()
+
+    save_webpage(path='index.html', body=cccs())
+    #    f = open('pics.html', 'w'); f.write(pics_()); f.close()
+    #    f = open('highschool.html', 'w'); f.write(highschool_()); f.close()
+    #    f = open('urics.html', 'w'); f.write(urics_()); f.close()
+    #    f = open('cs_day.html', 'w'); f.write(cs_day_page()); f.close()
+    #    f = open('quotes.html', 'w'); f.write(quotes_()); f.close()
+    #    f = open('why_you_should_still_consider_cs.html', 'w'); f.write(why_you_should_still_consider_cs_()); f.close()
+    #    f = open('cccsdiscord.html', 'w'); f.write(cccsdiscord_()); f.close()
