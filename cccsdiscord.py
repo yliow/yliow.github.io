@@ -188,7 +188,7 @@ Michael Fisher
     
 <div style="border-style: solid; padding:10px">
 Braydon Hampton blhampton1@cougars.ccis.edu Mar 13, 2020, 2:49:33 PM<br>
-    <img src="images/braydon.jpg" style="width: 300px; margin: 1px 5px; border: #111111;float:right;"/>
+    <img src="images/braydon.jpg" style="width: 250px; margin: 1px 5px; border: #111111;float:right;"/>
 to cc_cs@googlegroups.com<br>
 Subject: Hangout Hours<br><br>
 
