@@ -107,8 +107,9 @@ Braydon Hampton
 
 
 
-
-<div style="border-style: solid; padding:10px">
+TEST<br>
+    
+<p style="border-style: solid; padding:10px">
 Liow, Yihsiang yliow@ccis.edu Tue, Mar 17, 2020 at 12:10 PM<br>
 to cc_cs@googlegroups.com<br>
 Subject: CCCS discord server for online chat & video conf & pair programming<br><br>
@@ -131,7 +132,7 @@ Right now we’re trying to figure out how to set up the channels, how to intera
 <div style="color:red"><b>CS Hangout in discord will start VERY SOON – THIS WEEK.</b></div><br>
 
 Once things are semi-finalized, we might have a “CCCS Discord Kickoff” in case people have new suggestions on how to configure the discord space and also for Michael, Braydon, Caleb, etc to do a general welcome + introduction to discord.
-</div>
+</p>
 
 
 
