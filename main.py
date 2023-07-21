@@ -515,7 +515,7 @@ def cccsdiscord_():
 
     return webpage(navigation_bar=navigation_bar('cccsdiscord'),
                    header=header(title('cccsdiscord')),
-                   body=cccsdiscord.index() % {'images':images_}
+                   body=cccsdiscord.index() % {'images':''}
     )
 
 
