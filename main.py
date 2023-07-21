@@ -89,7 +89,7 @@ def navigation_bar(name):
     elif name == 'cs_day':
         return '<a href="index.html">Home</a> | CS Day'
     elif name == 'cccsdiscord':
-        return '<a href="index.html">Home</a> | CCCS Discord'
+        return '<a href="index.html">Home</a> | <a href="index.html">CCCS</a> | CCCS Discord'
     elif name == 'why_you_should_still_consider_cs':
         return '<a href="index.html">Home</a> | CS Outreach | High school CS | Q&A'
     else:
