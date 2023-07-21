@@ -132,7 +132,9 @@ def title(name):
 # GENERAL HTML
 #==============================================================================
 def header(title):
-    return r'<h1>%(title)s</h1>' % {'title':title}
+    return r'''
+<h1>%(title)s</h1>
+    '''% {'title':title}
 
 def tablerow(link, name, description):
     return '<tr><td><a href="%(link)s">%(name)s</td><td>%(description)s</td></tr>' % \
