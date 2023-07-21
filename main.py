@@ -1,17 +1,22 @@
 """
 webpage structure
 
-<html>  
+<html>
+
   %(head)s
+
   <body style="font-family:arial; margin:200px; padding:200px; ">
     
     %(navigation_bar)s
+
     %(header)s
+
     <h2>%(title)s</h2>
     
     <hr>
 
     %(body)s
+
   </body>
 </html>
 """
@@ -25,7 +30,7 @@ import cccsdiscord
 NOW = datetime.datetime.now()
 CURR_YEAR = NOW.year
 HEAD = r'''
-      <head>
+    <head>
     <style>
 
       * {
@@ -67,9 +72,6 @@ HEAD = r'''
     margin: 0 0 0 15px;
     }
 
-
-
-
     </style>
   </head>
     '''
@@ -78,22 +80,26 @@ def writefile(filename, s):
     f = open(filename, 'w'); f.write(s); f.close()
     
 def navigation_bar(name):
-    if name == 'cccs':
-        return '<a href="index.html">Home</a> | <a href="index.html">CCCS</a>'
-    elif name == 'pics':
-        return '<a href="index.html">Home</a> | Outreach'
-    elif name == 'urics':
-        return '<a href="index.html">Home</a> | URiCS'
-    elif name == 'quotes':
-        return '<a href="index.html">Home</a> | Quotes'
-    elif name == 'cs_day':
-        return '<a href="index.html">Home</a> | CS Day'
-    elif name == 'cccsdiscord':
-        return '<a href="index.html">Home</a> | <a href="index.html">CCCS</a> | CCCS Discord'
-    elif name == 'why_you_should_still_consider_cs':
-        return '<a href="index.html">Home</a> | CS Outreach | High school CS | Q&A'
-    else:
-        return '<a href="index.html">Home</a> [INCOMPLETE]'
+    home = '<a href="index.html">Home</a>'
+    cccs = '<a href="index.html">Home</a>'
+    outreach = 'Outreach'
+    urics = 'URiCS'
+    quotes = 'Quotes'
+    cs_day = 'CS Day'
+    cccsdiscord = 'CCCS Discord'
+    highschool = 'High school CS'
+    q_and_a = 'Q&A'
+    def join(xs): return ' | '.join(xs)
+
+    d = {'cccs':   [home, cccs],
+         'pics':   [home, outreach],
+         'urics':  [home,urics],
+         'quotes': [home, quotes],
+         'cs_day': [home, cs_day],
+         'cccsdiscord': [home, cs_day, cccsdiscord],
+         'why_you_should_still_consider_cs': [home, outreach, highschool, q_and_a],
+         }
+    return join(d.get(name, [home, cccs] + ['?']))
     
 def title(name):
     if name == 'cccs':
