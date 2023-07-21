@@ -23,7 +23,7 @@ the CS club officers decided to create CCCS Discord.
 CCCS Discord was created by Brandon, Caleb, Michael in March 2020.
 </p>
 
-Messages (03/13/2020-03/19/2020) from our google group on setting up CCCS Discord are below.
+Messages from our google group on setting up CCCS Discord are below.
 Here are some snippets:
     <ul>
     <li>Braydon: &#8220;... the campus is shutting down ... this will effect hangout hours ... Right now I’m think a discord server will be our best option ...&#8221;
