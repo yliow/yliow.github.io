@@ -40,7 +40,7 @@ leading up to the creation of CCCS discord:
 </p>
 
 <div style="border-style: solid; padding:10px">
-<img src="images/braydon.jpg" style="width: 250px; margin: 1px 5px; border: #111111;float:right;"/>
+<img src="images/braydon.jpg" style="width: 30%; margin: 1px 5px; border: #111111;float:right;"/>
  Braydon Hampton blhampton1@cougars.ccis.edu Mar 19, 2020, 2:40:52 PM<br>
 to cc_cs@googlegroups.com<br>
 Subject: Hangout Hours and Discord kickoff<br><br>
@@ -94,7 +94,7 @@ Once things are semi-finalized, we might have a “CCCS Discord Kickoff” in ca
 
    
 <div style="border-style: solid; padding:10px">
-    <img src="images/michael-fisher.jpg" style="width: 250px; margin: 1px 5px; border: #111111;float:right;"/>
+    <img src="images/michael-fisher.jpg" style="width: 30%; margin: 1px 5px; border: #111111;float:right;"/>
 Michael Fisher mefisher2@cougars.ccis.edu Mar 16, 2020, 12:42:24 PM<br>
 to cc_cs@googlegroups.com, krfelts@ccis.edu, Tourville, Suzanne<br>
 Subject: Discord<br><br>
@@ -116,7 +116,7 @@ https://discord.gg/yrssjGb
 
     
 <div style="border-style: solid; padding:10px">
-        <img src="images/michael-fisher.jpg" style="width: 250px; margin: 1px 5px; border: #111111;float:right;"/>
+        <img src="images/michael-fisher.jpg" style="width: 30%; margin: 1px 5px; border: #111111;float:right;"/>
 Michael Fisher mefisher2@cougars.ccis.edu Mar 13, 2020, at 6:17 PM<br>
 to cc_cs@googlegroups.com<br>
 ﻿Subject: CCCS Continuity for the Spring Semester<br><br>
@@ -190,7 +190,7 @@ Michael Fisher
 
     
 <div style="border-style: solid; padding:10px">
- <img src="images/braydon.jpg" style="width: 250px; margin: 1px 5px; border: #111111;float:right;"/>
+ <img src="images/braydon.jpg" style="width: 30%; margin: 1px 5px; border: #111111;float:right;"/>
     Braydon Hampton blhampton1@cougars.ccis.edu Mar 13, 2020, 2:49:33 PM<br>
    
 to cc_cs@googlegroups.com<br>
