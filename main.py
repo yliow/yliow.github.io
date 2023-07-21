@@ -96,7 +96,7 @@ def navigation_bar(name):
          'urics':  [home,urics],
          'quotes': [home, quotes],
          'cs_day': [home, cs_day],
-         'cccsdiscord': [home, cs_day, cccsdiscord],
+         'cccsdiscord': [home, cccsdiscord],
          'why_you_should_still_consider_cs': [home, outreach, highschool, q_and_a],
          }
     return join(d.get(name, [home, cccs] + ['?']))
