@@ -74,7 +74,9 @@ HEAD = r'''
   </head>
     '''
 
-
+def writefile(filename, s):
+    f = open(filename, 'w'); f.write(s); f.close()
+    
 def navigation_bar(name):
     if name == 'cccs':
         return '<a href="index.html">Home</a> | <a href="index.html">CCCS</a>'
@@ -173,20 +175,6 @@ Last update: %(now)s
            'curr_year':CURR_YEAR,
            }
 
-def save_webpage(head=HEAD,
-                 navigation_bar='',
-                 header='',
-                 body='',
-                 path=None):
-    if path == None:
-        raise ValueError("save_webpage ERROR: no path")
-    f = open(path, 'w')
-    w = webpage(head=head,
-                navigation_bar=navigation_bar,
-                header=header,
-                body=body)
-    f.write(w) 
-    f.close()
 
     
 
@@ -514,20 +502,13 @@ def cccsdiscord_():
 
 
 if __name__ == '__main__':
-        f = open('index.html', 'w'); f.write(cccs()); f.close()
-    #    f = open('pics.html', 'w'); f.write(pics_()); f.close()
-    #    f = open('highschool.html', 'w'); f.write(highschool_()); f.close()
-    #    f = open('urics.html', 'w'); f.write(urics_()); f.close()
-    #    f = open('cs_day.html', 'w'); f.write(cs_day_page()); f.close()
-    #    f = open('quotes.html', 'w'); f.write(quotes_()); f.close()
-    #    f = open('why_you_should_still_consider_cs.html', 'w'); f.write(why_you_should_still_consider_cs_()); f.close()
-    #    f = open('cccsdiscord.html', 'w'); f.write(cccsdiscord_()); f.close()
+    writefile(filename='index.html',                            s=cccs())
+    writefile(filename='pics.html',                             s=pics_())
+    writefile(filename='highschool.html',                       s=highschool_())
+    writefile(filename='urics.html',                            s=urics_())
+    writefile(filename='cs_day.html',                           s=cs_day_page())
+    writefile(filename='quotes.html',                           s=quotes_())
+    writefile(filename='why_you_should_still_consider_cs.html', s=why_you_should_still_consider_cs_())
+    writefile(filename='cccsdiscord.html',                      s=cccsdiscord_())
+    
 
-    #save_webpage(path='index.html', body=cccs())
-    #    f = open('pics.html', 'w'); f.write(pics_()); f.close()
-    #    f = open('highschool.html', 'w'); f.write(highschool_()); f.close()
-    #    f = open('urics.html', 'w'); f.write(urics_()); f.close()
-    #    f = open('cs_day.html', 'w'); f.write(cs_day_page()); f.close()
-    #    f = open('quotes.html', 'w'); f.write(quotes_()); f.close()
-    #    f = open('why_you_should_still_consider_cs.html', 'w'); f.write(why_you_should_still_consider_cs_()); f.close()
-    #    f = open('cccsdiscord.html', 'w'); f.write(cccsdiscord_()); f.close()
