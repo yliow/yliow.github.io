@@ -26,11 +26,11 @@ CCCS Discord was created by Brandon, Caleb, Michael in March 2020.
 Messages (03/13/2020-03/19/2020) from our google group on setting up CCCS Discord are below.
 Here are some snippets:
     <ul>
-    <li>Braydon: "... the campus is shutting down ... this will effect hangout hours ... Right now I’m think a discord server will be our best option ..."
+    <li>Braydon: &#8220;... the campus is shutting down ... this will effect hangout hours ... Right now I’m think a discord server will be our best option ...&#8221;
     <li>
-    Michael: "... disruptive for a lot of us, especially for those who have come to rely on the support structure of the CS club for
+    Michael: &#8220;... disruptive for a lot of us, especially for those who have come to rely on the support structure of the CS club for
     tutoring in Math and Computer Science ...
-    We will be setting up a discord server ... that will allow us to remain in contact and provide an open forum for students ..."
+    We will be setting up a discord server ... that will allow us to remain in contact and provide an open forum for students ...&#8221;
     </ul>
 The following was added to my homepage:<br><br>
 
