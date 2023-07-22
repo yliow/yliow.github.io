@@ -544,6 +544,6 @@ if __name__ == '__main__':
     writefile(filename='quotes.html',                           s=quotes_())
     writefile(filename='why_you_should_still_consider_cs.html', s=why_you_should_still_consider_cs_())
     writefile(filename='cccsdiscord.html',                      s=cccsdiscord_())
-    writefile(filename='how_to_give_a_talk.html',               s=cccsdiscord_())
+    writefile(filename='how_to_give_a_talk.html',               s=how_to_give_a_talk_())
     
 
