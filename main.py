@@ -82,7 +82,7 @@ def writefile(filename, s):
     
 def navigation_bar(name):
     home = '<a href="index.html">Home</a>'
-    cccs = '<a href="index.html">Home</a>'
+    cccs = '<a href="index.html">CCCS</a>'
     outreach = 'Outreach'
     urics = 'URiCS'
     quotes = 'Quotes'
@@ -94,13 +94,13 @@ def navigation_bar(name):
     def join(xs): return ' | '.join(xs)
 
     d = {'cccs':   [home, cccs],
-         'pics':   [home, outreach],
-         'urics':  [home,urics],
-         'quotes': [home, quotes],
-         'cs_day': [home, cs_day],
-         'cccsdiscord': [home, cccsdiscord],
-         'why_you_should_still_consider_cs': [home, outreach, highschool, q_and_a],
-         'how_to_give_a_talk': [home, how_to_give_a_talk],
+         'pics':   [home, cccs, outreach],
+         'urics':  [home, cccs, urics],
+         'quotes': [home, cccs, quotes],
+         'cs_day': [home, cccs, cs_day],
+         'cccsdiscord': [home, cccs, cccsdiscord],
+         'why_you_should_still_consider_cs': [home, cccs, outreach, highschool, q_and_a],
+         'how_to_give_a_talk': [home, cccs, how_to_give_a_talk],
 
          }
     return join(d.get(name, [home, cccs] + ['?']))
