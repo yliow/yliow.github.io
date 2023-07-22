@@ -27,6 +27,7 @@ from html_fragments import *
 import urics, courses, quotes, pics
 import why_you_should_still_consider_cs, highschool
 import cccsdiscord
+import how_to_give_a_talk
 NOW = datetime.datetime.now()
 CURR_YEAR = NOW.year
 HEAD = r'''
@@ -89,6 +90,7 @@ def navigation_bar(name):
     cccsdiscord = 'CCCS Discord'
     highschool = 'High school CS'
     q_and_a = 'Q&A'
+    how_to_give_a_talk = 'How to give a talk'
     def join(xs): return ' | '.join(xs)
 
     d = {'cccs':   [home, cccs],
@@ -98,6 +100,8 @@ def navigation_bar(name):
          'cs_day': [home, cs_day],
          'cccsdiscord': [home, cccsdiscord],
          'why_you_should_still_consider_cs': [home, outreach, highschool, q_and_a],
+         'how_to_give_a_talk': [home, how_to_give_a_talk],
+
          }
     return join(d.get(name, [home, cccs] + ['?']))
     
@@ -126,6 +130,10 @@ def title(name):
     elif name == 'cccsdiscord':
         return '''<div>
         CCCS Discord 
+        </div>'''
+    elif name == 'how_to_give_a_talk':
+        return '''<div>
+        How to give a talk
         </div>'''
     elif name == 'why_you_should_still_consider_cs':
         return '''<div>
@@ -519,6 +527,14 @@ def cccsdiscord_():
     )
 
 
+def how_to_give_a_talk_():
+
+    return webpage(navigation_bar=navigation_bar('how_to_give_a_talk'),
+                   header=header(title('how_to_give_a_talk')),
+                   body=how_to_give_a_talk.index() # % {'images':''}
+    )
+
+
 if __name__ == '__main__':
     writefile(filename='index.html',                            s=cccs())
     writefile(filename='pics.html',                             s=pics_())
@@ -528,5 +544,6 @@ if __name__ == '__main__':
     writefile(filename='quotes.html',                           s=quotes_())
     writefile(filename='why_you_should_still_consider_cs.html', s=why_you_should_still_consider_cs_())
     writefile(filename='cccsdiscord.html',                      s=cccsdiscord_())
+    writefile(filename='how_to_give_a_talk.html',               s=cccsdiscord_())
     
 
