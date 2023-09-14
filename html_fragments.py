@@ -32,10 +32,11 @@ def classes_for_current_semester():
 My classes:
 <ul>
  <li> %s
- <li> MATH325, MWF 9:05AM, BUH100
- <li> CISS350, MWF 11:15AM, BUH103
- <li> CISS240, MWF 1:25PM and Tu 2:00PM, BUH107
- <li> CISS451, MWF 2:30PM, BUH103
+ <li>ciss380 MWF 10:10AM-11:05AM BUH103
+ <li>ciss350 MWF 11:15AM-12:10PM BUH103
+ <li>ciss240 MWF 01:25PM-02:20PM and Tue 02:00PM-02:55PM BUH104
+ <li>ciss245 MWF 02:30PM-03:25PM and Thu 02:00PM-02:55PM BUH107
+ <li>ciss360 MWF 03:35PM-04:30PM BUH104
 </ul>
 ''' % alex()
 
