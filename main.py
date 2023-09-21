@@ -340,7 +340,8 @@ def cccs():
 def useful_stuff():
     return r"""<img style="float:right; padding:20px 20px 20px 20px; width:25%" src='images/graph2.png'/>""" +\
         section(name='Useful stuff', id_='useful_stuff') + \
-        ul(htmls=[calendar(),
+        ul(htmls=["<a href='bugs/index.html'>Bugs</a>",
+                  calendar(),
                   academic_calendar_final_exam(),
                   cccs_google_group(),
                   cccs_discord(),
