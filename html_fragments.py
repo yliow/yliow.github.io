@@ -14,7 +14,8 @@ def publication_about_cccs():
 def cs_hangout():
     return r'''<a href ='http://bit.ly/cc_cs_hangout'>CS Hangout</a>.
     <ul>
-    <li>MWF 4:30-6:30, BUH107
+    <li>MF 4:30-6:30, BUH107
+    <li>W 4:30-6:30, BRN107
     <li>TuTh 3-5, BUH104 
     </ul>
     '''
