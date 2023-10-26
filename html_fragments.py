@@ -15,7 +15,7 @@ def cs_hangout():
     return r'''<a href ='http://bit.ly/cc_cs_hangout'>CS Hangout</a>.
     <ul>
     <li>MF 4:30PM-6:30PM, BUH107
-    <li>W 4:30PM-6:30PM, BRN108 <div font-color='red'>[NEW]</div>
+    <li>W 4:30PM-6:30PM, BRN108 <font color='red'>[NEW]</font>
     <li>TuTh 3PM-5PM, BUH104 
     </ul>
     '''
