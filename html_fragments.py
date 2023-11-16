@@ -10,6 +10,7 @@ def cs101():
     <a href='https://docs.google.com/spreadsheets/d/1km1oFGXvq5QSBqlOPGtfQCmo7F_tl9-dX6H_RuTJ4KM/edit?usp=sharing'>course rotation</a>
     |
     <a href='http://catalog.ccis.edu/content.php?catoid=28&navoid=3576#ciss'>rotation at ccis.edu</a>
+    <font color='red'>[NEW]</font>
     '''
 
 def publication_about_cccs():
