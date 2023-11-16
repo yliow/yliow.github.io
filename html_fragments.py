@@ -6,7 +6,7 @@ def cctt():
 def work_study():
     return r'''<a href="https://docs.google.com/document/d/1nYQtW3TTPIAYHcOeU-KSe2aEOiWHZgn6LA9aybH8pw0/edit?usp=sharing">Work study</a>'''
 def cs101():
-    return r'''<a href='https://docs.google.com/presentation/d/1v_YISntWpguP-t-SwrhjT1537UwmgybZe5mGzwP_11w/edit?usp=sharing'>CS101 Guide to CCCS or ... HHGTT CCCS</a> |
+    return r'''<a href='https://docs.google.com/presentation/d/1v_YISntWpguP-t-SwrhjT1537UwmgybZe5mGzwP_11w/edit?usp=sharing'>CS101 Guide to CCCS (HHGTT CCCS)</a> |
     <a href='https://docs.google.com/spreadsheets/d/1km1oFGXvq5QSBqlOPGtfQCmo7F_tl9-dX6H_RuTJ4KM/edit?usp=sharing'>course rotation</a>
     |
     <a href='http://catalog.ccis.edu/content.php?catoid=28&navoid=3576#ciss'>course rotation at ccis.edu</a>
