@@ -10,7 +10,6 @@ def cs101():
     <a href='https://docs.google.com/spreadsheets/d/1km1oFGXvq5QSBqlOPGtfQCmo7F_tl9-dX6H_RuTJ4KM/edit?usp=sharing'>course rotation</a>
     |
     <a href='http://catalog.ccis.edu/content.php?catoid=28&navoid=3576#ciss'>course rotation at ccis.edu</a>
-    <font color='red'>[NEW]</font>
     '''
 
 def publication_about_cccs():
@@ -142,7 +141,7 @@ def administrative_stuff():
     return r"""
 Administrative stuff:
 <ul>
-<li><a href="pdfs/Course_Audit_Form_1.pdf">Course audit form</a> <font color='red'>[NEW]</font>
+<li><a href="pdfs/Course_Audit_Form_1.pdf">Course audit form</a>
 <li><a href="https://docs.google.com/document/d/1n4mIGWJWRFDNyDrQstJ64z1ND4zSw89jca0VWp8YbrA/edit?usp=sharing">How to register for classes</a> (<a href="https://drive.google.com/file/d/1YOaFo5nM9X8EHanqufFKAEq_7miwNLvC/view?usp=sharing">Prerequisite waiver form</a>)
 <li><a href="https://drive.google.com/file/d/1qdu3EVnCXhxvEpl3lI_RPYFYqN_O1flu/view?usp=sharing">Course withdrawal form</a>
 <li><a href="https://docs.google.com/document/d/1Z5Aq_AuCzT6XFSI7OGy6_rEQ7tAJLjvtrJBdcqimAGM/edit?usp=sharing">How to add a minor</a>
