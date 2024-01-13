@@ -16,9 +16,9 @@ def publication_about_cccs():
     return r'''<a href='google-drive-downloads/PublicationsonCCCS.html'>Publications about CCCS</a>'''
 
 def cs_hangout():
-    return r'''<a href ='http://bit.ly/cc_cs_hangout'>CS Hangout</a>.
+    return r'''<a href ='http://bit.ly/cc_cs_hangout'>CS Hangout</a>. BRN = Brown Hall. 
     <ul>
-    <li>MWF 4:30PM-6:30PM, BRN100 (BRN = Brown Hall) <font color='red'>[NEW]</font>
+    <li>MWF 4:30PM-6:30PM, BRN100 <font color='red'>[NEW]</font>
     <li>TuTh 3PM-5PM, BRN100 <font color='red'>[NEW]</font>
     </ul>
     '''
