@@ -19,7 +19,7 @@ def cs_hangout():
     return r'''<a href ='http://bit.ly/cc_cs_hangout'>CS Hangout</a>.
     <ul>
     <li>MWF 4:30PM-6:30PM, BRN100 (BRN = Brown Hall) <font color='red'>[NEW]</font>
-    <li>TuTh 3PM-5PM, BUH104 <font color='red'>[SPRING2024 -- to be determined]</font>
+    <li>TuTh 3PM-5PM, BRN100 <font color='red'>[NEW]</font>
     </ul>
     '''
 def ciss145():
