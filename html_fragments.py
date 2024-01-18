@@ -108,7 +108,7 @@ def academic_calendar():
     return r'<a href="pdfs/academic-calendar.pdf">Academic calendar</a>'
 
 def final_exam():
-    return r'<a href="https://drive.google.com/file/d/1Le1VIJLtGx2ovk0xSXnxsZpOpYxekAqm/view?usp=sharing">Final exam</a>'
+    return r'<a href="pdfs/final-exam.pdf">Final exam</a>'
 
 def academic_calendar_final_exam():
     return academic_calendar() + " | " + final_exam() 
