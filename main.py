@@ -281,6 +281,9 @@ def tutorials():
              ('book/book.tar.gz',
               'book.tar.gz',
               'Book template.'),
+             ('article/article.tar.gz',
+              'article.tar.gz',
+              'Article template.'),
     ]
 
     for path,name,comment in data:

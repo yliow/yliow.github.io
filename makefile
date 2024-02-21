@@ -14,6 +14,7 @@ run: index.html
 	-mkdir pdfs/latex-automata/
 	-mkdir pdfs/latex-2d/
 	-mkdir book/
+	-mkdir article/
 	cp ../xemacs/main.pdf           pdfs/xemacs/main.pdf
 	cp ../vmware/vmwareplayer.pdf 	pdfs/vmware/vmwareplayer.pdf
 	cp ../unix1-1/main.pdf       	pdfs/unix1-1/main.pdf
@@ -28,6 +29,7 @@ run: index.html
 	cp ../latex-automata/main.pdf 	pdfs/latex-automata/main.pdf
 	cp ../latex-2d/main.pdf 	pdfs/latex-2d/main.pdf
 	cp ../latex-templates/book.tar.gz book/book.tar.gz
+	cp ../latex-templates/article.tar.gz article/article.tar.gz
 	python main.py
 	git add .; git commit -m"no msg"; git push
 	xdg-open index.html &
