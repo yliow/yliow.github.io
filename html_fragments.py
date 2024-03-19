@@ -19,6 +19,7 @@ def cs_hangout():
     return r'''<a href ='http://bit.ly/cc_cs_hangout'>CS Hangout</a>. BRN = Brown Hall. 
     <ul>
     <li><font color='red'>For Fri 3/1, hangout is moved to BUH102 because of a weekend event in Brown Hall.</font>
+    <li><font color='red'>For Tue 3/19, I'll be at hangout at 4:30PM.</font>
     <li>MWF 4:30PM-6:30PM, BRN100 
     <li>TuTh 3PM-5PM, BRN100 
     </ul>
