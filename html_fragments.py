@@ -12,6 +12,9 @@ def cs101():
     <a href='http://catalog.ccis.edu/content.php?catoid=28&navoid=3576#ciss'>course rotation at ccis.edu</a>
     '''
 
+def grad_school_q_and_a():
+    return r'''<a href='https://docs.google.com/document/d/1eAzjxhdGNL15Bar-NsuEWVvCkTteMwa6MPJqNHICgVw/edit'>Grad school Q&A</a>'''
+
 def publication_about_cccs():
     return r'''<a href='google-drive-downloads/PublicationsonCCCS.html'>Publications about CCCS</a>'''
 
@@ -27,7 +30,7 @@ def ciss145():
     return r'<a href="http://ciss145.pythonanywhere.com">CISS145 (Python)</a>'
 
 def research():
-    return r'''<a href='urics.html'>Research</a>'''
+    return r'''<a href='urics.html'>Research</a> | %s''' % grad_school_q_and_a() 
 
 def quotes():
     return r'<a href="https://docs.google.com/document/d/1i4HYMQqOo0yP3XPTdtZqws2SgaJ71n2ikBd68c8FYig/edit">Quotes</a>'
