@@ -11,7 +11,8 @@ For most class or personal projects:
 <li>For student projects (depending on the number of students), you usually have about 10-15 minutes. For larger projects such as senior seminars, you usually have 20-30 minutes.
 <li>Have some presentation slides with your name, class, project title, goals of the project. You can include an algorithm/idea/design if you think it’s interesting. For small class projects probably <= 3 slides. For large projects such as senior seminar or you have done some serious research, maybe 10 slides.
 <li>The presentation:
-    <ul>Introduce yourself
+    <ul>
+    <li>Introduce yourself
     <li>State the course
     <li>State the project: name, general goals of the project.
     <li>Do a demo.
