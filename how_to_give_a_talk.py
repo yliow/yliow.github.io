@@ -23,4 +23,6 @@ For most class or personal projects:
     <li>For larger projects (senior seminar types) you will probably give an overview of proofs.
     </ul>
 </ul>
+
+If you absolutely cannot attend, make a video of your presentation, upload the video to say your photos.google.com account, make the video public, email me the URL. This will be shown during the CS presentation.
     ''' 
