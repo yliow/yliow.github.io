@@ -23,15 +23,15 @@ def cs_hangout():
     <ul>
     <li><font color='red'>For finals week cram ... </font>
     <ul>
-    <li>Fri 4/19 6:30PM-9:00PM Brown 102
-    <li>Sat 4/20 9:00AM-9:00PM Brown 102
-    <li>Sun 4/21 1:00PM-9:00PM Brown 102
-    <li>Mon 4/22 4:30PM-6:30PM Brown 100
-    <li>Tue 4/23 3:00PM-5:00PM Brown 100
-    <li>Wed 4/24 4:30PM-6:30PM Brown 100
+    <li>Fri 4/19 6:30PM-9:00PM BRN-102
+    <li>Sat 4/20 9:00AM-9:00PM BRN-102
+    <li>Sun 4/21 1:00PM-9:00PM BRN-102
+    <li>Mon 4/22 4:30PM-6:30PM BRN-100
+    <li>Tue 4/23 3:00PM-5:00PM BRN-100
+    <li>Wed 4/24 4:30PM-6:30PM BRN-100
     </ul>
-    <li>MWF 4:30PM-6:30PM, BRN100 
-    <li>TuTh 3PM-5PM, BRN100 
+    <li>MWF 4:30PM-6:30PM, BRN-100
+    <li>TuTh 3PM-5PM, BRN-100
     </ul>
     '''
 def ciss145():
