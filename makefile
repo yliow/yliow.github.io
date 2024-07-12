@@ -3,6 +3,7 @@ run: index.html
 	-mkdir pdfs/xemacs/ 
 	-mkdir pdfs/vmware/
 	-mkdir pdfs/unix1-1/
+	-mkdir pdfs/unix1-1-python/
 	-mkdir pdfs/gpp/
 	-mkdir pdfs/make/
 	-mkdir pdfs/gdb/
@@ -18,6 +19,7 @@ run: index.html
 	cp ../xemacs/main.pdf           pdfs/xemacs/main.pdf
 	cp ../vmware/vmwareplayer.pdf 	pdfs/vmware/vmwareplayer.pdf
 	cp ../unix1-1/main.pdf       	pdfs/unix1-1/main.pdf
+	cp ../unix1-1-python/main.pdf   pdfs/unix1-1-python/main.pdf
 	cp ../gpp/main.pdf 	      	pdfs/gpp/main.pdf
 	cp ../make/main.pdf 	      	pdfs/make/main.pdf
 	cp ../gdb/main.pdf 	      	pdfs/gdb/main.pdf

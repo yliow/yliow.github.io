@@ -231,6 +231,9 @@ def tutorials():
              'unix1.pdf',
              '''How to work with linux. Extra linux commands
              <a href="https://docs.google.com/document/d/1QivrEQChzKZb2RV5X0p-TbEWh65K_NR-shsmMWi5O_4/edit?usp=sharing">here</a>'''),
+            ('pdfs/unix1-1-python/main.pdf',
+             'unix1.pdf (python version)',
+             '''This is the python version of unix1.pdf'''),
             ('pdfs/xemacs/main.pdf',
              'emacs.pdf', 
              'How to use emacs/xemacs.'),
