@@ -238,7 +238,7 @@ def tutorials():
              'emacs.pdf', 
              'How to use emacs/xemacs.'),
             ('pdfs/xemacs-python/main.pdf',
-             'emacs.pdf (python versin)', 
+             'emacs.pdf (python version)', 
              'This is the python version of emacs.pdf.'),
             ('pdfs/gpp/main.pdf',
              'gpp.pdf', 
