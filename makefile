@@ -1,6 +1,7 @@
 run: index.html
 	-mkdir pdfs
 	-mkdir pdfs/xemacs/ 
+	-mkdir pdfs/xemacs-python/ 
 	-mkdir pdfs/vmware/
 	-mkdir pdfs/unix1-1/
 	-mkdir pdfs/unix1-1-python/
@@ -17,6 +18,7 @@ run: index.html
 	-mkdir book/
 	-mkdir article/
 	cp ../xemacs/main.pdf           pdfs/xemacs/main.pdf
+	cp ../xemacs-python/main.pdf    pdfs/xemacs-python/main.pdf
 	cp ../vmware/vmwareplayer.pdf 	pdfs/vmware/vmwareplayer.pdf
 	cp ../unix1-1/main.pdf       	pdfs/unix1-1/main.pdf
 	cp ../unix1-1-python/main.pdf   pdfs/unix1-1-python/main.pdf
