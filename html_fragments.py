@@ -4,7 +4,7 @@
 def cctt():
     return r'''<a href="http://cctt0.pythonanywhere.com/">Royal Ping Pong Club</a>'''
 def work_study():
-    return r'''<a href="https://docs.google.com/document/d/1nYQtW3TTPIAYHcOeU-KSe2aEOiWHZgn6LA9aybH8pw0/edit?usp=sharing">Work study</a>'''
+    return r'''<a href="https://drive.google.com/drive/folders/0BzjYrK0VFuMWbjFDTnhsUzhHQkE?resourcekey=0-0HJH3q7E1lDQ_9IHyd6olg&usp=drive_link">Work study</a>'''
 def cs101():
     return r'''<a href='https://docs.google.com/presentation/d/1v_YISntWpguP-t-SwrhjT1537UwmgybZe5mGzwP_11w/edit?usp=sharing'>CS101 Guide to CCCS (HHGTT CCCS)</a> |
     <a href='https://docs.google.com/spreadsheets/d/1km1oFGXvq5QSBqlOPGtfQCmo7F_tl9-dX6H_RuTJ4KM/edit?usp=sharing'>course rotation</a>
