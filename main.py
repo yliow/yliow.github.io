@@ -357,6 +357,7 @@ def useful_stuff():
                   classes_for_current_semester(),
                   cs_hangout(),
                   publication_about_cccs(),
+                  companies(),
                   cs101(),
                   research(),
                   administrative_stuff(),
