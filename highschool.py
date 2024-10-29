@@ -16,7 +16,7 @@ def index():
 <ul>
     <li><a href='https://docs.google.com/document/d/1ISqXbxwtF2Pr6tIFxtHdIyW2NQNoDt4mxvnEz_cUED4/edit?usp=sharing'>Q&A for HS students</a>
     <li><a href='https://docs.google.com/presentation/d/1yRvBfspB4uxvTCRtjSHAfb302yC53mqVRluCWOyUFKo/edit?usp=sharing'>Slides (how to find a strong CS program and info about CCCS)</a>
-    <li><a href='https://www.ccis.edu/tuition-financial-aid/scholarships/traditional?utm_source=google&utm_medium=search&utm_campaign=23100&utm_medium=search&utm_source=google&utm_term=scholarship&utm_campaign=23100+-+Day+-+Search&hsa_acc=4554236598&hsa_cam=18641107180&hsa_grp=141234895374&hsa_ad=629179897813&hsa_src=g&hsa_tgt=kwd-10513051&hsa_kw=scholarship&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjw5P2aBhAlEiwAAdY7dETeNnMebZOdPvEhtP4uPrL2O7jR9CWP3ZxAoh03qHj9AaMAvkKtUhoCbxMQAvD_BwE'>CC Scholarships</a>
+    <li><a href='https://www.ccis.edu/tuition-financial-aid/aid-types/scholarships/traditional-students'>CC Scholarships</a>
 </ul>
 
 
