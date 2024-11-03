@@ -13,6 +13,7 @@ run: index.html
 	-mkdir pdfs/googletest/
 	-mkdir pdfs/latex/
 	-mkdir pdfs/latex-graph/
+	-mkdir pdfs/graphviz/
 	-mkdir pdfs/latex-automata/
 	-mkdir pdfs/latex-2d/
 	-mkdir pdfs/companies/
@@ -30,6 +31,7 @@ run: index.html
 	cp ../git/main.pdf 		pdfs/git/main.pdf
 	cp ../googletest/main.pdf 	pdfs/googletest/main.pdf
 	cp ../latex/main.pdf 		pdfs/latex/main.pdf
+	cp ../graphviz/main.pdf 	pdfs/graphviz/main.pdf
 	cp ../latex-graph/main.pdf 	pdfs/latex-graph/main.pdf
 	cp ../latex-automata/main.pdf 	pdfs/latex-automata/main.pdf
 	cp ../latex-2d/main.pdf 	pdfs/latex-2d/main.pdf
