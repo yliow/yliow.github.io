@@ -15,6 +15,7 @@ def index():
 <h2>Some info</h2>
 <ul>
     <li><a href='https://docs.google.com/document/d/1ISqXbxwtF2Pr6tIFxtHdIyW2NQNoDt4mxvnEz_cUED4/edit?usp=sharing'>Q&A for HS students</a>
+    <li><a href='https://docs.google.com/presentation/d/105LOQYpdmbGKyZAVnUeBQcXxF6V0J964Oca58MvngiU/edit?usp=sharing'>CS Day 10/21/2024</a>
     <li><a href='https://docs.google.com/presentation/d/1yRvBfspB4uxvTCRtjSHAfb302yC53mqVRluCWOyUFKo/edit?usp=sharing'>Slides (how to find a strong CS program and info about CCCS)</a>
     <li><a href='https://www.ccis.edu/tuition-financial-aid/aid-types/scholarships/traditional-students'>CC Scholarships</a>
 </ul>
