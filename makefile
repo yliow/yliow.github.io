@@ -23,7 +23,7 @@ run: index.html
 	cp ../xemacs-python/main.pdf    pdfs/xemacs-python/main.pdf
 	cp ../vmware/vmwareplayer.pdf 	pdfs/vmware/vmwareplayer.pdf
 	cp ../unix1-1/main.pdf       	pdfs/unix1-1/main.pdf
-	cp ../unix1-1-python/main.pdf   pdfs/unix1-1-python/main.pdf
+		cp ../unix1-1-python/main.pdf   pdfs/unix1-1-python/main.pdf
 	cp ../gpp/main.pdf 	      	pdfs/gpp/main.pdf
 	cp ../make/main.pdf 	      	pdfs/make/main.pdf
 	cp ../gdb/main.pdf 	      	pdfs/gdb/main.pdf
