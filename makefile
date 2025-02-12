@@ -39,6 +39,7 @@ run: index.html
 	cp ../latex-templates/article.tar.gz article/article.tar.gz
 	cp ../why-cs/companies/main.pdf pdfs/companies/main.pdf
 	cp ../programming-contest/index.html programming-contest/
+	cp -r ../programming-contest/images programming-contest/images
 	python main.py
 	git add .; git commit -m"no msg"; git push
 	xdg-open index.html &
