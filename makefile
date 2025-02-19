@@ -40,6 +40,7 @@ run: index.html
 	cp ../why-cs/companies/main.pdf pdfs/companies/main.pdf
 	cp ../programming-contest/index.html programming-contest/
 	cp -r ../programming-contest/images programming-contest/images
+	cp ../programming-contest/images/* programming-contest/images/
 	python update_date.py
 	python main.py
 	git add .; git commit -m"no msg"; git push
