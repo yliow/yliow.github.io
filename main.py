@@ -413,6 +413,7 @@ def software():
         <li>Python2: <a href="http://colab-py2">colab-py2</a> | <a href="https://repl.it/languages/python">repl-python</a></li>
         <li>Python3: <a href="https://repl.it/languages/python3">repl-py3</a></li>
         <li>OCAML: <a href="https://try.ocamlpro.com/">ocamlpro</a></li>
+        <li>SQL: <a href="https://dbfiddle.uk/">db fiddle</a></li>
         <li>PDF: <a href="http://www.xodo.com">xodo</a></li>
         <li>LaTeX: Some latex tutorials are below in the “Tutorials” section.</li>
         <ul>
