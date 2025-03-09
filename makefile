@@ -40,6 +40,7 @@ run: index.html
 	cp ../latex-templates/article.tar.gz article/article.tar.gz
 	cp ../why-cs/companies/main.pdf pdfs/companies/main.pdf
 	cp ../programming-contest/index.html programming-contest/
+	cp ../programming-contest/attendees.html programming-contest/
 	cp -r ../programming-contest/images programming-contest/images
 	cp ../programming-contest/images/* programming-contest/images/
 	cp ../programming-contest/pdf/* programming-contest/pdf/
