@@ -19,6 +19,7 @@ run: index.html
 	-mkdir pdfs/companies/
 	-mkdir book/
 	-mkdir article/
+	-mkdir programming-contest/pdf
 	cp ../xemacs/main.pdf           pdfs/xemacs/main.pdf
 	cp ../xemacs-python/main.pdf    pdfs/xemacs-python/main.pdf
 	cp ../vmware/vmwareplayer.pdf 	pdfs/vmware/vmwareplayer.pdf
@@ -41,6 +42,7 @@ run: index.html
 	cp ../programming-contest/index.html programming-contest/
 	cp -r ../programming-contest/images programming-contest/images
 	cp ../programming-contest/images/* programming-contest/images/
+	cp ../programming-contest/pdf/* programming-contest/pdf/
 	python update_date.py
 	python main.py
 	git add .; git commit -m"no msg"; git push
