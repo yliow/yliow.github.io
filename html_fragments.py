@@ -31,12 +31,12 @@ def cs_hangout():
     <ul>
     <li><font color='red'>For finals week cram ... </font>
     <ul>
-    <li>Fri 4/19 6:30PM-9PM, BRN-102
-    <li>Sat 4/20 9AM-9PM, BRN-102
-    <li>Sun 4/21 1PM-9PM, BRN-102
-    <li>Mon 4/22 4:30-9PM, BRN-100
-    <li>Tue 4/23 3PM-9PM, BRN-100
-    <li>Wed 4/24 4:30-9PM, BRN-100
+    <li>Fri 4/18, 4:30PM-10PM, Brown 101
+    <li>Mon 4/21, 4:30PM-10PM, Brown 100 & 101
+    <li>Tue 4/22, 3PM-10PM, Brown 100 & 101
+    <li>Wed 4/23, 4:30PM-10PM, Brown 100 & 101
+    <li>Thu 4/24, 3PM-10PM, Brown 100 & 101
+    <li>Fri, 4/25, 4:30PM-10PM, Brown 100 & 101
     </ul>
     <li>MWF 4:30PM-6:30PM, BRN-100
     <li>TuTh 3PM-5PM, BRN-100
