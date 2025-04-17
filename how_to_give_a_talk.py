@@ -24,5 +24,5 @@ For most class or personal projects:
     </ul>
 </ul>
 
-If you absolutely cannot attend, make a video of your presentation, upload the video to say your photos.google.com account, make the video public, email me the URL. This will be shown during the CS presentation.
+If you absolutely cannot attend, email me, make a video of your presentation, upload the video to say your photos.google.com account, make the video public, email me the URL. This will be shown during the CS presentation.
     ''' 
