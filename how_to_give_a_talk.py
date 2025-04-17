@@ -25,5 +25,5 @@ For most class or personal projects:
 </ul>
 
 If you absolutely cannot attend, email me, make a video of your presentation, upload the video to say your photos.google.com account, make the video public, email me the URL. This will be shown during the CS presentation.
-Questions addressed to you will be sent to you. Make a video of your answers, upload the video, make it public, email me the URL.
+Questions addressed to you will be sent to you. Make a video of your answering the questions, upload the video, make it public, email me the URL.
     ''' 
