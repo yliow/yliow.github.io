@@ -16,7 +16,7 @@ For most class or personal projects:
     <li>State the course
     <li>State the project: name, general goals of the project.
     <li>Do a demo.
-    <li>Explain some of the features implemented, mentioned problems solved, etc.
+    <li>Explain some of the features implemented, mention problems solved, etc.
     <li>Mention features you have not completed, problems met, etc.
     <li>Mention future work (if any) on the project.
     <li>Ask if there are questions.
