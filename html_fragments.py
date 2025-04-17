@@ -57,7 +57,8 @@ My classes:
 <ul>
  <li> %s
  <li>ciss430 MWF 9:05AM-10:00AM BUH104
- <li>ciss350 MWF 11:15AM-12:10PM BUH104 (room might be changing soon)
+ <li>ciss438 MWF 10:10AM-11:05AM BUH104
+ <li>ciss350 MWF 11:15AM-12:10PM BUH100 
  <li>ciss240 MWF 01:25PM-02:20PM and Tue 02:00PM-02:55PM BUH104
  <li>ciss245 MWF 02:30PM-03:25PM and Thu 02:00PM-02:55PM BUH104
  <li>ciss450 MWF 3:35PM-4:30PM BUH104 (room might be changing soon)
