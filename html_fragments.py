@@ -22,7 +22,7 @@ def grad_school_q_and_a():
 
 def reu():
     return r'''
-    REU (Research Experiences for Undergraduates - a nationwide NSF funded summer search program)
+    REU (Research Experiences for Undergraduates - a nationwide NSF-funded summer search program)
     <ul>
     <li>Andrew Woods. <a href=''>REU ?</a> at University of Missouri at Columbia.
     <li>Michael Fisher. <a href='https://reu.rnet.missouri.edu/REU20.html'>REU 2020</a> at University of Missouri at Columbia.
