@@ -70,6 +70,7 @@ def research():
     <ul>
     <li> %s
     <li> %s
+    </ul>
     ''' % (grad_school_q_and_a(), reu()) 
 
 def quotes():
