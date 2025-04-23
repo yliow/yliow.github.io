@@ -24,9 +24,13 @@ def reu():
     return r'''
     REU (Research Experiences for Undergraduates - a nationwide NSF funded summer search program)
     <ul>
-    <li>Andrew Woods. 
-    <li>Michael Fisher.
-    <li>Eric Garcis. 2024. REU at University of Missouri at Columbia. 
+    <li>Andrew Woods. <a href=''>REU ?</a>
+    <li>Michael Fisher. <a href='https://reu.rnet.missouri.edu/REU20.html'>REU 2020</a> at University of Missouri at Columbia.
+    "Attack-Defense and Performance Adaptations for Social Virtual Reality Learning Environments".
+    (Advisors: Dr. Prasad Calyam / Dr. Khaza Hoque; 
+    Graduate Student Mentors: Samaikya Valluripally, Vaibhav Akashe;
+    Research Students: David Falana, Michael Fisher)
+    <li>Eric Garcia. <a href='https://reu.rnet.missouri.edu/REU24.html'>REU 2024</a> at University of Missouri at Columbia. 
     "Hardware trojan detection via In-context Learning of Large Language Models"
     (Advisors: Dr. Khaza Anuarul Hoque, Dr. Prasad Calyam; 
     Graduate Student Mentors: Ripan Kumar Kundu; 
