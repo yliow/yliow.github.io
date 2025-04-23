@@ -355,7 +355,7 @@ def useful_stuff():
         ul(htmls=["<a href='bugs/index.html'>Bugs</a> [NEW]",
                   calendar(),
                   academic_calendar_final_exam(),
-                  "Get in touch <ul> <li>%s <li>%s </ul>" % (cccs_google_group(), cccs_discord()),
+                  "Get in touch <ul> <li>%s <li>%s </ul>" % (cccs_discord(), cccs_google_group()),
                   classes_for_current_semester(),
                   cs_hangout(),
                   publication_about_cccs(),
