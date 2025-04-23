@@ -35,7 +35,7 @@ def reu():
     (Advisors: Dr. Khaza Anuarul Hoque, Dr. Prasad Calyam; 
     Graduate Student Mentors: Ripan Kumar Kundu; 
     Research Students: Eric Garcia, Ethan Grassia)
-    <li>Robert Oladayo Oyedeji. <a href=''>REU 2025</a> REU at University of Missouri at Columbia.
+    <li>Robert Oladayo Oyedeji. <a href=''>REU 2025</a> at University of Missouri at Columbia.
     <li>Cole Schwandt. <a href=''>REU 2025</a> at Missouri University of Science and Technology.
     </ul>
     '''
