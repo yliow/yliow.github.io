@@ -20,6 +20,22 @@ def grad_school_q_and_a():
 #def publication_about_cccs():
 #    return r'''<a href='google-drive-downloads/PublicationsonCCCS.html'>Publications about CCCS</a>'''
 
+def reu():
+    return r'''
+    REU (Research Experiences for Undergraduates - a nationwide NSF funded summer search program)
+    <ul>
+    <li>Andrew Woods. 
+    <li>Michael Fisher.
+    <li>Eric Garcis. 2024. REU at University of Missouri at Columbia. 
+    "Hardware trojan detection via In-context Learning of Large Language Models"
+    (Advisors: Dr. Khaza Anuarul Hoque, Dr. Prasad Calyam; 
+    Graduate Student Mentors: Ripan Kumar Kundu; 
+    Research Students: Eric Garcia, Ethan Grassia)
+    <li>Robert Oladayo Oyedeji. 2025. REU at University of Missouri at Columbia.
+    <li>Cole Schwandt. 2025. REU at Missouri University of Science and Technology.
+    </ul>
+    '''
+    
 def publication_about_cccs():
     return r'''<a href='google-drive-downloads/PublicationsonCCCS.html'>Publications about CCCS</a>'''
 
