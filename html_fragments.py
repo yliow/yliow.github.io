@@ -17,8 +17,8 @@ def cs101():
 def grad_school_q_and_a():
     return r'''<a href='https://docs.google.com/document/d/1eAzjxhdGNL15Bar-NsuEWVvCkTteMwa6MPJqNHICgVw/edit'>Grad school Q&A</a>'''
 
-def publication_about_cccs():
-    return r'''<a href='google-drive-downloads/PublicationsonCCCS.html'>Publications about CCCS</a>'''
+#def publication_about_cccs():
+#    return r'''<a href='google-drive-downloads/PublicationsonCCCS.html'>Publications about CCCS</a>'''
 
 def publication_about_cccs():
     return r'''<a href='google-drive-downloads/PublicationsonCCCS.html'>Publications about CCCS</a>'''
