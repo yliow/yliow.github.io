@@ -62,8 +62,8 @@ def cs_hangout():
     <li>Thu 4/24, 3PM-10PM, Brown 100 & 101
     <li>Fri, 4/25, 4:30PM-10PM, Brown 100 & 101
     </ul>
-    <li>MWF 4:30PM-6:30PM, BRN-100
-    <li>TuTh 3PM-5PM, BRN-100
+    <li>MWF 4:30PM-6:30PM, Brown 100
+    <li>TuTh 3PM-5PM, Brown 100
     </ul>
     '''
 def ciss145():
