@@ -44,7 +44,11 @@ def publication_about_cccs():
     return r'''<a href='google-drive-downloads/PublicationsonCCCS.html'>Publications about CCCS</a>'''
 
 def companies():
-    return r'''<a href='pdfs/companies/main.pdf'>Companies that hire my graduates</a> | or <a href='https://docs.google.com/document/d/1SPCaGycXVdnCXX5L-b2FzQ01kXcIjCkNOE8TyEj_PC4/edit?usp=sharing'>here</a>'''
+    return r'''Industry
+    <ul>
+    <li><a href='pdfs/companies/main.pdf'>Companies that hire my graduates</a>
+    <li><a href='https://docs.google.com/document/d/1SPCaGycXVdnCXX5L-b2FzQ01kXcIjCkNOE8TyEj_PC4/edit?usp=sharing'>here</a>
+    </ul>'''
 
 def cs_hangout():
     return r'''<a href ='http://bit.ly/cc_cs_hangout'>CS Hangout</a>. BRN = Brown Hall.
