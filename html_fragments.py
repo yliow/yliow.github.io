@@ -47,7 +47,7 @@ def companies():
     return r'''Industry
     <ul>
     <li><a href='pdfs/companies/main.pdf'>Companies that hire my graduates</a>
-    <li><a href='https://docs.google.com/document/d/1SPCaGycXVdnCXX5L-b2FzQ01kXcIjCkNOE8TyEj_PC4/edit?usp=sharing'>here</a>
+    <li><a href='https://docs.google.com/document/d/1SPCaGycXVdnCXX5L-b2FzQ01kXcIjCkNOE8TyEj_PC4/edit?usp=sharing'>or here</a>
     </ul>'''
 
 def cs_hangout():
