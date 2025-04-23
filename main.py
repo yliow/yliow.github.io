@@ -361,7 +361,7 @@ def useful_stuff():
                   cs_hangout(),
                   publication_about_cccs(),
                   companies(),
-                  reu(),
+                  #reu(),
                   cs101(),
                   research(),
                   administrative_stuff(),

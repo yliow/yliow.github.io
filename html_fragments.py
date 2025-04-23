@@ -66,7 +66,11 @@ def ciss145():
     return r'<a href="http://ciss145.pythonanywhere.com">CISS145 (Python)</a>'
 
 def research():
-    return r'''<a href='urics.html'>Research</a> | %s''' % grad_school_q_and_a() 
+    return r'''<a href='urics.html'>Research</a>
+    <ul>
+    <li> %s
+    <li> %s
+    ''' % (grad_school_q_and_a(), reu()) 
 
 def quotes():
     return r'<a href="https://docs.google.com/document/d/1i4HYMQqOo0yP3XPTdtZqws2SgaJ71n2ikBd68c8FYig/edit">Quotes</a>'
