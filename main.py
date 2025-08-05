@@ -409,7 +409,11 @@ def software():
     (for CISS245 game development)</li>
     <li>Web-based</li>
     <ul>
-        <li>C++: <a href="https://repl.it/languages/cpp">repl-c++</a> | <a href="http://cpp.sh/">cpp-sh</a></li>
+        <li>C++:
+              <a href="https://www.onlinegdb.com/online_c++_compiler">onlinegdbb</a>
+            | <a href="https://repl.it/languages/cpp">repl-c++</a>
+            | <a href="http://cpp.sh/">cpp-sh</a>
+        </li>
         <li>Python2: <a href="http://colab-py2">colab-py2</a> | <a href="https://repl.it/languages/python">repl-python</a></li>
         <li>Python3: <a href="https://repl.it/languages/python3">repl-py3</a></li>
         <li>OCAML: <a href="https://try.ocamlpro.com/">ocamlpro</a></li>
