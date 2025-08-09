@@ -70,7 +70,7 @@ def ciss145():
     return r'<a href="http://ciss145.pythonanywhere.com">CISS145 (Python)</a>'
 
 def grad_school():
-    xs = ['University of TN at Knoxvillw',
+    xs = ['University of TN at Knoxville',
           'University of MO at Columbia',
           'University of TX at Dallas',
           'Missouri State University',
