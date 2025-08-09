@@ -77,7 +77,7 @@ def grad_school():
           'University of Arkansas at Little Rock',
           ]
     xs.sort()
-    return 'Some grads of CCCS went to the following graduate schools for MSc and PhD: <ul>%s</ul>' % ''.join(['<li>%s</li>' % x for x in xs])
+    return 'MSc and PhD: Some grads of CCCS went to the following graduate schools (sorted alphabetically): <ul>%s</ul>' % ''.join(['<li>%s</li>' % x for x in xs])
  
 def research():
     return r'''<a href='urics.html'>Research</a>
