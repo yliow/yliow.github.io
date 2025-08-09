@@ -69,13 +69,24 @@ def cs_hangout():
 def ciss145():
     return r'<a href="http://ciss145.pythonanywhere.com">CISS145 (Python)</a>'
 
+def grad_school():
+    xs = ['University of TN at Knoxvillw',
+          'University of MO at Columbia',
+          'University of TX at Dallas',
+          'Missouri State University',
+          'University of Arkansas at Little Rock',
+          ]
+    xs.sort()
+    return 'Grads of CCCS went to the following graduate school: <ul>%s</ul>' % '<li>'.join(['<li>%s</li>' % x for x in xs])
+ 
 def research():
     return r'''<a href='urics.html'>Research</a>
     <ul>
     <li> %s
     <li> %s
+    <li> %s
     </ul>
-    ''' % (grad_school_q_and_a(), reu()) 
+    ''' % (grad_school_q_and_a(), reu(), grad_school()) 
 
 def quotes():
     return r'<a href="https://docs.google.com/document/d/1i4HYMQqOo0yP3XPTdtZqws2SgaJ71n2ikBd68c8FYig/edit">Quotes</a>'
