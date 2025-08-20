@@ -206,7 +206,9 @@ def toc():
       <li><a href="#courses">Courses</a></li>      
       <li><a href="#tutorials">Tutorials</a></li>
       <li><a href="#wanna-feed-your-brain">Wanna feed your brain?</a></li>
-    <li><a href="pics.html">K-12</a> | <a href="highschool.html">HS</a></li>
+    <li><a href="pics.html">K-12</a> | <a href="highschool.html">HS</a>
+    (<a href="https://yliow.github.io/programming-contest/">HS Programming Contets</a>)
+    </li>
     </ul>
 
     '''
