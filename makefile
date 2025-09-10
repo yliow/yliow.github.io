@@ -19,6 +19,7 @@ run: index.html
 	-mkdir pdfs/companies/
 	-mkdir book/
 	-mkdir article/
+	-mkdir programming-contest
 	-mkdir programming-contest/pdf
 	cp ../xemacs/main.pdf           pdfs/xemacs/main.pdf
 	cp ../xemacs-python/main.pdf    pdfs/xemacs-python/main.pdf
