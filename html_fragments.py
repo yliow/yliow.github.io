@@ -115,7 +115,7 @@ def cs_jam():
     return r"<a href='https://docs.google.com/document/d/1NGH0XFmeaIfdWVxBzlBK-ehKvilg61Rs9gww6j1FjsQ/edit'>CS.js (CS Jam)</a>"
 
 def department_welcome_lunch():
-    return r"<a href='http://bit.ly/cccslunch'>Department welcome lunch</a>"
+    return r"<a href='https://docs.google.com/document/d/1_ULKokhzXiu1VemtAfTGQf8GO7jn5XbK/edit?usp=sharing&ouid=110224096777115323458&rtpof=true&sd=true'>Department welcome lunch</a>"
 
 def end_of_semester_presentations():
     return r"End of semester presentations: <a href='how_to_give_a_talk.html'>How to give a talk</a>"
