@@ -371,7 +371,7 @@ def useful_stuff():
 def events_t_shirts_etc():
     return \
         r"""<img style="float:right; padding:20px 20px 20px 20px; width:25%" src='images/graph1.png'/>""" +\
-        section(name='Events, T-shirts, etc. [MOVING TO <a href="https://docs.google.com/document/d/1oaRJu_3yVRHab0CpRvOZg9iWcKyWPligG9eMTFLKtiM/edit?usp=sharing"></a>]', id_='events_t_shirts_etc') + \
+        section(name='Events, T-shirts, etc. [moving to <a href="https://docs.google.com/document/d/1oaRJu_3yVRHab0CpRvOZg9iWcKyWPligG9eMTFLKtiM/">here</a>]', id_='events_t_shirts_etc') + \
         ul(htmls=[pictures_and_videos(),
                   cs_club(),
                   cs_day(),
