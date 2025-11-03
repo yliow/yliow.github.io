@@ -199,7 +199,7 @@ def toc():
     <h2><a id="top">TOC</a></h2>
     <ul>
       <li><a href="#useful_stuff">Useful stuff</a></li>
-      <li><a href="#events_t_shirts_etc">Events, T-shirts, etc.</a></li>
+      <li><a href="#events_t_shirts_etc">CS Club (Events, T-shirts, etc.)</a></li>
       <li><a href="#outreach">Outreach</a></li>
       <li><a href="#others">Others</a></li>      
       <li><a href="#software">Software</a></li>      
@@ -371,7 +371,7 @@ def useful_stuff():
 def events_t_shirts_etc():
     return \
         r"""<img style="float:right; padding:20px 20px 20px 20px; width:25%" src='images/graph1.png'/>""" +\
-        section(name='Events, T-shirts, etc. [moving to <a href="https://docs.google.com/document/d/1oaRJu_3yVRHab0CpRvOZg9iWcKyWPligG9eMTFLKtiM/">here</a>]', id_='events_t_shirts_etc')
+        section(name='CS Club (Events, T-shirts, etc.) [moving to <a href="https://docs.google.com/document/d/1oaRJu_3yVRHab0CpRvOZg9iWcKyWPligG9eMTFLKtiM/">here</a>]', id_='events_t_shirts_etc')
 #+ \
 #        """
 #        ul(htmls=[pictures_and_videos(),
