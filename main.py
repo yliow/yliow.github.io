@@ -333,10 +333,10 @@ def cccs():
     %(useful_stuff)s
     %(events_t_shirts_etc)s
     %(outreach)s
-    %(others)s
     %(software)s
     %(courses)s
     %(tutorials)s
+    %(others)s
     %(wanna_feed_your_brain)s 
     ''' % {
         'toc':toc(),
