@@ -16,6 +16,7 @@ run: index.html
 	-mkdir pdfs/graphviz/
 	-mkdir pdfs/latex-automata/
 	-mkdir pdfs/latex-2d/
+	-mkdir pdfs/latextool/
 	-mkdir pdfs/companies/
 	-mkdir book/
 	-mkdir article/
@@ -37,6 +38,7 @@ run: index.html
 	cp ../latex-graph/main.pdf 	pdfs/latex-graph/main.pdf
 	cp ../latex-automata/main.pdf 	pdfs/latex-automata/main.pdf
 	cp ../latex-2d/main.pdf 	pdfs/latex-2d/main.pdf
+	cp ../latextool/doc/main.pdf 	pdfs/latextool/main.pdf
 	cp ../latex-templates/book.tar.gz book/book.tar.gz
 	cp ../latex-templates/article.tar.gz article/article.tar.gz
 	cp ../why-cs/companies/main.pdf pdfs/companies/main.pdf
