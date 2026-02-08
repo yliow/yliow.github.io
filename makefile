@@ -45,6 +45,7 @@ run: index.html
 	cp ../programming-contest/index.html programming-contest/
 	cp ../programming-contest/2025 programming-contest/ -r
 	cp ../programming-contest/attendees.html programming-contest/
+	cp ../programming-contest/comments.html programming-contest/
 	cp -r ../programming-contest/images programming-contest/images
 	cp ../programming-contest/images/* programming-contest/images/
 	cp ../programming-contest/pdf/* programming-contest/pdf/
