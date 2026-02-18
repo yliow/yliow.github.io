@@ -43,6 +43,7 @@ run: index.html
 	cp ../latex-templates/article.tar.gz article/article.tar.gz
 	cp ../why-cs/companies/main.pdf pdfs/companies/main.pdf
 	cp ../programming-contest/index.html programming-contest/
+	cp ../programming-contest/programming-contest-2026-flyer.pdf programming-contest/
 	cp ../programming-contest/2025 programming-contest/ -r
 	cp ../programming-contest/attendees.html programming-contest/
 	cp ../programming-contest/comments.html programming-contest/
