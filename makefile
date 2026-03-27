@@ -54,7 +54,8 @@ run: index.html
 	cp ../programming-contest/pdf/* programming-contest/pdf/
 
 	-rm -rf programming-contest-debug
-	cp -r ../programming-contest-debug programming-contest-debug
+	-mkdir programming-contest-debug
+	cp -r ../programming-contest-debug/* programming-contest-debug/
 
 	python update_date.py
 	python main.py
