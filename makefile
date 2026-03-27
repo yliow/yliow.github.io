@@ -52,6 +52,10 @@ run: index.html
 	cp -r ../programming-contest/images programming-contest/images
 	cp ../programming-contest/images/* programming-contest/images/
 	cp ../programming-contest/pdf/* programming-contest/pdf/
+
+	-rm -rf programming-contest-debug
+	cp -r ../programming-contest-debug programming-contest-debug
+
 	python update_date.py
 	python main.py
 	git add .; git commit -m"no msg"; git push
