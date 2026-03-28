@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERMINAL // DEBUG_SYSTEM_v2.0</title>
+    <!-- Futuristic Monospace Font -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        :root {
+            --neon-cyan: #00f2ff;
+            --neon-magenta: #ff00ff;
+            --dark-bg: #050505;
+            --panel-bg: rgba(0, 20, 30, 0.8);
+            --glow: 0 0 10px rgba(0, 242, 255, 0.5), 0 0 20px rgba(0, 242, 255, 0.2);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--neon-cyan);
+            font-family: 'Fira Code', monospace;
+            overflow-x: hidden;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 1. Scrolling Neon Grid Background */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 200%; height: 200%;
+            background-image: 
+                linear-gradient(var(--panel-bg) 1px, transparent 1px),
+                linear-gradient(90deg, var(--panel-bg) 1px, transparent 1px);
+            background-size: 50px 50px;
+            transform: perspective(500px) rotateX(60deg);
+            animation: grid-move 20s linear infinite;
+            z-index: -2;
+            opacity: 0.3;
+        }
+
+        @keyframes grid-move {
+            from { background-position: 0 0; }
+            to { background-position: 0 50px; }
+        }
+
+        /* 2. CRT Scanline Overlay */
+        body::after {
+            content: " ";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%);
+            background-size: 100% 4px;
+            z-index: 100;
+            pointer-events: none;
+            opacity: 0.2;
+        }
+
+        .main-container {
+            width: 90%;
+            max-width: 1000px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            z-index: 10;
+        }
+
+        /* 3. Clipped-Corner HUD Panels */
+        .hud-panel {
+            background: var(--panel-bg);
+            border: 1px solid var(--neon-cyan);
+            padding: 25px;
+            backdrop-filter: blur(10px);
+            clip-path: polygon(0 15px, 15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%);
+            box-shadow: var(--glow);
+            position: relative;
+        }
+
+        .hud-header h1 {
+            font-family: 'Orbitron', sans-serif;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            text-shadow: var(--glow);
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .status-bar {
+            font-size: 0.8rem;
+            display: flex;
+            gap: 15px;
+            color: var(--neon-magenta);
+        }
+
+        .blink { animation: blink-anim 1.5s infinite; }
+        @keyframes blink-anim { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+        /* Form Styling */
+        textarea {
+            width: 100%;
+            height: 200px;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(0, 242, 255, 0.3);
+            color: #fff;
+            padding: 15px;
+            font-family: 'Fira Code', monospace;
+            resize: none;
+            outline: none;
+        }
+
+        .controls { display: flex; gap: 10px; margin-top: 15px; }
+
+        .btn-cyber {
+            background: transparent;
+            border: 1px solid var(--neon-cyan);
+            color: var(--neon-cyan);
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-cyber:hover {
+            background: var(--neon-cyan);
+            color: var(--dark-bg);
+            box-shadow: 0 0 20px var(--neon-cyan);
+        }
+
+        .output-box {
+            background: #000;
+            border-left: 3px solid var(--neon-magenta);
+            padding: 15px;
+            min-height: 100px;
+            color: #00ff00;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <!-- Header -->
+        <header class="hud-panel hud-header">
+            <h1>SYSTEM // CODE_DEBUGGER</h1>
+            <div class="status-bar">
+                <span>[ STATUS: <span class="blink">ONLINE</span> ]</span>
+                <span>[ CORE_LOAD: 12% ]</span>
+                <span>[ ENCRYPTION: ACTIVE ]</span>
+            </div>
+        </header>
+
+        <!-- Editor Section -->
+        <section class="hud-panel">
+            <textarea id="codeInput" placeholder="> Await input sequence..."></textarea>
+            <div class="controls">
+                <button class="btn-cyber" onclick="processDebug()">INITIALIZE</button>
+                <button class="btn-cyber" style="border-color: var(--neon-magenta); color: var(--neon-magenta);" onclick="clearAll()">PURGE</button>
+            </div>
+        </section>
+
+        <!-- Result Section -->
+        <section class="hud-panel">
+            <p style="margin-bottom: 10px; font-size: 0.7rem; opacity: 0.7;">> EXECUTION_LOG</p>
+            <div id="output" class="output-box">
+                Ready for data stream...
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function processDebug() {
+            const out = document.getElementById('output');
+            out.innerHTML = "> Scanning code structure...<br>> No syntax anomalies detected.<br>> Process complete.";
+        }
+        function clearAll() {
+            document.getElementById('codeInput').value = "";
+            document.getElementById('output').innerHTML = "Ready for data stream...";
+        }
+    </script>
+</body>
+</html>
+
+
+
+<!--
+
+<html>  
+
+    <head>
+    <style>
+
+      * {
+          box-sizing: border-box;
+      }
+
+
+       .rounded-box {
+        border: 2px solid #333; /* Adds a border around the text */
+        padding: 20px; /* Adds space between the text and the border */
+        background-color: #f0f0ff; /* Sets a background color for the box */
+        border-radius: 10px; /* Rounds the corners by 10 pixels */
+        width: fit-content; /* Adjusts the box width to fit the content */
+       }
+       
+      .row {
+          display: flex;
+      }
+      
+      /* Create three equal columns that sits next to each other */
+      .column {
+          flex: 33.33%;
+          padding: 5px;
+      }
+      
+      table {
+          font-family: arial, sans-serif;
+          border: 1px solid black;
+          border-collapse: collapse;
+          width: 100%;
+      }
+
+      td, th {
+          text-align: left;
+          vertical-align:top;
+          padding: 8px;
+      }
+
+    <!-- vertically stacked images -->
+
+.detailImgWrapper
+    {
+    display: inline;
+    display: block;
+    width: 100px;
+    padding: 0;
+    float: right;
+    margin: 0 0 0 15px;
+    }
+
+    </style>
+    </head>
+
+    
+<body style="font-family: arial; margin-left:100px; margin-right:100px; ">
+<!-- <a href="index.html">Home</a> | <a href="index.html">CCCS</a> -->
+<br>
+<h3>CCCS Columbia College Computer Science</h3>
+<center>
+  <p>
+    <div  style='background-color:#00419a; padding:1%' width='100%'> <!-- rgba(0,65,122,255) -->
+        <center>
+        <img src="images/pics-logo.png" style="width:40%">     
+      </center>
+    </div>
+  <h1>
+    CCCS High School Programming Contest #10<br>
+    March 14, 2026    
+  </h1>
+  </p>
+</center>
+
+
+<!--
+    <h3>
+      <div class="rounded-box">
+        ANNOUNCEMENT
+        <p>
+          The CCCS HS Programming Contest #10 will be held on March 14, 2026!
+          Details and registration form will be available in mid October (possibly earlier).
+        </p>
+
+        <p>
+          Currently we are working on finding financial support for
+          food, prizes, and scholarships.
+          We are also working on an early check-in option for HS students to check in
+          on Friday before the contest to attend
+          contest preparation meetings, CS classes, CS events, etc.
+        </p>
+        <p>
+          To high school students:
+          Please email Dr. Liow (yliow@ccis.edu) to be added to our mailing list for updates.
+          Include your name and the name your high school.
+          Also, please ask your teachers to email us so that we can send our
+          contest information to them.
+        </p>
+      </div>      
+    </h3>
+-->
+    
+    <h3>
+      <div class="rounded-box">
+        <p>
+        <center>
+          ANNOUNCEMENT
+        </center>
+        </p>
+
+        <p>
+          The CCCS HS Programming Contest #10 (Spring 2026) has ended!
+          I hope all the HS students had a great time.
+          Information on contest #11 will be available soon.
+          Stay tuned:
+          join <a href='https://discord.gg/4E8YVyDExu'>CCCS HS PC discord server</a> (https://discord.gg/4E8YVyDExu).
+        </p>
+        <p>
+          Thanks to principals and teachers for their help in
+          announcing the event
+          to colleagues and students.
+          And thanks to all the attendees: HS students, parents, and teachers.
+          Hope you all had a great time!
+          Also, the event would not be possible without the
+          counselors, CS majors (sorted):
+          Andrew Woods, Ben Hamilton, Ben Kelly, Cole Schwandt, Eric Schultz,
+          Hunter Derenski, Mark Noble, Nasser Alahaideb, Oladayo Oyedeji,
+          Ricky Spires, Ryan Harvey, Yonathan Siele.
+          (Ben K and Hunter D graduated but work in town.
+          Andrew W graduated and is doing his PhD.)
+          The event was heavily funded by Columbia College
+          (food, space, tuition
+          scholarships, etc.)
+        </p>
+        <p>
+          For contest #11 (spring 2027),
+          we will get in touch with as many high schools as we can.
+          You can help by letting us know who else we should contact:
+          CS instructors, your friends, ....
+          The first announcement will be sent to schools during
+          the first 3 weeks of the fall 2026 semester.
+          The second will go out during the first 3 weeks of the
+          spring 2027 semester.
+    </h3>
+    
+<hr>
+    <!-- pictures -->
+    <div class="row">
+      <div class="column">
+        <img src="images/2015-04-18-17-32-08-cropped.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="images/pics-2016.jpg" style="width:100%">
+      </div>
+    <div class="column">
+    <img src="images/pics-2017.jpg" style="width:100%">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img src="images/pics-2017-2-cropped.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="images/pics-2017-3-cropped.jpg" style="width:100%">
+     </div>
+      <div class="column">
+        <img src="images/pics-2019-cropped.jpg" style="width:100%">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img src="images/pics-2018.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="images/pics-2018-2-cropped.jpg" style="width:100%">
+      </div>
+      <!--
+      <div class="column">
+        <img src="images/pics-2024-cropped.jpg" style="width:100%">
+      </div>
+      -->
+      <div class="column">
+        <img src="images/pics-2025-cropped.jpg" style="width:100%">
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="column">
+        <img src="images/2026-lunch-cropped.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="images/2026-contest-cropped.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="images/2026-awards-cropped.jpg" style="width:100%">
+      </div>
+    </div>
+
+
+    
+    <center>
+    <a href='https://photos.app.goo.gl/yq9WzYTZidGcomtj9'>2015</a> |
+    <a href='https://photos.app.goo.gl/zDpAb9iRkATqqFcC8'>2016</a> |
+    <a href='https://photos.app.goo.gl/SAfQqkvrzC7bBsteA'>2017</a> |
+    <a href='https://photos.app.goo.gl/34UXRRdAd4SzDgK36'>2018</a> |
+    <a href='https://photos.app.goo.gl/xcZVZKXh1zrcRmB66'>2019</a> | 
+    <a href='https://photos.app.goo.gl/hvT8F1Uc6WEW1DNU6'>2024</a> |
+    <a href='2025/index.html'>2025</a> (<a href='https://photos.app.goo.gl/GpVXqVuURTFffh4N6'>pics</a>) | 
+    <a href='index.html'>2026</a> (<a href='https://photos.app.goo.gl/C2ec1GiupcdPgMai6'>pics</a>) <span style='color:red'>new</span>
+    </center>
+    
+    <p>
+      <hr>
+    <a name="top"></a>
+    Quicklinks:
+    <a href='#what'>what</a> |
+    <a href='#prizes'>prizes</a> |
+    <a href='#who'>who</a> |
+    <a href='#when'>when</a> |
+    <a href='#where'>where</a> |
+    <a href='#cost'>fee</a> |
+    <a href='#schedule'>schedule</a> |
+    <a href='#rules'>rules</a> |
+    <a href='#reviews'>reviews</a> |
+    <a href='#register'>register</a> |
+    <a href='#sponsors'>sponsors</a> | 
+    <a href='#organizers'>organizers</a> |
+    <a href='#questions'>contact</a> |
+    <a href='#faq'>faq</a> |
+    <a href='#fyi'>results</a> <span style='color:red'>new</span> |
+    <a href='#connect'>connect</a>
+    <hr>
+    </p>
+    
+    
+    <h2><a name="what"></a>What is it? <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
+    <p>
+A day of programming activities, competitive programming contest (in a team of at most 3 members), meeting with CS majors from Columbia College, etc.
+<!-- In short: a day of fun for people who are interested in or wanting to find out more about CS. -->
+At this point, the programming languages used are C++, Python, and Java.
+There are three categories: Advanced, Intermediate and Beginner.
+The questions in Advanced are more challenging than the ones in Intermediate.
+The Beginner category (new in 2026) is a non-competitive category.
+You can view the Beginner category as a workshop.
+Teachers are welcome to join their students in the Beginner category.
+Here's our <a href="programming-contest-2026-flyer.pdf">flyer</a>.
+<!-- Feel free to send it to your friends. -->
+
+    </p>
+
+    <p>
+      Note that you need not form a school team.
+      We can help you find a team during our morning
+      warmup session. You can be choose to be a team of one.
+      You need not be registered by your
+      teacher -- you can register individually.
+      You need not arrive on our campus in a school bus.
+      You or your parents can drive to the event too.
+      Parking is free.
+      Parents and teachers are welcome.
+      Food is provided for parents and teachers too!
+    </p>
+    
+    <p>
+    There will be prizes!
+    </p>
+    
+    <p>
+      <span style='color:red'>UPDATE ON EARLY CHECK-IN OPTION (3/3):</span>
+      The early check-in was very popular: 67% indicated interest!
+      Unfortunnately we cannot find a staff member to stay overnight in
+      the dorm with the participants. We are canceling the early
+      check-in option this year. We will prepare for this earlier
+      for next year's contest.
+      Stay tuned.
+      <br><br>
+      <small><small>
+      <span style='color:red'>NEW! EARLY CHECK-IN OPTION!</span>
+    For spring 2026, we are looking into an early check-in option:
+    <ul>
+      <li>You check in on Friday morning before the contest and meet your host
+        (a CS major).
+      <li>You have breakfast, lunch, and dinner
+        with all the other early check-ins and hosts.
+        For dinner, we might go to Columbia downtown (15-minute walk). 
+      <li>You attend CS classes, programming contest practice sessions, and CS events.
+      <li>You either stay over-night in our dorms (free of course) with other early check-ins
+        and the hosts, or your parents pick you
+        up at the end of the day.
+      <li>You then attend the contest the next day.
+      <li>If we do offer the early check-in option, we will probably limit the number of participants to ~10.
+      <li>
+        We are working through the early check-in option.
+        If you are interested, make sure you say so when you register.
+    </ul>
+    </small></small>
+    </p>
+
+        
+        <h2><a name="prizes"></a>Are there prizes? <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
+
+        <p>
+    Yes! There will be tuition scholarship prizes (see below) and cash prizes (probably in the form of Amazon e-gift cards)!
+        </p>
+
+    Tuition scholarship prizes are
+    <ul>
+      <li> Advanced:
+        <ul>
+          <li>1st: Every team member gets <b>$3000/yr ($12000 total)</b></li>
+          <li>2nd: Every team member gets <b>$2500/yr ($10000 total)</b></li>
+          <li>3rd: Every team member gets <b>$2000/yr ($8000 total)</b></li>
+        </ul>
+      <li> Intermediate:
+        <ul>
+          <li>1st: Every team member gets <b>$1600/yr ($6400 total)</b></li>
+          <li>2nd: Every team member gets <b>$1400/yr ($5600 total)</b></li>
+          <li>3rd: Every team member gets <b>$1200/yr ($4800 total)</b></li>
+        </ul>
+      <li> Beginner: Non-competitive.
+    </ul>
+
+    <p>
+    Excluding the winners,
+    everyone gets <b>$1000/yr ($4000 total) just for participating</b>!!!
+    All the above tuition scholarships are annual awards for up to
+    <b>three years of renewal after initial year</b>.
+    For instance a winner of the first place team
+    of Advanced will be awarded $12000, i.e.,
+    $3000 per year for <b>four years</b>.
+    This is a total tuition scholarship prize pool of <b>$140,400</b>.
+    Here are the
+    <a href='tuition-scholarship-2026.html'>terms and conditions</a>
+    for the tuition scholarships.
+    </p>
+    
+    
+    <h2><a name="who"></a>Who is this for? <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
+    <ul>
+    <li>High school students with knowledge of C++, Python, and/or Java.
+    <li>There are three categories:
+      Advanced, Intermediate and Beginner.
+      The Beginner category is non-competitive.
+      You can decide which category you want to join during the
+      Warmup session in the morning.
+      We can also help you decide.
+    <li>There is a limited number of laptops and PCs.
+    We highly recommend that you bring your own laptops.
+    </ul>
+
+        
+    <h2><a name="when"></a>When is this? <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
+    <p>
+    Saturday March 14, 2026, 9AM-5PM.
+    The actual contest begins after lunch (see schedule below).
+    So it's OK to check in late especially if you live far away from Columbia, MO.
+    </p>
+
+        
+    <h2><a name="where"></a>What is the location? <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
+    <ul>
+    <li>Columbia College at Columbia, MO (Address:
+      <a href='https://www.google.com/maps/place/1001+Rogers+St,+Columbia,+MO+65201/@38.9565614,-92.3262634,17z/data=!3m1!4b1!4m2!3m1!1s0x87dcb7dc8ba44079:0x7f504692e93726d7'>1001 Rogers Street, Columbia, MO 65216</a>)
+    <li>Parking:
+      Parking is free.
+      The <b>Miller parking lot</b> is the most convenient.
+      The next is <b>10th Street parking lot</b>.
+      But you can use any non-residential parking lot.
+      <ul>
+        <li>
+          <a href='pdf/campus-map-2.pdf'>pdf map</a>: look for
+          "C. Miller" or 
+          "A. 10th Street".
+        </li>
+        <li>or <a href='https://tinyurl.com/ykf892m3'>interactive map</a>:
+          under "Parking Lots", look for "Miller Lot" or "Tenth Street Lot".
+        </li>
+      </ul>
+      <li>Check-in (and meals): <b>Dulany Hall</b>.
+      <ul>
+        <li>
+          <a href='pdf/campus-map-2.pdf'>pdf map</a>: look for "10. Dulany Hall".
+        </li>
+        <li>or <a href='https://tinyurl.com/ykf892m3'>interactive map</a>:
+          under "Buildings", look for "Dulany Hall".
+        </li>
+      </ul>
+    <li>Contest venue: <b>Buchanan Hall</b>.
+      <ul>
+        <li>
+          <a href='pdf/campus-map-2.pdf'>pdf map</a>:
+          look for "16. Buchanan Hall".
+        </li>
+        <li>
+          or <a href='https://tinyurl.com/ykf892m3'>interactive map</a>:
+          under "Buildings", look for "Buchanan Hall".
+      </ul>
+    </ul>
+    The main thing is to get to Dulany Hall for check-in.
+    After that you just need to follow us.
+    If you need help,
+    go to <a href='https://discord.gg/4E8YVyDExu'>CCCS HS PC discord server</a>
+    and send a message.
+    
+        <h2><a name="cost"></a>How much does it cost? <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
+
+    <p>
+    <!-- For a participating student the registration fee is $5. -->
+    For Spring 2026, the event is <b>free</b>! Food is provided! ...
+    <ul>
+      <li> Breakfast (Panera breakfast sandwich, fruit cup, coffee, juice)
+      <li> Lunch (Elior buffet)
+      <li> Dinner (Domino's pizzas)
+      <li> Snacks and drinks throughout the day.
+    </ul>
+      This event is heavily sponsored by Columbia College.
+    </p>
+
+    <p>
+    Students can purchase a commemorative t-shirt for about $20.
+    </p>
+    <!--
+    Parents, guardians, siblings can purchase food tickets at $5
+    when the student registers.
+    This covers food as above.
+    -->
+
+    <!--
+    <p>
+    Teachers can also purchase the food tickets at $5.
+    </p>
+    -->
+    
+
+        
+    <h2><a name="schedule"></a>What’s the schedule? <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
+    <!-- Here’s the <a href='schedule.html'>schedule</a>. -->
+    The event begins at 9AM.
+    The contest itself begins after lunch.
+    It's OK to check in late especially if you driving from far -- just let
+    us know.
+    <ul>
+      <li> <b>8AM-9AM: CHECK-IN, BREAKFAST, OPENING -- DULANY HALL (BANQUET ROOM)</b> </li>
+      <ul>
+        <li>Panera breakfast.
+          (Drinks and snacks provided throughout the day.)
+        <li>Opening remarks at ~8:45AM</li>
+      </ul>
+      <li><b>9AM-11:50AM: WARMUPS -- BUCHANAN HALL</b></li>
+      <ul>
+        <li>Practice session.</li>
+        <li>Decide which category you want to join.
+        We'll help you decide if you need help.
+        <li>Form teams.
+          We'll also help to form teams if you don't have one.
+          It's OK if you prefer to work alone.
+          But it's more fun to work in a group.
+        </li>
+      </ul>
+      <li><b>12PM-12:40PM: LUNCH -- DULANY HALL (BANQUET ROOM)</b></li>
+      <ul>
+        <li> Buffet lunch
+        <li> Talk and Q&A with Ryan Frappier, senior software engineer at Google
+      </ul>
+      <li><b>12:45-5PM: CONTEST -- BUCHANAN HALL</b></li>
+      <li><b>5PM: DINNER, CLOSING -- DULANY HALL (BANQUET ROOM)</b></li>
+      <ul>
+        <li>Prize presentation</li>
+        <li>Closing remarks</li>
+        <li>Domino's pizzas
+      </ul>
+    </ul>
+
+    During the contest, depending on interest from the guests,
+    there might be information and discussion sessions for
+    parents and teachers.
+    
+        
+    <h2><a name="rules"></a>Are there contest rules? <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
+    Here you go: <a href='https://docs.google.com/document/d/1c7LjAY_9Fv3Ls2YdNOI40bNSkP1DC1Lv7H_cJyO8mmA/edit?usp=sharing'>contest rules page</a>.
+
+        
+    <h2><a name="reviews"></a>What do participants say about the contest? <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
+    Here you go: <a href='comments.html'>comments</a>.
+
+
+        
+    <h2><a name="register"></a>Where do I register? <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
+
+    <ul>
+    <li><strong>Students:</strong>
+      Here’s the <a href='https://docs.google.com/forms/d/e/1FAIpQLSfKTC_SOHnqXk1DEWoEslPNouLTj8kuytjhj35jd6FDKYbYJg/viewform'>registration form</a>.
+      Parents/guardians/siblings are welcome and encouraged to attend and can register as guests when a student registers.
+    <ul>
+      <li>Registration opens: 9/29/2025
+      <!-- <li>Early 10% discount: payment by 11/31/2025 -->
+      <li>Registration closes: 3/7/2026. We will try to accomodate late registrations. Go ahead and register!
+      <!-- <li>Deadline for refund: 1/31/2026, 5PM -->
+    </ul>
+    Parents are welcome. (During registration, include parents as guests.)
+    <!-- For a late registration, we will try to accomodate. -->
+    <!-- but it might be rejected depending on arrangements for food. and t-shirts. -->
+    </li>
+    <li>
+      <strong>Teachers:</strong>
+      Teachers are welcome and encouraged to register and attend the event.
+      Even if you are not attending the event, you can enter your
+      contact info so that we can email you info on our future events.
+      Here's the <a href='https://forms.gle/fYRUVs3wPzhcHfELA'>registration form</a>.
+    <li>
+      <strong>Bulk registration:</strong>
+      If you are a teacher registering a group of students
+      it might be more convenient for you to email
+      <a href="mailto:yliow@ccis.edu?subject=CCCS%20HSPC%20Donation">Dr. Liow (yliow@ccis.edu)</a> directly.
+    </li>
+    </ul>
+    
+    <h2><a name="attendees"></a>I’m registered! Now what? <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
+    Head over to the <a href='attendees.html'>attendees page</a>
+    for some details!
+    Also,
+    you can send our
+    <a href="programming-contest-2026-flyer.pdf">flyer</a>
+    to your friends to help publicize the event.
+    
+        <h2><a name="sponsors"></a>Sponsors<small><small> [<a href='#top'>goto top</a>]</small></small></h2>
+
+        <p>
+          The CCCS High School Programming Contest began in 2015 and was a local event.
+          In 2025, we expanded by sending invitations to high schools in a 3-hour driving radius from Columbia, MO.  
+          We hope to be one of the largest programming contests in MO.
+          Whether you are a graduate of CCCS or a corporation or someone who believes in the importance of CS,
+          by supporting our high school programming contests, you are supporting our computer science outreach and 
+          education.
+          If you are sponsoring as a corporation, you are increasing your company's profile and branding to future software engineers.
+        </p>
+
+        <p>
+          Your contribution will help us continue to grow and expand our programming contest for years to come.
+          Thank you for your support in creating future generations of software engineers and computer scientists.
+        </p>
+
+        <p>
+        Click <a href='https://host.nxt.blackbaud.com/donor-form/?svcid=renxt&formId=8ccfe4fe-1c36-4d01-8797-12450765f5b1&envid=p-Jn6Clk9FZ06Lw5g5HsMjYw&zone=usa'>here</a> to make a donation.
+          (You can donate electronically or by check.)
+        In the comments, you can indicate how you want your donation to be used.
+        Email <a href="mailto:yliow@ccis.edu?subject=CCCS%20HSPC%20Donation">Dr. Liow (yliow@ccis.edu) </a> and let us know the payment has been processed so we can check the account and make sure the donation was posted to the correct account.
+          A tax receipt will be issued to you from Columbia College.
+        </p>
+
+    <h2><a name="organizers"></a>Who are the organizers? <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
+    <ul>
+      <li>Dr Yihsiang Liow (Columbia College, <a href="mailto:yliow@ccis.edu">yliow@ccis.edu</a>)
+      <li>Mr Nathaniel Graham (Columbia Area Career Center, <a href="mailto:chgraham@cpsk12.org">chgraham@cpsk12.org</a>)
+      <li>Computer Science Club (Columbia College)
+    </ul>
+
+    
+    <h2><a name="questions"></a>Who should I talk to? … I have questions <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
+    Please email any one of us or talk to us at our CCCS HS Programming Contest discord server:
+    <ul>
+      <li><a href='https://discord.gg/4E8YVyDExu'>CCCS HS PC discord server</a>
+      <li> Dr Yihsiang Liow (<a href="mailto:yliow@ccis.edu">yliow@ccis.edu</a>)</li>
+      <li> Cole Schwandt, President of CS club (<a href="mailto:ctschwandt1@cougars.ccis.edu">ctschwandt1@cougars.ccis.edu</a>)</li>
+      <li> Ryan Harvey, VP of CS club (<a href="mailto:rsharvey2@cougars.ccis.edu">rsharvey2@cougars.ccis.edu</a>)</li>
+    </ul>
+    
+        
+      <h2><a name="faq"></a>FAQ <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
+      <p>
+    <ul>
+      <li>Q: What is the deadline for registration?
+       <br>
+    A: We’ll accommodate late registrants as much as we can. So go ahead and register!
+    </ul>
+      </p>
+      
+
+      <p>
+        <ul>
+          <li>Q: I can't find 2 other teammates from my school. Can I still participate?
+            <br>
+            A: Sure. You can be a team of 1. A team of 2 is fine too.
+            On the day of the event, you can also form a team with students
+            from another high school!
+        </ul>
+      </p>
+
+      <p>
+        <ul>
+          <li>Q: Do I need a teacher's permission/approval?
+            Do I need a teacher to be the team coach?
+            <br>
+            A: You (and your teammates) can register individually.
+            You do not need a teacher to register the team.
+            Of course if you have a teacher as a team coach, he/she
+            is welcome to attend the event too!
+        </ul>
+      </p>
+
+                      <style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+  
+  thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+  }
+  
+  tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+
+  tfoot {
+    font-weight: bold;
+    background-color: #eee;
+  }
+</style>
+
+          
+      <p>
+        <h2><a name="fyi"></a>Results <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
+
+        <h3>
+          Contest #10 (3/14/2026)
+        </h3>
+
+        Registration data and winners.
+        
+        <table>
+  <thead>
+    <tr><th>Category</th><th>Count</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>High School Students</td><td>41</td></tr>
+    <tr><td>Parents</td><td>37</td></tr>
+    <tr><td>Teachers</td><td>4</td></tr>
+  </tbody>
+  <tfoot>
+    <tr><td>Total</td><td>82</td></tr>
+  </tfoot>
+</table>
+        
+<table>
+  <thead>
+    <tr>
+      <th>HIGH SCHOOL</th>
+      <th>CITY</th>
+      <th>STATE/COUNTRY</th>
+      <th>STUDENTS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- India -->
+    <tr><td>Icon Public School</td><td>Ahmednagar</td><td>Maharashtra, India</td><td>1</td></tr>
+    <tr><td>Bharatiya Vidya Bhavan Matriculation Higher Sec School</td><td>Coimbatore</td><td>Tamilnadu, India</td><td>1</td></tr>
+    <!-- USA - Kansas -->
+    <tr><td>Olathe South High School</td><td>Olathe</td><td>KS, USA</td><td>1</td></tr>
+    <tr><td>Labette County High School</td><td>Parsons</td><td>KS, USA</td><td>1</td></tr>
+    <!-- USA - Missouri -->
+    <tr><td>Hickman High School</td><td>Columbia</td><td>MO, USA</td><td>3</td></tr>
+    <tr><td>Rock Bridge High School</td><td>Columbia</td><td>MO, USA</td><td>6</td></tr>
+    <tr><td>Eugene Cole R V</td><td>Henley</td><td>MO, USA</td><td>1</td></tr>
+    <tr><td>Seckman High School</td><td>Imperial</td><td>MO, USA</td><td>1</td></tr>
+    <tr><td>Helias Catholic High School</td><td>Jefferson City</td><td>MO, USA</td><td>1</td></tr>
+    <tr><td>Jefferson City High School</td><td>Jefferson City</td><td>MO, USA</td><td>1</td></tr>
+    <tr><td>Frontier Stem High School</td><td>Kansas City</td><td>MO, USA</td><td>5</td></tr>
+    <tr><td>Lee's Summit High School</td><td>Lee's Summit</td><td>MO, USA</td><td>2</td></tr>
+    <tr><td>Lee's Summit North High School</td><td>Lee's Summit</td><td>MO, USA</td><td>1</td></tr>
+    <tr><td>Lee's Summit West High School</td><td>Lee's Summit</td><td>MO, USA</td><td>7</td></tr>
+    <tr><td>Liberty High School</td><td>Liberty</td><td>MO, USA</td><td>1</td></tr>
+    <tr><td>Monroe City High School</td><td>Monroe</td><td>MO, USA</td><td>1</td></tr>
+    <tr><td>Gateway Science Academy</td><td>St. Louis</td><td>MO, USA</td><td>1</td></tr>
+    <tr><td>Eureka High School</td><td>Wildwood</td><td>MO, USA</td><td>1</td></tr>
+    <tr><td>Lafayette High School</td><td>Wildwood</td><td>MO, USA</td><td>5</td></tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">TOTAL</td>
+      <td>41</td>
+    </tr>
+  </tfoot>
+</table>
+
+
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th>CITY</th>
+      <th>STATE / COUNTRY</th>
+      <th>STUDENTS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- India -->
+    <tr><td>Ahmednagar</td><td>Maharashtra, India</td><td>1</td></tr>
+    <tr><td>Coimbatore</td><td>Tamilnadu, India</td><td>1</td></tr>
+    <!-- USA - Kansas -->
+    <tr><td>Olathe</td><td>KS, USA</td><td>1</td></tr>
+    <tr><td>Parsons</td><td>KS, USA</td><td>1</td></tr>
+    <!-- USA - Missouri -->
+    <tr><td>Columbia</td><td>MO, USA</td><td>9</td></tr>
+    <tr><td>Henley</td><td>MO, USA</td><td>1</td></tr>
+    <tr><td>Imperial</td><td>MO, USA</td><td>1</td></tr>
+    <tr><td>Jefferson City</td><td>MO, USA</td><td>2</td></tr>
+    <tr><td>Kansas City</td><td>MO, USA</td><td>5</td></tr>
+    <tr><td>Lee's Summit</td><td>MO, USA</td><td>10</td></tr>
+    <tr><td>Liberty</td><td>MO, USA</td><td>1</td></tr>
+    <tr><td>Monroe City</td><td>MO, USA</td><td>1</td></tr>
+    <tr><td>St. Louis</td><td>MO, USA</td><td>1</td></tr>
+    <tr><td>Wildwood</td><td>MO, USA</td><td>6</td></tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="2">TOTAL</td>
+      <td>41</td>
+    </tr>
+  </tfoot>
+</table>
+
+           
+
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+    font-size: 16px;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  thead tr {
+    background-color: #009879;
+    color: #ffffff;
+  }
+  
+  .division-header {
+    background-color: #f3f3f3;
+    font-weight: bold;
+    color: #333;
+  }
+
+  tbody tr:hover {
+    background-color: #f9f9f9;
+  }
+
+  .place-1st { color: #d4af37; font-weight: bold; }
+  .place-2nd { color: #aaa9ad; font-weight: bold; }
+  .place-3rd { color: #cd7f32; font-weight: bold; }
+</style>
+
+<table>
+  <thead>
+    <tr>
+      <th>DIVISION</th>
+      <th>PLACE</th>
+      <th>WINNERS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Advanced Division -->
+    <tr class="division-header">
+      <td rowspan="3">Advanced</td>
+      <td class="place-1st">1st</td>
+      <td>Dylan Fletcher, Emery Chiang, Oskar Cobb</td>
+    </tr>
+    <tr>
+      <td class="place-2nd">2nd</td>
+      <td>Aiden Burgstahler, Brody Joling</td>
+    </tr>
+    <tr>
+      <td class="place-3rd">3rd</td>
+      <td>Seamus Ashley</td>
+    </tr>
+    <!-- Intermediate Division -->
+    <tr class="division-header">
+      <td rowspan="3">Intermediate</td>
+      <td class="place-1st">1st</td>
+      <td>Adit Swami, Nate Bairu, Vivek Maddineni</td>
+    </tr>
+    <tr>
+      <td class="place-2nd">2nd</td>
+      <td>Anh Dao, Neil Zheng, Ruby Mollenkamp</td>
+    </tr>
+    <tr>
+      <td class="place-3rd">3rd</td>
+      <td>Aleyah Borsutzky</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<!-- SPECIAL -->
+<table>
+  <thead>
+    <tr>
+      <th>ABSOLUTE WINNER</th>
+      <th>STATE / COUNTRY</th>
+<!--      <th>WINNERS</th> -->
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Advanced Division -->
+    <tr class="division-header">
+      <td rowspan="1">Tanishk Jaggi</td>
+      <td rowspan="1">Maharashtra, India</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+                
+<p>
+                <b>Counselors (CCCS majors):</b>
+                Andrew Woods, Ben Hamilton, Ben Kelly, Cole Schwandt, Eric Schultz, Hunter Derenski, Mark Noble, Nasser Alahaideb, Oladayo Oyedeji, Ricky Spires, Ryan Harvey, Yonathan Siele
+              <p>
+
+                <p>
+                  <b>Sponsor:</b>
+                  Columbia College (space, food, tuition scholarship)
+                </p>
+
+
+         <h3> Contest #9 (3/13/2025)</h3>
+            <ul>
+              <li> Number of high school students, parents, teachers: 21, 10, 1
+              <li>Cities/towns of attendees (sorted):
+                <ul>
+                  <li>California, MO
+                  <li>Columbia, MO
+                  <li>Fenton, MO
+                  <li>Knob Noster, MO
+                  <li>Olathe, KS
+                  <li>Wildwood, MO
+                </ul>
+              <li> High schools (sorted):
+                <ul>
+                  <li>California R-1 High School
+                  <li>Hickman High School 
+                  <li>Homeschool
+                  <li>Knob Noster High School 
+                  <li>Lafayette High School
+                  <li>Lindbergh High School
+                  <li>Muriel Williams Battle High School
+                  <li>Olathe Northwest High School
+                  <li>Rock Bridge High School
+                </ul>
+              <li>Results (sorted):
+                <ul>
+                  <li>Advanced</li>
+                  <ul>
+                    <li>1st: Andrew Trask, Ben Hamilton, Ricky Spires
+                    <li>2nd: Christian Moegling, Philip Chindris, Ray Ward
+                    <li>3rd: Vidur Kothur
+                  </ul>
+                  <li>Intermediate</li>
+                  <ul>
+                    <li>1st: Charles DiBlasi, Landin Woods, Oskar Cobb
+                    <li>2nd: Aasiyah Arowogbadamu, Hadeel Adam, Hunter Smith
+                    <li>3rd: Arphita Sureshkumar, Ty McDonald
+                  </ul>
+                </ul>
+              <li>
+                Counselors (CCCS majors):
+                Ben Kelly, Cole Schwandt, Eric Schultz, Grant Clark,
+                Mark Noble, Nasser Alahaideb, Robert Oladayo Oyedeji
+              </li>
+              <li>Sponsors:
+                <ul>
+                  <li>Columbia College (space, food, 3x$1000 tuition scholarship, $500 for prizes)
+                  <li>Nathaniel Graham ($300 for prizes)
+                </ul>
+              </li>
+            </ul>
+        </ul>
+      </p>
+
+      
+      <br>
+      <!-- Social Media Section -->
+      <a name="connect"></a>
+      <p>
+        <center>
+          <div class="social-links">
+
+            <!-- Facebook Link -->
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            <a style="text-decoration: none;" href="https://www.facebook.com/share/p/182HFBUqb7/" target="_blank" rel="noopener" aria-label="Join our Facebook community">
+              <svg width="42" height="42" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+              </svg>
+            </a>
+
+            <!-- X (formerly Twitter)  Link -->
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            <a style="text-decoration: none;" href="https://x.com/yliow17649/status/2027284865494761720?s=20" target="_blank" rel="noopener" aria-label="Follow our contest updates on X">
+              <svg width="42" height="42" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            
+            <!-- Instagram -->
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            <a style="text-decoration:none:" href="http://www.instagram.com/p/DVR8rbrjXNG/" target="_blank" rel="noopener" aria-label="Follow us on Instagram">
+              <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+ 
+          </div>
+        </center>
+        [<a href='#top'>goto top</a>]</small></small>
+      </p>
+      
+<hr>
+&copy Copyright 2013-2026. Yihsiang Liow. All rights reserved. (<a href="mailto:yliow@ccis.edu">yliow@ccis.edu</a>
+    | <a href='http://yliow.github.io'>http://yliow.github.io</a>)
+<br>
+Last update: 2026-03-12 09:08:10.333547
+</body>
+</html>
+    
+-->

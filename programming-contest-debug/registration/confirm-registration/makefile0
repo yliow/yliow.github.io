@@ -1,0 +1,16 @@
+pdf:
+	#python main.py
+	pdflatex --shell-escape %s.tex
+	xdg-open %s.pdf
+view:
+	xdg-open %s.pdf
+v:
+	xdg-open %s.pdf
+cleantmp:
+	rm -rf '__pycache__' 'auto' 'desktop.ini' \
+	'abc.output' 'texput.log' 'shEsc.tmp' \
+	'main.log' 'main.aux' 'main.toc' 'main.out' 'main.idx' 'main.ilg' 'main.vrb' 'main.snm' 'main.nav' \
+	'main.py.err' 'main.py.out' 'latex.py' 'main.pytxcode' \
+	'makefile.old' 'missfont.log' 'traceback.txt'
+c:
+	make cleantmp

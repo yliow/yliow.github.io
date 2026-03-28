@@ -1,0 +1,84 @@
+%\usepackage{myassignment}
+%myassignment is below:
+
+\usepackage{mymacro-new}
+
+%==============================================================================
+% Page style, header, footer
+%==============================================================================
+\renewcommand\HEADERLEFT{\textsc{\COURSENUMBER: \COURSESHORTNAME}}
+\renewcommand\HEADERLEFT{\textsc{CCCS HS PC 2026 Registration}}
+
+%==============================================================================
+% Place this immediately after \begin{document}
+%==============================================================================
+\newcommand\topmatter {
+ 
+  \hypersetup{
+    pdftitle={\COURSENUMBER: \TITLE},
+  }
+
+  \newpage
+  \begin{center}
+    \textbf{\COURSENUMBER: \COURSENAME} \\
+    \textbf{\TITLE}
+  \end{center}
+  \mbox{} \\
+}
+
+
+
+
+\usepackage{environ}
+\let\oldquote=\quote
+\let\endoldquote=\endquote
+\let\quote\relax
+\let\endquote\relax
+
+\newcommand\NAME{} % ADDED 2020/09/16
+
+% ADDED 2020/09/16
+\newcommand{\wideunderline}[2][2em]{%
+  \uline{\makebox[\ifdim\width>#1\width\else#1\fi][l]{#2}}%
+}
+
+\renewcommand\topmatter {
+
+  \hypersetup{
+    pdftitle={\COURSENUMBER+++ \TITLE},
+  }
+
+ \newpage
+  \begin{center}
+ \textbf{\COURSENUMBER+++ \COURSENAME} \\
+ \textbf{\TITLE}
+ \end{center} 
+ 
+}
+
+
+\usepackage{pifont}
+\newcommand{\cmark}{\textred{\ding{51}}}
+\newcommand{\xmark}{\textred{\ding{55}}}
+
+\DefineVerbatimEnvironment%
+ {answercode}{Verbatim}
+ {frame=single,fontsize=\footnotesize}
+
+ 
+\newenvironment{largebox}[1]{%
+ \boxparone{#1}
+}
+{}
+
+\newsavebox\foobox
+\newenvironment{answerlong}
+  {%
+    \begin{lrbox}{\foobox}%
+      \begin{minipage}{\dimexpr\textwidth-.25cm}%
+  }
+  {%
+      \end{minipage}%
+    \end{lrbox}%
+    \[\framebox[\textwidth][c]{\usebox\foobox}\]%
+  }
