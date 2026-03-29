@@ -3,6 +3,11 @@ webpage structure
 
 <html>
 
+<p>
+<span style="color:red">bunder heavy construction</span>
+</p>
+
+
   %(head)s
 
   <body style="font-family:arial; margin:200px; padding:200px; ">
