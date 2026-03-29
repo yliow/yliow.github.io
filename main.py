@@ -3,15 +3,11 @@ webpage structure
 
 <html>
 
-<p>
-<span style="color:red">bunder heavy construction</span>
-</p>
-
 
   %(head)s
 
   <body style="font-family:arial; margin:200px; padding:200px; ">
-    
+
     %(navigation_bar)s
 
     %(header)s
@@ -112,7 +108,7 @@ def navigation_bar(name):
     
 def title(name):
     if name == 'cccs':
-        return 'CCCS<br>Columbia College Computer Science'
+        return 'CCCS<br>Columbia College Computer Science<br><span style="color:red">under heavy construction</span>'
     if name == 'cs_day':
         return 'CS Day'
     elif name == 'pics':
