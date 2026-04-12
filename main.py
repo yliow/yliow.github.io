@@ -207,7 +207,8 @@ def toc():
       <li><a href="#software">Software</a></li>      
       <li><a href="#courses">Courses</a></li>      
       <li><a href="#tutorials">Tutorials</a></li>
-      <li><a href="#wanna-feed-your-brain">Wanna feed your brain?</a></li>
+      <li><a href="#wanna-feed-your-brain">Wanna feed your brain?</a> |
+    <a href='https://www.youtube.com/watch?v=AIYQp1n51ZI'>AI</a></li>
       <li><a href="#others">Others</a></li>
     </li>
     </ul>
