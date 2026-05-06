@@ -413,7 +413,6 @@ def software():
 <ul>
     <li>Software downloads for classes:
     <a href="https://docs.google.com/document/d/1fstvjlxEb45D3R6THZuLOnTZ3C-JSWWN8pdwW5KMVm8/">README</a>
-    (<a href="https://docs.google.com/document/d/1gsozRu7xMSO0WO_QouY81B5WeDt2Sg119JTF9I1Mq2Q/edit?usp=sharing">README</a> backup)
     |
     <a href="https://drive.google.com/drive/folders/0B7Sweg7OrVSTQUh6a0VmVnMzVm8">Software folder</a>
     | <span style='color:red'>NEW</span> <a href='https://drive.google.com/drive/folders/1FlF_EY1n5t8UbcXkdtACZxCq5OGjVgbj?usp=sharing'>Software folder</a></li>
