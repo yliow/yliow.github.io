@@ -51,19 +51,13 @@ def companies():
     </ul>'''
 
 def cs_hangout():
-    return r'''<a href ='http://bit.ly/cc_cs_hangout'>CS Hangout</a>. BRN = Brown Hall.
+    return r'''<a href ='http://bit.ly/cc_cs_hangout'>CS Hangout</a>.
     <ul>
     <li><font color='red'>For finals week cram ... </font>
     <ul>
-    <li>Fri 4/18, 4:30PM-10PM, Brown 101
-    <li>Mon 4/21, 4:30PM-10PM, Brown 100 & 101
-    <li>Tue 4/22, 3PM-10PM, Brown 100 & 101
-    <li>Wed 4/23, 4:30PM-10PM, Brown 100 & 101
-    <li>Thu 4/24, 3PM-10PM, Brown 100 & 101
-    <li>Fri, 4/25, 4:30PM-10PM, Brown 100 & 101
     </ul>
-    <li>MWF 4:30PM-6:30PM, Brown 100
-    <li>TuTh 3PM-5PM, Brown 100
+    <li>MWF 4:30PM-6:00PM
+    <li>TuTh 3PM-5PM
     </ul>
     '''
 def ciss145():
