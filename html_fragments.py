@@ -53,9 +53,6 @@ def companies():
 def cs_hangout():
     return r'''<a href ='http://bit.ly/cc_cs_hangout'>CS Hangout</a>.
     <ul>
-    <li><font color='red'>For finals week cram ... </font>
-    <ul>
-    </ul>
     <li>MWF 4:30PM-6:00PM
     <li>TuTh 3PM-5PM
     </ul>
