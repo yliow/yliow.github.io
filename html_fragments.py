@@ -9,7 +9,7 @@ def work_study():
     <a href="https://drive.google.com/drive/folders/0BzjYrK0VFuMWbjFDTnhsUzhHQkE?resourcekey=0-0HJH3q7E1lDQ_9IHyd6olg&usp=drive_link">folder</a>'''
 def cs101():
     return r'''<a href='https://docs.google.com/presentation/d/1BkZiqa6YoGeEOFk5dOA1o46cUEsN0NhB/edit?usp=sharing&ouid=110224096777115323458&rtpof=true&sd=true'><span style='color:red'>NEW***</span> CS101 Guide to CCCS (HHGTT CCCS)</a> |
-    <a href='https://docs.google.com/spreadsheets/d/1Sttb-5SSJnIF_jisvNg_-onr_9gsa9CH'>course rotation</a>
+    <span style='color:red'>NEW***</span> <a href='https://docs.google.com/spreadsheets/d/1Sttb-5SSJnIF_jisvNg_-onr_9gsa9CH'>course rotation</a>
     |
     <a href='http://catalog.ccis.edu/content.php?catoid=28&navoid=3576#ciss'>course rotation at ccis.edu</a>
     '''
