@@ -412,9 +412,7 @@ def software():
     return r'''<h2><a id="software">Software</a> <a href="#top" style="font-size:16px">top</a></h2>
 <ul>
     <li>Software downloads for classes:
-    <a href="https://docs.google.com/document/d/1fstvjlxEb45D3R6THZuLOnTZ3C-JSWWN8pdwW5KMVm8/">README</a>
-    |
-    <a href="https://drive.google.com/drive/folders/0B7Sweg7OrVSTQUh6a0VmVnMzVm8">Software folder</a>
+    <span style='color:red'>NEW</span> <a href="https://docs.google.com/document/d/1fstvjlxEb45D3R6THZuLOnTZ3C-JSWWN8pdwW5KMVm8/">README</a>
     | <span style='color:red'>NEW</span> <a href='https://drive.google.com/drive/folders/1FlF_EY1n5t8UbcXkdtACZxCq5OGjVgbj?usp=sharing'>Software folder</a></li>
     <li>Link for SDL <a href="https://drive.google.com/file/d/1munqhXWCN3J3Wp_0GtrvxZozGPwj7JiQ/view?usp=sharing">demo.tar</a>
     (for CISS245 game development)</li>
