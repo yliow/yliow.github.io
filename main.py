@@ -319,7 +319,7 @@ def cccs():
     <p>I'm in the process of moving <a href="http://bit.ly/yliow0">http://bit.ly/yliow0</a> to this website.    
     Let me know if there are broken links.
     </p>
-    <p><span style='color:red'>NEW*</span> means moved to cccs101010.</p>
+    <p><span style='color:red'>NEW***</span> means moved to cccs101010.</p>
 
     <!-- pictures -->
     <div class="row">
@@ -414,8 +414,8 @@ def software():
     return r'''<h2><a id="software">Software</a> <a href="#top" style="font-size:16px">top</a></h2>
 <ul>
     <li>Software downloads for classes:
-    <span style='color:red'>NEW</span> <a href="https://docs.google.com/document/d/1fstvjlxEb45D3R6THZuLOnTZ3C-JSWWN8pdwW5KMVm8/">README</a>
-    | <span style='color:red'>NEW</span> <a href='https://drive.google.com/drive/folders/1FlF_EY1n5t8UbcXkdtACZxCq5OGjVgbj?usp=sharing'>Software folder</a></li>
+    <span style='color:red'>NEW***</span> <a href="https://docs.google.com/document/d/1fstvjlxEb45D3R6THZuLOnTZ3C-JSWWN8pdwW5KMVm8/">README</a>
+    | <span style='color:red'>NEW***</span> <a href='https://drive.google.com/drive/folders/1FlF_EY1n5t8UbcXkdtACZxCq5OGjVgbj?usp=sharing'>Software folder</a></li>
     <li>Link for SDL <a href="https://drive.google.com/file/d/1munqhXWCN3J3Wp_0GtrvxZozGPwj7JiQ/view?usp=sharing">demo.tar</a>
     (for CISS245 game development)</li>
     <li>Web-based</li>
