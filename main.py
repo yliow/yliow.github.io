@@ -316,8 +316,10 @@ def cccs():
     return webpage(navigation_bar=navigation_bar('cccs'),
                    header=header(title('cccs')),
                    body=r'''
-    I'm in the process of moving <a href="http://bit.ly/yliow0">http://bit.ly/yliow0</a> to this website.    
+    <p>I'm in the process of moving <a href="http://bit.ly/yliow0">http://bit.ly/yliow0</a> to this website.    
     Let me know if there are broken links.
+    </p>
+    <p><span style='color:red'>NEW*</span> means moved to cccs101010.</p>
 
     <!-- pictures -->
     <div class="row">
