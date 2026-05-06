@@ -8,7 +8,7 @@ def work_study():
     <a href="https://docs.google.com/document/d/1uPx4N4WrRhDfcajIs7PwcfdV9Q4fBqpqZwvsogfAn5w/edit?usp=drive_link">page</a> | 
     <a href="https://drive.google.com/drive/folders/0BzjYrK0VFuMWbjFDTnhsUzhHQkE?resourcekey=0-0HJH3q7E1lDQ_9IHyd6olg&usp=drive_link">folder</a>'''
 def cs101():
-    return r'''<a href='https://docs.google.com/presentation/d/1v_YISntWpguP-t-SwrhjT1537UwmgybZe5mGzwP_11w/edit?usp=sharing'>CS101 Guide to CCCS (HHGTT CCCS)</a> |
+    return r'''<a href='https://docs.google.com/presentation/d/1BkZiqa6YoGeEOFk5dOA1o46cUEsN0NhB/edit?usp=sharing&ouid=110224096777115323458&rtpof=true&sd=true'>CS101 Guide to CCCS (HHGTT CCCS)</a> |
     <a href='https://docs.google.com/spreadsheets/d/1km1oFGXvq5QSBqlOPGtfQCmo7F_tl9-dX6H_RuTJ4KM/edit?usp=sharing'>course rotation</a>
     |
     <a href='http://catalog.ccis.edu/content.php?catoid=28&navoid=3576#ciss'>course rotation at ccis.edu</a>
