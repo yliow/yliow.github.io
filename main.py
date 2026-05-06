@@ -416,7 +416,7 @@ def software():
     <li>Software downloads for classes:
     <span style='color:red'>NEW***</span> <a href="https://docs.google.com/document/d/1fstvjlxEb45D3R6THZuLOnTZ3C-JSWWN8pdwW5KMVm8/">README</a>
     | <span style='color:red'>NEW***</span> <a href='https://drive.google.com/drive/folders/1FlF_EY1n5t8UbcXkdtACZxCq5OGjVgbj?usp=sharing'>Software folder</a></li>
-    <li>Link for SDL <span style='color:red'>NEW***</span><a href="https://drive.google.com/file/d/1qjM_Aayja4dOFHYdT5Bnwkl_ZKp-QeaM/view?usp=sharing">demo.tar</a>
+    <li>Link for SDL <span style='color:red'>NEW*** </span><a href="https://drive.google.com/file/d/1qjM_Aayja4dOFHYdT5Bnwkl_ZKp-QeaM/view?usp=sharing">demo.tar</a>
     (for CISS245 game development)</li>
     <li>Web-based</li>
     <ul>
