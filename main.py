@@ -416,7 +416,7 @@ def software():
     (<a href="https://docs.google.com/document/d/1gsozRu7xMSO0WO_QouY81B5WeDt2Sg119JTF9I1Mq2Q/edit?usp=sharing">README</a> backup)
     |
     <a href="https://drive.google.com/drive/folders/0B7Sweg7OrVSTQUh6a0VmVnMzVm8">Software folder</a>
-    | <span style='-color:red'>NEW: </span><a href=''>Software folder</a></li>
+    | <span style='color:red'>NEW: </span><a href=''>Software folder</a></li>
     <li>Link for SDL <a href="https://drive.google.com/file/d/1munqhXWCN3J3Wp_0GtrvxZozGPwj7JiQ/view?usp=sharing">demo.tar</a>
     (for CISS245 game development)</li>
     <li>Web-based</li>
