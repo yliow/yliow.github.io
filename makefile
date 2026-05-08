@@ -18,6 +18,7 @@ run: index.html
 	-mkdir pdfs/latex-2d/
 	-mkdir pdfs/latextool/
 	-mkdir pdfs/companies/
+	-mkdir pdfs/expand-vm-storage/
 	-mkdir book/
 	-mkdir article/
 	-mkdir programming-contest
@@ -30,6 +31,7 @@ run: index.html
 	cp ../gpp/main.pdf 	      	pdfs/gpp/main.pdf
 	cp ../make/main.pdf 	      	pdfs/make/main.pdf
 	cp ../gdb/main.pdf 	      	pdfs/gdb/main.pdf
+	cp ../expand-vm-storage/main.pdf pdfs/expand-vm-storage/main.pdf
 	cp ../memory-debugging/main.pdf pdfs/memory-debugging/main.pdf
 	cp ../git/main.pdf 		pdfs/git/main.pdf
 	cp ../googletest/main.pdf 	pdfs/googletest/main.pdf

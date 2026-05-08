@@ -231,6 +231,9 @@ def tutorials():
              (The screenshots in the pdf are slightly different from the newer
              versions of the VMWare software.
              But in general, the process for using the software is the same.)'''),
+            ('pdfs/expand-vm-storage/main.pdf',
+             'expand-vm-storage.pdf',
+             '''Expand vm storage to 100GB.'''),
             ('pdfs/unix1-1/main.pdf',
              'unix1.pdf',
              '''How to work with linux. Extra linux commands
