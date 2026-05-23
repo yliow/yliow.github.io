@@ -2,8 +2,10 @@
 
 should probly have
 
-         link string  link                   link description
+         name         link                   link description
 latex -> "latex.pdf", "pdfs/latex/main.pdf", "How to write LaTeX documents and generate pdf."
+
+
 '''
 
 #===========================================================================
