@@ -249,7 +249,7 @@
                     if (commands[inputVal] !== undefined) { reply = commands[inputVal]; } 
                     else if (inputVal.startsWith('cat ') && !commands[inputVal]) { reply = `Error: Sector '${inputVal.substring(4)}' corrupted.`; } 
                     else { reply = `Command not recognized: '${inputVal}'. Type 'help'.`; }
-                    terminalOutput.textContent += `guest@cccs:~$ ${terminalInput.value}\n${reply}\n\n`;
+                    terminalOutput.textContent += `\nguest@cccs:~$ ${terminalInput.value}\n${reply}\n`;
                 }
                 terminalInput.value = ""; terminalBox.scrollTop = terminalBox.scrollHeight;
             }
