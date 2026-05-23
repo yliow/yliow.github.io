@@ -87,7 +87,7 @@
                 <div class="terminal-box" id="terminal-box" onclick="document.getElementById('terminal-input').focus()">
                     <div class="terminal-output" id="terminal-output">Welcome to Core Terminal OS v4.12. Type 'help' to fetch local subsystem directories.<br><br></div>
                     <div class="terminal-line">
-                        <span class="terminal-prompt">guest@cccs-node:~$</span>
+                        <span class="terminal-prompt">guest@cccs:~$</span>
                         <input type="text" id="terminal-input" class="terminal-input" autofocus autocomplete="off" spellcheck="false">
                     </div>
                 </div>
@@ -217,7 +217,7 @@
                     if (commands[inputVal] !== undefined) { reply = commands[inputVal]; } 
                     else if (inputVal.startsWith('cat ') && !commands[inputVal]) { reply = `Error: Sector '${inputVal.substring(4)}' corrupted.`; } 
                     else { reply = `Command not recognized: '${inputVal}'. Type 'help'.`; }
-                    terminalOutput.textContent += `guest@cccs-node:~$ ${terminalInput.value}\n${reply}\n\n`;
+                    terminalOutput.textContent += `guest@cccs:~$ ${terminalInput.value}\n${reply}\n\n`;
                 }
                 terminalInput.value = ""; terminalBox.scrollTop = terminalBox.scrollHeight;
             }
