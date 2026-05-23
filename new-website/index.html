@@ -157,17 +157,17 @@
                     </div>
                     <div class="data-item">
                         <span class="data-tag"></span>
-                        <a href="pdfs/vmware/vmwareplayer.pdf">unix1.pdf</a>: Introduction to linux
+                        <a href="pdfs/vmware/vmwareplayer.pdf">unix1.pdf</a>: Intro to linux
                         <!-- <p style="font-size: 0.9rem; margin-top: 0.3rem;">Introduction to linux</p> -->
                     </div>
                     <div class="data-item">
                         <span class="data-tag"></span>
-                        <a href="pdfs/xemacs/main.pdf">emacs.pdf</a>: Introduction to emacs/xemacs
+                        <a href="pdfs/xemacs/main.pdf">emacs.pdf</a>: Intro to emacs/xemacs
                         <!-- <p style="font-size: 0.9rem; margin-top: 0.3rem;">Introduction to linux</p> -->
                     </div>
                     <div class="data-item">
                         <span class="data-tag"></span> 
-                        <a href="pdfs/xemacs-python/main.pdf">emacs.pdf (python version)</a>: Introduction to emacs/xemacs
+                        <a href="pdfs/xemacs-python/main.pdf">emacs.pdf (python version)</a>: Intro to emacs/xemacs
                         <!-- <p style="font-size: 0.9rem; margin-top: 0.3rem;">Introduction to linux</p> -->
                     </div>
                 </section>
@@ -232,7 +232,7 @@
             ls: "research/    tutorials/    software/    courses/    contact/",
             whoami: "User status: GUEST // Access Level: UNCLASSIFIED",
             "cat research": "RESEARCH ARCHIVES:\n- MDB : Mapotofu RDBMS research project\n- Onigiri Logic Simulator research project",
-            "cat tutorials": "TUTORIALS ARCHIVES:\n- How to use vmware workstation/player\n- Introduction to linux",
+            "cat tutorials": "TUTORIALS ARCHIVES:\n- How to use vmware workstation/player\n- Intro to linux",
             "cat contact": "CONTACT ARCHIVES:\n- Dr. Yihsiang Liow yliow@ccis.edu\n- Cole Schwandt (president CS club) ctschwandt1@cougars.ccis.edu",
             "rm -rf /": "don't do that",
             "rm / -rf": "don't do that",
@@ -249,7 +249,7 @@
                     if (commands[inputVal] !== undefined) { reply = commands[inputVal]; } 
                     else if (inputVal.startsWith('cat ') && !commands[inputVal]) { reply = `Error: Sector '${inputVal.substring(4)}' corrupted.`; } 
                     else { reply = `Command not recognized: '${inputVal}'. Type 'help'.`; }
-                    terminalOutput.textContent += `\nguest@cccs:~$ ${terminalInput.value}\n${reply}\n`;
+                    terminalOutput.textContent += `\nguest@cccs:~$ ${terminalInput.value}\n${reply}`;
                 }
                 terminalInput.value = ""; terminalBox.scrollTop = terminalBox.scrollHeight;
             }
