@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prof. Name | Central Command</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0a0d14;
+            --panel-bg: rgba(16, 22, 34, 0.6);
+            --text-main: #d1d5db;
+            --accent-cyan: #00f0ff;
+            --accent-dim: #007788;
+            --border-glow: rgba(0, 240, 255, 0.2);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Roboto Mono', monospace;
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: radial-gradient(var(--accent-dim) 0.5px, transparent 0.5px), radial-gradient(var(--accent-dim) 0.5px, var(--bg-color) 0.5px);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
+            padding: 2rem 1rem;
+        }
+        body::before {
+            content: " "; display: block; position: fixed;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            z-index: 9999; background-size: 100% 4px, 6px 100%; pointer-events: none;
+        }
+        .container { max-width: 1000px; margin: 0 auto; }
+        header {
+            border: 1px solid var(--accent-dim); background: var(--panel-bg);
+            padding: 2rem; margin-bottom: 2rem; position: relative;
+            backdrop-filter: blur(4px); box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
+        }
+        header::before {
+            content: "SYSTEM: ACTIVE"; position: absolute; top: -10px; left: 20px;
+            background: var(--bg-color); padding: 0 10px; font-size: 0.75rem; color: var(--accent-cyan); letter-spacing: 2px;
+        }
+        h1 { font-family: 'Orbitron', sans-serif; color: #fff; font-size: 2.5rem; letter-spacing: 3px; text-transform: uppercase; text-shadow: 0 0 10px var(--border-glow); margin-bottom: 0.5rem; }
+        .title-sub { color: var(--accent-cyan); font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; }
+        .scifi-clock { font-size: 0.8rem; color: var(--accent-cyan); text-align: right; border-left: 2px solid var(--accent-dim); padding-left: 1rem; }
+        .grid { display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; }
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+            .scifi-clock { text-align: left; border-left: none; padding-left: 0; border-top: 1px dashed var(--accent-dim); padding-top: 1rem; width: 100%; }
+        }
+        section { background: var(--panel-bg); border-left: 3px solid var(--accent-cyan); border-top: 1px solid var(--accent-dim); border-bottom: 1px solid var(--accent-dim); border-right: 1px solid var(--accent-dim); padding: 1.5rem; margin-bottom: 2rem; position: relative; backdrop-filter: blur(4px); }
+        h2 { font-family: 'Orbitron', sans-serif; color: #fff; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1.5rem; border-bottom: 1px dashed var(--accent-dim); padding-bottom: 0.5rem; }
+        .terminal-container { position: relative; background: rgba(5, 8, 15, 0.95); border: 1px solid var(--accent-cyan); border-radius: 4px; height: 280px; margin-bottom: 2rem; overflow: hidden; box-shadow: inset 0 0 10px rgba(0, 240, 255, 0.1), 0 0 15px rgba(0, 240, 255, 0.1); }
+        .matrix-canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.12; pointer-events: none; transition: opacity 0.3s ease; }
+        .terminal-container:focus-within .matrix-canvas { opacity: 0.03; }
+        .terminal-box { position: absolute; top: 0; left: 0; right: 0; bottom: 0; padding: 1rem; font-family: 'Roboto Mono', monospace; font-size: 0.9rem; color: #00ff66; overflow-y: auto; z-index: 2; }
+        .terminal-output { white-space: pre-wrap; margin-bottom: 0.5rem; }
+        .terminal-line { display: flex; align-items: center; }
+        .terminal-prompt { color: var(--accent-cyan); margin-right: 0.5rem; user-select: none; }
+        .terminal-input { background: transparent; border: none; color: #fff; font-family: 'Roboto Mono', monospace; font-size: 0.9rem; width: 100%; outline: none; }
+        .data-item { margin-bottom: 1.2rem; padding-left: 1rem; border-left: 2px solid var(--accent-dim); transition: all 0.2s ease; }
+        .data-item:hover { border-left-color: var(--accent-cyan); background: rgba(0, 240, 255, 0.03); }
+        .data-tag { color: var(--accent-cyan); font-size: 0.8rem; font-weight: bold; display: block; margin-bottom: 0.2rem; }
+        a { color: #fff; text-decoration: none; border-bottom: 1px dotted var(--accent-cyan); transition: all 0.2s ease; }
+        a:hover { color: var(--accent-cyan); text-shadow: 0 0 8px var(--accent-cyan); }
+        footer { text-align: center; margin-top: 3rem; font-size: 0.75rem; color: var(--accent-dim); letter-spacing: 1px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>CCCS</h1>
+                <div class="title-sub">Columbia College Computer Science</div>
+            </div>
+            <div class="scifi-clock" id="scifi-clock">LCL: 00:00:00<br>UTC: 00:00:00</div>
+        </header>
+
+        <section style="border-left-color: #00ff66; padding: 0.5rem;">
+            <div class="terminal-container">
+                <canvas class="matrix-canvas" id="matrix-canvas"></canvas>
+                <div class="terminal-box" id="terminal-box" onclick="document.getElementById('terminal-input').focus()">
+                    <div class="terminal-output" id="terminal-output">Welcome to Core Terminal OS v4.12. Type 'help' to fetch local subsystem directories.<br><br></div>
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">guest@cccs-node:~$</span>
+                        <input type="text" id="terminal-input" class="terminal-input" autofocus autocomplete="off" spellcheck="false">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid">
+            <main>
+                <section>
+                    <h2>Research</h2>
+                    <div class="data-item">
+                        <span class="data-tag"></span>
+                        <a href="#">MDB</a>: Mapo tofu RDBMS research project
+                        <!-- <p style="font-size: 0.9rem; margin-top: 0.3rem;">Mapo tofu RDBMS research project</p> -->
+                    </div>
+                    <div class="data-item">
+                        <span class="data-tag"></span>
+                        <a href="#">OLS</a>: Onigiri logic simulator research project
+                        <!-- <p style="font-size: 0.9rem; margin-top: 0.3rem;">Onigiri logic simulator research project</p> -->
+                    </div>
+                </section>
+                 <section>
+                    <h2>Software</h2>
+                    <div class="data-item">
+                        <span class="data-tag"></span>
+                        <a href="#">README</a> | <a href="#">Software folder</a>: Software download for classes
+                        <!-- <p style="font-size: 0.9rem; margin-top: 0.3rem;">Software download for classes.</p> -->
+                    </div>
+                    <div class="data-item">
+                        <span class="data-tag"></span>
+                        <a href="#">demo.tar.gz</a>: CISS245 game lib
+                        <!-- <p style="font-size: 0.9rem; margin-top: 0.3rem;">CISS245 game lib</p> -->
+                    </div>
+                    <div class="data-item">
+                        <span class="data-tag"></span>
+                        <a href="https://www.onlinegdb.com/online_c++_compiler">onlinegdb</a>: Online gdb compiler
+                        <!-- <p style="font-size: 0.9rem; margin-top: 0.3rem;">Online gdb compiler</p> -->
+                    </div>
+
+                </section>
+                <section>
+                    <h2>Tutorials</h2>
+                    <div class="data-item">
+                        <span class="data-tag"></span>
+                        <a href="pdfs/vmware/vmwareplayer.pdf">vmplayer.pdf</a>: How to use vmware workstation/player
+                        <!-- <p style="font-size: 0.9rem; margin-top: 0.3rem;">How to use vmware workstation/player</p> -->
+                    </div>
+                    <div class="data-item">
+                        <span class="data-tag"></span>
+                        <a href="pdfs/vmware/vmwareplayer.pdf">unix1.pdf</a>: Introduction to linux
+                        <!-- <p style="font-size: 0.9rem; margin-top: 0.3rem;">Introduction to linux</p> -->
+                    </div>
+                </section>
+            </main>
+            <aside>
+                <section>
+                    <h2>Terminal Uplink</h2>
+                    <div class="data-item" style="border: none; padding-left: 0;">
+                        <span class="data-tag">PHYSICAL COORD</span>Buchanan Hall Room 106<br>Dr. Liow: St Clair Hall Room 223
+                    </div>
+                    <div class="data-item" style="border: none; padding-left: 0;">
+                        <span class="data-tag">DIRECT NETMAIL</span><a href="mailto:yliow@ccis.edu.edu">yliow@ccis.edu</a>
+                    </div>
+                </section>
+            </aside>
+        </div>
+        <footer>// TERMINAL END // SECURE CONNECTION MAINTAINED // 2026</footer>
+    </div>
+
+
+
+
+
+
+
+        <script>
+        function updateClock() {
+            const now = new Date();
+            document.getElementById('scifi-clock').innerHTML = `LCL: ${now.toLocaleTimeString('en-US', { hour12: false })}<br>UTC: ${now.toISOString().slice(11, 19)}`;
+        }
+        setInterval(updateClock, 1000); updateClock();
+
+        const canvas = document.getElementById('matrix-canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = canvas.offsetWidth; canvas.height = canvas.offsetHeight;
+        const chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+        const drops = Array(Math.floor(canvas.width / 12)).fill(1);
+
+        function drawMatrix() {
+            ctx.fillStyle = 'rgba(10, 13, 20, 0.06)'; ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = '#00ff66'; ctx.font = '11px monospace';
+            for (let i = 0; i < drops.length; i++) {
+                ctx.fillText(chars[Math.floor(Math.random() * chars.length)], i * 12, drops[i] * 12);
+                if (drops[i] * 12 > canvas.height && Math.random() > 0.975) drops[i] = 0;
+                drops[i]++;
+            }
+        }
+        setInterval(drawMatrix, 35);
+
+        const terminalInput = document.getElementById('terminal-input');
+        const terminalOutput = document.getElementById('terminal-output');
+        const terminalBox = document.getElementById('terminal-box');
+
+        const commands = {
+            help: "Available commands:\n  ls       - List directory structures\n  cat [dir]- Read sector data (e.g., cat research, cat cv.txt)\n  clear    - Clear display logs\n  whoami   - View current user status",
+            ls: "research/    tutorials/    software/    courses/    contact/    cv.txt",
+            whoami: "User status: GUEST // Access Level: UNCLASSIFIED",
+            "cat research": "RESEARCH ARCHIVES:\n- Neural Network Topologies in Deep-Space Systems (IEEE-2026)\n- Quantum Cryptographic Handshakes at Scale (ArXiv-2026)",
+            "cat tutorials": "TUTORIALS ARCHIVES:\n- How to use vmware workstation/player\n- Introduction to linux"
+        };
+
+        terminalInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                const inputVal = terminalInput.value.trim().toLowerCase();
+                let reply = "";
+                if (inputVal === 'clear') { terminalOutput.textContent = ""; } 
+                else if (inputVal !== "") {
+                    if (commands[inputVal] !== undefined) { reply = commands[inputVal]; } 
+                    else if (inputVal.startsWith('cat ') && !commands[inputVal]) { reply = `Error: Sector '${inputVal.substring(4)}' corrupted.`; } 
+                    else { reply = `Command not recognized: '${inputVal}'. Type 'help'.`; }
+                    terminalOutput.textContent += `guest@cccs-node:~$ ${terminalInput.value}\n${reply}\n\n`;
+                }
+                terminalInput.value = ""; terminalBox.scrollTop = terminalBox.scrollHeight;
+            }
+        });
+    </script>
+</body>
+</html>
