@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mainframe Core // Theoretical CS</title>
+    <style>
+        /* Base Screen Styling */
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: #050805;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            color: #39ff14;
+            font-family: 'Fira Code', 'Courier New', monospace;
+            padding: 30px;
+            line-height: 1.6;
+            text-shadow: 0 0 4px rgba(57, 255, 20, 0.6);
+            position: relative;
+        }
+
+        /* CRT Scanline and Flicker Overlay */
+        body::before {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            z-index: 9999;
+            background-size: 100% 4px, 6px 100%;
+            pointer-events: none;
+        }
+
+        /* CRT Screen Glass Curve Simulation */
+        body::after {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: radial-gradient(circle, rgba(0,0,0,0) 60%, rgba(0,0,0,0.8) 100%);
+            z-index: 10000;
+            pointer-events: none;
+        }
+
+        /* Screen Flicker Animation */
+        @keyframes crt-flicker {
+            0% { opacity: 0.98; }
+            50% { opacity: 1; }
+            100% { opacity: 0.99; }
+        }
+
+        main, header {
+            animation: crt-flicker 0.15s infinite;
+        }
+
+        header {
+            border-bottom: 2px dashed #39ff14;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        h1 { font-size: 1.6rem; margin: 0; }
+        a { color: #00ffff; text-decoration: none; text-shadow: 0 0 4px rgba(0, 255, 255, 0.6); }
+        a:hover { text-decoration: underline; }
+        
+        /* Fallback Navigation Menu */
+        .fallback-nav {
+            margin: 15px 0;
+            padding: 10px;
+            border: 1px solid #163316;
+            background: #09140a;
+            box-shadow: inset 0 0 10px rgba(57, 255, 20, 0.2);
+        }
+        .fallback-nav span { color: #fff; font-weight: bold; }
+        .nav-btn {
+            background: none;
+            border: none;
+            color: #00ffff;
+            font-family: inherit;
+            font-size: 1rem;
+            cursor: pointer;
+            padding: 0 5px;
+            text-decoration: underline;
+            text-shadow: 0 0 4px rgba(0, 255, 255, 0.6);
+        }
+        .nav-btn:hover { color: #39ff14; }
+
+        /* Terminal Styling */
+        #terminal-output {
+            white-space: pre-wrap;
+            margin-bottom: 20px;
+        }
+        .input-line {
+            display: flex;
+            align-items: center;
+        }
+        .prompt {
+            color: #00ffff;
+            margin-right: 10px;
+            white-space: nowrap;
+            text-shadow: 0 0 4px rgba(0, 255, 255, 0.6);
+        }
+        #cmd-input {
+            background: transparent;
+            border: none;
+            color: #39ff14;
+            font-family: inherit;
+            font-size: 1rem;
+            width: 100%;
+            outline: none;
+            text-shadow: 0 0 4px rgba(57, 255, 20, 0.6);
+        }
+        .accent { color: #00ffff; text-shadow: 0 0 4px rgba(0, 255, 255, 0.6); }
+        .warning { color: #ff5555; text-shadow: 0 0 4px rgba(255, 85, 85, 0.6); }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CORE@MAINFRAME:~# init_theory_subroutines.sh</h1>
+    <p>Logged in as: Professor_CS // Security Level: Root // Focus: Formal Languages & Complexity</p>
+    
+    <!-- Fallback Menu -->
+    <nav class="fallback-nav">
+        <span>[QUICK ACCESS]:</span> 
+        <button class="nav-btn" onclick="executeCommand('bio')">Bio</button> | 
+        <button class="nav-btn" onclick="executeCommand('courses')">Courses</button> | 
+        <button class="nav-btn" onclick="executeCommand('publications')">Publications</button> | 
+        <button class="nav-btn" onclick="executeCommand('contact')">Contact</button> |
+        <button class="nav-btn" onclick="executeCommand('clear')">Clear</button>
+    </nav>
+</header>
+
+<main>
+    <div id="terminal-output">Welcome to the Theoretical Computing Mainframe.
+Halting problem subroutines... <span class="warning">[UNDECIDABLE]</span>
+P vs NP verification engine... <span class="warning">[UNRESOLVED]</span>
+Type commands below or use the quick access menu above.</div>
+
+    <div class="input-line">
+        <span class="prompt">root@mainframe:~#</span>
+        <input type="text" id="cmd-input" autofocus autocomplete="off" spellcheck="false">
+    </div>
+</main>
+
+<script>
+    const cmdInput = document.getElementById('cmd-input');
+    const output = document.getElementById('terminal-output');
+
+    const database = {
+        help: `Available subroutines:
+  bio          Display professor dossier and research paradigm
+  courses      List active formal curriculum modules
+  publications View peer-reviewed data transmissions
+  contact      Open communication ports
+  clear        Flush terminal buffer`,
+        
+        bio: `// cat bio_dossier.log
+-----------------------------------------------------------------
+I am a Professor of Theoretical Computer Science. My work maps the 
+absolute limits of computation across galactic networks. 
+
+Research vectors include:
+- Multi-tape Turing machine efficiency in higher dimensions.
+- Cellular automata modeling of stellar collapse patterns.
+- Quantifying the complexity classes of hyper-spatial routing.`,
+
+        courses: `// ls /etc/teaching/
+-----------------------------------------------------------------
+* CS 301: Automata Theory & Galactic Grammar
+  - Finite state machines, regular languages, and pushdown automata.
+* CS 480: Advanced Complexity & Non-Deterministic Engines
+  - Space-time trade-offs, NP-completeness, and oracle machines.`,
+
+        publications: `// grep -r "theorem" /usr/share/publications/
+-----------------------------------------------------------------
+* "Decidability Metrics for Autonomous Fleet Synchronization" (2025)
+* "Lower Bounds on Time Complexity in Singularity-Adjacent Nodes" (2023)
+* "Context-Free Grammars for Alien Signal Parsing Protocols" (2021)`,
+
+        contact: `// nc -l -p 8080 (Listening for subspace connections)
+-----------------------------------------------------------------
+* Office Coordinates: Subsector 404, Theory Wing
+* Comms Frequency:   <a href="mailto:you@university.edu">you@university.edu</a>
+* Office Hours:      Tues/Thurs (Stardate 4210.5 - 4210.8)`
+    };
+
+    function executeCommand(rawInput) {
+        const cleanInput = rawInput.trim().toLowerCase();
+        
+        output.innerHTML += `<br><span class="prompt">root@mainframe:~#</span> ${rawInput}<br>`;
+
+        if (cleanInput === 'clear') {
+            output.innerHTML = '';
+        } else if (database[cleanInput]) {
+            output.innerHTML += database[cleanInput] + '<br>';
+        } else if (cleanInput.startsWith('sudo')) {
+            output.innerHTML += `<span class="warning">Permission denied. Nice try. This mainframe runs on an un-interceptable oracle machine. Your attempt to solve the Halting problem manually has been logged.</span><br>`;
+        } else if (cleanInput === '') {
+            // Do nothing
+        } else {
+            output.innerHTML += `<span class="warning">bash: command not found: ${rawInput}. Type 'help' for options.</span><br>`;
+        }
+
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    cmdInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') {
+            executeCommand(cmdInput.value);
+            cmdInput.value = '';
+        }
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!e.target.classList.contains('nav-btn') && e.target !== cmdInput) {
+            cmdInput.focus();
+        }
+    });
+</script>
+
+</body>
+</html>
