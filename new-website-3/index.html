@@ -173,7 +173,9 @@
             <button class="nav-btn" onclick="engageDeck('research', this)">[ ] Research</button>
             <button class="nav-btn" onclick="engageDeck('courses', this)">[ ] Courses</button>
             <button class="nav-btn" onclick="engageDeck('tutorials', this)">[ ] Tutorials</button>
+            <button class="nav-btn" onclick="engageDeck('high-school', this)">[ ] High school</button>
             <button class="nav-btn" onclick="engageDeck('logs', this)">[ ] Captains Logs</button>
+            <button class="nav-btn" onclick="engageDeck('contact_us', this)">[ ] Contact us</button>
         </nav>
         <section class="hud-panel viewscreen">
             <div id="manifesto" class="console-content active-view">
@@ -186,6 +188,12 @@
                 <h2>Research</h2>
                 <p><strong>MDB</strong><br>Mapotofu RDBMS research project</p>
                 <p><strong>OLS</strong><br>Onigiri logic simulator research project</p>
+            </div>
+            <div id="high-school" class="console-content">
+                <div class="cmd-line">root@bridge:~# ls -la /var/research/</div>
+                <h2>High school students</h2>
+                <p><strong>High school page</strong><br> Info for high school students. [<a href='https://yliow.github.io/highschool.html'>link</a>] </p>
+                <p><strong>CCCS HS programming contest</strong><br>Programming contest for high school students. [<a href='https://yliow.github.io/programming-contest/'>link</a>]</p>
             </div>
             <div id="courses" class="console-content">
                 <div class="cmd-line">root@bridge:~# cat academic_calendar.dat</div>
@@ -211,15 +219,32 @@
                 <p><strong>googletest.pdf</strong>: How to use Google’s googletest to write C++ unit tests.[<a href="pdfs/googletest/main.pdf">pdf</a>]
                 <p><strong>latex.pdf</strong>: How to write LaTeX documents and generate pdf.[<a href="pdfs/latex/main.pdf">pdf</a>]
                 <p><strong>latex-graph.pdf</strong>: How to draw directed and undirected graphs (including DFAs, TMs).[<a href="pdfs/latex-graph/main.pdf">pdf</a>]
-
-                  
             </div>
 
             <div id="logs" class="console-content">
                 <div class="cmd-line">root@bridge:~# tail -f /var/log/captains_log.sys</div>
-                <h2>Captain's Logs</h2>
+                <h2>Captain's Logs</h2>           
                 <p><strong>STARDATE 2026.143:</strong> Finalizing the syllabus grid for the upcoming cadet deployment.</p>
             </div>
+            <div id="contact_us" class="console-content">
+                <div class="cmd-line">root@bridge:~# tail -f /var/log/contact_us.dat</div>
+                <h2>Contact Us</h2>
+                <p><strong>DISCORD</strong><br>
+                  https://discord.gg/UDCX6wF. [<a href="https://discord.gg/UDCX6wF">link</a>]
+                </p>
+                <p><strong>EMAILS</strong><br>
+                  Dr. Yihsiang Liow. [<a href="mailto:yliow@ccis.edu">email</a>]<br>
+                  Cole Schwandt. [<a href="mailto:ctschwandt1@cougars.ccis.edu">email</a>]
+                </p>
+                <p><strong>LOCATION</strong><br>
+                  Buchanan Hall Room 106. [<a href="https://www.ccis.edu/student-life/life-on-campus/campus-map">map</a>]<br>
+                  Dr. Yihsiang Liow: St Clair Hall Room 223. [<a href="https://www.ccis.edu/student-life/life-on-campus/campus-map">map</a>]<br>
+                  Cole Schwandt. [<a href="mailto:ctschwandt1@cougars.ccis.edu">mail</a>]
+                </p>
+
+                
+            </div>
+            
         </section>
         <aside class="hud-panel telemetry-deck">
             <h3>Matrix Diagnostics</h3>
