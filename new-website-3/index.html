@@ -280,7 +280,11 @@
         }
         setInterval(updateStardate, 60000); updateStardate();
         const box = document.getElementById('matrix-terminal');
-        const logs = ["[INFO] Node pinged.", "[WARN] Solar flare radiation.", "[SYS] Route updated.", "[INFO] Port 8080 active."];
+        const logs = ["[INFO] Node pinged.",
+                      "[WARN] Solar flare radiation.",
+                      "[SYS] Route updated.",
+                      "[INFO] Port 8080 active.",
+                      "[INFO] HSPC 3/6/2027."];
         setInterval(() => {
             if (box) {
                 box.innerHTML += `<br>${logs[Math.floor(Math.random() * logs.length)]}`;
