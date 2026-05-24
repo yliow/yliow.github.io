@@ -328,13 +328,11 @@
                 if (inputVal === 'clear') { terminalOutput.textContent = ""; }
                 else if (inputVal !== "") {
                     if (commands[inputVal] !== undefined) { reply = commands[inputVal]; }
-                    else if (inputVal === 'cat contact') { finalreply = '<a href="mailto:yliow@ccis.edu">yliow</a>'; }
                     else if (inputVal === 'rm') { reply = `rm: missing operand`; }
                     else if (inputVal.startsWith('rm ')) { reply = `guest do not have permissions to exec rm`; }
                     else if (inputVal.startsWith('cat ') && !commands[inputVal]) { reply = `Error: Sector '${inputVal.substring(4)}' corrupted.`; }
                     else { reply = `Command not recognized: '${inputVal}'. Type 'help'.`; }
-                    terminalOutput.textContent += `\nguest@cccs:~$ ${terminalInput.value}\n${reply}`;
-                    if (finalreply !== "") terminalOutput.innerHTML = finalreply;
+                    terminalOutput.textContent += `\nguest@cccs:~$ ${terminalInput.value}\n${reply}`;        
                 }
                 terminalInput.value = ""; terminalBox.scrollTop = terminalBox.scrollHeight;
             }
