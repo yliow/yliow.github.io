@@ -183,6 +183,17 @@ a:active {
   color: #ff007f;
   text-decoration: underline;
 }
+        /* ADDED */
+        @keyframes smooth-blink {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    .fade-blink {
+        /* Changed from 2s to 5s for a much slower, breathing effect */
+        animation: smooth-blink 5s ease-in-out infinite; 
+    }
 
     </style>
 </head>
@@ -309,7 +320,7 @@ a:active {
         </aside>
     </main>
     <footer>
-        <div>COMMS: ONLINE // SECURE_LINK</div>
+        <div>COMMS: <span style="fade-blink">ONLINE // SECURE_LINK</span></div>
         <div>DESIGN BY CONTROL_DECK_OS v4.11</div>
     </footer>
     <script>
