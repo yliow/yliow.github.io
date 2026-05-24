@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCARS-X // PROFESSOR TERMINAL</title>
+    <style>
+        :root {
+            --bg-color: #050811;
+            --panel-bg: rgba(10, 25, 50, 0.5);
+            --neon-blue: #00f3ff;
+            --neon-green: #39ff14;
+            --neon-amber: #ffb700;
+            --neon-red: #ff3131;
+            --border-glow: 0 0 10px rgba(0, 243, 255, 0.3);
+            --text-glow: 0 0 8px rgba(0, 243, 255, 0.6);
+            --font-family: 'Courier New', Courier, monospace;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            cursor: crosshair;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--neon-blue);
+            font-family: var(--font-family);
+            overflow-x: hidden;
+            height: 100vh;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            background-image: 
+                radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+                radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px);
+            background-size: 550px 550px, 350px 350px;
+            animation: warpDrive 100s linear infinite;
+        }
+        @keyframes warpDrive {
+            from { background-position: 0 0, 40px 60px; }
+            to { background-position: 550px 550px, 390px 410px; }
+        }
+        body::before {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+            z-index: 9999;
+            background-size: 100% 4px;
+            pointer-events: none;
+        }
+        header {
+            border-bottom: 2px solid var(--neon-blue);
+            padding: 15px 30px;
+            background: var(--panel-bg);
+            box-shadow: var(--border-glow);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .ship-title h1 {
+            font-size: 1.8rem;
+            letter-spacing: 4px;
+            text-shadow: var(--text-glow);
+        }
+        .ship-status {
+            display: flex;
+            gap: 20px;
+            font-size: 0.8rem;
+        }
+        .status-node {
+            padding: 5px 10px;
+            border: 1px solid var(--neon-green);
+            color: var(--neon-green);
+            border-radius: 4px;
+        }
+        .main-bridge {
+            display: grid;
+            grid-template-columns: 250px 1fr 300px;
+            gap: 20px;
+            padding: 20px;
+            height: calc(100vh - 140px);
+            overflow: hidden;
+        }
+        .hud-panel {
+            background: var(--panel-bg);
+            border: 1px solid var(--neon-blue);
+            box-shadow: var(--border-glow);
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+        .nav-deck { gap: 15px; }
+        .nav-btn {
+            background: transparent;
+            border: 1px solid var(--neon-blue);
+            color: var(--neon-blue);
+            padding: 12px;
+            text-align: left;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: var(--font-family);
+            transition: all 0.3s ease;
+        }
+        .nav-btn:hover, .nav-btn.active {
+            background: var(--neon-blue);
+            color: var(--bg-color);
+            box-shadow: 0 0 15px var(--neon-blue);
+        }
+        .viewscreen { position: relative; }
+        .console-content {
+            display: none;
+        }
+        .console-content.active-view {
+            display: block;
+        }
+        h2 {
+            color: var(--neon-amber);
+            margin-bottom: 20px;
+            border-bottom: 1px dashed var(--neon-amber);
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+        p { margin-bottom: 15px; line-height: 1.6; }
+        .cmd-line { color: var(--neon-green); margin-bottom: 10px; }
+        .telemetry-deck h3 {
+            font-size: 0.9rem;
+            color: var(--neon-amber);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .matrix-box {
+            font-size: 0.75rem;
+            background: rgba(0,0,0,0.4);
+            border: 1px solid rgba(0, 243, 255, 0.2);
+            padding: 10px;
+            height: 150px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            color: var(--neon-green);
+        }
+        .bar-graph { display: flex; flex-direction: column; gap: 8px; }
+        .bar-row { display: flex; align-items: center; justify-content: space-between; font-size: 0.75rem; }
+        .bar-bg { width: 120px; height: 10px; background: rgba(255,255,255,0.1); border: 1px solid var(--neon-blue); }
+        .bar-fill { height: 100%; background: var(--neon-blue); width: 50%; }
+        footer {
+            border-top: 1px solid rgba(0, 243, 255, 0.4);
+            padding: 10px 30px;
+            font-size: 0.75rem;
+            display: flex;
+            justify-content: space-between;
+            background: rgba(5, 8, 17, 0.9);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="ship-title"><h1>CCCS // CORE_DECK</h1></div>
+        <div class="ship-status">
+            <div class="status-node" id="clock">STARDATE: 2026.000</div>
+            <div class="status-node" style="border-color: var(--neon-amber); color: var(--neon-amber);">SYS_LOAD: OPTIMAL</div>
+            <div class="status-node">SHIELDS: 100%</div>
+        </div>
+    </header>
+    <main class="main-bridge">
+        <nav class="hud-panel nav-deck">
+            <h3 style="color: var(--neon-amber); font-size: 0.9rem; margin-bottom: 10px;">SECTOR NAV</h3>
+            <button class="nav-btn active" onclick="engageDeck('manifesto', this)">[ ] Manifesto</button>
+            <button class="nav-btn" onclick="engageDeck('research', this)">[ ] Research</button>
+            <button class="nav-btn" onclick="engageDeck('courses', this)">[ ] Courses</button>
+            <button class="nav-btn" onclick="engageDeck('tutorials', this)">[ ] Tutorials</button>
+            <button class="nav-btn" onclick="engageDeck('logs', this)">[ ] Captains Logs</button>
+        </nav>
+        <section class="hud-panel viewscreen">
+            <div id="manifesto" class="console-content active-view">
+                <div class="cmd-line">root@bridge:~# cat welcome_msg.txt</div>
+                <h2>Greeting, Traveler.</h2>
+                <p>Welcome to my subspace transmission node. I am a Professor of Computer Science focusing on distributed star-systems and quantum algorithms.</p>
+            </div>
+            <div id="research" class="console-content">
+                <div class="cmd-line">root@bridge:~# ls -la /var/research/</div>
+                <h2>Research</h2>
+                <p><strong>MDB</strong><br>Mapotofu RDBMS research project</p>
+                <p><strong>OLS</strong><br>Onigiri logic simulator research project</p>
+            </div>
+            <div id="courses" class="console-content">
+                <div class="cmd-line">root@bridge:~# cat academic_calendar.dat</div>
+                <h2>Active Courses</h2>
+                <p><strong>COSC-240</strong> Intro to C++<br>MWF 1:25PM BUH104, Tu 2:00PM BUH104</p>
+                <p><strong>COSC-245</strong> Advanced C++<br>MWF 2:30PM BUH104, Th 2:00PM BUH104</p>
+                <p><strong>COSC-350</strong> Advanced data structures and algorithms<br>MWF 11:15AM, BUH100</p>
+            </div>
+            <div id="tutorials" class="console-content">
+                <div class="cmd-line">root@bridge:~# cat tutorials.dat</div>
+                <h2>Tutorials</h2>
+                <!-- <p><strong>vmwareplayer.pdf</strong><br> How to use vmware workstation/player. [<a href="pdfs/vmware/vmwareplayer.pdf">pdf</a>] -->
+                <p><strong>vmwareplayer.pdf</strong>: How to use vmware workstation/player. [<a href="pdfs/vmware/vmwareplayer.pdf">pdf</a>]
+                <p><strong>expand-vm-storage.pdf</strong>: Expand vm storage to 100GB. [<a href="pdfs/expand-vm-storage/main.pdf">pdf</a>]
+                <p><strong>unix1.pdf</strong>: Intro to linux. [<a href="pdfs/unix1-1/main.pdf">pdf</a>] 
+                <p><strong>emacs.pdf</strong>: Intro to emacs. [<a href="pdfs/xemacs/main.pdf">pdf</a>]
+                <p><strong>emacs.pdf (python version)</strong>: Intro to emacs. [<a href="pdfs/xemacs-python/main.pdf">pdf</a>]
+                <p><strong>gpp.pdf</strong>: How to use g++ to compile C++ programs. [<a href="pdfs/gpp/main.pdf">pdf</a>]
+                <p><strong>make.pdf</strong>: How to use make to automate building your programs. [<a href="pdfs/make/main.pdf">pdf</a>]
+                <p><strong>gdb.pdf</strong>: How to use gdb to help find bugs. [<a href="pdfs/gdb/main.pdf">pdf</a>]
+                <p><strong>memory-debugging.pdf</strong>: How to use Google’s addr sanitizer and valgrind to find memory bugs. [<a href="pdfs/memory-debugging/main.pdf">pdf</a>]
+                <p><strong>git.pdf</strong>: How to use git and github.[<a href="pdfs/git/main.pdf">pdf</a>]
+                <p><strong>googletest.pdf</strong>: How to use Google’s googletest to write C++ unit tests.[<a href="pdfs/googletest/main.pdf">pdf</a>]
+                <p><strong>latex.pdf</strong>: How to write LaTeX documents and generate pdf.[<a href="pdfs/latex/main.pdf">pdf</a>]
+                <p><strong>latex-graph.pdf</strong>: How to draw directed and undirected graphs (including DFAs, TMs).[<a href="pdfs/latex-graph/main.pdf">pdf</a>]
+
+                  
+            </div>
+
+            <div id="logs" class="console-content">
+                <div class="cmd-line">root@bridge:~# tail -f /var/log/captains_log.sys</div>
+                <h2>Captain's Logs</h2>
+                <p><strong>STARDATE 2026.143:</strong> Finalizing the syllabus grid for the upcoming cadet deployment.</p>
+            </div>
+        </section>
+        <aside class="hud-panel telemetry-deck">
+            <h3>Matrix Diagnostics</h3>
+            <div class="matrix-box" id="matrix-terminal">[SYS] Monitoring telemetry...</div>
+            <h3>Core Allocation</h3>
+            <div class="bar-graph">
+                <div class="bar-row"><span>WARP</span><div class="bar-bg"><div class="bar-fill" id="warp-bar" style="width: 85%;"></div></div></div>
+                <div class="bar-row"><span>PROP</span><div class="bar-bg"><div class="bar-fill" id="prop-bar" style="width: 42%;"></div></div></div>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div>COMMS: ONLINE // SECURE_LINK</div>
+        <div>DESIGN BY CONTROL_DECK_OS v4.11</div>
+    </footer>
+    <script>
+        function engageDeck(targetDeckId, buttonElement) {
+            document.querySelectorAll('.console-content').forEach(p => p.classList.remove('active-view'));
+            document.getElementById(targetDeckId).classList.add('active-view');
+            document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+            buttonElement.classList.add('active');
+        }
+        function updateStardate() {
+            const now = new Date();
+            document.getElementById('clock').innerText = `STARDATE: ${now.getFullYear()}.${Math.floor((now - new Date(now.getFullYear(), 0, 0)) / 86400000)}`;
+        }
+        setInterval(updateStardate, 60000); updateStardate();
+        const box = document.getElementById('matrix-terminal');
+        const logs = ["[INFO] Node pinged.", "[WARN] Solar flare radiation.", "[SYS] Route updated.", "[INFO] Port 8080 active."];
+        setInterval(() => {
+            if (box) {
+                box.innerHTML += `<br>${logs[Math.floor(Math.random() * logs.length)]}`;
+                box.scrollTop = box.scrollHeight;
+            }
+            const wb = document.getElementById('warp-bar');
+            if (wb) wb.style.width = Math.floor(Math.random() * 20 + 75) + '%';
+        }, 3500);
+    </script>
+</body>
+</html>
