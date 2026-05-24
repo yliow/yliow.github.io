@@ -35,11 +35,17 @@
                 radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px);
             background-size: 550px 550px, 350px 350px;
             animation: warpDrive 100s linear infinite;
+            animation: infimprobDrive 100s linear infinite; /* ?? */
         }
         @keyframes warpDrive {
             from { background-position: 0 0, 40px 60px; }
             to { background-position: 550px 550px, 390px 410px; }
         }
+        @keyframes infimprobDrive { /* ?? */
+            from { background-position: 0 0, 40px 60px; }
+            to { background-position: 550px 550px, 390px 410px; }
+        }
+
         body::before {
             content: " ";
             display: block;
@@ -192,8 +198,8 @@
             <div id="high-school" class="console-content">
                 <div class="cmd-line">root@bridge:~# ls -la /var/research/</div>
                 <h2>High school students</h2>
-                <p><strong>High school page</strong><br> Info for high school students. [<a href='https://yliow.github.io/highschool.html'>link</a>] </p>
-                <p><strong>CCCS HS programming contest</strong><br>Programming contest for high school students. [<a href='https://yliow.github.io/programming-contest/'>link</a>]</p>
+                <p><strong>HIGH SCHOOL PAGE</strong><br> Info for high school students. [<a href='https://yliow.github.io/highschool.html'>link</a>] </p>
+                <p><strong>CCCS HS PROGRAMMING CONTEST</strong><br>Programming contest for high school students. [<a href='https://yliow.github.io/programming-contest/'>link</a>]</p>
             </div>
             <div id="courses" class="console-content">
                 <div class="cmd-line">root@bridge:~# cat academic_calendar.dat</div>
@@ -234,12 +240,11 @@
                 </p>
                 <p><strong>EMAILS</strong><br>
                   Dr. Yihsiang Liow. [<a href="mailto:yliow@ccis.edu">email</a>]<br>
-                  Cole Schwandt. [<a href="mailto:ctschwandt1@cougars.ccis.edu">email</a>]
+                  Cole Schwandt (president CS club). [<a href="mailto:ctschwandt1@cougars.ccis.edu">email</a>]
                 </p>
                 <p><strong>LOCATION</strong><br>
-                  Buchanan Hall Room 106. [<a href="https://www.ccis.edu/student-life/life-on-campus/campus-map">map</a>]<br>
+                  CS Lab: Buchanan Hall Room 106. [<a href="https://www.ccis.edu/student-life/life-on-campus/campus-map">map</a>]<br>
                   Dr. Yihsiang Liow: St Clair Hall Room 223. [<a href="https://www.ccis.edu/student-life/life-on-campus/campus-map">map</a>]<br>
-                  Cole Schwandt. [<a href="mailto:ctschwandt1@cougars.ccis.edu">mail</a>]
                 </p>
 
                 
@@ -253,6 +258,7 @@
             <div class="bar-graph">
                 <div class="bar-row"><span>WARP</span><div class="bar-bg"><div class="bar-fill" id="warp-bar" style="width: 85%;"></div></div></div>
                 <div class="bar-row"><span>PROP</span><div class="bar-bg"><div class="bar-fill" id="prop-bar" style="width: 42%;"></div></div></div>
+                <div class="bar-row"><span>INF IMPROB</span><div class="bar-bg"><div class="bar-fill" id="inf-improb-bar" style="width: 25%;"></div></div></div>
             </div>
         </aside>
     </main>
@@ -281,6 +287,8 @@
             }
             const wb = document.getElementById('warp-bar');
             if (wb) wb.style.width = Math.floor(Math.random() * 20 + 75) + '%';
+            const iib = document.getElementById('inf-improb-bar');
+            if (iib) iib.style.width = Math.floor(Math.random() * 20 + 55) + '%';
         }, 3500);
     </script>
 </body>
