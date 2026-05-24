@@ -323,7 +323,7 @@ def cccs():
     Let me know if there are broken links.
     </p>
                    <p><a href='new-website-3/index.html'>Test 3</a></p>
-                   <p><a href='new-website/index.html'>Test</a></p>
+                   <p><a href='new-website/index.html'>Test 2</a></p>
     <p><span style='color:red'>NEW***</span> means moved to cccs101010.</p>
 
     <!-- pictures -->
