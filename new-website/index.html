@@ -229,6 +229,11 @@
                         <a href="pdfs/latextool/main.pdf">latextool.pdf</a>: How to draw using latextool.
                         <!-- <p style="font-size: 0.9rem; margin-top: 0.3rem;">Introduction to linux</p> -->
                     </div>
+                     <div class="data-item">
+                        <span class="data-tag"></span> 
+                        <a href="pdfs/latex-surfaces/main.pdf">late.pdf</a>: How to draw 3D surfaces. TO COME.
+                        <!-- <p style="font-size: 0.9rem; margin-top: 0.3rem;">Introduction to linux</p> -->
+                    </div>
                 </section>
             </main>
             <aside>
@@ -304,7 +309,7 @@
                     if (commands[inputVal] !== undefined) { reply = commands[inputVal]; }
                     else if (inputVal === 'rm') { reply = `rm: missing operand`; }
                     else if (inputVal.startsWith('rm ')) { reply = `guest do not have permissions to exec rm`; }
-                    else if (inputVal.startsWith('cat ') && !commands[inputVal]) { reply = `Error: Sector '${inputVal.substring(4)}' corrupted.`; } 
+                    else if (inputVal.startsWith('cat ') && !commands[inputVal]) { reply = `Error: Sector '${inputVal.substring(4)}' corrupted.`; }
                     else { reply = `Command not recognized: '${inputVal}'. Type 'help'.`; }
                     terminalOutput.textContent += `\nguest@cccs:~$ ${terminalInput.value}\n${reply}`;
                 }
