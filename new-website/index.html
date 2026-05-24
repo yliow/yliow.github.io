@@ -334,8 +334,7 @@
                     else if (inputVal.startsWith('cat ') && !commands[inputVal]) { reply = `Error: Sector '${inputVal.substring(4)}' corrupted.`; }
                     else { reply = `Command not recognized: '${inputVal}'. Type 'help'.`; }
                     terminalOutput.textContent += `\nguest@cccs:~$ ${terminalInput.value}\n${reply}`;
-                    if (finalreply) terminalOutpu.innerHTML = finalreply;
-         
+                    if (finalreply !== "") terminalOutput.innerHTML = finalreply;
                 }
                 terminalInput.value = ""; terminalBox.scrollTop = terminalBox.scrollHeight;
             }
