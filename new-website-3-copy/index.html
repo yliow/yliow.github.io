@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LCARS-X // CCCS TERMINAL COLUMBIA COLLEGE COMPUTER SCIENCE</title>
+    <style>
+        :root {
+            --bg-color: #050811;
+            --panel-bg: rgba(10, 25, 50, 0.5);
+            --neon-blue: #00f3ff;
+            --neon-green: #39ff14;
+            --neon-amber: #ffb700;
+            --neon-red: #ff3131;
+            --border-glow: 0 0 10px rgba(0, 243, 255, 0.3);
+            --text-glow: 0 0 8px rgba(0, 243, 255, 0.6);
+            --font-family: 'Courier New', Courier, monospace;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            cursor: crosshair;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--neon-blue);
+            font-family: var(--font-family);
+            overflow-x: hidden;
+            height: 100vh;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            background-image: 
+                radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+                radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px);
+            background-size: 550px 550px, 350px 350px;
+            animation: warpDrive 100s linear infinite;
+            animation: infimprobDrive 100s linear infinite; /* ?? */
+        }
+        @keyframes warpDrive {
+            from { background-position: 0 0, 40px 60px; }
+            to { background-position: 550px 550px, 390px 410px; }
+        }
+        @keyframes infimprobDrive { /* ?? */
+            from { background-position: 0 0, 40px 60px; }
+            to { background-position: 550px 550px, 390px 410px; }
+        }
+
+        body::before {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+            z-index: 9999;
+            background-size: 100% 4px;
+            pointer-events: none;
+        }
+        header {
+            border-bottom: 2px solid var(--neon-blue);
+            padding: 15px 30px;
+            background: var(--panel-bg);
+            box-shadow: var(--border-glow);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .ship-title h1 {
+            font-size: 1.8rem;
+            letter-spacing: 4px;
+            text-shadow: var(--text-glow);
+        }
+        .ship-status {
+            display: flex;
+            gap: 20px;
+            font-size: 0.8rem;
+        }
+        .status-node {
+            padding: 5px 10px;
+            border: 1px solid var(--neon-green);
+            color: var(--neon-green);
+            border-radius: 4px;
+        }
+        .main-bridge {
+            display: grid;
+            grid-template-columns: 250px 1fr 300px;
+            gap: 20px;
+            padding: 20px;
+            height: calc(100vh - 140px);
+            overflow: hidden;
+        }
+        .hud-panel {
+            background: var(--panel-bg);
+            border: 1px solid var(--neon-blue);
+            box-shadow: var(--border-glow);
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+        .nav-deck { gap: 15px; }
+        .nav-btn {
+            background: transparent;
+            border: 1px solid var(--neon-blue);
+            color: var(--neon-blue);
+            padding: 12px;
+            text-align: left;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: var(--font-family);
+            transition: all 0.3s ease;
+        }
+        .nav-btn:hover, .nav-btn.active {
+            background: var(--neon-blue);
+            color: var(--bg-color);
+            box-shadow: 0 0 15px var(--neon-blue);
+        }
+        .viewscreen { position: relative; }
+        .console-content {
+            display: none;
+        }
+        .console-content.active-view {
+            display: block;
+        }
+        h2 {
+            color: var(--neon-amber);
+            margin-bottom: 20px;
+            border-bottom: 1px dashed var(--neon-amber);
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+        p { margin-bottom: 15px; line-height: 1.6; }
+        .cmd-line { color: var(--neon-green); margin-bottom: 10px; }
+        .telemetry-deck h3 {
+            font-size: 0.9rem;
+            color: var(--neon-amber);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .matrix-box {
+            font-size: 0.75rem;
+            background: rgba(0,0,0,0.4);
+            border: 1px solid rgba(0, 243, 255, 0.2);
+            padding: 10px;
+            height: 150px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            color: var(--neon-green);
+        }
+        .bar-graph { display: flex; flex-direction: column; gap: 8px; }
+        .bar-row { display: flex; align-items: center; justify-content: space-between; font-size: 0.75rem; }
+        .bar-bg { width: 120px; height: 10px; background: rgba(255,255,255,0.1); border: 1px solid var(--neon-blue); }
+        .bar-fill { height: 100%; background: var(--neon-blue); width: 50%; }
+        footer {
+            border-top: 1px solid rgba(0, 243, 255, 0.4);
+            padding: 10px 30px;
+            font-size: 0.75rem;
+            display: flex;
+            justify-content: space-between;
+            background: rgba(5, 8, 17, 0.9);
+        }
+
+        /* ADDED */
+
+        a:link {
+  color: #00d2ff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+a:visited {
+  color: #a177ff;
+  text-decoration: underline;
+}
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  text-shadow: 0 0 5px #00d2ff, 0 0 10px #00d2ff, 0 0 20px #00d2ff;
+}
+a:active {
+  color: #ff007f;
+  text-decoration: underline;
+}
+        /* ADDED */
+        @keyframes smooth-blink {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    .fade-blink {
+        animation: smooth-blink 10s ease-in-out infinite; 
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="ship-title"><h1>CCCS // COLUMBIA COLLEGE COMPUTER SCIENCE</h1></div>
+        <div class="ship-status">
+            <div class="status-node" id="clock">STARDATE: 2026.000</div>
+            <div class="status-node" style="border-color: var(--neon-amber); color: var(--neon-amber);">SYS_LOAD: OPTIMAL</div>
+            <div class="status-node">SHIELDS: 100%</div>
+        </div>
+    </header>
+    <main class="main-bridge">
+        <nav class="hud-panel nav-deck">
+            <h3 style="color: var(--neon-amber); font-size: 0.9rem; margin-bottom: 10px;">SECTOR NAV</h3>
+            <button class="nav-btn active" onclick="engageDeck('manifesto', this)">[ ] Manifesto</button> <!-- "active" means turn on -->
+            <button class="nav-btn" onclick="engageDeck('events', this)">[ ] Events</button>
+            <button class="nav-btn" onclick="engageDeck('academics', this)">[ ] Academics</button>
+            <button class="nav-btn" onclick="engageDeck('tutorials', this)">[ ] Tutorials</button>
+            <button class="nav-btn" onclick="engageDeck('outreach', this)">[ ] Outreach</button>
+            <button class="nav-btn" onclick="engageDeck('research', this)">[ ] Research</button>
+            <!-- <button class="nav-btn" onclick="engageDeck('logs', this)">[ ] Captains Logs</button> -->
+            <button class="nav-btn" onclick="engageDeck('about', this)">[ ] About</button>
+            <button class="nav-btn" onclick="engageDeck('contact_us', this)">[ ] Contact us</button>
+        </nav>
+        <section class="hud-panel viewscreen">
+            <div id="manifesto" class="console-content active-view">
+                <div class="cmd-line">root@bridge:~# cat welcome_msg.txt</div>
+                <h2>Greeting, Traveler.</h2>
+                <p>Welcome to my subspace transmission node.
+                  I am a Professor of Computer Science focusing on distributed star-systems and quantum algorithms.
+                  <br>
+                  <br>
+                  <button class="nav-btn" onclick="engageDeck('this_is_a_test', this)">this_is_a_test </button>
+                  <button class="nav-btn" onclick="engageDeck('this_is_a_test_2', this)">this_is_a_test_2 </button>
+                </p>
+            </div>
+            <div id="research" class="console-content">
+                <div class="cmd-line">root@bridge:~# ls -la /var/research/</div>
+                <h2>Research</h2>
+                
+                <p><strong>RESEARCH PROJECTS</strong><br>
+                URiCS Undergraduate research in CS [<a href="https://yliow.github.io/urics.html">link</a>]<br>
+                MDB: Mapotofu RDBMS research project<br>
+                OLS: Onigiri logic simulator research project<br>
+                </p>
+                
+                <p><strong>REU (Research Experiences for Undergraduates).
+                  </strong><br>
+                  A paid nationwide NSF-funded summer research program.
+                  The following are students who were selected for the program.<br>
+                  Andrew Woods. REU 2015 at University of Missouri at Columbia.<br>
+                  Michael Fisher. REU 2020 at University of Missouri at Columbia.<br>
+                  Eric Garcia. REU 2024 at University of Missouri at Columbia.<br>
+                  Robert Oladayo Oyedeji. REU 2025 at University of Missouri at Columbia.<br>
+                  Cole Schwandt. REU 2025 at Missouri University of Science and Technology. <br>
+                </p>
+                <p><strong>GRAD SCHOOL</strong><br>
+                  Q&A [<a href="https://docs.google.com/document/d/1eAzjxhdGNL15Bar-NsuEWVvCkTteMwa6MPJqNHICgVw/edit">link</a>]<br>
+                  Some grads of CCCS went to the following graduate schools (sorted alphabetically):<br>
+                  Georgia Institute of Technology<br>
+                  Missouri State University<br>
+                  University of Arkansas at Little Rock<br>
+                  University of MO at Columbia<br>
+                  University of TN at Knoxville<br>
+                  University of TX at Dallas<br>
+                </p>
+            </div>
+            <div id="events" class="console-content">
+                <div class="cmd-line">root@bridge:~# cat /var/calendar/2026</div>
+                <h2>Events</h2>
+                <p><strong><a href="https://docs.google.com/document/d/1uGC6ZMQ6OMY8voiTKsuaRYOW2fUQZDdj1QoA-euKGtg/edit?usp=sharing">Event log</a></strong>
+                </p>
+                <p><strong>Google calendar</strong>:
+                    <a href="https://www.google.com/calendar/embed?src=cc.cs.photos.videos%40gmail.com&ctz=America/Chicago&mode=week">weekly</a> | <a href="https://www.google.com/calendar/embed?src=cc.cs.photos.videos%40gmail.com&ctz=America/Chicago&mode=month">monthly</a>
+                </p>
+                <p><strong>2026/??/??, ??PM: Fall 2027 kickoff</strong></p>
+                <p><strong>2026/??/??, ??AM/PM: CS jam #15</strong> [<a href="https://docs.google.com/document/d/1NGH0XFmeaIfdWVxBzlBK-ehKvilg61Rs9gww6j1FjsQ/edit?usp=sharing">link</a>]</p>
+                <p><strong>2026/??/??, ??AM/PM: CS welcome lunch #11</strong> [<a href="https://docs.google.com/document/d/1_ULKokhzXiu1VemtAfTGQf8GO7jn5XbK/">link</a>]</p>
+                <p><strong>2026/??/??, ??PM: Movie nite</strong></p>
+                      <p><strong>2026/??/??, ??PM: CS Day #6</strong></p>
+                <p><strong>2026/??/??, ??PM:: Chess tournament #2</strong></p>
+                <p><strong>2026/??/??, 1PM: CS presentations day</strong></p>
+                <p><strong>2026/??/??, 5PM: End of sem celebration</strong></p>
+                <p><strong>2026/??/??, ??AM: Laser-blasting range day</strong></p>
+                <p><strong>2027/03/06: CCCS HS Programming Contest #11</strong> [<a href="https://yliow.github.io/urics.html">link</a>]</p>
+            </div>
+            <div id="outreach" class="console-content">
+                <div class="cmd-line">root@bridge:~# ls -la /var/research/</div>
+                <h2>Outreach</h2>
+                <p><strong>INFORMATION ABOUT CCCS</strong><br>
+                  Publications [<a href="https://yliow.github.io/google-drive-downloads/PublicationsonCCCS.html">link</a>]<br>
+                  Companies, grad schools, startups: [<a href="https://yliow.github.io/pdfs/companies/main.pdf">link</a>]
+                </p>
+                <p><strong>PICS (Portal into CS)</strong><br>
+                  Homepage of PiCS [<a href="https://yliow.github.io/pics.html">link</a>]<br>
+                  High school students [<a href='https://yliow.github.io/highschool.html'>link</a>]<br>
+                  CCCS HS Programming Contest [<a href='https://yliow.github.io/programming-contest/'>link</a>]
+                </p>
+                <p><strong>INTERNATIONAL</strong><br>
+                Nepal [<a href="https://docs.google.com/document/d/1rJRVfzMLUaOJs5R7oF0y3-gHf68EmERlXfZlvJtdfAQ/edit?tab=t.0#">link</a>]
+                </p>
+            </div>
+            <div id="academics" class="console-content">
+                <div class="cmd-line">root@bridge:~# cat academics.dat</div>
+                <h2>Academics</h2>
+                <p><strong>ACADEMIC CALENDAR</strong> [<a href='https://yliow.github.io/pdfs/academic-calendar.pdf'>link</a>]
+                | <strong>FINALS</strong> [<a href="https://yliow.github.io/pdfs/final-exam.pdf">link</a>]
+                <p><strong>
+                </p>
+                <p>
+                  <strong>PLANNING</strong><br>
+                  Course rotation [<a href="https://docs.google.com/spreadsheets/d/1Sttb-5SSJnIF_jisvNg_-onr_9gsa9CH">link</a>] <br>
+                  CS101 Guide to CCCS (HHGTT CCCS) [<a href="https://docs.google.com/presentation/d/1BkZiqa6YoGeEOFk5dOA1o46cUEsN0NhB/edit?usp=sharing&ouid=110224096777115323458&rtpof=true&sd=true">link</a>]
+                </p>
+                <p><strong>ALEX</strong>: for work submission. [<a href='https://yliowsubmit.pythonanywhere.com/ul'>link</a>]</p>
+                <p><strong>COSC240: Intro to C++</strong> [<a href="https://ciss240.pythonanywhere.com">link</a>]<br>MWF 1:25PM-2:20PM BUH104, Tu 2:00PM BUH104</p>
+                <p><strong>COSC245: Advanced C++</strong> [<a href="https://ciss245.pythonanywhere.com">link</a>]<br>MWF 2:30PM-3:25PM BUH104, Th 2:00PM BUH104</p>
+                <p><strong>COSC350: Advanced data structures and algorithms [<a href="https://ciss350.pythonanywhere.com">link</a>]</strong><br>MWF 11:15AM-12:10PM BUH100</p>
+                
+            </div>
+            <div id="tutorials" class="console-content">
+                <div class="cmd-line">root@bridge:~# cat tutorials.dat</div>
+                <h2>Tutorials</h2>
+                <p><strong>vmwareplayer.pdf</strong>: How to use vmware workstation/player. [<a href="pdfs/vmware/vmwareplayer.pdf">pdf</a>]
+                <p><strong>expand-vm-storage.pdf</strong>: Expand vm storage to 100GB. [<a href="pdfs/expand-vm-storage/main.pdf">pdf</a>]
+                <p><strong>unix1.pdf</strong>: Intro to linux. [<a href="pdfs/unix1-1/main.pdf">pdf</a>] 
+                <p><strong>emacs.pdf</strong>: Intro to emacs. [<a href="pdfs/xemacs/main.pdf">pdf</a>]
+                <p><strong>emacs.pdf (python version)</strong>: Intro to emacs. [<a href="pdfs/xemacs-python/main.pdf">pdf</a>]
+                <p><strong>gpp.pdf</strong>: How to use g++ to compile C++ programs. [<a href="pdfs/gpp/main.pdf">pdf</a>]
+                <p><strong>make.pdf</strong>: How to use make to automate building your programs. [<a href="pdfs/make/main.pdf">pdf</a>]
+                <p><strong>gdb.pdf</strong>: How to use gdb to help find bugs. [<a href="pdfs/gdb/main.pdf">pdf</a>]
+                <p><strong>memory-debugging.pdf</strong>: How to use Google’s addr sanitizer and valgrind to find memory bugs. [<a href="pdfs/memory-debugging/main.pdf">pdf</a>]
+                <p><strong>git.pdf</strong>: How to use git and github.[<a href="pdfs/git/main.pdf">pdf</a>]
+                <p><strong>googletest.pdf</strong>: How to use Google’s googletest to write C++ unit tests.[<a href="pdfs/googletest/main.pdf">pdf</a>]
+                <p><strong>latex.pdf</strong>: How to write LaTeX documents and generate pdf.[<a href="pdfs/latex/main.pdf">pdf</a>]
+                <p><strong>latex-graph.pdf</strong>: How to draw directed and undirected graphs (including DFAs, TMs).[<a href="pdfs/latex-graph/main.pdf">pdf</a>]
+            </div>
+
+            <!--
+            <div id="logs" class="console-content">
+                <div class="cmd-line">root@bridge:~# tail -f /var/log/captains_log.sys</div>
+                <h2>Captain's Logs</h2>           
+                <p><strong>STARDATE 2026.143:</strong> Finalizing the syllabus grid for the upcoming cadet deployment.</p>
+            </div>
+            -->
+            
+            </div>
+            <div id="this_is_a_test" class="console-content">
+                <div class="cmd-line">root@bridge:~# this_is_a_test</div>
+                <h2>manifesto > this is a test</h2>
+                <p><strong>THIS IS A TEST</strong>
+                </p>
+            </div>
+            <div id="this_is_a_test_2" class="console-content">
+                <div class="cmd-line">root@bridge:~# this_is_a_test_2</div>
+                <h2>manifesto > this is a test_2</h2>
+                <p><strong>THIS IS A TEST 2</strong>
+                </p>
+            </div>
+            <div id="contact_us" class="console-content">
+                <div class="cmd-line">root@bridge:~# tail -f /var/log/contact_us.dat</div>
+                <h2>Contact Us</h2>
+                <p><strong>DISCORD</strong><br>
+                  <a href="https://discord.gg/UDCX6wF">CCCS discord</a> |
+                  <a href="https://yliow.github.io/cccsdiscord.html">history</a>
+                <p><strong>EMAILS</strong><br>
+                  <a href="mailto:yliow@ccis.edu">Captain Yihsiang Liow</a><br>
+                  <a href="mailto:ctschwandt1@cougars.ccis.edu">First Officer Cole Schwandt</a> (president CS club)
+                </p>
+                <p><strong>PHYSICAL COORDS</strong><br>
+
+                  CCCS: <a href="https://www.google.com/maps/d/viewer?mid=1iQfAKYWNHPg5fgwKkFOexWhfPI8TalA&femb=1&ll=38.958205695844065%2C-92.32676612483685&z=16">Columbia College 1001 Rogers St, Columbia MO 65216</a><br>
+                  CS Lab: <a href="https://www.ccis.edu/student-life/life-on-campus/campus-map">Buchanan Hall Room 106</a><br>
+                  Dr. Yihsiang Liow: <a href="https://www.ccis.edu/student-life/life-on-campus/campus-map">St Clair Hall Room 223</a><br>
+                </p>                
+            </div>
+            <div id="about" class="console-content">
+                <div class="cmd-line">root@bridge:~# tail -f /var/log/about.dat</div>
+                <h2>About CCCS starship #2: SS Systems Horizon</h2>
+                <p><strong>MISSION</strong><br>
+                  [TODO]
+                </p>
+            </div>
+            
+        </section>
+        <aside class="hud-panel telemetry-deck">
+            <h3>Matrix Diagnostics</h3>
+            <div class="matrix-box" id="matrix-terminal">[SYS] Monitoring telemetry...</div>
+            <h3>Core Allocation</h3>
+            <div class="bar-graph">
+                <div class="bar-row"><span>WARP</span><div class="bar-bg"><div class="bar-fill" id="warp-bar" style="width: 85%;"></div></div></div>
+                <div class="bar-row"><span>PROP</span><div class="bar-bg"><div class="bar-fill" id="prop-bar" style="width: 42%;"></div></div></div>
+                <div class="bar-row"><span>INF IMPROB</span><div class="bar-bg"><div class="bar-fill" id="inf-improb-bar" style="width: 25%;"></div></div></div>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div>COMMS: <span class="fade-blink">ONLINE // SECURE_LINK</span></div>
+        <div>DESIGN BY CONTROL_DECK_OS v4.11</div>
+    </footer>
+    <script>
+        function engageDeck(targetDeckId, buttonElement) {
+            document.querySelectorAll('.console-content').forEach(p => p.classList.remove('active-view')); // the top line "root..."
+            document.getElementById(targetDeckId).classList.add('active-view'); /* the body */
+            document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active')); /* turn off nav button */
+            buttonElement.classList.add('active'); // make button pressed stay bright
+        }
+        function updateStardate() {
+            const now = new Date();
+            document.getElementById('clock').innerText = `STARDATE: ${now.getFullYear()}.${Math.floor((now - new Date(now.getFullYear(), 0, 0)) / 86400000)}`;
+        }
+        setInterval(updateStardate, 60000); updateStardate();
+        const box = document.getElementById('matrix-terminal');
+        const logs = ["[INFO] Node pinged.",
+                      "[WARN] Solar flare radiation.",
+                      "[WARN] Vogon ship 3.14" + Math.floor(Math.random() * 100) + " ly.",
+                      "[SYS] Route updated.",
+                      "[INFO] Port 8080 active.",
+                      "[INFO] CS welcome lunch 2027 TBD.",
+                      "[INFO] Fall 2027 CS kickoff TBD.",
+                      "[INFO] Fall 2027 CS Day TBD.",
+                      "[INFO] HSPC #11 3/6/2027."];
+        setInterval(() => {
+            if (box) {
+                box.innerHTML += `<br>${logs[Math.floor(Math.random() * logs.length)]}`;
+                box.scrollTop = box.scrollHeight;
+            }
+            const wb = document.getElementById('warp-bar');
+            if (wb) wb.style.width = Math.floor(Math.random() * 20 + 75) + '%';
+            const iib = document.getElementById('inf-improb-bar');
+            if (iib) iib.style.width = Math.floor(Math.random() * 20 + 55) + '%';
+        }, 3500);
+    </script>
+</body>
+</html>
