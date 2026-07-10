@@ -292,15 +292,18 @@ a:active {
                 Nepal [<a href="https://docs.google.com/document/d/1rJRVfzMLUaOJs5R7oF0y3-gHf68EmERlXfZlvJtdfAQ/edit?tab=t.0#">link</a>]
                 </p>
             </div>
+            
             <div id="academics" class="console-content">
                 <div class="cmd-line">root@bridge:~# cat academics.dat</div>
                 <h2>Academics</h2>
-                <p><strong>ACADEMIC CALENDAR</strong> [<a href='https://yliow.github.io/pdfs/academic-calendar.pdf'>link</a>]
-                | <strong>FINALS</strong> [<a href="https://yliow.github.io/pdfs/final-exam.pdf">link</a>]
-                <p><strong>
+                <!-- NEW -->
+                <p>
+                  <button class="nav-btn active" onclick="engageDeck('classes', this)">Classes </button>
+                  <button class="nav-btn" onclick="engageDeck('alex', this)">ALEX </button>
+                  <button class="nav-btn" onclick="engageDeck('planning', this)">Planning </button>
+                  <button class="nav-btn" onclick="engageDeck('academic_calendars', this)">Calendars </button>
                 </p>
                 <p>
-                  <strong>PLANNING</strong><br>
                   Course rotation [<a href="https://docs.google.com/spreadsheets/d/1Sttb-5SSJnIF_jisvNg_-onr_9gsa9CH">link</a>] <br>
                   CS101 Guide to CCCS (HHGTT CCCS) [<a href="https://docs.google.com/presentation/d/1BkZiqa6YoGeEOFk5dOA1o46cUEsN0NhB/edit?usp=sharing&ouid=110224096777115323458&rtpof=true&sd=true">link</a>]
                 </p>
@@ -310,6 +313,42 @@ a:active {
                 <p><strong>COSC350: Advanced data structures and algorithms [<a href="https://ciss350.pythonanywhere.com">link</a>]</strong><br>MWF 11:15AM-12:10PM BUH100</p>
                 
             </div>
+
+            <!-- NEW -->
+            <div id="planning" class="console-content">
+              <div class="cmd-line">root@bridge:~# cat academics/planning.dat</div>
+              <h2>Academics > Planning</h2>
+              <p>
+                <button class="nav-btn active" onclick="engageDeck('classes', this)">Classes </button>
+                <button class="nav-btn" onclick="engageDeck('alex', this)">ALEX </button>
+                <button class="nav-btn" onclick="engageDeck('planning', this)">Planning </button>
+                <button class="nav-btn" onclick="engageDeck('academic_calendars', this)">Calendars </button>
+              </p>
+              <p>
+                <strong>PLANNING</strong><br>
+                Course rotation [<a href="https://docs.google.com/spreadsheets/d/1Sttb-5SSJnIF_jisvNg_-onr_9gsa9CH">link</a>] <br>
+                CS101 Guide to CCCS (HHGTT CCCS) [<a href="https://docs.google.com/presentation/d/1BkZiqa6YoGeEOFk5dOA1o46cUEsN0NhB/edit?usp=sharing&ouid=110224096777115323458&rtpof=true&sd=true">link</a>]
+              </p>
+           </div>
+
+           <!-- new -->
+            <div id="academic_calendars" class="console-content">
+              <div class="cmd-line">root@bridge:~# cat academics/calendars.dat</div>
+              <h2>Academics > Calendars</h2>
+              <p>
+                <button class="nav-btn" onclick="engageDeck('classes', this)">Classes </button>
+                <button class="nav-btn" onclick="engageDeck('alex', this)">ALEX </button>
+                <button class="nav-btn" onclick="engageDeck('planning', this)">Planning </button>
+                <button class="nav-btn active" onclick="engageDeck('academic_calendars', this)">Calendars </button>
+              </p>
+              <p>
+                <strong>CALENDARS</strong><br>
+                Academic calendar [<a href='https://yliow.github.io/pdfs/academic-calendar.pdf'>link</a>]<br>
+                Finals [<a href="https://yliow.github.io/pdfs/final-exam.pdf">link</a>]<br>
+              </p>
+           </div>
+
+
             <div id="tutorials" class="console-content">
                 <div class="cmd-line">root@bridge:~# cat tutorials.dat</div>
                 <h2>Tutorials</h2>
