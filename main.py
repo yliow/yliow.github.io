@@ -320,10 +320,10 @@ def cccs():
                    header=header(title('cccs')),
                    body=r'''
     <p>I'm in the process of moving <a href="http://bit.ly/yliow0">http://bit.ly/yliow0</a> to this website.    
-    Let me know if there are broken links.
+    Let me know if there are broken links.                   
+                   <a href='new-website-3/index.html'>Test 3</a>
+                   <a href='new-website/index.html'>Test 2</a>
     </p>
-                   <p><a href='new-website-3/index.html'>Test 3</a></p>
-                   <p><a href='new-website/index.html'>Test 2</a></p>
     <p><span style='color:red'>NEW***</span> means moved to cccs101010.</p>
 
     <!-- pictures -->
