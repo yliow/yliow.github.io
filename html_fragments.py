@@ -76,6 +76,8 @@ def grad_school():
           'University of TX at Dallas',
           'Missouri State University',
           'University of Arkansas at Little Rock',
+          'Georgia Institute of Technology',
+          'University of North Carolina',
           ]
     xs.sort()
     return 'MSc and PhD. Some grads of CCCS went to the following graduate schools (sorted alphabetically): <ul>%s</ul>' % ''.join(['<li>%s</li>' % x for x in xs])
