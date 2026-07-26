@@ -1,1 +1,1 @@
-magick eric-garcia.png -gravity South -chop 0x100 eric-garcia.png
+magick julia-collins.png -gravity South -chop 0x10 julia-collins-cropped.png
