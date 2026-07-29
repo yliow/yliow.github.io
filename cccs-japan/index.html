@@ -25,7 +25,7 @@ width:25%;
         padding: 20px; /* Adds space between the text and the border */
         background-color: #f0f0ff; /* Sets a background color for the box */
         border-radius: 10px; /* Rounds the corners by 10 pixels */
-        width: fit-content; /* Adjusts the box width to fit the content */
+        width: 100% /*fit-content*/; /* Adjusts the box width to fit the content */
        }
        
       .row {
@@ -69,7 +69,14 @@ width:25%;
     
 <body style="font-family: arial; margin-left:100px; margin-right:100px; ">
 
-  <h1>CCCS-Japan <span style='color:red'>[UNDER CONSTRUCTION]</span></h1>
+  <h1>CCCS-Japan </h1>
+  <p class=rounded-box style='font-size:1.25rem; font-weight:bold'>
+    <span style='color:red'>UNDER CONSTRUCTION</span>: 
+    The CCCS-Japan scholarships will be available soon.
+    In the meantime, please contact Dr. Liow at
+    <a href='mailto:yliow@ccis.edu'>yliow@ccis.edu</a> for more information.    
+  </p>
+
    <div class="row">
       <div class="column">
         <img src="images/stc-cropped.jpg" style="width:100%">
@@ -178,7 +185,7 @@ Columbia College<br>
 <h2><a name="cccs-academics">CCCS academics</a> <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
 
 <p>
-OK. Now let’s begin.
+OK. Let’s begin.
 </p>
 
 <p>
@@ -429,7 +436,7 @@ In 2025, we had our first <a href='https://photos.app.goo.gl/rq3NbLtPCX53xMmw5'>
 </p>
 
 <p>
-Here is a <a href='https://photos.app.goo.gl/CXH7s2WwtxSyBkzaA'><b>company tour</b> of MidwayUSA</a>. During the tour, we were shown some of the most sophisticated warehouse automation equipment.
+Here is a <a href='https://photos.app.goo.gl/CXH7s2WwtxSyBkzaA'><b>company tour</b></a> of MidwayUSA. During the tour, we were shown some of the most sophisticated warehouse automation equipment.
 <img src="images/midway.png" alt="Description" class="center-image">
 MidwayUSA has 6 departments in their IT division. 5 of the 6 IT managers are my graduates.
 </p>
@@ -455,9 +462,9 @@ There’s also <a href='https://photos.app.goo.gl/vJK9V3SjH2wWh3vk7'><b>movie ni
 
 <p>
 Here is a <a href='https://photos.app.goo.gl/H3ygivboqS2maGAM8'><b>lunch meeting</b></a> with graduate Julia Collins (cofounder of Truss) in our dining hall:
-<img src="images/julia-collins-lunch.png" alt="Description" class="center-image">
+<img src="images/julia-collins-lunch-cropped.png" class="center-image">
 And here’s Saurav (Netflix, Google) who flew back to Columbia from California and had dinner with us at a popular local Chinese restaurant (he’s the rightmost person):
-<img src="images/saurav-dinner-out2.jpg" alt="Description" class="center-image">
+<img src="images/saurav-dinner-cropped.jpg" class="center-image">
 </p>
 
 <!--
@@ -643,7 +650,7 @@ Here's the data for 2026:
   Some have internships. For those staying in Columbia, summer sublet rent can be lower than $500/month.
 <li>The “Transportation”, “Personal” and “Loan Fees” above are variable.
 </ul>
-  You should definitely double-check with the International Student Office for details and ask for a more accurate cost of attendance for international students.
+  You can contact the International Student Office for details and ask for a more accurate cost of attendance for international students.
 
 
 
@@ -670,10 +677,8 @@ The following are sources of financial support that you might want to consider i
 <ul>
 <li ><b><a name="cccs-japan-scholarships">CCCS-JAPAN SCHOLARSHIPS</a></b></li>
 The CCCS-Japan scholarships program is for <b>Japanese students</b> who has completed or will be completing the <b>GCE A-Level exams</b> to
-coming to the Columbia College <b>main campus day program</b> to study <b>CS</b>.
+study <b>CS</b> at the <b>main day campus</b> of <b>Columbia College</b>.
 <b>Predicted GCE A-level grades</b> can be used.
-You will be reviewed holistically.
-Admission and scholarship are only reversed or adjusted if final GCE A-level grades drop drastically.
 <ul>
   <li style="margin-top: 10px;"><b>Tier 1: US$21K/year for 4 years (total = US$84K).</b> 
     <ul>
@@ -700,6 +705,8 @@ Admission and scholarship are only reversed or adjusted if final GCE A-level gra
       <li>At least 5 students: Each gets an additional US$2000.
     </ul>
   </ul>
+(You will be reviewed holistically.
+Admission and scholarship are only reversed or adjusted if final GCE A-level grades drop drastically from the predicted grades.)
 
 <li style="margin-top: 12px;"><b>CC AUTOMATIC MERIT-BASED SCHOLARSHIPS</b></li>
 If you did not take the GCE A-Level exams, you can still apply to Columbia College to study Computer Science and receive our
@@ -712,7 +719,7 @@ of up to US$16K/year for 4 years (total = US$64K)</b>. This requires ACT/SAT sco
 You can find external scholarships (sponsored by companies or philanthropic organizations) if you google. Here are some examples:
 <ul>
   <li>
-    <b>Generation Google Scholarship:</b> Awards $10,000 USD (or $5,000 CAD) to
+    <b>Generation Google Scholarship:</b> Awards $10,000 USD to
     students studying computer science or engineering who demonstrate strong academic records,
     financial need, and leadership.
     The program primarily benefits women and historically underrepresented groups in the tech industry. 
@@ -747,25 +754,27 @@ Google Summer of Code (GSoC).
 
 
 <h3>Summer research internships</h3>
-During summer there are paid undergraduate summer research programs. For instance, here are some of my students (some are graduates now) who took part in the REU (Research Experience for Undergraduates program).
+
+<p>
+Undergraduate students can participate in prestigious, fully funded summer
+research programs. Over the years, several of my students (some of whom have since graduated) have participated in the
+NSF’s <b>Research Experiences for Undergraduates (REU) program</b>:
 <ul>
-<li>Andrew Woods. <a href='https://reu.rnet.missouri.edu/REU07-19/REU15/index.htm'>REU 2015</a> at University of Missouri at Columbia.
-<li>Michael Fisher. <a href='https://reu.rnet.missouri.edu/REU20.html'>REU 2020</a> at University of Missouri at Columbia.
-<li>Eric Garcia. <a href='https://reu.rnet.missouri.edu/REU24.html'>REU 2024</a> at University of Missouri at Columbia.
-<li>Robert Oladayo Oyedeji. <a href='https://reu.rnet.missouri.edu/REU25.html'>REU 2025</a> at University of Missouri at Columbia.
-<li>Cole Schwandt. <a href='https://web.mst.edu/cswebdb/NSF_REU.html'>REU 2025</a> at Missouri University of Science and Technology.
+<li>Andrew Woods: <a href='https://reu.rnet.missouri.edu/REU07-19/REU15/index.htm'>REU 2015</a>, University of Missouri at Columbia
+<li>Michael Fisher: <a href='https://reu.rnet.missouri.edu/REU20.html'>REU 2020</a>, University of Missouri at Columbia
+<li>Eric Garcia: <a href='https://reu.rnet.missouri.edu/REU24.html'>REU 2024</a>, University of Missouri at Columbia
+<li>Robert Oladayo Oyedeji: <a href='https://reu.rnet.missouri.edu/REU25.html'>REU 2025</a>, University of Missouri at Columbia
+<li>Cole Schwandt: <a href='https://web.mst.edu/cswebdb/NSF_REU.html'>REU 2025</a>, Missouri University of Science and Technology
 </ul>
-The pay is ~$7K for 2 months in summer with housing and food provided free. 
+</p>
 
-Andrew graduated and went on to study his Ph.D.
-Michael went on to work at Selex ES which is a top 3 in the world in air traffic management and then moved to Garmin (number 1 in GPS and avionics).
-Eric graduated in May 2026. Besides REU, in summer 2025 he had a paid internship as embedded software engineer with
-Bracco Group (a major international medical diagnostic imaging company).
-Bracco group later offered him a full time job before his graduation.
-Robert and Cole are seniors in 2026.
+<p>
+Participation often serves as a springboard for exceptional careers. For instance, Andrew transitioned into a Ph.D. program after graduation. Michael went on to work at Selex ES—a global leader in air traffic management—before moving to Garmin. Eric supplemented his research with a paid summer 2025 internship as an embedded software engineer at Bracco Group, a major international medical imaging company. Bracco was so impressed that they extended a full-time job offer prior to his graduation. Robert and Cole are currently completing their senior years.
+</p>
 
-REU is for Americans. However there are also many similar summer research programs for internationals.
-For instance there’s the <b>RIPS (Research in Industrial Projects for Students)</b> hosted by UCLA/IPAM and <b>Microsoft Research Internships</b>.
+<p>
+  While REU programs are generally restricted to U.S. citizens and permanent residents, international students have access to excellent parallel opportunities. Examples include the <b>Research in Industrial Projects for Students (RIPS) program</b> hosted by UCLA/IPAM, as well as <b>Microsoft Research Internships</b>.
+</p>
 
 
 
@@ -798,7 +807,7 @@ If you have decided to join us, congratulations!!!
 <ul>
 
   <li>
-    Email me (<a href="mailto:yliow@ccis.edu">yliow@ccis.edu</a>) and let me know. Introduce yourself if you have not emailed me earlier.
+    Email me (<a href="mailto:yliow@ccis.edu">yliow@ccis.edu</a>) and let me know. 
 
   <li>
     I will connect you with <b>Britta Wright</b> from our <b>International Student Office</b>.
@@ -811,7 +820,7 @@ If you have decided to join us, congratulations!!!
   
   </ul>
 
-For your reference, the section below <a href='#application'>Application and F1 visa</a> will be helpful.
+For your reference, the section  <a href='#application'>Application and F1 visa</a> below will be helpful.
 
 
 
@@ -857,7 +866,7 @@ The following is the application process. Britta Wright from the International S
 <h3>Example timeline</h3>
 
   <p>
-    Here is an example timeline for a freshman starting in the <b>fall semester</b> of the same year he takes his GCE A-level exams. Let's call him John.
+    Here is an example timeline for a freshman starting in the <b>fall semester</b> of the same year he takes his GCE A-level exams. I'll call him John.
 
     <ul>
       <li>Nov-Jan:
@@ -879,8 +888,8 @@ The following is the application process. Britta Wright from the International S
             sends John an <!-- unconditional --> admission offer
             with enrollment/registration hold pending
             <b>actual GCE A-level grades</b>.
-          <li>John accepts admission offer, pays enrollment deposit.
-          <li>John submits financial proof and letters of support to CC.
+          <li>John accepts admission offer, pays enrollment deposit,
+          and submits financial proof and letters of support to CC.
           <li>CC sends John his I-20.
           <li>John pays  SEVIS I-901 fee, fills Form DS-160.
           <li>John books and attends F1 visa interview at US embassy.
@@ -924,11 +933,14 @@ You can also request for an <b>expedited F1 visa interview</b>.
 </p>
 
 <p>
-The International Student Office (Britta Wright) will definitely help with the providing information on F1 visa application.
+The International Student Office (Britta Wright) will provide
+information on F1 visa application.
 </p>
 
 <p>
-As part of the F1 visa process, you must prove you have enough funds to study in the USA. This often means asking parents or relatives for financial support documents. I do not come from a wealthy family; my parents had to ask two uncles and an aunt for bank statements so I could pursue my Ph.D. in the USA. Securing these financial documents as early as possible is crucial.
+As part of the F1 visa process, you must prove you have enough funds to study in the USA. This often means asking parents or relatives for financial support documents. I do not come from a wealthy family.
+My parents had to ask two uncles and an aunt for bank statements and letters of support
+so I could pursue my Ph.D. in the USA. Securing these financial documents as early as possible is crucial.
 </p>
 
 
@@ -937,18 +949,22 @@ As part of the F1 visa process, you must prove you have enough funds to study in
 <p>
 <b>Q:</b> Can I live off-campus?<br>
 A:  Yes, a student can stay off-campus after 60 credit hours. 60 credit hours is roughly two years. This is a pretty standard practice among all colleges/universities. However I know that some of my students have successfully petitioned to stay off-campus after 1 year. During summer, international students who stay in the USA can stay off-campus through summer sublets. Summer sublets are usually very cheap. 
-
-(FYI: In the USA, it is common for apartment rentals to be signed with 12-month contracts. For students who are from another city or another state, they usually do not stay in Columbia during summer. Such students will “sublet” their apartments during summer when they leave Columbia during summer, usually at a much lower rent and at a loss. Columbia is a “campus town” with many students. According to google, there are about 10,000 students who are not from Columbia. So there are usually many cheap summer sublets. According to google summer sublets can be as low as $500.)
 </p>
 
 <p>
-<b>Q.</b> Do I need to know how to program to get into your CS program?<br>
-A. No. In our computer science program, we do not assume you have prior programming experience. We have very successful graduates who enter our computer science program without any programming background. In fact, taking programming classes from an instructor who is not competent might do more harm than good.
+(FYI: In the USA, it is common for apartment rentals to be signed with 12-month contracts. S
+tudents who are from another city or another state
+usually do not stay in Columbia during summer. Such students will “sublet” their apartments during summer when they leave Columbia during summer, usually at a much lower rent and at a loss. Columbia is a “campus town” with many students. According to google, there are about 10,000 students who are not from Columbia. So there are usually many cheap summer sublets. According to google summer sublets can be as low as $500.)
 </p>
 
 <p>
-<b>Q</b>. What computer science courses do you offer?<br>
-A. The list below are all our current computer science courses. Computer science students also have to take some math courses and many of our CS students minor or double major in math. Some math courses of interest to computer science majors are listed below. This is a popular question that students ask. But in fact this is the wrong question! Why? Because the course offerings of most computer science programs are about the same. Every computer science program will have courses on programming, data structures, algorithms, etc. Yet some computer science departments successfully send their graduates to top companies while some don’t. It’s the teaching effectiveness and rigor of the program that is important, not the list of courses. Of course it is still a good idea to at least check that a computer science program has a good number of courses. A computer science program with less than 10 CS courses cannot possibly be good!
+<b>Q:</b> Do I need to know how to program to get into your CS program?<br>
+A: No. In our computer science program, we do not assume you have prior programming experience. We have very successful graduates who enter our computer science program without any programming background. In fact, taking programming classes from an instructor who is not competent might do more harm than good.
+</p>
+
+<p>
+<b>Q:</b> What computer science courses do you offer?<br>
+A: The list below are all our current computer science courses. Computer science students also have to take some math courses and many of our CS students minor or double major in math. Some math courses of interest to computer science majors are listed below. This is a popular question that students ask. But in fact this is the wrong question! Why? Because the course offerings of most computer science programs are about the same. Every computer science program will have courses on programming, data structures, algorithms, etc. Yet some computer science departments successfully send their graduates to top companies while some don’t. It’s the teaching effectiveness and rigor of the program that is important, not the list of courses. Of course it is still a good idea to at least check that a computer science program has a good number of courses. A computer science program with less than 10 CS courses cannot possibly be good!
 <ul>
 <li>COSC145 Python Programming
 <li>COSC238 Java Programming
@@ -983,8 +999,8 @@ A. The list below are all our current computer science courses. Computer science
 </p>
 
 <p>
-<b>Q.</b> Can I take science classes?<br>
-A. Yes. Columbia College also offers classes in physics, chemistry, and biology.
+<b>Q:</b> Can I take science classes?<br>
+A: Yes. Columbia College also offers classes in physics, chemistry, and biology.
 </p>
 
 </body>
