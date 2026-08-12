@@ -3,11 +3,19 @@ s = readfile('index.template.html')
 
 year = '2026'
 nextyear = '2027'
+
 country = 'Japan'
 country_adj = 'Japanese'
+
+country = 'South Korea'
+country_adj = 'South Korean'
+
+country = 'China'
+country_adj = 'Chinese'
+
 country_uppercase = country.upper()
 country_lowercase = country.lower()
-region = 'East Asia'
+region = 'East Asia, Southeast Asia and South Asia'
 tuition0 = '$14,677' # fall tuition
 tuition1 = '$29,354' # fall+spring tuition
 tuition2 = '$33,992' # fall+spring+summer tuition
@@ -76,7 +84,7 @@ for a, b in [('{year}', year),
              ('{cougarvillage}', cougarvillage),
              ]:
     print(a, b)
-    b = '[[[%s]]]' % b # for testing purposes
+    #b = '[[[%s]]]' % b # for testing purposes
     s = s.replace(a, b)
 
 writefile('aaa.html', s)
