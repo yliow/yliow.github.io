@@ -6,7 +6,21 @@ country_adj = {'Nepal': 'Nepali',
                'Vietnam': 'Vietnamese',
                'Malaysia': 'Malaysian',
                'Thailand': 'Thai',
-               'Indonedia': 'Indonesian'}
+               'Indonedia': 'Indonesian',
+               }
+
+
+f1denial0 = {'Nepal':'81%',
+             'Japan':'5%',
+             'South Korea':'7%',
+             'China':'16%',
+             'India':'61%',
+             'Vietnam':'13%',
+             'Malaysia':'12%',
+             'Thailand':'41%',
+             'Indonesia':'37%',
+             }
+
 
 s = r'''
 year=2026
@@ -57,5 +71,7 @@ def get_config(country):
     xs.append(('countryadj', country_adj[country]))
     xs.append(('countryuppercase', country.upper()))
     xs.append(('countrylowercase', country.lower()))
+    xs.append(('f1denial0', f1denial0[country]))
+    
     #for x in xs: print(x)
     return xs
