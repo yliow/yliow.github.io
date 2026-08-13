@@ -1,0 +1,2 @@
+magick julia-collins.png -gravity South -chop 0x20 julia-collins-cropped.png
+       
