@@ -1,25 +1,45 @@
-country_adj = {'Nepal': 'Nepali',
-               'Japan': 'Japanese',
-               'South Korea': 'South Korean',
-               'China': 'Chinese',
-               'India': 'Indian',
-               'Vietnam': 'Vietnamese',
-               'Malaysia': 'Malaysian',
-               'Thailand': 'Thai',
-               'Indonedia': 'Indonesian',
-               }
+def str_to_tuples(s):
+    xs = [_ for _ in s.split('\n')]
+    xs = [_ for _ in xs if _.strip() != '']
+    xs = [_.split('=') for _ in xs]
+    def IFELSE(b, a, c):
+        if b: return a
+        else: return c
+    xs = [(a, IFELSE('#' in b, b.split('#')[0], b)) for a,b in xs]
+    xs = [(a.strip(), b.strip()) for a,b in xs]
+    return xs
 
 
-f1denial0 = {'Nepal':'81%',
-             'Japan':'5%',
-             'South Korea':'7%',
-             'China':'16%',
-             'India':'61%',
-             'Vietnam':'13%',
-             'Malaysia':'12%',
-             'Thailand':'41%',
-             'Indonesia':'37%',
-             }
+# adjecive
+s = r'''
+Nepal=Nepali
+Japan=Japanese
+South Korea=South Korean
+China=Chinese
+India=Indian
+Vietnam=Vietnamese
+Malaysia=Malaysian
+Thailand=Thai
+Indonesia=Indonesian
+Pakistan=Pakistani
+'''
+country_adj = dict(str_to_tuples(s))
+
+
+# f1 visa denial rate
+s = r'''
+Nepal      =81%
+Japan      = 5%
+South Korea= 7%
+China      =16%
+India      =61%
+Vietnam    =13%
+Malaysia   =12%
+Thailand   =41%
+Indonesia  =37%
+Pakistan   =71%
+'''
+f1denial0 = dict(str_to_tuples(s))
 
 
 s = r'''
@@ -57,14 +77,8 @@ newhall=$3,637
 cougarvillage=$3,735
 '''
 
-xs = [_ for _ in s.split('\n')]
-xs = [_ for _ in xs if _.strip() != '']
-xs = [_.split('=') for _ in xs]
-def IFELSE(b, a, c):
-    if b: return a
-    else: return c
-xs = [(a, IFELSE('#' in b, b.split('#')[0], b)) for a,b in xs]
-xs = [(a.strip(), b.strip()) for a,b in xs]
+
+xs = str_to_tuples(s)
 
 def get_config(country):
     xs.append(('country', country))
