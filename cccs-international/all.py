@@ -9,6 +9,20 @@ def str_to_tuples(s):
     xs = [(a.strip(), b.strip()) for a,b in xs]
     return xs
 
+# welcome
+s = r'''
+Nepal=नमस्ते!
+Japan=ようこそ!
+South Korea=환영합니다!
+China=欢迎!
+India=स्वागतम्!
+Vietnam=Chào mừng!
+Malaysia=Selamat datang!
+Thailand=ยินดีต้อนรับนะ!
+Indonesia=Selamat datang!
+Pakistan=خوش آمدید!
+'''
+welcome = dict(str_to_tuples(s))
 
 # adjecive
 s = r'''
@@ -77,7 +91,6 @@ newhall=$3,637
 cougarvillage=$3,735
 '''
 
-
 xs = str_to_tuples(s)
 
 def get_config(country):
@@ -86,6 +99,7 @@ def get_config(country):
     xs.append(('countryuppercase', country.upper()))
     xs.append(('countrylowercase', country.lower()))
     xs.append(('f1denial0', f1denial0[country]))
+    xs.append(('welcome', welcome[country]))
     
     #for x in xs: print(x)
     return xs
