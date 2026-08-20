@@ -1,0 +1,2 @@
+run:
+	libreoffice --calc b*
