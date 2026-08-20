@@ -5,21 +5,23 @@ Rank,,School Name,Location,
 4,08/20/26,Branksome Hall Asia,Jeju-do,
 5,08/20/26,Chadwick International School,Incheon,
 6,08/20/26,Dwight School Seoul,Seoul,
-UR,x,Asia Pacific International School,Seoul,NO GCE NO IB
-UR,x,Busan Foreign School,Busan,NO GCE NO IB
 UR,08/20/26,Gyeonggi Suwon International School,Suwon,
 UR,08/20/26,Gyeongnam International Foreign School,Sacheon,
 UR,08/20/26,International School of Busan,Busan,
 UR,08/20/26,Taejon Christian International School,Daejeon,
 UR,08/20/26,Daegu Foreign Language High School,Daegu,
 UR,08/20/26,Kyungpook National University High School,Daegu,
+UR,08/20/26,Pyoseon High School,Jeju-do,
+UR,08/20/26,Jipyeongseon High School,Gimje,
+UR,08/20/26,Gyeonggi Foreign Language High School,Uiwang,
+UR,08/20/26,Daegu Seobu High School,Daegu,EMAIL ADDRESSES WRONG
+,08/20/26,Posan High School,"Dalseong-gun, Daegu",
+UR,x,Asia Pacific International School,Seoul,NO GCE NO IB
+UR,x,Busan Foreign School,Busan,NO GCE NO IB
 UR,x,Pocha High School,Daegu,NO SUCH SCHOOL
 UR,x,Namdaegu High School,Daegu,NO SUCH SCHOOL
 UR,x,Jeju Foreign Language High School,Jeju-do,NO GCE NO IB
-UR,08/20/26,Pyoseon High School,Jeju-do,
-UR,08/20/26,Jipyeongseon High School,Gimje,
 UR,x,Chungnam Foreign Language High School,Asan,NO GCE NO IB
-UR,08/20/26,Gyeonggi Foreign Language High School,Uiwang,
 UR,x,Seoul Foreign Language High School,Seoul,NO GCE NO IB
 UR,x,Hankuk Academy of Foreign Studies (HAFS),Yongin,NO GCE NO IB
 UR,x,Korean Minjok Leadership Academy (KMLA),Hoengseong,NO GCE NO IB
@@ -31,4 +33,16 @@ UR,x,Sejong International High School,Sejong,NO GCE NO IB
 UR,x,Gwangju Gyeongshin Girls' High School,Gwangju,NO GCE NO IB
 UR,x,Donga High School,Busan,NO GCE NO IB
 UR,x,Busan International High School,Busan,NO GCE NO IB
-UR,08/20/26,Daegu Seobu High School,Daegu,EMAIL ADDRESSES WRONG
+,TOTAL,16,,
+,,Korea Foreign School (KFS),"Gangnam-gu, Seoul",SENT AS GCE. BUT SEEMS TO BE ALSO IB
+,,,,
+,x,Daegu International High School,"Buk-gu, Daegu",NO GCE NO IB
+,,,,
+,x,Korea International School (KIS - Pangyo),"Seongnam, Gyeonggi-do",NO IB
+,,Yongsan International School of Seoul (YISS),"Yongsan-gu, Seoul",
+,,Daegu Foreign Language High School (IB Track),"Dalseo-gu, Daegu",
+,,Korea International School (KIS - Seoul),"Gangnam-gu, Seoul",
+,,,,
+,,,,
+,,,,
+,,Daegu Seobu High School (IB Track),"Seo-gu, Daegu",
