@@ -1,48 +1,44 @@
-Rank,,School Name,Location,
-1,08/20/26,North London Collegiate School Jeju,Jeju-do,
-2,08/20/26,Dulwich College Seoul,Seoul,
-3,08/20/26,Seoul Foreign School,Seoul,
-4,08/20/26,Branksome Hall Asia,Jeju-do,
-5,08/20/26,Chadwick International School,Incheon,
-6,08/20/26,Dwight School Seoul,Seoul,
-UR,08/20/26,Gyeonggi Suwon International School,Suwon,
-UR,08/20/26,Gyeongnam International Foreign School,Sacheon,
-UR,08/20/26,International School of Busan,Busan,
-UR,08/20/26,Taejon Christian International School,Daejeon,
-UR,08/20/26,Daegu Foreign Language High School,Daegu,
-UR,08/20/26,Kyungpook National University High School,Daegu,
-UR,08/20/26,Pyoseon High School,Jeju-do,
-UR,08/20/26,Jipyeongseon High School,Gimje,
-UR,08/20/26,Gyeonggi Foreign Language High School,Uiwang,
-UR,08/20/26,Daegu Seobu High School,Daegu,EMAIL ADDRESSES WRONG
-,08/20/26,Posan High School,"Dalseong-gun, Daegu",
-UR,x,Asia Pacific International School,Seoul,NO GCE NO IB
-UR,x,Busan Foreign School,Busan,NO GCE NO IB
-UR,x,Pocha High School,Daegu,NO SUCH SCHOOL
-UR,x,Namdaegu High School,Daegu,NO SUCH SCHOOL
-UR,x,Jeju Foreign Language High School,Jeju-do,NO GCE NO IB
-UR,x,Chungnam Foreign Language High School,Asan,NO GCE NO IB
-UR,x,Seoul Foreign Language High School,Seoul,NO GCE NO IB
-UR,x,Hankuk Academy of Foreign Studies (HAFS),Yongin,NO GCE NO IB
-UR,x,Korean Minjok Leadership Academy (KMLA),Hoengseong,NO GCE NO IB
-UR,x,Bugil Academy (Global Advanced Track),Cheonan,NO GCE NO IB
-UR,x,Cheongna Dalton School,Incheon,NO GCE NO IB
-UR,x,Songdo High School,Incheon,NO GCE NO IB
-UR,x,Incheon Foreign Language High School,Incheon,NO GCE NO IB
-UR,x,Sejong International High School,Sejong,NO GCE NO IB
-UR,x,Gwangju Gyeongshin Girls' High School,Gwangju,NO GCE NO IB
-UR,x,Donga High School,Busan,NO GCE NO IB
-UR,x,Busan International High School,Busan,NO GCE NO IB
-,TOTAL,16,,
-,,Korea Foreign School (KFS),"Gangnam-gu, Seoul",SENT AS GCE. BUT SEEMS TO BE ALSO IB
-,,,,
-,x,Daegu International High School,"Buk-gu, Daegu",NO GCE NO IB
-,,,,
-,x,Korea International School (KIS - Pangyo),"Seongnam, Gyeonggi-do",NO IB
-,,Yongsan International School of Seoul (YISS),"Yongsan-gu, Seoul",
-,,Daegu Foreign Language High School (IB Track),"Dalseo-gu, Daegu",
-,,Korea International School (KIS - Seoul),"Gangnam-gu, Seoul",
-,,,,
-,,,,
-,,,,
-,,Daegu Seobu High School (IB Track),"Seo-gu, Daegu",
+UR,x,Asia Pacific International School,Seoul,NO GCE NO IB,
+4,08/20/26,Branksome Hall Asia,Jeju-do,,
+UR,x,Bugil Academy (Global Advanced Track),Cheonan,NO GCE NO IB,
+UR,x,Busan Foreign School,Busan,NO GCE NO IB,
+UR,x,Busan International High School,Busan,NO GCE NO IB,
+5,08/20/26,Chadwick International School,Incheon,,
+UR,x,Cheongna Dalton School,Incheon,NO GCE NO IB,
+UR,x,Chungnam Foreign Language High School,Asan,NO GCE NO IB,
+UR,08/20/26,Daegu Foreign Language High School,Daegu,,
+,08/20/26,Daegu Foreign Language High School,"Dalseo-gu, Daegu",IB,SENT TWICE
+,x,Daegu International High School,"Buk-gu, Daegu",NO GCE NO IB,
+UR,08/20/26,Daegu Seobu High School,Daegu,EMAIL ADDRESSES WRONG,
+,08/20/26,Daegu Seobu High School,"Seo-gu, Daegu",,
+UR,x,Donga High School,Busan,NO GCE NO IB,
+2,08/20/26,Dulwich College Seoul,Seoul,,
+6,08/20/26,Dwight School Seoul,Seoul,,
+UR,x,Gwangju Gyeongshin Girls' High School,Gwangju,NO GCE NO IB,
+UR,08/20/26,Gyeonggi Foreign Language High School,Uiwang,,
+UR,08/20/26,Gyeonggi Suwon International School,Suwon,,
+UR,08/20/26,Gyeongnam International Foreign School,Sacheon,,
+UR,x,Hankuk Academy of Foreign Studies (HAFS),Yongin,NO GCE NO IB,
+UR,x,Incheon Foreign Language High School,Incheon,NO GCE NO IB,
+UR,08/20/26,International School of Busan,Busan,,
+UR,x,Jeju Foreign Language High School,Jeju-do,NO GCE NO IB,
+UR,08/20/26,Jipyeongseon High School,Gimje,,
+,,Korea Foreign School (KFS),"Gangnam-gu, Seoul",SENT AS GCE. BUT SEEMS TO BE ALSO IB,
+,x,Korea International School (KIS - Pangyo),"Seongnam, Gyeonggi-do",NO IB,
+,x,Korea International School (KIS - Seoul),"Gangnam-gu, Seoul",NO GCE NO IB,
+UR,x,Korean Minjok Leadership Academy (KMLA),Hoengseong,NO GCE NO IB,
+UR,08/20/26,Kyungpook National University High School,Daegu,,
+UR,x,Namdaegu High School,Daegu,NO SUCH SCHOOL,
+1,08/20/26,North London Collegiate School Jeju,Jeju-do,,
+UR,x,Pocha High School,Daegu,NO SUCH SCHOOL,
+,08/20/26,Posan High School,"Dalseong-gun, Daegu",,
+UR,08/20/26,Pyoseon High School,Jeju-do,,
+Rank,,School Name,Location,,
+UR,x,Sejong International High School,Sejong,NO GCE NO IB,
+UR,x,Seoul Foreign Language High School,Seoul,NO GCE NO IB,
+3,08/20/26,Seoul Foreign School,Seoul,,
+UR,x,Songdo High School,Incheon,NO GCE NO IB,
+UR,08/20/26,Taejon Christian International School,Daejeon,,
+,x,Yongsan International School of Seoul (YISS),"Yongsan-gu, Seoul",NO GCE NO IB,
+,,,,,
+,TOTAL,16,,,
