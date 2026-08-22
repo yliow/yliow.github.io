@@ -1,4 +1,4 @@
 run:
-	libreoffice --calc top100.csv
+	libreoffice --calc ib.csv
 old:
 	libreoffice --calc c*

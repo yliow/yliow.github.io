@@ -1,2 +1,2 @@
 run:
-	libreoffice --calc b*
+	libreoffice --calc gce.csv
