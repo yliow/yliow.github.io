@@ -33,9 +33,9 @@ welcome = dict(str_to_tuples(s))
 # WARNING: "=" is used to split "x=1" so cannot have "=" on the right. must split with parameter 1
 s = r'''
 Nepal=
-Japan=The following is the <a href="https://yliow.github.io/cccs-international/cccs-japan/docs/cccs-japan-summary-sheet.pdf">summary sheet (PDF)</a> / <a href="https://yliow.github.io/cccs-international/cccs-japan/docs/cccs-japan-summary-sheet.pdf">日本語訳付き概要シート (PDF)</a>. 
-South Korea=The following is the <a href="https://yliow.github.io/cccs-international/cccs-south-korea/docs/cccs-south-korea-summary-sheet.pdf">summary sheet (PDF)</a> / <a href="https://yliow.github.io/cccs-international/cccs-south-korea/docs/cccs-south-korea-summary-sheet.pdf">한국어 번역이 포함된 개요서 (PDF)</a>.
-China=The following is the <a href="https://yliow.github.io/cccs-international/cccs-china/docs/cccs-china-summary-sheet.pdf">summary sheet (PDF)</a> / <a href="https://yliow.github.io/cccs-international/cccs-china/docs/cccs-china-summary-sheet.pdf">附中文翻译的项目简介 (PDF)</a>.
+Japan=The following is the <a href="https://yliow.github.io/cccs-international/cccs-japan/docs/cccs-japan-summary-sheet.pdf">summary sheet / 日本語訳付き概要シート</a> (PDF). 
+South Korea=The following is the <a href="https://yliow.github.io/cccs-international/cccs-south-korea/docs/cccs-south-korea-summary-sheet.pdf">summary sheet  / 한국어 번역이 포함된 개요서</a> (PDF).
+China=The following is the <a href="https://yliow.github.io/cccs-international/cccs-china/docs/cccs-china-summary-sheet.pdf">summary sheet / 附中文翻译的项目简介 </a> (PDF).
 India=
 Vietnam=
 Malaysia=
