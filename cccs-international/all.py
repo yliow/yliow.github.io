@@ -1,10 +1,15 @@
 def str_to_tuples(s):
     xs = [_ for _ in s.split('\n')]
     xs = [_ for _ in xs if _.strip() != '']
-    xs = [_.split('=') for _ in xs]
+    xs = [_.split('=', 1) for _ in xs]
     def IFELSE(b, a, c):
         if b: return a
         else: return c
+    for _ in xs:
+        if len(_) != 2:
+            print("len:", len(_))
+            print("_", _)
+            raise Exception
     xs = [(a, IFELSE('#' in b, b.split('#')[0], b)) for a,b in xs]
     xs = [(a.strip(), b.strip()) for a,b in xs]
     return xs
@@ -23,6 +28,24 @@ Indonesia=Selamat datang!
 Pakistan=خوش آمدید!
 '''
 welcome = dict(str_to_tuples(s))
+
+# summary sheet
+# WARNING: "=" is used to split "x=1" so cannot have "=" on the right. must split with parameter 1
+s = r'''
+Nepal=The following is the summary sheet.
+Japan=The following is the <a href="https://yliow.github.io/cccs-international/cccs-japan/docs/cccs-japan-summary-sheet.pdf">summary sheet</a> / <a href="https://yliow.github.io/cccs-international/cccs-japan/docs/cccs-japan-summary-sheet.pdf">日本語訳付き概要シート</a>. 
+South Korea=The following is the summary sheet.
+China=The following is the summary sheet.
+India=The following is the summary sheet.
+Vietnam=The following is the summary sheet.
+Malaysia=The following is the summary sheet.
+Thailand=The following is the summary sheet.
+Indonesia=The following is the summary sheet.
+Pakistan=The following is the summary sheet
+'''
+summarysheet = dict(str_to_tuples(s))
+
+
 
 # adjecive
 s = r'''
@@ -100,6 +123,7 @@ def get_config(country):
     xs.append(('countrylowercase', country.lower()))
     xs.append(('f1denial0', f1denial0[country]))
     xs.append(('welcome', welcome[country]))
+    xs.append(('summarysheet', summarysheet[country]))
     
     #for x in xs: print(x)
     return xs
