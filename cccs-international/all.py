@@ -33,7 +33,7 @@ welcome = dict(str_to_tuples(s))
 # WARNING: "=" is used to split "x=1" so cannot have "=" on the right. must split with parameter 1
 s = r'''
 Nepal=
-Japan=The following is the <a href="https://yliow.github.io/cccs-international/cccs-japan/docs/cccs-japan-summary-sheet.pdf">summary sheet / 日本語訳付き概要シート</a> (PDF) and <a href='https://yliow.github.io/cccs-international/cccs-japan/docs/cccs-japan-poster-3-upscale.pdf'>flyer</a> (PDF). 
+Japan=The following is the <a href="https://yliow.github.io/cccs-international/cccs-japan/docs/cccs-japan-summary-sheet.pdf">summary sheet / 日本語訳付き概要シート</a> (PDF) and the <a href='https://yliow.github.io/cccs-international/cccs-japan/docs/cccs-japan-poster-3-upscale.pdf'>flyer / 日本語訳付きチラシ</a> (PDF). 
 South Korea=The following is the <a href="https://yliow.github.io/cccs-international/cccs-south-korea/docs/cccs-south-korea-summary-sheet.pdf">summary sheet  / 한국어 번역이 포함된 개요서</a> (PDF).
 China=The following is the <a href="https://yliow.github.io/cccs-international/cccs-china/docs/cccs-china-summary-sheet.pdf">summary sheet / 附中文翻译的项目简介</a> (PDF).
 India=
