@@ -22,7 +22,7 @@ def str_to_tuples(s):
 s = r'''
 Nepal=<meta />
 Japan=<meta name="google-site-verification" content="8Mgh2-EHsLkVIZAhRlLlxDa9l-3YCEl8eHN7pGIZdP0" />
-South Korea=<meta />
+South Korea=<meta name="google-site-verification" content="8Mgh2-EHsLkVIZAhRlLlxDa9l-3YCEl8eHN7pGIZdP0" />
 China=<meta />
 India=<meta />
 Vietnam=<meta />
