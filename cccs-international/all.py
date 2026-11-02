@@ -143,6 +143,7 @@ def get_config(country):
     xs.append(('f1denial0', f1denial0[country]))
     xs.append(('welcome', welcome[country]))
     xs.append(('summarysheet', summarysheet[country]))
+    xs.append(('meta', meta[country]))
     
     #for x in xs: print(x)
     return xs
