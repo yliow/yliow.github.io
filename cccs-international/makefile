@@ -9,6 +9,7 @@ run:
 	xdg-open cccs-pakistan.html
 
 	python main.py Japan
+	#cp cccs-japan.html cccs-japan/
 	xdg-open cccs-japan.html &
 
 	python main.py South Korea

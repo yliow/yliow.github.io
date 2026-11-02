@@ -1,3 +1,7 @@
+'''
+TODO: add meta tag
+'''
+
 def str_to_tuples(s):
     xs = [_ for _ in s.split('\n')]
     xs = [_ for _ in xs if _.strip() != '']
@@ -13,6 +17,21 @@ def str_to_tuples(s):
     xs = [(a, IFELSE('#' in b, b.split('#')[0], b)) for a,b in xs]
     xs = [(a.strip(), b.strip()) for a,b in xs]
     return xs
+
+# meta
+s = r'''
+Nepal=<meta />
+Japan=<meta name="google-site-verification" content="8Mgh2-EHsLkVIZAhRlLlxDa9l-3YCEl8eHN7pGIZdP0" />
+South Korea=<meta />
+China=<meta />
+India=<meta />
+Vietnam=<meta />
+Malaysia=<meta />
+Thailand=<meta />
+Indonesia=<meta />
+Pakistan=<meta />
+'''
+meta = dict(str_to_tuples(s))
 
 # welcome
 s = r'''
