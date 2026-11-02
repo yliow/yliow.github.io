@@ -23,7 +23,7 @@ s = r'''
 Nepal=<meta />
 Japan=<meta name="google-site-verification" content="8Mgh2-EHsLkVIZAhRlLlxDa9l-3YCEl8eHN7pGIZdP0" />
 South Korea=<meta name="google-site-verification" content="8Mgh2-EHsLkVIZAhRlLlxDa9l-3YCEl8eHN7pGIZdP0" />
-China=<meta />
+China=<meta name="google-site-verification" content="8Mgh2-EHsLkVIZAhRlLlxDa9l-3YCEl8eHN7pGIZdP0" />
 India=<meta />
 Vietnam=<meta />
 Malaysia=<meta />
