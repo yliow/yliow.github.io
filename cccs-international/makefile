@@ -17,6 +17,7 @@ run:
 	xdg-open cccs-south-korea.html
 
 	python main.py China
+	cp cccs-china.html cccs-china/index.html
 	xdg-open cccs-china.html &
 
 	python main.py Vietnam
