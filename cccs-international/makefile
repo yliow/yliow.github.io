@@ -1,34 +1,27 @@
-run:
-	python main.py Nepal
-	xdg-open cccs-nepal.html
+# Variables
+PYTHON = python
+OPEN   = xdg-open
 
-	python main.py India
-	xdg-open cccs-india.html
+# List of all countries
+COUNTRIES = india nepal pakistan china japan south-korea malaysia indonesia vietnam thailand
 
-	python main.py Pakistan
-	xdg-open cccs-pakistan.html
+.PHONY: all clean $(COUNTRIES)
 
-	python main.py Japan
-	cp cccs-japan.html cccs-japan/index.html
-	xdg-open cccs-japan.html &
+# Default target builds everything
+all: $(COUNTRIES)
 
-	python main.py South Korea
-	cp cccs-south-korea.html cccs-south-korea/index.html
-	xdg-open cccs-south-korea.html
+# Pattern rule: Matches any country in lowercase (e.g., south-korea)
+# It capitalizes the string dynamically to pass to your Python script
+$(COUNTRIES):
+	@# Capitalize first letter (and handle hyphenated names like South-Korea)
+	$(eval COUNTRY_NAME_CAPS := $(shell echo $@ | sed -e 's/\b\(.\)/\u\1/g'))
 
-	python main.py China
-	cp cccs-china.html cccs-china/index.html
-	xdg-open cccs-china.html &
+	$(PYTHON) src/main.py $(COUNTRY_NAME_CAPS)
+	mkdir -p cccs-$@
+	mv cccs-$@.html cccs-$@/index.html
+	$(OPEN) cccs-$@/index.html
 
-	python main.py Vietnam
-	xdg-open cccs-vietnam.html
-
-	python main.py Thailand
-	xdg-open cccs-thailand.html
-
-	python main.py Malaysia
-	xdg-open cccs-malaysia.html
-
-	python main.py Indonesia
-	xdg-open cccs-indonesia.html &
-
+# Cleans up all generated country folders and stray HTML files
+clean:
+	rm -rf $(addprefix cccs-, $(COUNTRIES))
+	rm -f cccs-*.html
