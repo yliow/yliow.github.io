@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Selection</title>
+    <style>
+        /* Container to center the buttons on your page */
+        .track-selection-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+            align-items: center;
+            margin: 40px auto;
+            max-width: 600px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        /* Base button styles matching Columbia College Navy & White palette */
+        .track-btn {
+            flex: 1;
+            min-width: 200px;
+            padding: 18px 28px;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-radius: 6px;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            transition: all 0.2s ease-in-out;
+            box-sizing: border-box;
+        }
+
+        /* Campus Track: Solid Navy Blue with Silver/White hover */
+        .campus-track {
+            background-color: #002d62; /* Columbia College Navy */
+            color: #ffffff;
+            border: 2px solid #002d62;
+            box-shadow: 0 4px 12px rgba(0, 45, 98, 0.2);
+        }
+
+        .campus-track:hover {
+            background-color: #001f44;
+            border-color: #001f44;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 45, 98, 0.3);
+        }
+
+        /* Online Track: Clean White/Silver with Navy accents to differentiate */
+        .online-track {
+            background-color: #ffffff;
+            color: #002d62;
+            border: 2px solid #002d62;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .online-track:hover {
+            background-color: #f4f6f9; /* Light silver/gray tint */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 45, 98, 0.15);
+        }
+
+        /* Active click state for tactile feedback */
+        .track-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 6px rgba(0, 45, 98, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="track-selection-container">
+        <!-- Replace the '#' symbols with your actual registration anchor tags or URLs -->
+        <a href="#register-campus" class="track-btn campus-track">Campus Track</a>
+        <a href="#register-online" class="track-btn online-track">Online Track</a>
+    </div>
+
+</body>
+</html>
