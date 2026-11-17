@@ -67,6 +67,82 @@
 
     <style>
 
+
+      /* CAMPUS/ONLINE TRACK BUTTONS -- ADDED 2026/11/11 */
+      
+        /* Container to center the buttons on your page */
+        .track-selection-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+            align-items: center;
+            margin: 40px auto;
+            max-width: 600px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        /* Base button styles matching Columbia College Navy & White palette */
+        .track-btn {
+            flex: 1;
+            min-width: 200px;
+            padding: 18px 28px;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-radius: 6px;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            transition: all 0.2s ease-in-out;
+            box-sizing: border-box;
+        }
+
+        /* Campus Track: Solid Navy Blue with Silver/White hover */
+        .campus-track {
+            background-color: #002d62; /* Columbia College Navy */
+            color: #ffffff;
+            border: 2px solid #002d62;
+            box-shadow: 0 4px 12px rgba(0, 45, 98, 0.2);
+        }
+
+        .campus-track:hover {
+            background-color: #001f44;
+            border-color: #001f44;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 45, 98, 0.3);
+        }
+
+        /* Online Track: Clean White/Silver with Navy accents to differentiate */
+        .online-track {
+            background-color: #ffffff;
+            color: #002d62;
+            border: 2px solid #002d62;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .online-track:hover {
+            background-color: #f4f6f9; /* Light silver/gray tint */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 45, 98, 0.15);
+        }
+
+        /* Active click state for tactile feedback */
+        .track-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 6px rgba(0, 45, 98, 0.2);
+        }
+
+
+
+
+
+
+      
+
+
+      
       
 
       * {
@@ -188,9 +264,7 @@
         for announcements.
         We are expecting ...
         <ul>
-          <li> The event is free.</li>
           <li> There will be tuition scholarships.</li>
-          <li> Food is provided.</li>
           <li> <span style='color:red'>NEW:</span>
             Besides our usual <b>campus track</b>, 
             we are currently looking into an <b>online track</b>!!!
@@ -235,11 +309,10 @@
       <div class="column">
         <img src="images/pics-2018-2-cropped.jpg" style="width:100%">
       </div>
-      <!--
+      
       <div class="column">
         <img src="images/pics-2024-cropped.jpg" style="width:100%">
       </div>
-      -->
       <div class="column">
         <img src="images/pics-2025-cropped.jpg" style="width:100%">
       </div>
@@ -276,22 +349,24 @@
       <hr>
     <a name="top"></a>
     Quicklinks:
+    <a href='index.html'>home</a> |
     <a href='#what'>what</a> |
+    <!-- <a href='#links'>links</a> | -->
     <a href='#prizes'>prizes</a> |
-    <a href='#who'>who</a> |
-    <a href='#when'>when</a> |
-    <a href='#where'>where</a> |
-    <a href='#cost'>fee</a> |
-    <a href='#schedule'>schedule</a> |
-    <a href='#rules'>rules</a> |
-    <a href='#reviews'>reviews</a> |
-    <a href='#register'>register</a> |
+    <!-- <a href='#who'>who</a> | -->
+    <!-- <a href='#when'>when</a> | -->
+    <!-- <a href='#where'>where</a> | -->
+    <!-- <a href='#cost'>fee</a> | -->
+    <!-- <a href='#schedule'>schedule</a> | -->
+    <!-- <a href='#rules'>rules</a> | -->
+    <!-- <a href='#reviews'>reviews</a> | -->
+    <!-- <a href='#register'>register</a> | -->
     <a href='#sponsors'>sponsors</a> | 
     <a href='#organizers'>organizers</a> |
     <a href='#questions'>contact</a> |
-    <a href='#faq'>faq</a> |
-    <a href='#fyi'>results</a> |
-    <a href='#connect'>connect</a>
+    <!-- <a href='#faq'>faq</a> | -->
+    <a href='#fyi'>results</a> 
+    <!-- <a href='#connect'>connect</a> -->
     <hr>
     </p>
     
@@ -299,33 +374,71 @@
     <h2><a name="what"></a>What is it? <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
 
 <p>
-  A day of programming activities, competitive programming contest (in a team of at most 3 members), meeting with CS majors from Columbia College, etc.
-  The main thing is to have fun.
-  At this point, the programming languages used are C++, Python, and Java.
-  There are three categories: Advanced, Intermediate and Beginner.
-  The questions in Advanced are more challenging than the ones in Intermediate.
+  <b>CCCS High School Programming Contest</b>
+  (<a href="pdf/flyer.pdf">flyer</a>) is a team-based
+  competitive programming contest
+  for high school students.
+  Note that you need not form a school team; members in a team can be from
+  different schools.
+  At this point, the main programming languages used are C++, Python, and Java.
+  You are allowed to use any programming language. 
+</p>
+
+<p>
+  Beginning in spring 2027, 
+  there are two tracks: <b>campus track</b> and <b>online track</b>.
+  We strongly encourage all regional students to join us on campus to fully
+  experience the event, the community, and prizes.
+  The online track is reserved strictly for international teams,
+  those located outside a 2.5-hour driving radius of Columbia College,
+  or those facing unavoidable travel barriers.
+</p>
+
+<p>
+  For each track,
+  there are three categories: <b>Advanced</b>, <b>Intermediate</b>
+  and <b>Beginner</b>.
   The Beginner category is a non-competitive category.
   You can view the Beginner category as a workshop.
   Teachers are welcome to join their students in the Beginner category.
-  Here's our <a href="pdf/flyer.pdf">flyer</a>.
 </p>
 
 <p>
-  Note that you need not form a school team.
-  We can help you find a team during our morning
-  warmup session. You can choose to be a team of one.
-  You need not be registered by your
-  teacher -- you can register individually.
-  You need not arrive on our campus in a school bus.
-  You or your parents can drive to the event too.
-  Parking is free.
-  Parents and teachers are welcome.
-  Food is provided for parents and teachers too!
+  There are <b>scholarships</b> and <b>medals</b>.
+  Scholarships and medals are awarded for each track
+  <b>independently</b>.
+  Campus track and online track participants are judged <b>separately</b>,
+  with dedicated prizes available for the Advanced and Intermediate categories
+  in both tracks.
 </p>
 
 <p>
-  There will be prizes!
+  The event is <b>free</b>.
+  For the campus track,
+  <b>parking</b> is <b>free</b>, <b>food</b> is <b>provided</b> and
+  there will be a 
+  <b>lunchtime Q&A session with a CCCS graduate from the industry</b>.
 </p>
+
+
+<p>
+  <!-- TRACK BUTTONS -- ADDED 2026/11/11 -->
+  <div class="track-selection-container">
+    <a href="campus-track.html" class="track-btn campus-track">Campus Track</a>
+    <a href="online-track.html" class="track-btn online-track">Online Track</a>
+  </div>
+  </p>
+
+
+<!--
+    <p>
+The main thing is to have fun.
+</p>
+-->
+    
+<p>
+</p>
+
 
 <h2><a name="prizes"></a>Are there prizes? <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
 
@@ -336,9 +449,7 @@
   the campus track.
 </p>
 
-We will have our usual <b>campus track</b> (participants are on-campus).
-But for spring 2027, we are adding an <b>online track</b>.
-
+<p>
 Tuition scholarship prizes for each track are
 <ul>
   <li> Advanced:
@@ -355,6 +466,7 @@ Tuition scholarship prizes for each track are
     </ul>
   <li> Beginner: Non-competitive.
 </ul>
+</p>
 
 <p>
   Excluding the winners,
@@ -372,218 +484,7 @@ Tuition scholarship prizes for each track are
   for the tuition scholarships.
 </p>
 
-
-<h2><a name="who"></a>Who is this for? <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
-<ul>
-  <li>High school students with knowledge of C++, Python, and/or Java.
-  <li>There are two tracks: campus and online.
-    For each track, there are three categories:
-    Advanced, Intermediate and Beginner.
-    The Beginner category is non-competitive.
-    You can decide which category you want to join during the
-    Warmup session in the morning.
-    We can also help you decide.
-  <li>There is a <b>limited</b> number of laptops and PCs.
-    We highly recommend that you bring your own laptops.
-</ul>
-
-<h2><a name="when"></a>When is this? <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
-<p>
-  <b>Saturday March 6, 2027, 9:00 AM – 5:00 PM CST (15:00 – 23:00 UTC)</b>.
-  The actual contest begins after lunch (see schedule below).
-  So it's OK to check in late especially if you live far away from Columbia, MO.
-</p>
-
-<h2><a name="where"></a>What is the location? <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
-
-<ul>
-  <li>Columbia College at Columbia, MO (Address:
-    <a href='https://www.google.com/maps/place/1001+Rogers+St,+Columbia,+MO+65201/@38.9565614,-92.3262634,17z/data=!3m1!4b1!4m2!3m1!1s0x87dcb7dc8ba44079:0x7f504692e93726d7'>1001 Rogers Street, Columbia, MO 65216</a>)
-  <li>Parking:
-    Parking is free.
-    The <b>Miller parking lot</b> is the most convenient.
-    The next is <b>10th Street parking lot</b>.
-    But you can use any non-residential parking lot.
-    <ul>
-      <li>
-        <a href='pdf/campus-map-2.pdf'>pdf map</a>: look for
-        "C. Miller" or 
-        "A. 10th Street".
-      </li>
-      <li>or <a href='https://tinyurl.com/ykf892m3'>interactive map</a>:
-        under "Parking Lots", look for "Miller Lot" or "Tenth Street Lot".
-      </li>
-    </ul>
-  <li>Check-in (and meals): <b>Dulany Hall</b>.
-    <ul>
-      <li>
-        <a href='pdf/campus-map-2.pdf'>pdf map</a>: look for "10. Dulany Hall".
-      </li>
-      <li>or <a href='https://tinyurl.com/ykf892m3'>interactive map</a>:
-        under "Buildings", look for "Dulany Hall".
-      </li>
-    </ul>
-  <li>Contest venue: <b>Buchanan Hall</b>.
-    <ul>
-      <li>
-        <a href='pdf/campus-map-2.pdf'>pdf map</a>:
-        look for "16. Buchanan Hall".
-      </li>
-      <li>
-        or <a href='https://tinyurl.com/ykf892m3'>interactive map</a>:
-        under "Buildings", look for "Buchanan Hall".
-    </ul>
-</ul>
-The main thing is to get to Dulany Hall for check-in.
-After that you just need to follow us.
-If you need help,
-go to <a href='https://discord.gg/4E8YVyDExu'>CCCS HS PC discord server</a>
-and send a message.
-
-<h2><a name="cost"></a>How much does it cost? <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
-
-<p>
-  For Spring 2027, the event is <b>free</b>! Food is provided! ...
-  <ul>
-    <li> Breakfast (Panera breakfast sandwich, fruit cup, coffee, juice)
-    <li> Lunch (Elior buffet)
-    <li> Dinner (Domino's pizzas)
-    <li> Snacks and drinks throughout the day.
-  </ul>
-  This event is heavily sponsored by Columbia College.
-</p>
-
-<!--
-    <p>
-      Students can purchase a commemorative t-shirt for about $20.
-    </p>
-    -->
-    
-    <!--
-        Parents, guardians, siblings can purchase food tickets at $5
-        when the student registers.
-        This covers food as above.
-      -->
-    
-    <!--
-        <p>
-          Teachers can also purchase the food tickets at $5.
-        </p>
-        -->
-        
-        
-        
-        <h2><a name="schedule"></a>What’s the schedule? <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
-        <!-- Here’s the <a href='schedule.html'>schedule</a>. -->
-    The event begins at 9AM CST (15:00 UTC).
-    The contest itself begins after lunch.
-    It's OK to check in late especially if you are driving from far -- just let
-    us know.
-    <ul>
-      <li> <b>8AM-9AM: CHECK-IN, BREAKFAST, OPENING -- DULANY HALL (BANQUET ROOM)</b> </li>
-      <ul>
-        <li>Panera breakfast.
-          (Drinks and snacks provided throughout the day.)
-        <li>Opening remarks at ~8:45AM</li>
-      </ul>
-      <li><b>9AM-11:50AM: WARMUPS -- BUCHANAN HALL</b></li>
-      <ul>
-        <li>Practice session.</li>
-        <li>Decide which category you want to join.
-        We'll help you decide if you need help.
-        <li>Form teams.
-          We'll also help to form teams if you don't have one.
-          It's OK if you prefer to work alone.
-          But it's more fun to work in a group.
-        </li>
-      </ul>
-      <li><b>12PM-12:40PM: LUNCH -- DULANY HALL (BANQUET ROOM)</b></li>
-      <ul>
-        <li> Buffet lunch
-        <li> Talk and Q&A with CCCS graduate Michael Fisher.
-
-          <p style="margin-left: 2em;">
-          Michael Fisher graduated from CC CS in 2022. Michael Fisher is an embedded software engineer. He worked at Indra Air Traffic, part of Indra Sistemas --
-one of the world's top three companies in air traffic management (ATM) and a leading Spanish multinational specializing in defense, aerospace, and digital transformation. 
-           In January 2025, Michael joined Garmin, the undisputed #1 leader in the world in general aviation avionics and GPS navigation systems.</p>
-          
-      </ul>
-      <li><b>12:45PM-5PM: CONTEST -- BUCHANAN HALL</b></li>
-      <li><b>5PM: DINNER, CLOSING -- DULANY HALL (BANQUET ROOM)</b></li>
-      <ul>
-        <li>Prize presentation</li>
-        <li>Closing remarks</li>
-        <li>Domino's pizzas
-      </ul>
-    </ul>
-
-    During the contest, depending on interest from the guests,
-    there might be information and discussion sessions for
-    parents and teachers.
-    
-        
-    <h2><a name="rules"></a>Are there contest rules? <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
-    Here you go: <a href='https://docs.google.com/document/d/1c7LjAY_9Fv3Ls2YdNOI40bNSkP1DC1Lv7H_cJyO8mmA/edit?usp=sharing'>contest rules page</a>.
-
-        
-    <h2><a name="reviews"></a>What do participants say about the contest? <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
-    Here you go: <a href='comments.html'>comments</a>.
-
-
-        
-    <h2><a name="register"></a>Where do I register? <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
-    
-    <ul>
-      <li>Registration opens: 10/02/2026</li>
-      <li>Registration closes: 2/25/2027. We will try to accomodate late registrations. Go ahead and register!</li>
-      <li><strong>Students:</strong>
-        <a href='https://docs.google.com/forms/d/e/1FAIpQLScEH0pMrfdI3L4iRPGyCK3w5R5YdvLNjj9Lt_HXxMzzPeovyw/viewform?usp=sharing&ouid=110224096777115323458'>registration form</a>.
-        <ul>
-          <li>Parents/guardians/siblings are welcome and encouraged to attend and can register as guests when a student registers.</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Teachers:</strong>
-        <a href='https://docs.google.com/forms/d/e/1FAIpQLSed4Si4nsiw1YYNF24ZCu6N5QVf9Cm4qdcT2qg1OBjffhFuOw/viewform?usp=sharing&ouid=110224096777115323458'>registration form</a>.
-        <ul>
-          <li>
-            Teachers are welcome and encouraged to register and attend the event.
-            Even if you are not attending the event, you can enter your
-            contact info so that we can email you info on our future events.
-          <li>
-            If you are a teacher registering a group of students,
-            you can either ask your students to register individually or
-            you can email
-            <a href="mailto:yliow@ccis.edu?subject=CCCS%20HSPC%20Donation">Dr. Liow (yliow@ccis.edu)</a>.
-        </ul>
-      <li>
-        <!--
-        If you registered but cannot attend, please let us know ASAP.
-        This allows others to take your place,
-        helps us lower event costs, and reduces food waste.
-        -->
-        Thanks to our generous sponsors,
-        this contest is 100% free and includes complimentary meals and scholarship opportunities.
-        Because we order food and allocate prizes based on registration numbers,
-        every empty seat represents wasted college resources.
-        If your plans change, please cancel your registration ASAP
-        (email Dr. Liow at <a href='mailto:yliow@ccis.edu'>yliow@ccis.edu</a>)
-        so we can give your seat (and meals!) to a student on the waitlist.
-      </li>
-    </ul>
-    
-    <h2><a name="attendees"></a>I’m registered! Now what? <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
-    Head over to the <a href='attendees.html'>attendees page</a>
-    for some details!
-    Also, you can send our
-    <a href="pdf/flyer.pdf">flyer</a>
-    to your friends to help publicize the event.
-    Here are some <a href='practice.pdf'>practice problems</a>.
-    You can go to <a href='https://discord.gg/4E8YVyDExu'>CCCS HS PC discord server</a> to meet other high school students and
-    get announcements.
-    We will hold discussions on the practice problems.
-
-    <h2><a name="sponsors"></a>Sponsors<small><small> [<a href='#top'>goto top</a>]</small></small></h2>
+<h2><a name="sponsors"></a>Sponsors<small><small> [<a href='#top'>goto top</a>]</small></small></h2>
 
 <p>
   The CCCS High School Programming Contest began in 2015 and was a local event.
@@ -630,37 +531,6 @@ Please email any one of us or talk to us at our CCCS HS Programming Contest disc
 </ul>
     
         
-      <h2><a name="faq"></a>FAQ <small><small>[<a href='#top'>goto top</a>]</small></small></h2>
-      <p>
-    <ul>
-      <li>Q: What is the deadline for registration?
-       <br>
-    A: We’ll accommodate late registrants as much as we can. So go ahead and register!
-    </ul>
-      </p>
-      
-
-      <p>
-        <ul>
-          <li>Q: I can't find 2 other teammates from my school. Can I still participate?
-            <br>
-            A: Sure. You can be a team of 1. A team of 2 is fine too.
-            On the day of the event, you can also form a team with students
-            from another high school!
-        </ul>
-      </p>
-
-      <p>
-        <ul>
-          <li>Q: Do I need a teacher's permission/approval?
-            Do I need a teacher to be the team coach?
-            <br>
-            A: You (and your teammates) can register individually.
-            You do not need a teacher to register the team.
-            Of course if you have a teacher as a team coach, he/she
-            is welcome to attend the event too!
-        </ul>
-      </p>
 
                       <style>
   table {
